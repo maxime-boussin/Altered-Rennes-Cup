@@ -1,0 +1,328 @@
+<style>
+    @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32KxfXBiEJow.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBiEJow.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQBiEJow.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QBiEJow.ttf) format('truetype');
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        background-image: url('images/bg.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    #winner-bracket, #loser-bracket {
+        display: flex;
+        align-items: center;
+    }
+    #winner-bracket {
+        margin-bottom: 50px;
+    }
+    .match-box {
+        display: flex;
+        width: 500px;
+        margin: 15px;
+    }
+    .match-box::after {
+        content: '';
+        background-image: url('images/vs.png');
+        background-size: cover;
+        width: 35px;
+        height: 35px;
+        margin-left: -267px;
+        margin-top: 15px;
+        z-index: 2;
+    }
+    .match-box a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .match-box .player-box {
+        background-size: cover;
+        width: 230px;
+        height: 59px;
+        display: inline-block;
+        color: white;
+        font-family: "Work Sans";
+        font-size: 18px;
+        font-weight: 700;
+        padding-top: 10px;
+    }
+    .match-box h2 {
+        font-size: 20px;
+        text-shadow: rgb(55, 55, 55) 3px 0px 0px, rgb(55, 55, 55) 2.83487px 0.981584px 0px, rgb(55, 55, 55) 2.35766px 1.85511px 0px, rgb(55, 55, 55) 1.62091px 2.52441px 0px, rgb(55, 55, 55) 0.705713px 2.91581px 0px, rgb(55, 55, 55) -0.287171px 2.98622px 0px, rgb(55, 55, 55) -1.24844px 2.72789px 0px, rgb(55, 55, 55) -2.07227px 2.16926px 0px, rgb(55, 55, 55) -2.66798px 1.37182px 0px, rgb(55, 55, 55) -2.96998px 0.42336px 0px, rgb(55, 55, 55) -2.94502px -0.571704px 0px, rgb(55, 55, 55) -2.59586px -1.50383px 0px, rgb(55, 55, 55) -1.96093px -2.27041px 0px, rgb(55, 55, 55) -1.11013px -2.78704px 0px, rgb(55, 55, 55) -0.137119px -2.99686px 0px, rgb(55, 55, 55) 0.850987px -2.87677px 0px, rgb(55, 55, 55) 1.74541px -2.43999px 0px, rgb(55, 55, 55) 2.44769px -1.73459px 0px, rgb(55, 55, 55) 2.88051px -0.838247px 0px;
+        margin: 0;
+    }
+    .player-box.winner {
+        filter: drop-shadow(0px 0px 5px white);
+        z-index: 1;
+    }
+    .player-box.loser {
+        filter: contrast(0.4) grayscale(0.5);
+    }
+    .player-box:first-child {
+        padding-right: 20px;
+        text-align: right;
+    }
+    .player-box:last-child {
+        padding-left: 20px;
+        text-align: left;
+    }
+    .match-box:before {
+        content: "";
+        position: absolute;
+        margin-left: 450px;
+        display: block;
+        width: 100px;
+        z-index: -1;
+    }
+    .match-box:nth-child(2n):before {   
+        margin-top: -3px;
+        height: 37px;
+        border-bottom-right-radius: 10px;
+        border-right: 4px solid #ffffff;
+        border-bottom: 4px solid #ffffff; 
+    }
+    .match-box:nth-child(2n+1):before {
+        margin-top: 33px;
+        height: 37px;
+        border-top-right-radius: 10px;
+        border-right: 4px solid #ffffff;
+        border-top: 4px solid #ffffff;
+    }
+    #winner-bracket .container:nth-child(2) .match-box:before {
+        height: 50px;
+    }
+    #winner-bracket .container:nth-child(2) .match-box:nth-child(2n):before {
+        margin-top: -16px;
+    }
+    #winner-bracket .container:nth-child(3) .match-box:before {
+        height: 131px;
+    }
+    #winner-bracket .container:nth-child(3) .match-box:nth-child(2n):before {
+        margin-top: -97px;
+    }
+    #winner-bracket .container:nth-child(4) .match-box:before {
+        height: 301px;
+    }
+    #winner-bracket .container:nth-child(4) .match-box:nth-child(2n):before {
+        margin-top: -267px;
+    }
+    #winner-bracket .container:nth-child(2) .match-box:not(:first-child):not(:last-child) {
+        margin: 99px 15px;
+    }
+    #winner-bracket .container:nth-child(3) .match-box:not(:first-child):not(:last-child) {
+        margin: 265px 15px;
+    }
+    #winner-bracket .container:nth-child(4) .match-box:first-child {
+        margin-bottom: 600px;
+    }
+    #winner-bracket .container:nth-child(5) .match-box:before {  
+        border-right: none;
+    }
+    #winner-bracket .container:nth-child(6) .match-box:before {  
+        border: none;
+    }
+    /* LOOSER */
+    #loser-bracket .container:nth-child(2n+1) .match-box:before {  
+        border-right: none;
+    }
+    #loser-bracket .container:last-child .match-box:last-child:before {
+        height: 1040px;
+        width: 826px;
+        margin-top: -1040px;
+        margin-left: -578px;
+    }
+    #loser-bracket .container:nth-child(4) .match-box:before {
+        height: 50px;
+    }
+    #loser-bracket .container:nth-child(4) .match-box:nth-child(2n):before {
+        margin-top: -16px;
+    }
+    #loser-bracket .container:nth-child(6) .match-box:before {
+        height: 131px;
+    }
+    #loser-bracket .container:nth-child(6) .match-box:nth-child(2n):before {
+        margin-top: -97px;
+    }
+    #loser-bracket .container:nth-child(3) .match-box:not(:first-child):not(:last-child),
+    #loser-bracket .container:nth-child(4) .match-box:not(:first-child):not(:last-child) {
+        margin: 99px 15px;
+    }
+    #loser-bracket .container:nth-child(5) .match-box:first-child,
+    #loser-bracket .container:nth-child(6) .match-box:first-child {
+        margin-bottom: 265px;
+    }
+</style>
+<body>
+    <div id="winner-bracket"></div>
+    <div id="loser-bracket"></div>
+    <script>
+        const winnerMatchs = [
+            [1, 1, 2, 2, 2, 2, 1, 2, 2, 1, 1, 2, 1, 2, 2, 1],
+            [0, 1, 0, 0, 0, 0, 2, 2],
+            [0, 0, 0, 0],
+            [0, 0],
+            [0]
+        ];
+        const loserMatchs = [
+            [2, 2, 2, 2, 1, 2, 1, 2],
+            [0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0],
+            [0, 0, 0, 0],
+            [0, 0],
+            [0, 0],
+            [0],
+            [0]
+        ];
+        const players = [
+            { id: 1, name: "McFlaïe", hero: "Teija", bg: "m", deck: "https://www.altered.gg/decks/01JC5MVD50S3QNYABHXBRSM7D3" },
+            { id: 2, name: "Bliisters", hero: "Rin", bg: "m", deck: "https://www.altered.gg/decks/01JB9ZD4VD1N7XHKB6BV1DGG6V" },
+            { id: 3, name: "Hurricane", hero: "Afanas", bg: "y", deck: "https://www.altered.gg/decks/01JCH57RPH0P637ZFMF48ZXQG0" },
+            { id: 4, name: "Malo", hero: "Fen", bg: "l", deck: "https://www.altered.gg/decks/01JCDZGDVPPNMA7SSKGDMV1JCH" },
+            { id: 5, name: "Loar", hero: "Rin", bg: "m", deck: "https://www.altered.gg/decks/01JCKYKYV121BWA8N8B69N51VK" },
+            { id: 6, name: "JoliRougeGorge", hero: "Lindiwe", bg: "y", deck: "https://www.altered.gg/decks/01J9VHCK8DR408E0SC1Y16Q15M" },
+            { id: 7, name: "Autilis", hero: "Kojo", bg: "b", deck: "https://www.altered.gg/decks/01JCMQDRAW323KG0VRMS8EHVKZ" },
+            { id: 8, name: "Zupaw", hero: "Teija", bg: "m", deck: "https://www.altered.gg/decks/01JAQE4CJ3KCVAEZJVN2YHECBK" },
+            { id: 9, name: "Loutre", hero: "Teija", bg: "m", deck: "https://www.altered.gg/decks/01J9K7WGNWT178EE34ZMX33VV7" },
+            { id: 10, name: "GrankorSalade", hero: "Afanas", bg: "y", deck: "https://www.altered.gg/decks/01JB7WEDP3H5SKMPP4RQD7CQQN" },
+            { id: 11, name: "Nijisa", hero: "Subhash", bg: "a", deck: "https://www.altered.gg/decks/01JBQEKED96H4W66SNGEJJ1E59" },
+            { id: 12, name: "ZazaLaRiboule", hero: "Fen", bg: "l", deck: "#" },
+            { id: 13, name: "Yann", hero: "Teija", bg: "m", deck: "https://www.altered.gg/decks/01J9TEA0HYS5HEKA9WSH8XHD7K" },
+            { id: 14, name: "Raloufifa", hero: "Afanas", bg: "y", deck: "https://www.altered.gg/decks/01JCFTKG84EP8VGHPDJB0GNDPX" },
+            { id: 15, name: "EdgeSouls", hero: "Sigismar", bg: "o", deck: "https://www.altered.gg/decks/01J89YQQPFM6QXEZFJ1XH2WH96" },
+            { id: 16, name: "Irex", hero: "Waru", bg: "o", deck: "https://www.altered.gg/fr-fr/decks/01JCZC6GVMXQBAJR5HH49J6ZYM" },
+            { id: 17, name: "Djaack", hero: "Basira", bg: "b", deck: "https://www.altered.gg/decks/01JCTJ7QYJX9314VXP4VPFFRS8" },
+            { id: 18, name: "EverydayLife", hero: "Waru", bg: "o", deck: "https://www.altered.gg/decks/01JCENTNGZQVS9KZKCYSQJ66KN" },
+            { id: 19, name: "RoyaumeDuDé", hero: "Auraq", bg: "l", deck: "https://www.altered.gg/decks/01JBZ5E0KMWRSBDQDZM26BEX6G" },
+            { id: 20, name: "Pikevchu", hero: "Rin", bg: "m", deck: "https://www.altered.gg/decks/01JBXSS6YQT3YQ8JSFH1QREJC4" },
+            { id: 21, name: "Nimrel", hero: "Fen", bg: "l", deck: "https://www.altered.gg/decks/01JCKTG55YYD0GVMSZDCD8N890" },
+            { id: 22, name: "Folzoqua", hero: "Teija", bg: "m", deck: "https://www.altered.gg/decks/01J837K9RE6HD61H3AVVBHR4BM" },
+            { id: 23, name: "Calcifer", hero: "Akesha", bg: "y", deck: "https://www.altered.gg/decks/01JCRZEXPJB7KMV96DN86YMF8F" },
+            { id: 24, name: "Marbull", hero: "Sigismar", bg: "o", deck: "https://www.altered.gg/decks/01JCP8N34RWH53259RCBR47992" },
+            { id: 25, name: "Y04nn", hero: "Afanas", bg: "y", deck: "https://www.altered.gg/fr-fr/decks/01J9NZFC7SH9N87RDJCAFGB1DF?translations.name=main" },
+            { id: 26, name: "Xathros", hero: "Kojo", bg: "b", deck: "https://www.altered.gg/decks/01JCRWZTSFK7NJZ4QA16DZSRMQ" },
+            { id: 27, name: "Hedi", hero: "Afanas", bg: "y", deck: "https://www.altered.gg/decks/01JCTFWNCK13EMXN756873AFYH" },
+            { id: 28, name: "Keg", hero: "Fen", bg: "l", deck: "https://www.altered.gg/decks/01JCK3EHSJZPN571FDCW9H1PFD" },
+            { id: 29, name: "Edco", hero: "Auraq", bg: "l", deck: "https://www.altered.gg/decks/01JAK3MRP1NDFW8AFVD2FC16P8" },
+            { id: 30, name: "Gothon", hero: "Fen", bg: "l", deck: "https://www.altered.gg/decks/01J9JYV79MYVQZFZRK94FJ7M0F" },
+            { id: 31, name: "Xanders", hero: "Treyst", bg: "a", deck: "https://www.altered.gg/decks/01J9HVZV48TXKDQDQTJ7H3VVM1" },
+            { id: 32, name: "JacquesCeler", hero: "Treyst", bg: "a", deck: "https://www.altered.gg/decks/01JAB5ZDHB8DQ2N6RA6NGKFW30" }
+        ];
+        const winners = [players, [], [], [], [], []];
+        const losers = [[], [], [], [], [], [], [], []];
+        const noPlayer = { id: 0, name: "", hero: "", bg: "z" };
+        const finale = [noPlayer, noPlayer, 0];
+        // Fonction pour créer un bloc match-box
+        function createMatchBox(player1, player2, match) {
+            const matchBox = document.createElement("div");
+            matchBox.className = "match-box";
+
+            // Création de la première player-box
+            const playerBox1 = document.createElement("div");
+            playerBox1.className = "player-box";
+            playerBox1.style.backgroundImage = "url('images/"+player1.bg+"-banner.png')";
+            playerBox1.innerHTML = `<a href="${player1.deck}"><h2>${player1.name}</h2><span>${player1.hero}</span></a>`;
+
+            // Création de la seconde player-box
+            const playerBox2 = document.createElement("div");
+            playerBox2.className = "player-box";
+            playerBox2.style.backgroundImage = "url('images/"+player2.bg+"-banner-r.png')";
+            playerBox2.innerHTML = `<a href="${player2.deck}"><h2>${player2.name}</h2><span>${player2.hero}</span></a>`;
+
+            if(match == 1) {
+                playerBox1.classList.add('winner');
+                playerBox2.classList.add('loser');
+            }
+            else if(match == 2) {
+                playerBox1.classList.add('loser');
+                playerBox2.classList.add('winner');
+            }
+
+            // Ajout des player-box au match-box
+            matchBox.appendChild(playerBox1);
+            matchBox.appendChild(playerBox2);
+
+            return matchBox;
+        }
+
+        for (let i = 0; i < winnerMatchs.length; i++) {
+            const container = document.createElement("div");
+            container.className = "container";
+            for (let j = 0; j < winnerMatchs[i].length; j++) {
+                let round = i < 2 ? i : i*2-1;
+                if(round > 0) {
+                    losers[round].push(noPlayer);
+                }
+                if(winnerMatchs[i][j] == 1) {
+                    winners[i+1].push(winners[i][j*2]);
+                    losers[round].push(winners[i][j*2+1]);
+                }
+                else if(winnerMatchs[i][j] == 2) {
+                    winners[i+1].push(winners[i][j*2+1]);
+                    losers[round].push(winners[i][j*2]);
+                }
+                else {
+                    winners[i+1].push(noPlayer);
+                    losers[round].push(noPlayer);
+                }
+                if(i == winnerMatchs.length-1 && winnerMatchs[i][j] > 0){
+                    finale[0] = (winnerMatchs[i][j] == 1 ? winners[i][j*2] : winners[i][j*2+1]);
+                }
+                const matchBox = createMatchBox(winners[i][j*2], winners[i][j*2+1], winnerMatchs[i][j]);
+                container.appendChild(matchBox);
+            }
+            document.querySelector("#winner-bracket").appendChild(container);
+        }
+
+        for (let i = 0; i < loserMatchs.length; i++) {
+            const container = document.createElement("div");
+            container.className = "container";
+            for (let j = 0; j < loserMatchs[i].length; j++) {
+                if(losers[i+1]){
+                    if(loserMatchs[i][j] == 1) {
+                        losers[i+1][i % 2 == 0 ? j*2 : j] = losers[i][j*2];
+                    }
+                    else if(loserMatchs[i][j] == 2) {
+                        losers[i+1][i % 2 == 0 ? j*2 : j] = losers[i][j*2+1];
+                    }
+                    else {
+                        losers[i+1][i % 2 == 0 ? j*2 : j] = noPlayer;
+                    }
+                }
+                if(i == loserMatchs.length-1 && loserMatchs[i][j] > 0){
+                    finale[1] = (loserMatchs[i][j] == 1 ? losers[i][j*2] : losers[i][j*2+1]);
+                }
+                const matchBox = createMatchBox(losers[i][j*2], losers[i][j*2+1], loserMatchs[i][j]);
+                container.appendChild(matchBox);
+            }
+            document.querySelector("#loser-bracket").appendChild(container);
+        }
+
+        const finaleBox = createMatchBox(finale[0], finale[1], finale[2]);
+        const container = document.createElement("div");
+        container.className = "container";
+        container.appendChild(finaleBox);
+        document.querySelector("#winner-bracket").appendChild(container);
+    </script>
+</body>
