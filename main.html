@@ -1,4 +1,5 @@
 <head>
+    <meta charset="UTF-8">
     <title>Altered Rennes Cup</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
@@ -46,16 +47,6 @@
         display: flex;
         width: 500px;
         margin: 15px;
-    }
-    .match-box::after {
-        content: '';
-        background-image: url('images/vs.png');
-        background-size: cover;
-        width: 35px;
-        height: 35px;
-        margin-left: -267px;
-        margin-top: 15px;
-        z-index: 2;
     }
     .match-box a {
         text-decoration: none;
@@ -177,28 +168,64 @@
     #loser-bracket .container:nth-child(6) .match-box:first-child {
         margin-bottom: 265px;
     }
+    .physic-icon, .bga-link {
+        display: block;
+        position:absolute;
+        margin-left: 232px;
+        margin-top: 13px;
+        height: 36px;
+        width: 36px;
+        background-size: cover;
+        z-index: 2;
+        transition: all 0.25s ease-out;
+    }
+    .bga-link {
+        background-image: url('images/replay.png');
+    }
+    .bga-link:hover {
+        filter: drop-shadow(0px 0px 5px #ffffff) drop-shadow(0px 0px 2px #ffffff);
+        transform: scale(1.3);
+    }
+    .physic-icon {
+        background-image: url('images/vs.png');
+    }
 </style>
 <body>
     <div id="winner-bracket"></div>
     <div id="loser-bracket"></div>
+    <div id="loser-bracket">
+        <div class="match-box">
+            <div class="player-box loser" style="background-image: url('images/m-banner.png');">
+                <a href="https://www.altered.gg/decks/01JCKYKYV121BWA8N8B69N51VK">
+                    <h2>Loar</h2>
+                    <span>Rin</span>
+                </a>
+            </div>
+            <a class="bga-link" href="https://boardgamearena.com/gamereview?table=589692122"></a>
+            <div class="player-box winner" style="background-image: url('images/y-banner-r.png');">
+                <a href="https://www.altered.gg/decks/01J9VHCK8DR408E0SC1Y16Q15M">
+                    <h2>JoliRougeGorge</h2>
+                    <span>Lindiwe</span>
+                </a>
+            </div>
+        </div>
+        <div class="match-box">
+            <div class="player-box loser" style="background-image: url('images/m-banner.png');">
+                <a href="https://www.altered.gg/decks/01JCKYKYV121BWA8N8B69N51VK">
+                    <h2>Loar</h2>
+                    <span>Rin</span>
+                </a>
+            </div>
+            <div class="physic-icon"></div>
+            <div class="player-box winner" style="background-image: url('images/y-banner-r.png');">
+                <a href="https://www.altered.gg/decks/01J9VHCK8DR408E0SC1Y16Q15M">
+                    <h2>JoliRougeGorge</h2>
+                    <span>Lindiwe</span>
+                </a>
+            </div>
+        </div>
+    </div>
     <script>
-        const winnerMatchs = [
-            [1, 1, 2, 2, 2, 2, 1, 2, 2, 1, 1, 2, 1, 2, 2, 1],
-            [1, 1, 1, 1, 2, 1, 2, 2],
-            [0, 0, 0, 0],
-            [0, 0],
-            [0]
-        ];
-        const loserMatchs = [
-            [2, 2, 2, 2, 1, 2, 1, 2],
-            [1, 1, 0, 2, 0, 2, 0, 0],
-            [0, 0, 0, 0],
-            [0, 0, 0, 0],
-            [0, 0],
-            [0, 0],
-            [0],
-            [0]
-        ];
         const players = [
             { id: 1, name: "McFlaïe", hero: "Teija", bg: "m", deck: "https://www.altered.gg/decks/01JC5MVD50S3QNYABHXBRSM7D3" },
             { id: 2, name: "Bliisters", hero: "Rin", bg: "m", deck: "https://www.altered.gg/decks/01JB9ZD4VD1N7XHKB6BV1DGG6V" },
@@ -236,35 +263,145 @@
         const winners = [players, [], [], [], [], []];
         const losers = [[], [], [], [], [], [], [], []];
         const noPlayer = { id: 0, name: "", hero: "", bg: "z" };
-        const finale = [noPlayer, noPlayer, 0];
-        // Fonction pour créer un bloc match-box
+
+        /******************************************/
+        /*             WINNER BRACKET             */
+        /******************************************/
+        const winnerMatchs = [
+            [
+/* 1-1 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=589684177'},
+/* 1-2 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=589637996'}, 
+/* 1-3 */       { status: 2, link: 'https://boardgamearena.com/table?table=588823626'}, 
+/* 1-4 */       { status: 2, link: 'https://boardgamearena.com/10/altered?table=590168870'}, 
+/* 1-5 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=589626262'}, 
+/* 1-6 */       { status: 2, link: 'https://boardgamearena.com/archive/replay/241113-0916/?table=589778280&player=94926066&comments=94926066'}, 
+/* 1-7 */       { status: 1, link: 'https://boardgamearena.com/table?table=589654761'}, 
+/* 1-8 */       { status: 2, link: ''}, 
+/* 1-9 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=589692122'}, 
+/* 1-10 */      { status: 1, link: 'https://boardgamearena.com/7/altered?table=589230327'}, 
+/* 1-11 */      { status: 1, link: 'https://boardgamearena.com/4/altered?table=589813972'}, 
+/* 1-12 */      { status: 2, link: 'https://boardgamearena.com/table?table=589446459'}, 
+/* 1-13 */      { status: 1, link: 'https://boardgamearena.com/gamereview?table=589821707'}, 
+/* 1-14 */      { status: 2, link: 'https://boardgamearena.com/table?table=589711880'}, 
+/* 1-15 */      { status: 2, link: ''}, 
+/* 1-16 */      { status: 1, link: 'https://boardgamearena.com/gamereview?table=589314654'}
+            ],
+            [
+/* 2-1 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=591162586'},  
+/* 2-2 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=590488632'},  
+/* 2-3 */       { status: 1, link: ''},  
+/* 2-4 */       { status: 1, link: 'https://boardgamearena.com/table?table=591099253'},  
+/* 2-5 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=590977190'},
+/* 2-6 */       { status: 1, link: 'https://boardgamearena.com/table?table=590692496'},  
+/* 2-7 */       { status: 2, link: 'https://boardgamearena.com/table?table=590192075'}, 
+/* 2-8 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=590095090'}
+            ],
+            [ 
+/* 3-1 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=591828083'},
+/* 3-2 */       { status: 0, link: ''},
+/* 3-3 */       { status: 0, link: ''},
+/* 3-4 */       { status: 0, link: ''}
+            ],
+            [
+/* 4-1 */       { status: 0, link: ''},
+/* 4-2 */       { status: 0, link: ''}
+            ],
+            [
+/* 5-1 */       { status: 0, link: ''}
+            ]
+        ];
+        /******************************************/
+        /*             LOSER BRACKET              */
+        /******************************************/
+        const loserMatchs = [
+            [
+/* 1-1 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=590099485'},   
+/* 1-2 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=590609687'}, 
+/* 1-3 */       { status: 2, link: 'https://boardgamearena.com/archive/replay/241113-0916/?table=590262389&player=94926066&comments=94926066'}, 
+/* 1-4 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=590262389'},  
+/* 1-5 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=590484255'},
+/* 1-6 */       { status: 2, link: 'https://boardgamearena.com/8/altered?table=590117597'},  
+/* 1-7 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=590264692'}, 
+/* 1-8 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=590190210'}
+            ],
+            [
+/* 2-1 */       { status: 1, link: ''},   
+/* 2-2 */       { status: 1, link: 'https://boardgamearena.com/8/altered?table=590638876'}, 
+/* 2-3 */       { status: 0, link: ''}, 
+/* 2-4 */       { status: 2, link: ''},  
+/* 2-5 */       { status: 0, link: ''},
+/* 2-6 */       { status: 2, link: 'https://boardgamearena.com/table?table=590761450'},  
+/* 2-7 */       { status: 0, link: ''}, 
+/* 2-8 */       { status: 0, link: ''}
+            ],
+            [ 
+/* 3-1 */       { status: 0, link: ''},   
+/* 3-2 */       { status: 0, link: ''}, 
+/* 3-3 */       { status: 0, link: ''}, 
+/* 3-4 */       { status: 0, link: ''}
+            ],
+            [ 
+/* 4-1 */       { status: 0, link: ''},   
+/* 4-2 */       { status: 0, link: ''}, 
+/* 4-3 */       { status: 0, link: ''}, 
+/* 4-4 */       { status: 0, link: ''}
+            ],
+            [
+/* 5-1 */       { status: 0, link: ''},   
+/* 5-2 */       { status: 0, link: ''}
+            ],
+            [
+/* 6-1 */       { status: 0, link: ''},   
+/* 6-2 */       { status: 0, link: ''}
+            ],
+            [
+/* 7-1 */       { status: 0, link: ''}
+            ],
+            [
+/* 8-1 */       { status: 0, link: ''}
+            ]
+        ];
+        const finale = [ noPlayer, noPlayer, 
+/* Final */ {status: 0 , link: '' }
+        ];
         function createMatchBox(player1, player2, match) {
             const matchBox = document.createElement("div");
             matchBox.className = "match-box";
-
-            // Création de la première player-box
             const playerBox1 = document.createElement("div");
             playerBox1.className = "player-box";
             playerBox1.style.backgroundImage = "url('images/"+player1.bg+"-banner.png')";
             playerBox1.innerHTML = `<a href="${player1.deck}"><h2>${player1.name}</h2><span>${player1.hero}</span></a>`;
 
-            // Création de la seconde player-box
             const playerBox2 = document.createElement("div");
             playerBox2.className = "player-box";
             playerBox2.style.backgroundImage = "url('images/"+player2.bg+"-banner-r.png')";
             playerBox2.innerHTML = `<a href="${player2.deck}"><h2>${player2.name}</h2><span>${player2.hero}</span></a>`;
 
-            if(match == 1) {
+            if(match.status == 1) {
                 playerBox1.classList.add('winner');
                 playerBox2.classList.add('loser');
             }
-            else if(match == 2) {
+            else if(match.status == 2) {
                 playerBox1.classList.add('loser');
                 playerBox2.classList.add('winner');
             }
 
-            // Ajout des player-box au match-box
             matchBox.appendChild(playerBox1);
+
+            if(match.status > 0) {
+                let separationBox;
+                if(match.link != "") {
+                    separationBox = document.createElement("a");
+                    separationBox.className = "bga-link";
+                    separationBox.href = match.link;
+                }
+                else {
+                    separationBox = document.createElement("div");
+                    separationBox.className = "physic-icon";
+                }
+                matchBox.appendChild(separationBox);
+            }
+
             matchBox.appendChild(playerBox2);
 
             return matchBox;
@@ -278,11 +415,11 @@
                 if(round > 0) {
                     losers[round].push(noPlayer);
                 }
-                if(winnerMatchs[i][j] == 1) {
+                if(winnerMatchs[i][j].status == 1) {
                     winners[i+1].push(winners[i][j*2]);
                     losers[round].push(winners[i][j*2+1]);
                 }
-                else if(winnerMatchs[i][j] == 2) {
+                else if(winnerMatchs[i][j].status == 2) {
                     winners[i+1].push(winners[i][j*2+1]);
                     losers[round].push(winners[i][j*2]);
                 }
@@ -290,8 +427,8 @@
                     winners[i+1].push(noPlayer);
                     losers[round].push(noPlayer);
                 }
-                if(i == winnerMatchs.length-1 && winnerMatchs[i][j] > 0){
-                    finale[0] = (winnerMatchs[i][j] == 1 ? winners[i][j*2] : winners[i][j*2+1]);
+                if(i == winnerMatchs.length-1 && winnerMatchs[i][j].status > 0){
+                    finale[0] = (winnerMatchs[i][j].status == 1 ? winners[i][j*2] : winners[i][j*2+1]);
                 }
                 const matchBox = createMatchBox(winners[i][j*2], winners[i][j*2+1], winnerMatchs[i][j]);
                 container.appendChild(matchBox);
@@ -304,18 +441,18 @@
             container.className = "container";
             for (let j = 0; j < loserMatchs[i].length; j++) {
                 if(losers[i+1]){
-                    if(loserMatchs[i][j] == 1) {
+                    if(loserMatchs[i][j].status == 1) {
                         losers[i+1][i % 2 == 0 ? j*2 : j] = losers[i][j*2];
                     }
-                    else if(loserMatchs[i][j] == 2) {
+                    else if(loserMatchs[i][j].status == 2) {
                         losers[i+1][i % 2 == 0 ? j*2 : j] = losers[i][j*2+1];
                     }
                     else {
                         losers[i+1][i % 2 == 0 ? j*2 : j] = noPlayer;
                     }
                 }
-                if(i == loserMatchs.length-1 && loserMatchs[i][j] > 0){
-                    finale[1] = (loserMatchs[i][j] == 1 ? losers[i][j*2] : losers[i][j*2+1]);
+                if(i == loserMatchs.length-1 && loserMatchs[i][j].status > 0){
+                    finale[1] = (loserMatchs[i][j].status == 1 ? losers[i][j*2] : losers[i][j*2+1]);
                 }
                 const matchBox = createMatchBox(losers[i][j*2], losers[i][j*2+1], loserMatchs[i][j]);
                 container.appendChild(matchBox);
