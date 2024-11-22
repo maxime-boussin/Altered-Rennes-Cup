@@ -189,10 +189,150 @@
     .physic-icon {
         background-image: url('images/vs.png');
     }
+    #small-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:10px;
+    }
+    #small-container h1 {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        font-family: "Work Sans";
+        font-weight: 700;
+        color: #fff;
+        text-shadow: rgb(55, 55, 55) 3px 0px 0px, rgb(55, 55, 55) 2.83487px 0.981584px 0px, rgb(55, 55, 55) 2.35766px 1.85511px 0px, rgb(55, 55, 55) 1.62091px 2.52441px 0px, rgb(55, 55, 55) 0.705713px 2.91581px 0px, rgb(55, 55, 55) -0.287171px 2.98622px 0px, rgb(55, 55, 55) -1.24844px 2.72789px 0px, rgb(55, 55, 55) -2.07227px 2.16926px 0px, rgb(55, 55, 55) -2.66798px 1.37182px 0px, rgb(55, 55, 55) -2.96998px 0.42336px 0px, rgb(55, 55, 55) -2.94502px -0.571704px 0px, rgb(55, 55, 55) -2.59586px -1.50383px 0px, rgb(55, 55, 55) -1.96093px -2.27041px 0px, rgb(55, 55, 55) -1.11013px -2.78704px 0px, rgb(55, 55, 55) -0.137119px -2.99686px 0px, rgb(55, 55, 55) 0.850987px -2.87677px 0px, rgb(55, 55, 55) 1.74541px -2.43999px 0px, rgb(55, 55, 55) 2.44769px -1.73459px 0px, rgb(55, 55, 55) 2.88051px -0.838247px 0px;
+        margin: 0;
+    }
+    #small-container h2.loser {
+        opacity: 0.6;
+        filter: grayscale(0.7);
+    }
+    .small-box {
+        display: flex;
+        flex-direction: column;
+        width: 142px;
+        height: 46px;
+        background-image: url('images/small-ui/box.png');
+        background-size: cover;
+        color: #373737;
+        font-family: "Work Sans";
+        font-size: 10px;
+        font-weight: 700;
+        padding: 4px 10px;
+        margin: 4px;
+    }
+    .small-box h2 {
+        margin: 0;
+    }
+    .small-box img {
+        width:21px;
+        height:21px;
+        margin-top: 2px;
+        margin-bottom: -6px;
+    }
+    .small-box h2:first-child {
+        text-align: left;
+    }
+    .small-box h2:last-child {
+        text-align: right;
+    }
+    .ui {
+        position:fixed;
+        display: flex;
+        z-index: 3;
+        right: 0;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin: 5px;
+        border-radius: 15px;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        margin: 10px 10px 0 0;
+        width: 40px;
+        height: 23px;
+    }
+
+    .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(16px);
+        -ms-transform: translateX(16px);
+        transform: translateX(16px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 23px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    .label {
+        display: inline-block;
+        height: 23px;
+        margin: 10px;
+        font-size: 20px;
+        font-family: "Work Sans";
+        font-weight: 700;
+        color: #fff;
+        text-shadow: rgb(55, 55, 55) 3px 0px 0px, rgb(55, 55, 55) 2.83487px 0.981584px 0px, rgb(55, 55, 55) 2.35766px 1.85511px 0px, rgb(55, 55, 55) 1.62091px 2.52441px 0px, rgb(55, 55, 55) 0.705713px 2.91581px 0px, rgb(55, 55, 55) -0.287171px 2.98622px 0px, rgb(55, 55, 55) -1.24844px 2.72789px 0px, rgb(55, 55, 55) -2.07227px 2.16926px 0px, rgb(55, 55, 55) -2.66798px 1.37182px 0px, rgb(55, 55, 55) -2.96998px 0.42336px 0px, rgb(55, 55, 55) -2.94502px -0.571704px 0px, rgb(55, 55, 55) -2.59586px -1.50383px 0px, rgb(55, 55, 55) -1.96093px -2.27041px 0px, rgb(55, 55, 55) -1.11013px -2.78704px 0px, rgb(55, 55, 55) -0.137119px -2.99686px 0px, rgb(55, 55, 55) 0.850987px -2.87677px 0px, rgb(55, 55, 55) 1.74541px -2.43999px 0px, rgb(55, 55, 55) 2.44769px -1.73459px 0px, rgb(55, 55, 55) 2.88051px -0.838247px 0px;
+    }
 </style>
 <body>
-    <div id="winner-bracket"></div>
-    <div id="loser-bracket"></div>
+    <div class="ui">
+        <div class="label">Liste</div>
+        <label class="switch">
+            <input type="checkbox" id="small-view-toggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div id="big-container">
+        <div id="winner-bracket"></div>
+        <div id="loser-bracket"></div>
+    </div>
+    <div id="small-container"></div>
     <script>
         const players = [
             { id: 1, name: "McFlaïe", hero: "Teija", bg: "m", deck: "https://www.altered.gg/decks/01JC5MVD50S3QNYABHXBRSM7D3" },
@@ -330,7 +470,7 @@
             ]
         ];
         const finale = [ noPlayer, noPlayer, 
-/* Final */ {status: 0 , link: '' }
+/* Finale */    {status: 0 , link: '' }
         ];
         function createMatchBox(player1, player2, match) {
             const matchBox = document.createElement("div");
@@ -374,10 +514,37 @@
 
             return matchBox;
         }
+        function createSmallMatchBox(player1, player2, match) {
+            const matchBox = document.createElement("div");
+            const player1Line = document.createElement("h2");
+            const player2Line = document.createElement("h2");
+            matchBox.className = "small-box";
+            player1Line.innerHTML = `<img src="images/small-ui/logo-${player1.bg}.png" /> ${player1.name}`;
+            player2Line.innerHTML = `${player2.name} <img src="images/small-ui/logo-${player2.bg}.png" />`;
+            if(match.status > 0) {
+                matchBox.style.backgroundImage = "url('images/small-ui/box1.png')";
+                if(match.status == 1) {
+                    player2Line.className = 'loser';
+                }
+                else {
+                    player1Line.className = 'loser';
+                }
+            }
+
+            matchBox.appendChild(player1Line);
+            matchBox.appendChild(player2Line);
+
+            return matchBox;
+        }
 
         for (let i = 0; i < winnerMatchs.length; i++) {
             const container = document.createElement("div");
             container.className = "container";
+
+            const smallTitle = document.createElement("h1");
+            smallTitle.innerHTML = `Winner - Round ${i+1}`;
+            document.querySelector("#small-container").appendChild(smallTitle);
+
             for (let j = 0; j < winnerMatchs[i].length; j++) {
                 let round = i < 2 ? i : i*2-1;
                 if(round > 0) {
@@ -399,6 +566,8 @@
                     finale[0] = (winnerMatchs[i][j].status == 1 ? winners[i][j*2] : winners[i][j*2+1]);
                 }
                 const matchBox = createMatchBox(winners[i][j*2], winners[i][j*2+1], winnerMatchs[i][j]);
+                const smallMatchBox = createSmallMatchBox(winners[i][j*2], winners[i][j*2+1], winnerMatchs[i][j]);
+                document.querySelector("#small-container").appendChild(smallMatchBox);
                 container.appendChild(matchBox);
             }
             document.querySelector("#winner-bracket").appendChild(container);
@@ -407,6 +576,11 @@
         for (let i = 0; i < loserMatchs.length; i++) {
             const container = document.createElement("div");
             container.className = "container";
+
+            const smallTitle = document.createElement("h1");
+            smallTitle.innerHTML = `Loser - Round ${i+1}`;
+            document.querySelector("#small-container").appendChild(smallTitle);
+
             for (let j = 0; j < loserMatchs[i].length; j++) {
                 if(losers[i+1]){
                     if(loserMatchs[i][j].status == 1) {
@@ -423,15 +597,35 @@
                     finale[1] = (loserMatchs[i][j].status == 1 ? losers[i][j*2] : losers[i][j*2+1]);
                 }
                 const matchBox = createMatchBox(losers[i][j*2], losers[i][j*2+1], loserMatchs[i][j]);
+                const smallMatchBox = createSmallMatchBox(losers[i][j*2], losers[i][j*2+1], loserMatchs[i][j]);
+                document.querySelector("#small-container").appendChild(smallMatchBox);
                 container.appendChild(matchBox);
             }
             document.querySelector("#loser-bracket").appendChild(container);
         }
 
         const finaleBox = createMatchBox(finale[0], finale[1], finale[2]);
+        const finaleSmallBox = createSmallMatchBox(finale[0], finale[1], finale[2]);
         const container = document.createElement("div");
+        const smallTitle = document.createElement("h1");
+        smallTitle.innerHTML = 'Finale';
         container.className = "container";
         container.appendChild(finaleBox);
+        document.querySelector("#small-container").appendChild(smallTitle);
+        document.querySelector("#small-container").appendChild(finaleSmallBox);
         document.querySelector("#winner-bracket").appendChild(container);
+
+        const toggle = document.querySelector("#small-view-toggle");
+        document.querySelector("#small-container").style.display = 'none';
+        toggle.addEventListener("change", (e) => {
+            if(toggle.checked){
+                document.querySelector("#big-container").style.display = 'none';
+                document.querySelector("#small-container").style.display = 'flex';
+            }
+            else {
+                document.querySelector("#big-container").style.display = 'block';
+                document.querySelector("#small-container").style.display = 'none';
+            }
+        });
     </script>
 </body>
