@@ -5,6 +5,16 @@
 </head>
 <style>
     @font-face {
+        font-family: 'Tiller';
+        font-weight: 300;
+        src:  url('images/TillerTest-Demi-BF65c2eac4d9ea5.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'Tiller';
+        font-weight: 600;
+        src:  url('images/TillerTest-Bold-BF65c2eac415eb4.otf') format('opentype');
+    }
+    @font-face {
         font-family: 'Work Sans';
         font-style: normal;
         font-weight: 300;
@@ -47,6 +57,10 @@
         display: flex;
         width: 500px;
         margin: 15px;
+        color: white;
+        font-family: "Tiller", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
     }
     .match-box a {
         text-decoration: none;
@@ -57,10 +71,6 @@
         width: 230px;
         height: 59px;
         display: inline-block;
-        color: white;
-        font-family: "Work Sans";
-        font-size: 18px;
-        font-weight: 700;
         padding-top: 10px;
     }
     .match-box h2 {
@@ -138,6 +148,27 @@
     #winner-bracket .container:nth-child(6) .match-box:before {  
         border: none;
     }
+    .bga-link {
+        background-image: url('images/replay.png');
+    }
+    .bga-link:hover {
+        filter: drop-shadow(0px 0px 5px #ffffff) drop-shadow(0px 0px 2px #ffffff);
+        transform: scale(1.3);
+    }
+    .physic-icon {
+        background-image: url('images/vs.png');
+    }
+    .physic-icon, .bga-link {
+        display: block;
+        position:absolute;
+        margin-left: 232px;
+        margin-top: 13px;
+        height: 36px;
+        width: 36px;
+        background-size: cover;
+        z-index: 2;
+        transition: all 0.25s ease-out;
+    }
     /* LOOSER */
     #loser-bracket .container:nth-child(2n+1) .match-box:before {  
         border-right: none;
@@ -168,27 +199,35 @@
     #loser-bracket .container:nth-child(6) .match-box:first-child {
         margin-bottom: 265px;
     }
-    .physic-icon, .bga-link {
-        display: block;
-        position:absolute;
-        margin-left: 232px;
-        margin-top: 13px;
-        height: 36px;
-        width: 36px;
-        background-size: cover;
-        z-index: 2;
-        transition: all 0.25s ease-out;
+    /* FINALE */
+    #winner-bracket .container:last-child .match-box {
+        width: 800px;
     }
-    .bga-link {
-        background-image: url('images/replay.png');
+    #winner-bracket .container:last-child .match-box .player-box {
+        width: 380px;
+        height: 100px;
+        font-size: 24px;
+        padding-top: 10px;
     }
-    .bga-link:hover {
-        filter: drop-shadow(0px 0px 5px #ffffff) drop-shadow(0px 0px 2px #ffffff);
-        transform: scale(1.3);
+    #winner-bracket .container:last-child .match-box .player-box:first-child {
+        padding-right: 20px;
     }
-    .physic-icon {
-        background-image: url('images/vs.png');
+    #winner-bracket .container:last-child .match-box .player-box:last-child {
+        padding-left: 20px;
     }
+    #winner-bracket .container:last-child .match-box .player-box h2 {
+        font-size: 28px;
+    }
+    .score-box {
+        position: absolute;
+        text-shadow: rgb(55, 55, 55) 5px 0px 0px, rgb(55, 55, 55) 4.90033px 0.993347px 0px, rgb(55, 55, 55) 4.60531px 1.94709px 0px, rgb(55, 55, 55) 4.12668px 2.82321px 0px, rgb(55, 55, 55) 3.48353px 3.58678px 0px, rgb(55, 55, 55) 2.70151px 4.20736px 0px, rgb(55, 55, 55) 1.81179px 4.6602px 0px, rgb(55, 55, 55) 0.849836px 4.92725px 0px, rgb(55, 55, 55) -0.145998px 4.99787px 0px, rgb(55, 55, 55) -1.13601px 4.86924px 0px, rgb(55, 55, 55) -2.08073px 4.54649px 0px, rgb(55, 55, 55) -2.94251px 4.04248px 0px, rgb(55, 55, 55) -3.68697px 3.37732px 0px, rgb(55, 55, 55) -4.28444px 2.57751px 0px, rgb(55, 55, 55) -4.71111px 1.67494px 0px, rgb(55, 55, 55) -4.94996px 0.7056px 0px, rgb(55, 55, 55) -4.99147px -0.291871px 0px, rgb(55, 55, 55) -4.83399px -1.27771px 0px, rgb(55, 55, 55) -4.48379px -2.2126px 0px, rgb(55, 55, 55) -3.95484px -3.05929px 0px, rgb(55, 55, 55) -3.26822px -3.78401px 0px, rgb(55, 55, 55) -2.4513px -4.35788px 0px, rgb(55, 55, 55) -1.53666px -4.75801px 0px, rgb(55, 55, 55) -0.560763px -4.96845px 0px, rgb(55, 55, 55) 0.437495px -4.98082px 0px, rgb(55, 55, 55) 1.41831px -4.79462px 0px, rgb(55, 55, 55) 2.34258px -4.41727px 0px, rgb(55, 55, 55) 3.17346px -3.86382px 0px, rgb(55, 55, 55) 3.87783px -3.15633px 0px, rgb(55, 55, 55) 4.4276px -2.32301px 0px, rgb(55, 55, 55) 4.80085px -1.39708px 0px, rgb(55, 55, 55) 4.98271px -0.415447px 0px;
+        width: 800px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        margin-top: 85px;
+    }
+    /* SMALL */
     #small-container {
         display: flex;
         flex-direction: row;
@@ -200,7 +239,7 @@
         font-size: 20px;
         width: 100%;
         text-align: center;
-        font-family: "Work Sans";
+        font-family: "Tiller", sans-serif;
         font-weight: 700;
         color: #fff;
         text-shadow: rgb(55, 55, 55) 3px 0px 0px, rgb(55, 55, 55) 2.83487px 0.981584px 0px, rgb(55, 55, 55) 2.35766px 1.85511px 0px, rgb(55, 55, 55) 1.62091px 2.52441px 0px, rgb(55, 55, 55) 0.705713px 2.91581px 0px, rgb(55, 55, 55) -0.287171px 2.98622px 0px, rgb(55, 55, 55) -1.24844px 2.72789px 0px, rgb(55, 55, 55) -2.07227px 2.16926px 0px, rgb(55, 55, 55) -2.66798px 1.37182px 0px, rgb(55, 55, 55) -2.96998px 0.42336px 0px, rgb(55, 55, 55) -2.94502px -0.571704px 0px, rgb(55, 55, 55) -2.59586px -1.50383px 0px, rgb(55, 55, 55) -1.96093px -2.27041px 0px, rgb(55, 55, 55) -1.11013px -2.78704px 0px, rgb(55, 55, 55) -0.137119px -2.99686px 0px, rgb(55, 55, 55) 0.850987px -2.87677px 0px, rgb(55, 55, 55) 1.74541px -2.43999px 0px, rgb(55, 55, 55) 2.44769px -1.73459px 0px, rgb(55, 55, 55) 2.88051px -0.838247px 0px;
@@ -218,7 +257,7 @@
         background-image: url('images/small-ui/box.png');
         background-size: cover;
         color: #373737;
-        font-family: "Work Sans";
+        font-family: "Tiller", sans-serif;
         font-size: 10px;
         font-weight: 700;
         padding: 4px 10px;
@@ -314,7 +353,7 @@
         height: 23px;
         margin: 10px;
         font-size: 20px;
-        font-family: "Work Sans";
+        font-family: "Tiller", sans-serif;
         font-weight: 700;
         color: #fff;
         text-shadow: rgb(55, 55, 55) 3px 0px 0px, rgb(55, 55, 55) 2.83487px 0.981584px 0px, rgb(55, 55, 55) 2.35766px 1.85511px 0px, rgb(55, 55, 55) 1.62091px 2.52441px 0px, rgb(55, 55, 55) 0.705713px 2.91581px 0px, rgb(55, 55, 55) -0.287171px 2.98622px 0px, rgb(55, 55, 55) -1.24844px 2.72789px 0px, rgb(55, 55, 55) -2.07227px 2.16926px 0px, rgb(55, 55, 55) -2.66798px 1.37182px 0px, rgb(55, 55, 55) -2.96998px 0.42336px 0px, rgb(55, 55, 55) -2.94502px -0.571704px 0px, rgb(55, 55, 55) -2.59586px -1.50383px 0px, rgb(55, 55, 55) -1.96093px -2.27041px 0px, rgb(55, 55, 55) -1.11013px -2.78704px 0px, rgb(55, 55, 55) -0.137119px -2.99686px 0px, rgb(55, 55, 55) 0.850987px -2.87677px 0px, rgb(55, 55, 55) 1.74541px -2.43999px 0px, rgb(55, 55, 55) 2.44769px -1.73459px 0px, rgb(55, 55, 55) 2.88051px -0.838247px 0px;
@@ -333,157 +372,24 @@
         <div id="loser-bracket"></div>
     </div>
     <div id="small-container"></div>
+    <script src="data.js"></script>
     <script>
-        const players = [
-            { id: 1, name: "McFlaïe", hero: "Teija", bg: "m", deck: "https://www.altered.gg/decks/01JC5MVD50S3QNYABHXBRSM7D3" },
-            { id: 2, name: "Bliisters", hero: "Rin", bg: "m", deck: "https://www.altered.gg/decks/01JB9ZD4VD1N7XHKB6BV1DGG6V" },
-            { id: 3, name: "Hurricane", hero: "Afanas", bg: "y", deck: "https://www.altered.gg/decks/01JCH57RPH0P637ZFMF48ZXQG0" },
-            { id: 4, name: "Malo", hero: "Fen", bg: "l", deck: "https://www.altered.gg/decks/01JCDZGDVPPNMA7SSKGDMV1JCH" },
-            { id: 5, name: "Loar", hero: "Rin", bg: "m", deck: "https://www.altered.gg/decks/01JCKYKYV121BWA8N8B69N51VK" },
-            { id: 6, name: "JoliRougeGorge", hero: "Lindiwe", bg: "y", deck: "https://www.altered.gg/decks/01J9VHCK8DR408E0SC1Y16Q15M" },
-            { id: 7, name: "Autilis", hero: "Kojo", bg: "b", deck: "https://www.altered.gg/decks/01JCMQDRAW323KG0VRMS8EHVKZ" },
-            { id: 8, name: "Zupaw", hero: "Teija", bg: "m", deck: "https://www.altered.gg/decks/01JAQE4CJ3KCVAEZJVN2YHECBK" },
-            { id: 9, name: "Loutre", hero: "Teija", bg: "m", deck: "https://www.altered.gg/decks/01J9K7WGNWT178EE34ZMX33VV7" },
-            { id: 10, name: "GrankorSalade", hero: "Afanas", bg: "y", deck: "https://www.altered.gg/decks/01JB7WEDP3H5SKMPP4RQD7CQQN" },
-            { id: 11, name: "Nijisa", hero: "Subhash", bg: "a", deck: "https://www.altered.gg/decks/01JBQEKED96H4W66SNGEJJ1E59" },
-            { id: 12, name: "ZazaLaRiboule", hero: "Fen", bg: "l", deck: "https://www.altered.gg/decks/01J7KHVJBRV23VVDKXP57PA25R" },
-            { id: 13, name: "Yann", hero: "Teija", bg: "m", deck: "https://www.altered.gg/decks/01J9TEA0HYS5HEKA9WSH8XHD7K" },
-            { id: 14, name: "Raloufifa", hero: "Afanas", bg: "y", deck: "https://www.altered.gg/decks/01JCFTKG84EP8VGHPDJB0GNDPX" },
-            { id: 15, name: "EdgeSouls", hero: "Sigismar", bg: "o", deck: "https://www.altered.gg/decks/01J89YQQPFM6QXEZFJ1XH2WH96" },
-            { id: 16, name: "Irex", hero: "Waru", bg: "o", deck: "https://www.altered.gg/fr-fr/decks/01JCZC6GVMXQBAJR5HH49J6ZYM" },
-            { id: 17, name: "Djaack", hero: "Basira", bg: "b", deck: "https://www.altered.gg/decks/01JCTJ7QYJX9314VXP4VPFFRS8" },
-            { id: 18, name: "EverydayLife", hero: "Waru", bg: "o", deck: "https://www.altered.gg/decks/01JCENTNGZQVS9KZKCYSQJ66KN" },
-            { id: 19, name: "RoyaumeDuDé", hero: "Auraq", bg: "l", deck: "https://www.altered.gg/decks/01JBZ5E0KMWRSBDQDZM26BEX6G" },
-            { id: 20, name: "Pikevchu", hero: "Rin", bg: "m", deck: "https://www.altered.gg/decks/01JBXSS6YQT3YQ8JSFH1QREJC4" },
-            { id: 21, name: "Nimrel", hero: "Fen", bg: "l", deck: "https://www.altered.gg/decks/01JCKTG55YYD0GVMSZDCD8N890" },
-            { id: 22, name: "Folzoqua", hero: "Teija", bg: "m", deck: "https://www.altered.gg/decks/01J837K9RE6HD61H3AVVBHR4BM" },
-            { id: 23, name: "Calcifer", hero: "Akesha", bg: "y", deck: "https://www.altered.gg/decks/01JCRZEXPJB7KMV96DN86YMF8F" },
-            { id: 24, name: "Marbull", hero: "Sigismar", bg: "o", deck: "https://www.altered.gg/decks/01JCP8N34RWH53259RCBR47992" },
-            { id: 25, name: "Y04nn", hero: "Afanas", bg: "y", deck: "https://www.altered.gg/fr-fr/decks/01J9NZFC7SH9N87RDJCAFGB1DF?translations.name=main" },
-            { id: 26, name: "Xathros", hero: "Kojo", bg: "b", deck: "https://www.altered.gg/decks/01JCRWZTSFK7NJZ4QA16DZSRMQ" },
-            { id: 27, name: "Hedi", hero: "Afanas", bg: "y", deck: "https://www.altered.gg/decks/01JCTFWNCK13EMXN756873AFYH" },
-            { id: 28, name: "Keg", hero: "Fen", bg: "l", deck: "https://www.altered.gg/decks/01JCK3EHSJZPN571FDCW9H1PFD" },
-            { id: 29, name: "Edco", hero: "Auraq", bg: "l", deck: "https://www.altered.gg/decks/01JAK3MRP1NDFW8AFVD2FC16P8" },
-            { id: 30, name: "Gothon", hero: "Fen", bg: "l", deck: "https://www.altered.gg/decks/01J9JYV79MYVQZFZRK94FJ7M0F" },
-            { id: 31, name: "Xanders", hero: "Treyst", bg: "a", deck: "https://www.altered.gg/decks/01J9HVZV48TXKDQDQTJ7H3VVM1" },
-            { id: 32, name: "JacquesCeler", hero: "Treyst", bg: "a", deck: "https://www.altered.gg/decks/01JAB5ZDHB8DQ2N6RA6NGKFW30" }
-        ];
-        const winners = [players, [], [], [], [], []];
+        const winners = [data.players, [], [], [], [], []];
         const losers = [[], [], [], [], [], [], [], []];
         const noPlayer = { id: 0, name: "", hero: "", bg: "z" };
-
-        /******************************************/
-        /*             WINNER BRACKET             */
-        /******************************************/
-        const winnerMatchs = [
-            [
-/* 1-1 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=589684177'},
-/* 1-2 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=589637996'}, 
-/* 1-3 */       { status: 2, link: 'https://boardgamearena.com/table?table=588823626'}, 
-/* 1-4 */       { status: 2, link: 'https://boardgamearena.com/10/altered?table=590168870'}, 
-/* 1-5 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=589626262'}, 
-/* 1-6 */       { status: 2, link: 'https://boardgamearena.com/archive/replay/241113-0916/?table=589778280&player=94926066&comments=94926066'}, 
-/* 1-7 */       { status: 1, link: 'https://boardgamearena.com/table?table=589654761'}, 
-/* 1-8 */       { status: 2, link: ''}, 
-/* 1-9 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=589692122'}, 
-/* 1-10 */      { status: 1, link: 'https://boardgamearena.com/7/altered?table=589230327'}, 
-/* 1-11 */      { status: 1, link: 'https://boardgamearena.com/4/altered?table=589813972'}, 
-/* 1-12 */      { status: 2, link: 'https://boardgamearena.com/table?table=589446459'}, 
-/* 1-13 */      { status: 1, link: 'https://boardgamearena.com/gamereview?table=589821707'}, 
-/* 1-14 */      { status: 2, link: 'https://boardgamearena.com/table?table=589711880'}, 
-/* 1-15 */      { status: 2, link: ''}, 
-/* 1-16 */      { status: 1, link: 'https://boardgamearena.com/gamereview?table=589314654'}
-            ],
-            [
-/* 2-1 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=591162586'},  
-/* 2-2 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=590488632'},  
-/* 2-3 */       { status: 1, link: 'https://boardgamearena.com/table?table=594063262'},  
-/* 2-4 */       { status: 1, link: 'https://boardgamearena.com/table?table=591099253'},  
-/* 2-5 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=590977190'},
-/* 2-6 */       { status: 1, link: 'https://boardgamearena.com/table?table=590692496'},  
-/* 2-7 */       { status: 2, link: 'https://boardgamearena.com/table?table=590192075'}, 
-/* 2-8 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=590095090'}
-            ],
-            [ 
-/* 3-1 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=591828083'},
-/* 3-2 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=591943645'},
-/* 3-3 */       { status: 2, link: 'https://boardgamearena.com/table?table=593347067'},
-/* 3-4 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=592448127'}
-            ],
-            [
-/* 4-1 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=592395398'},
-/* 4-2 */       { status: 2, link: ''}
-            ],
-            [
-/* 5-1 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=597156974'}
-            ]
-        ];
-        /******************************************/
-        /*             LOSER BRACKET              */
-        /******************************************/
-        const loserMatchs = [
-            [
-/* 1-1 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=590099485'},   
-/* 1-2 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=590609687'}, 
-/* 1-3 */       { status: 2, link: 'https://boardgamearena.com/archive/replay/241113-0916/?table=590262389&player=94926066&comments=94926066'}, 
-/* 1-4 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=590262389'},  
-/* 1-5 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=590484255'},
-/* 1-6 */       { status: 2, link: 'https://boardgamearena.com/8/altered?table=590117597'},  
-/* 1-7 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=590264692'}, 
-/* 1-8 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=590190210'}
-            ],
-            [
-/* 2-1 */       { status: 1, link: ''},   
-/* 2-2 */       { status: 1, link: 'https://boardgamearena.com/8/altered?table=590638876'}, 
-/* 2-3 */       { status: 2, link: 'https://boardgamearena.com/archive/replay/241121-1458/?table=591981731&player=94926066&comments=94926066;'}, 
-/* 2-4 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=593776912'},  
-/* 2-5 */       { status: 2, link: 'https://boardgamearena.com/table?table=592009065'},
-/* 2-6 */       { status: 2, link: 'https://boardgamearena.com/table?table=590761450'},  
-/* 2-7 */       { status: 2, link: 'https://boardgamearena.com/table?table=592029925'}, 
-/* 2-8 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=592651949'}
-            ],
-            [ 
-/* 3-1 */       { status: 2, link: 'https://boardgamearena.com/table?table=592248290'},   
-/* 3-2 */       { status: 1, link: ''}, 
-/* 3-3 */       { status: 2, link: 'https://boardgamearena.com/table?table=592741336'}, 
-/* 3-4 */       { status: 1, link: 'https://boardgamearena.com/gamereview?table=593120637'}
-            ],
-            [ 
-/* 4-1 */       { status: 2, link: 'https://boardgamearena.com/gamereview?table=593776912'},   
-/* 4-2 */       { status: 1, link: 'https://boardgamearena.com/table?table=594173517'}, 
-/* 4-3 */       { status: 1, link: 'https://boardgamearena.com/table?table=593838449'}, 
-/* 4-4 */       { status: 2, link: 'https://boardgamearena.com/4/altered?table=593746136'}
-            ],
-            [
-/* 5-1 */       { status: 2, link: 'https://boardgamearena.com/7/altered?table=594604196'},   
-/* 5-2 */       { status: 2, link: 'https://boardgamearena.com/10/altered?table=594727610'}
-            ],
-            [
-/* 6-1 */       { status: 2, link: 'https://boardgamearena.com/table?table=596812788'},   
-/* 6-2 */       { status: 2, link: 'https://boardgamearena.com/table?table=596116094'}
-            ],
-            [
-/* 7-1 */       { status: 1, link: 'https://boardgamearena.com/table?table=600149827'}
-            ],
-            [
-/* 8-1 */       { status: 1, link: 'https://boardgamearena.com/table?table=600609585'}
-            ]
-        ];
-        const finale = [ noPlayer, noPlayer, 
-/* Finale */    {status: 0 , link: '' }
-        ];
+        let finale = [noPlayer, noPlayer];
         function createMatchBox(player1, player2, match) {
             const matchBox = document.createElement("div");
             matchBox.className = "match-box";
             const playerBox1 = document.createElement("div");
             playerBox1.className = "player-box";
             playerBox1.style.backgroundImage = "url('images/"+player1.bg+"-banner.png')";
-            playerBox1.innerHTML = `<a href="${player1.deck}"><h2>${player1.name}</h2><span>${player1.hero}</span></a>`;
+            playerBox1.innerHTML = `<a href="https://www.altered.gg/decks/${player1.deck}" target="_blank"><h2>${player1.name}</h2><span>${player1.hero}</span></a>`;
 
             const playerBox2 = document.createElement("div");
             playerBox2.className = "player-box";
             playerBox2.style.backgroundImage = "url('images/"+player2.bg+"-banner-r.png')";
-            playerBox2.innerHTML = `<a href="${player2.deck}"><h2>${player2.name}</h2><span>${player2.hero}</span></a>`;
+            playerBox2.innerHTML = `<a href="https://www.altered.gg/decks/${player2.deck}" target="_blank"><h2>${player2.name}</h2><span>${player2.hero}</span></a>`;
 
             if(match.status == 1) {
                 playerBox1.classList.add('winner');
@@ -501,13 +407,21 @@
                 if(match.link != "") {
                     separationBox = document.createElement("a");
                     separationBox.className = "bga-link";
-                    separationBox.href = match.link;
+                    separationBox.target = "_blank";
+                    separationBox.href = "https://boardgamearena.com/table?table=" + match.link;
                 }
                 else {
                     separationBox = document.createElement("div");
                     separationBox.className = "physic-icon";
                 }
                 matchBox.appendChild(separationBox);
+            }
+
+            if(match.score) {
+                const scoreBox = document.createElement("div");
+                scoreBox.className = "score-box";
+                scoreBox.innerHTML = match.score;
+                matchBox.appendChild(scoreBox);
             }
 
             matchBox.appendChild(playerBox2);
@@ -537,7 +451,7 @@
             return matchBox;
         }
 
-        for (let i = 0; i < winnerMatchs.length; i++) {
+        for (let i = 0; i < data.matchs.winner.length; i++) {
             const container = document.createElement("div");
             container.className = "container";
 
@@ -545,16 +459,16 @@
             smallTitle.innerHTML = `Winner - Round ${i+1}`;
             document.querySelector("#small-container").appendChild(smallTitle);
 
-            for (let j = 0; j < winnerMatchs[i].length; j++) {
+            for (let j = 0; j < data.matchs.winner[i].length; j++) {
                 let round = i < 2 ? i : i*2-1;
                 if(round > 0) {
                     losers[round].push(noPlayer);
                 }
-                if(winnerMatchs[i][j].status == 1) {
+                if(data.matchs.winner[i][j].status == 1) {
                     winners[i+1].push(winners[i][j*2]);
                     losers[round].push(winners[i][j*2+1]);
                 }
-                else if(winnerMatchs[i][j].status == 2) {
+                else if(data.matchs.winner[i][j].status == 2) {
                     winners[i+1].push(winners[i][j*2+1]);
                     losers[round].push(winners[i][j*2]);
                 }
@@ -562,18 +476,18 @@
                     winners[i+1].push(noPlayer);
                     losers[round].push(noPlayer);
                 }
-                if(i == winnerMatchs.length-1 && winnerMatchs[i][j].status > 0){
-                    finale[0] = (winnerMatchs[i][j].status == 1 ? winners[i][j*2] : winners[i][j*2+1]);
+                if(i == data.matchs.winner.length-1 && data.matchs.winner[i][j].status > 0){
+                    finale[0] = (data.matchs.winner[i][j].status == 1 ? winners[i][j*2] : winners[i][j*2+1]);
                 }
-                const matchBox = createMatchBox(winners[i][j*2], winners[i][j*2+1], winnerMatchs[i][j]);
-                const smallMatchBox = createSmallMatchBox(winners[i][j*2], winners[i][j*2+1], winnerMatchs[i][j]);
+                const matchBox = createMatchBox(winners[i][j*2], winners[i][j*2+1], data.matchs.winner[i][j]);
+                const smallMatchBox = createSmallMatchBox(winners[i][j*2], winners[i][j*2+1], data.matchs.winner[i][j]);
                 document.querySelector("#small-container").appendChild(smallMatchBox);
                 container.appendChild(matchBox);
             }
             document.querySelector("#winner-bracket").appendChild(container);
         }
 
-        for (let i = 0; i < loserMatchs.length; i++) {
+        for (let i = 0; i < data.matchs.loser.length; i++) {
             const container = document.createElement("div");
             container.className = "container";
 
@@ -581,31 +495,31 @@
             smallTitle.innerHTML = `Loser - Round ${i+1}`;
             document.querySelector("#small-container").appendChild(smallTitle);
 
-            for (let j = 0; j < loserMatchs[i].length; j++) {
+            for (let j = 0; j < data.matchs.loser[i].length; j++) {
                 if(losers[i+1]){
-                    if(loserMatchs[i][j].status == 1) {
+                    if(data.matchs.loser[i][j].status == 1) {
                         losers[i+1][i % 2 == 0 ? j*2 : j] = losers[i][j*2];
                     }
-                    else if(loserMatchs[i][j].status == 2) {
+                    else if(data.matchs.loser[i][j].status == 2) {
                         losers[i+1][i % 2 == 0 ? j*2 : j] = losers[i][j*2+1];
                     }
                     else {
                         losers[i+1][i % 2 == 0 ? j*2 : j] = noPlayer;
                     }
                 }
-                if(i == loserMatchs.length-1 && loserMatchs[i][j].status > 0){
-                    finale[1] = (loserMatchs[i][j].status == 1 ? losers[i][j*2] : losers[i][j*2+1]);
+                if(i == data.matchs.loser.length-1 && data.matchs.loser[i][j].status > 0){
+                    finale[1] = (data.matchs.loser[i][j].status == 1 ? losers[i][j*2] : losers[i][j*2+1]);
                 }
-                const matchBox = createMatchBox(losers[i][j*2], losers[i][j*2+1], loserMatchs[i][j]);
-                const smallMatchBox = createSmallMatchBox(losers[i][j*2], losers[i][j*2+1], loserMatchs[i][j]);
+                const matchBox = createMatchBox(losers[i][j*2], losers[i][j*2+1], data.matchs.loser[i][j]);
+                const smallMatchBox = createSmallMatchBox(losers[i][j*2], losers[i][j*2+1], data.matchs.loser[i][j]);
                 document.querySelector("#small-container").appendChild(smallMatchBox);
                 container.appendChild(matchBox);
             }
             document.querySelector("#loser-bracket").appendChild(container);
         }
 
-        const finaleBox = createMatchBox(finale[0], finale[1], finale[2]);
-        const finaleSmallBox = createSmallMatchBox(finale[0], finale[1], finale[2]);
+        const finaleBox = createMatchBox(finale[0], finale[1], data.matchs.finale);
+        const finaleSmallBox = createSmallMatchBox(finale[0], finale[1], data.matchs.finale);
         const container = document.createElement("div");
         const smallTitle = document.createElement("h1");
         smallTitle.innerHTML = 'Finale';
