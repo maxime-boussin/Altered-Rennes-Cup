@@ -92,7 +92,7 @@ const data = {
                 { "id": "8-1", "status": 1, "bgaId": "600609585"}
             ]
         ],
-        "finale": { "id": "1-1", "status": 0, "score": "0 - 0", "bgaId": ""}
+        "finale": { "id": "1-1", "status": 1, "score": "2 - 0", "bgaId": ""}
     },
     "players": [
         { "id": 1,  "name": "McFlaïe",        "hero": "Teija",    "bg": "m", "deck": "01JC5MVD50S3QNYABHXBRSM7D3" },
