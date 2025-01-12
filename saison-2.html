@@ -1,0 +1,545 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Altered Rennes Cup - Saison 2</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<style>
+    @font-face {
+        font-family: 'Tiller';
+        font-weight: 300;
+        src:  url('images/TillerTest-Demi-BF65c2eac4d9ea5.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'Tiller';
+        font-weight: 600;
+        src:  url('images/TillerTest-Bold-BF65c2eac415eb4.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32KxfXBiEJow.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBiEJow.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQBiEJow.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QBiEJow.ttf) format('truetype');
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        background-image: url('images/bg.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    #winner-bracket, #loser-bracket {
+        display: flex;
+        align-items: center;
+    }
+    #winner-bracket {
+        margin-bottom: 50px;
+    }
+    .match-box {
+        display: flex;
+        width: 500px;
+        margin: 15px;
+        color: white;
+        font-family: "Tiller", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .match-box a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .match-box .player-box {
+        background-size: cover;
+        width: 230px;
+        height: 59px;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    .match-box h2 {
+        font-size: 20px;
+        text-shadow: rgb(55, 55, 55) 3px 0px 0px, rgb(55, 55, 55) 2.83487px 0.981584px 0px, rgb(55, 55, 55) 2.35766px 1.85511px 0px, rgb(55, 55, 55) 1.62091px 2.52441px 0px, rgb(55, 55, 55) 0.705713px 2.91581px 0px, rgb(55, 55, 55) -0.287171px 2.98622px 0px, rgb(55, 55, 55) -1.24844px 2.72789px 0px, rgb(55, 55, 55) -2.07227px 2.16926px 0px, rgb(55, 55, 55) -2.66798px 1.37182px 0px, rgb(55, 55, 55) -2.96998px 0.42336px 0px, rgb(55, 55, 55) -2.94502px -0.571704px 0px, rgb(55, 55, 55) -2.59586px -1.50383px 0px, rgb(55, 55, 55) -1.96093px -2.27041px 0px, rgb(55, 55, 55) -1.11013px -2.78704px 0px, rgb(55, 55, 55) -0.137119px -2.99686px 0px, rgb(55, 55, 55) 0.850987px -2.87677px 0px, rgb(55, 55, 55) 1.74541px -2.43999px 0px, rgb(55, 55, 55) 2.44769px -1.73459px 0px, rgb(55, 55, 55) 2.88051px -0.838247px 0px;
+        margin: 0;
+    }
+    .player-box.winner {
+        filter: drop-shadow(0px 0px 5px white);
+        z-index: 1;
+    }
+    .player-box.loser {
+        filter: contrast(0.4) grayscale(0.5);
+    }
+    .player-box:first-child {
+        padding-right: 20px;
+        text-align: right;
+    }
+    .player-box:last-child {
+        padding-left: 20px;
+        text-align: left;
+    }
+    .match-box:before {
+        content: "";
+        position: absolute;
+        margin-left: 450px;
+        display: block;
+        width: 100px;
+        z-index: -1;
+    }
+    .match-box:nth-child(2n):before {   
+        margin-top: -3px;
+        height: 37px;
+        border-bottom-right-radius: 10px;
+        border-right: 4px solid #ffffff;
+        border-bottom: 4px solid #ffffff; 
+    }
+    .match-box:nth-child(2n+1):before {
+        margin-top: 33px;
+        height: 37px;
+        border-top-right-radius: 10px;
+        border-right: 4px solid #ffffff;
+        border-top: 4px solid #ffffff;
+    }
+    #winner-bracket .container:nth-child(2) .match-box:before {
+        height: 50px;
+    }
+    #winner-bracket .container:nth-child(2) .match-box:nth-child(2n):before {
+        margin-top: -16px;
+    }
+    #winner-bracket .container:nth-child(3) .match-box:before {
+        height: 131px;
+    }
+    #winner-bracket .container:nth-child(3) .match-box:nth-child(2n):before {
+        margin-top: -97px;
+    }
+    #winner-bracket .container:nth-child(2) .match-box:not(:first-child):not(:last-child) {
+        margin: 99px 15px;
+    }
+    #winner-bracket .container:nth-child(3) .match-box:last-child {
+        margin-top: 265px;
+    }
+    #winner-bracket .container:nth-child(4) .match-box:first-child {
+        margin-left: 0px;
+    }
+    #winner-bracket .container:nth-child(5) .match-box:before {  
+        border-right: none;
+    }
+    #winner-bracket .container:nth-child(6) .match-box:before {  
+        border: none;
+    }
+    .bga-link {
+        background-image: url('images/replay.png');
+    }
+    .bga-link:hover {
+        filter: drop-shadow(0px 0px 5px #ffffff) drop-shadow(0px 0px 2px #ffffff);
+        transform: scale(1.3);
+    }
+    .physic-icon {
+        background-image: url('images/vs.png');
+    }
+    .physic-icon, .bga-link {
+        display: block;
+        position:absolute;
+        margin-left: 232px;
+        margin-top: 13px;
+        height: 36px;
+        width: 36px;
+        background-size: cover;
+        z-index: 2;
+        transition: all 0.25s ease-out;
+    }
+    #winner-bracket .container:last-child .match-box .physic-icon, 
+    #winner-bracket .container:last-child .match-box .bga-link {
+        margin-left: 382px;
+        margin-top: 27px;
+    }
+    /* LOOSER */
+    #loser-bracket .container:nth-child(2n+1) .match-box:before {  
+        border-right: none;
+    }
+    #loser-bracket .container:last-child .match-box:last-child:before {
+        height: 1040px;
+        width: 826px;
+        margin-top: -1040px;
+        margin-left: -578px;
+    }
+    #loser-bracket .container:nth-child(4) .match-box:before {
+        height: 50px;
+    }
+    #loser-bracket .container:nth-child(4) .match-box:nth-child(2n):before {
+        margin-top: -16px;
+    }
+    #loser-bracket .container:nth-child(6) .match-box:before {
+        height: 131px;
+    }
+    #loser-bracket .container:nth-child(6) .match-box:nth-child(2n):before {
+        margin-top: -97px;
+    }
+    #loser-bracket .container:nth-child(3) .match-box:not(:first-child):not(:last-child),
+    #loser-bracket .container:nth-child(4) .match-box:not(:first-child):not(:last-child) {
+        margin: 99px 15px;
+    }
+    #loser-bracket .container:nth-child(5) .match-box:first-child,
+    #loser-bracket .container:nth-child(6) .match-box:first-child {
+        margin-bottom: 265px;
+    }
+    /* FINALE */
+    #winner-bracket .container:last-child .match-box {
+        width: 800px;
+    }
+    #winner-bracket .container:last-child .match-box .player-box {
+        width: 380px;
+        height: 100px;
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    #winner-bracket .container:last-child .match-box .player-box:first-child {
+        padding-right: 20px;
+    }
+    #winner-bracket .container:last-child .match-box .player-box:last-child {
+        padding-left: 20px;
+    }
+    #winner-bracket .container:last-child .match-box .player-box h2 {
+        font-size: 28px;
+    }
+    .score-box {
+        position: absolute;
+        z-index: 2;
+        text-shadow: rgb(55, 55, 55) 5px 0px 0px, rgb(55, 55, 55) 4.90033px 0.993347px 0px, rgb(55, 55, 55) 4.60531px 1.94709px 0px, rgb(55, 55, 55) 4.12668px 2.82321px 0px, rgb(55, 55, 55) 3.48353px 3.58678px 0px, rgb(55, 55, 55) 2.70151px 4.20736px 0px, rgb(55, 55, 55) 1.81179px 4.6602px 0px, rgb(55, 55, 55) 0.849836px 4.92725px 0px, rgb(55, 55, 55) -0.145998px 4.99787px 0px, rgb(55, 55, 55) -1.13601px 4.86924px 0px, rgb(55, 55, 55) -2.08073px 4.54649px 0px, rgb(55, 55, 55) -2.94251px 4.04248px 0px, rgb(55, 55, 55) -3.68697px 3.37732px 0px, rgb(55, 55, 55) -4.28444px 2.57751px 0px, rgb(55, 55, 55) -4.71111px 1.67494px 0px, rgb(55, 55, 55) -4.94996px 0.7056px 0px, rgb(55, 55, 55) -4.99147px -0.291871px 0px, rgb(55, 55, 55) -4.83399px -1.27771px 0px, rgb(55, 55, 55) -4.48379px -2.2126px 0px, rgb(55, 55, 55) -3.95484px -3.05929px 0px, rgb(55, 55, 55) -3.26822px -3.78401px 0px, rgb(55, 55, 55) -2.4513px -4.35788px 0px, rgb(55, 55, 55) -1.53666px -4.75801px 0px, rgb(55, 55, 55) -0.560763px -4.96845px 0px, rgb(55, 55, 55) 0.437495px -4.98082px 0px, rgb(55, 55, 55) 1.41831px -4.79462px 0px, rgb(55, 55, 55) 2.34258px -4.41727px 0px, rgb(55, 55, 55) 3.17346px -3.86382px 0px, rgb(55, 55, 55) 3.87783px -3.15633px 0px, rgb(55, 55, 55) 4.4276px -2.32301px 0px, rgb(55, 55, 55) 4.80085px -1.39708px 0px, rgb(55, 55, 55) 4.98271px -0.415447px 0px;
+        width: 800px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        margin-top: 80px;
+    }
+    /* SMALL */
+    #small-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:10px;
+    }
+    #small-container h1 {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        font-family: "Tiller", sans-serif;
+        font-weight: 700;
+        color: #fff;
+        text-shadow: rgb(55, 55, 55) 3px 0px 0px, rgb(55, 55, 55) 2.83487px 0.981584px 0px, rgb(55, 55, 55) 2.35766px 1.85511px 0px, rgb(55, 55, 55) 1.62091px 2.52441px 0px, rgb(55, 55, 55) 0.705713px 2.91581px 0px, rgb(55, 55, 55) -0.287171px 2.98622px 0px, rgb(55, 55, 55) -1.24844px 2.72789px 0px, rgb(55, 55, 55) -2.07227px 2.16926px 0px, rgb(55, 55, 55) -2.66798px 1.37182px 0px, rgb(55, 55, 55) -2.96998px 0.42336px 0px, rgb(55, 55, 55) -2.94502px -0.571704px 0px, rgb(55, 55, 55) -2.59586px -1.50383px 0px, rgb(55, 55, 55) -1.96093px -2.27041px 0px, rgb(55, 55, 55) -1.11013px -2.78704px 0px, rgb(55, 55, 55) -0.137119px -2.99686px 0px, rgb(55, 55, 55) 0.850987px -2.87677px 0px, rgb(55, 55, 55) 1.74541px -2.43999px 0px, rgb(55, 55, 55) 2.44769px -1.73459px 0px, rgb(55, 55, 55) 2.88051px -0.838247px 0px;
+        margin: 0;
+    }
+    #small-container h2.loser {
+        opacity: 0.6;
+        filter: grayscale(0.7);
+    }
+    .small-box {
+        display: flex;
+        flex-direction: column;
+        width: 142px;
+        height: 46px;
+        background-image: url('images/small-ui/box.png');
+        background-size: cover;
+        color: #373737;
+        font-family: "Tiller", sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        padding: 4px 10px;
+        margin: 4px;
+    }
+    .small-box h2 {
+        margin: 0;
+    }
+    .small-box img {
+        width:21px;
+        height:21px;
+        margin-top: 2px;
+        margin-bottom: -6px;
+    }
+    .small-box h2:first-child {
+        text-align: left;
+    }
+    .small-box h2:last-child {
+        text-align: right;
+    }
+    .ui {
+        position:fixed;
+        display: flex;
+        z-index: 3;
+        right: 0;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin: 5px;
+        border-radius: 15px;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        margin: 10px 10px 0 0;
+        width: 40px;
+        height: 23px;
+    }
+
+    .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(16px);
+        -ms-transform: translateX(16px);
+        transform: translateX(16px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 23px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    .label {
+        display: inline-block;
+        height: 23px;
+        margin: 10px;
+        font-size: 20px;
+        font-family: "Tiller", sans-serif;
+        font-weight: 700;
+        color: #fff;
+        text-shadow: rgb(55, 55, 55) 3px 0px 0px, rgb(55, 55, 55) 2.83487px 0.981584px 0px, rgb(55, 55, 55) 2.35766px 1.85511px 0px, rgb(55, 55, 55) 1.62091px 2.52441px 0px, rgb(55, 55, 55) 0.705713px 2.91581px 0px, rgb(55, 55, 55) -0.287171px 2.98622px 0px, rgb(55, 55, 55) -1.24844px 2.72789px 0px, rgb(55, 55, 55) -2.07227px 2.16926px 0px, rgb(55, 55, 55) -2.66798px 1.37182px 0px, rgb(55, 55, 55) -2.96998px 0.42336px 0px, rgb(55, 55, 55) -2.94502px -0.571704px 0px, rgb(55, 55, 55) -2.59586px -1.50383px 0px, rgb(55, 55, 55) -1.96093px -2.27041px 0px, rgb(55, 55, 55) -1.11013px -2.78704px 0px, rgb(55, 55, 55) -0.137119px -2.99686px 0px, rgb(55, 55, 55) 0.850987px -2.87677px 0px, rgb(55, 55, 55) 1.74541px -2.43999px 0px, rgb(55, 55, 55) 2.44769px -1.73459px 0px, rgb(55, 55, 55) 2.88051px -0.838247px 0px;
+    }
+</style>
+<body>
+    <div class="ui">
+        <div class="label">Liste</div>
+        <label class="switch">
+            <input type="checkbox" id="small-view-toggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div id="big-container">
+        <div id="winner-bracket"></div>
+        <div id="loser-bracket"></div>
+    </div>
+    <div id="small-container"></div>
+    <script src="data-janvier2025.js"></script>
+    <script>
+        const winners = [data.players, [], [], [], [], []];
+        const losers = [[], [], [], [], [], [], [], []];
+        const noPlayer = { id: 0, name: "", hero: "", bg: "z" };
+        let finale = [noPlayer, noPlayer];
+        function createMatchBox(player1, player2, match) {
+            const matchBox = document.createElement("div");
+            matchBox.className = "match-box";
+            const playerBox1 = document.createElement("div");
+            playerBox1.className = "player-box";
+            playerBox1.style.backgroundImage = "url('images/"+player1.bg+"-banner.png')";
+            playerBox1.innerHTML = `<a href="https://www.altered.gg/decks/${player1.deck}" target="_blank"><h2>${player1.name}</h2><span>${player1.hero}</span></a>`;
+
+            const playerBox2 = document.createElement("div");
+            playerBox2.className = "player-box";
+            playerBox2.style.backgroundImage = "url('images/"+player2.bg+"-banner-r.png')";
+            playerBox2.innerHTML = `<a href="https://www.altered.gg/decks/${player2.deck}" target="_blank"><h2>${player2.name}</h2><span>${player2.hero}</span></a>`;
+
+            if(match.status == 1) {
+                playerBox1.classList.add('winner');
+                playerBox2.classList.add('loser');
+            }
+            else if(match.status == 2) {
+                playerBox1.classList.add('loser');
+                playerBox2.classList.add('winner');
+            }
+
+            matchBox.appendChild(playerBox1);
+
+            if(match.status > 0) {
+                let separationBox;
+                if(match.bgaId != "") {
+                    separationBox = document.createElement("a");
+                    separationBox.className = "bga-link";
+                    separationBox.target = "_blank";
+                    separationBox.href = "https://boardgamearena.com/table?table=" + match.bgaId;
+                }
+                else {
+                    separationBox = document.createElement("div");
+                    separationBox.className = "physic-icon";
+                }
+                matchBox.appendChild(separationBox);
+            }
+
+            if(match.score) {
+                const scoreBox = document.createElement("div");
+                scoreBox.className = "score-box";
+                scoreBox.innerHTML = match.score;
+                matchBox.appendChild(scoreBox);
+            }
+
+            matchBox.appendChild(playerBox2);
+
+            return matchBox;
+        }
+        function createSmallMatchBox(player1, player2, match) {
+            const matchBox = document.createElement("div");
+            const player1Line = document.createElement("h2");
+            const player2Line = document.createElement("h2");
+            matchBox.className = "small-box";
+            player1Line.innerHTML = `<img src="images/small-ui/logo-${player1.bg}.png" /> ${player1.name}`;
+            player2Line.innerHTML = `${player2.name} <img src="images/small-ui/logo-${player2.bg}.png" />`;
+            if(match.status > 0) {
+                matchBox.style.backgroundImage = "url('images/small-ui/box1.png')";
+                if(match.status == 1) {
+                    player2Line.className = 'loser';
+                }
+                else {
+                    player1Line.className = 'loser';
+                }
+            }
+
+            matchBox.appendChild(player1Line);
+            matchBox.appendChild(player2Line);
+
+            return matchBox;
+        }
+
+        for (let i = 0; i < data.matchs.winner.length; i++) {
+            const container = document.createElement("div");
+            container.className = "container";
+
+            const smallTitle = document.createElement("h1");
+            smallTitle.innerHTML = `Winner - Round ${i+1}`;
+            document.querySelector("#small-container").appendChild(smallTitle);
+
+            for (let j = 0; j < data.matchs.winner[i].length; j++) {
+                let round = i < 2 ? i : i*2-1;
+                if(round > 0) {
+                    losers[round].push(noPlayer);
+                }
+                if(data.matchs.winner[i][j].status == 1) {
+                    winners[i+1].push(winners[i][j*2]);
+                    losers[round].push(winners[i][j*2+1]);
+                }
+                else if(data.matchs.winner[i][j].status == 2) {
+                    winners[i+1].push(winners[i][j*2+1]);
+                    losers[round].push(winners[i][j*2]);
+                }
+                else {
+                    winners[i+1].push(noPlayer);
+                    losers[round].push(noPlayer);
+                }
+                if(i == data.matchs.winner.length-1 && data.matchs.winner[i][j].status > 0){
+                    finale[0] = (data.matchs.winner[i][j].status == 1 ? winners[i][j*2] : winners[i][j*2+1]);
+                }
+                const matchBox = createMatchBox(winners[i][j*2], winners[i][j*2+1], data.matchs.winner[i][j]);
+                const smallMatchBox = createSmallMatchBox(winners[i][j*2], winners[i][j*2+1], data.matchs.winner[i][j]);
+                document.querySelector("#small-container").appendChild(smallMatchBox);
+                container.appendChild(matchBox);
+            }
+            document.querySelector("#winner-bracket").appendChild(container);
+        }
+
+        for (let i = 0; i < data.matchs.loser.length; i++) {
+            const container = document.createElement("div");
+            container.className = "container";
+
+            const smallTitle = document.createElement("h1");
+            smallTitle.innerHTML = `Loser - Round ${i+1}`;
+            document.querySelector("#small-container").appendChild(smallTitle);
+
+            for (let j = 0; j < data.matchs.loser[i].length; j++) {
+                if(losers[i+1]){
+                    if(data.matchs.loser[i][j].status == 1) {
+                        losers[i+1][i % 2 == 0 ? j*2 : j] = losers[i][j*2];
+                    }
+                    else if(data.matchs.loser[i][j].status == 2) {
+                        losers[i+1][i % 2 == 0 ? j*2 : j] = losers[i][j*2+1];
+                    }
+                    else {
+                        losers[i+1][i % 2 == 0 ? j*2 : j] = noPlayer;
+                    }
+                }
+                if(i == data.matchs.loser.length-1 && data.matchs.loser[i][j].status > 0){
+                    finale[1] = (data.matchs.loser[i][j].status == 1 ? losers[i][j*2] : losers[i][j*2+1]);
+                }
+                const matchBox = createMatchBox(losers[i][j*2], losers[i][j*2+1], data.matchs.loser[i][j]);
+                const smallMatchBox = createSmallMatchBox(losers[i][j*2], losers[i][j*2+1], data.matchs.loser[i][j]);
+                document.querySelector("#small-container").appendChild(smallMatchBox);
+                container.appendChild(matchBox);
+            }
+            document.querySelector("#loser-bracket").appendChild(container);
+        }
+
+        const finaleBox = createMatchBox(finale[0], finale[1], data.matchs.finale);
+        const finaleSmallBox = createSmallMatchBox(finale[0], finale[1], data.matchs.finale);
+        const container = document.createElement("div");
+        const smallTitle = document.createElement("h1");
+        smallTitle.innerHTML = 'Finale';
+        container.className = "container";
+        container.appendChild(finaleBox);
+        document.querySelector("#small-container").appendChild(smallTitle);
+        document.querySelector("#small-container").appendChild(finaleSmallBox);
+        document.querySelector("#winner-bracket").appendChild(container);
+
+        const toggle = document.querySelector("#small-view-toggle");
+        document.querySelector("#small-container").style.display = 'none';
+        toggle.addEventListener("change", (e) => {
+            if(toggle.checked){
+                document.querySelector("#big-container").style.display = 'none';
+                document.querySelector("#small-container").style.display = 'flex';
+            }
+            else {
+                document.querySelector("#big-container").style.display = 'block';
+                document.querySelector("#small-container").style.display = 'none';
+            }
+        });
+    </script>
+</body>
