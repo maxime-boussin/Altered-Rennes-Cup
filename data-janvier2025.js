@@ -43,6 +43,6 @@ const data = {
         { "id": 13, "name": "1er - Poule 4",             "hero": "",         "bg": "z", "deck": "" },
         { "id": 14, "name": "2nd - Poule 3",             "hero": "",         "bg": "z", "deck": "" },
         { "id": 15, "name": "Xanders",                   "hero": "Waru",     "bg": "o", "deck": "01JGP7BXG78VQGFN0GQXRNHVEP" },
-        { "id": 16, "name": "Bliisters",                 "hero": "Treyst",   "bg": "a", "deck": "01JBW954A1063BMSS3CV7SJV3V" },
+        { "id": 16, "name": "Nijisa",                 "hero": "Treyst",   "bg": "a", "deck": "01JFW6ESFGX83B945HHD017WB8" },
     ]
 };
