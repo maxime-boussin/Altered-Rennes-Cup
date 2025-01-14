@@ -34,7 +34,7 @@ const data = {
         { "id": 4,  "name": "2nd - Poule 4",             "hero": "",         "bg": "z", "deck": "" },
         { "id": 5,  "name": "1er - Poule 5",             "hero": "",         "bg": "z", "deck": "" },
         { "id": 6,  "name": "2nd - Poule 6",             "hero": "",         "bg": "z", "deck": "" },
-        { "id": 7,  "name": "1er - Poule 7",             "hero": "",         "bg": "z", "deck": "" },
+        { "id": 7,  "name": "Nahmaa",                    "hero": "Fen",      "bg": "l", "deck": "01JE9E8C9BKK9763628GJ7TQ11" },
         { "id": 8,  "name": "2nd - Poule 8",             "hero": "",         "bg": "z", "deck": "" },
         { "id": 9,  "name": "1er - Poule 8",             "hero": "",         "bg": "z", "deck": "" },
         { "id": 10, "name": "2nd - Poule 7",             "hero": "",         "bg": "z", "deck": "" },
