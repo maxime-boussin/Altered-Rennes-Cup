@@ -3,14 +3,14 @@ const data = {
     "matchs": {
         "winner": [
             [
-                { "id": "1-1",  "status": 0, "bgaId": ""},
-                { "id": "1-2",  "status": 0, "bgaId": ""}, 
+                { "id": "1-1",  "status": 2, "bgaId": "616879694"},
+                { "id": "1-2",  "status": 1, "bgaId": "616860555"}, 
                 { "id": "1-3",  "status": 0, "bgaId": ""}, 
                 { "id": "1-4",  "status": 0, "bgaId": ""}, 
-                { "id": "1-5",  "status": 0, "bgaId": ""}, 
+                { "id": "1-5",  "status": 1, "bgaId": "616790076"}, 
                 { "id": "1-6",  "status": 2, "bgaId": "616810423"}, 
                 { "id": "1-7",  "status": 0, "bgaId": ""}, 
-                { "id": "1-8",  "status": 0, "bgaId": ""}
+                { "id": "1-8",  "status": 1, "bgaId": "616834972"}
             ],
             [
                 { "id": "2-1", "status": 0, "bgaId": ""},
