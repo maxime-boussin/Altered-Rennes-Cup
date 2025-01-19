@@ -14,9 +14,9 @@ const data = {
             ],
             [
                 { "id": "2-1", "status": 0, "bgaId": ""},
-                { "id": "2-2", "status": 0, "bgaId": ""},
+                { "id": "2-2", "status": 2, "bgaId": "617838510"},
                 { "id": "2-3", "status": 0, "bgaId": ""},
-                { "id": "2-4", "status": 0, "bgaId": ""}
+                { "id": "2-4", "status": 2, "bgaId": "617845669"}
             ],
             [ 
                 { "id": "3-1", "status": 0, "bgaId": ""},
