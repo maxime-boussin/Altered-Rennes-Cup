@@ -6,10 +6,10 @@ const data = {
                 { "id": "1-1",  "status": 2, "bgaId": "616879694"},
                 { "id": "1-2",  "status": 1, "bgaId": "616860555"}, 
                 { "id": "1-3",  "status": 2, "bgaId": "617191736"}, 
-                { "id": "1-4",  "status": 0, "bgaId": ""}, 
+                { "id": "1-4",  "status": 1, "bgaId": "617738220"}, 
                 { "id": "1-5",  "status": 1, "bgaId": "616790076"}, 
                 { "id": "1-6",  "status": 2, "bgaId": "616810423"}, 
-                { "id": "1-7",  "status": 0, "bgaId": ""}, 
+                { "id": "1-7",  "status": 1, "bgaId": "617599411"}, 
                 { "id": "1-8",  "status": 1, "bgaId": "616834972"}
             ],
             [
