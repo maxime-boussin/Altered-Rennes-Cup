@@ -13,7 +13,7 @@ const data = {
                 { "id": "1-8",  "status": 1, "bgaId": "616834972"}
             ],
             [
-                { "id": "2-1", "status": 0, "bgaId": ""},
+                { "id": "2-1", "status": 1, "bgaId": "618314166"},
                 { "id": "2-2", "status": 2, "bgaId": "617838510"},
                 { "id": "2-3", "status": 1, "bgaId": "618304190"},
                 { "id": "2-4", "status": 2, "bgaId": "617845669"}
