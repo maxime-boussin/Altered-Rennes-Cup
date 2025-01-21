@@ -20,7 +20,7 @@ const data = {
             ],
             [ 
                 { "id": "3-1", "status": 0, "bgaId": ""},
-                { "id": "3-2", "status": 0, "bgaId": ""}
+                { "id": "3-2", "status": 1, "bgaId": "618783986"}
             ]
         ],
         "loser": [
