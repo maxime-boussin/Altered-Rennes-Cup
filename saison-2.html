@@ -477,7 +477,7 @@
                     losers[round].push(noPlayer);
                 }
                 if(i == data.matchs.winner.length-1 && data.matchs.winner[i][j].status > 0){
-                    finale[0] = (data.matchs.winner[i][j].status == 1 ? winners[i][j*2] : winners[i][j*2+1]);
+                    finale[data.matchs.winner[i][j].id.slice(-1)-1] = (data.matchs.winner[i][j].status == 1 ? winners[i][j*2] : winners[i][j*2+1]);
                 }
                 const matchBox = createMatchBox(winners[i][j*2], winners[i][j*2+1], data.matchs.winner[i][j]);
                 const smallMatchBox = createSmallMatchBox(winners[i][j*2], winners[i][j*2+1], data.matchs.winner[i][j]);
