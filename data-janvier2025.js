@@ -25,7 +25,7 @@ const data = {
         ],
         "loser": [
         ],
-        "finale": { "id": "1-1", "status": 0, "score": "", "bgaId": ""}
+        "finale": { "id": "1-1", "status": 2, "score": "1-2", "bgaId": ""}
     },
     "players": [
         { "id": 1,  "name": "Hedi",                      "hero": "Afanas",   "bg": "y", "deck": "01JCTFWNCK13EMXN756873AFYH" },
