@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <title>Altered Rennes Cup - Classement saison 1</title>
+    <title>Altered Rennes Cup - Classement saison 2</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <style>
@@ -112,8 +112,8 @@
         width: 19px;
         height: 19px;
     }
-    .botbar .slider .arrow-right {
-        background-image: url('../images/arrow-right.png');
+    .botbar .slider .arrow-left {
+        background-image: url('../images/arrow-left.png');
     }
     .content {
         display: flex;
@@ -137,15 +137,6 @@
         flex: 1 1 0px;
         background-position: center 30px;
         vertical-align: middle;
-    }
-    .afanas {
-        background-image: url('../images/heroes/afanas.png');
-    }
-    .lindiwe {
-        background-image: url('../images/heroes/lindiwe.png');
-    }
-    .treyst {
-        background-image: url('../images/heroes/treyst.png');
     }
     .podium div:nth-child(2) .nickname {
         margin-top: 75vh;
@@ -193,7 +184,8 @@
         font-family: "Tiller", sans-serif;
         text-shadow: rgb(55, 55, 55) 0px 0px 5px;
         font-size: 24px;
-        padding: 0 10px 2px 10px;
+        padding: 0 10px;
+        margin-top: -4px;
     }
     .player span {
         display: inline-block;
@@ -204,6 +196,63 @@
         margin-right: 7px;
         width: 40px;
         height: 40px;
+    }
+    .sierra {
+        background-image: url('../images/heroes/sierra.png');
+    }
+    .treyst {
+        background-image: url('../images/heroes/treyst.png');
+    }
+    .subhash {
+        background-image: url('../images/heroes/subhash.png');
+    }
+    .atsadi {
+        background-image: url('../images/heroes/atsadi.png');
+    }
+    .basira {
+        background-image: url('../images/heroes/basira.png');
+    }
+    .kojo {
+        background-image: url('../images/heroes/kojo.png');
+    }
+    .fen {
+        background-image: url('../images/heroes/fen.png');
+    }
+    .auraq {
+        background-image: url('../images/heroes/auraq.png');
+    }
+    .nevenka {
+        background-image: url('../images/heroes/nevenka.png');
+    }
+    .teija {
+        background-image: url('../images/heroes/teija.png');
+    }
+    .rin {
+        background-image: url('../images/heroes/rin.png');
+    }
+    .arjun {
+        background-image: url('../images/heroes/arjun.png');
+    }
+    .sigismar {
+        background-image: url('../images/heroes/sigismar.png');
+    }
+    .waru {
+        background-image: url('../images/heroes/waru.png');
+    }
+    .gulrang {
+        background-image: url('../images/heroes/gulrang.png');
+    }
+    .afanas {
+        background-image: url('../images/heroes/afanas.png');
+    }
+    .lindiwe {
+        background-image: url('../images/heroes/lindiwe.png');
+    }
+    .akesha {
+        background-image: url('../images/heroes/akesha.png');
+    }
+    .none {
+        background-image: url('../images/heroes/none.png');
     }
     .sierra-round {
         background-image: url('../images/heroes/sierra-round.png');
@@ -259,6 +308,9 @@
     .akesha-round {
         background-image: url('../images/heroes/akesha-round.png');
     }
+    .none-round {
+        background-image: url('../images/heroes/none-round.png');
+    }
 </style>
 <body>
     <div class="topbar">
@@ -269,55 +321,63 @@
     <div class="botbar">
         <div class="fill"></div>
         <div class="banner"></div>
-        <div class="slider"><span class="arrow-left"></span> Saison 1 <span class="arrow-right" onclick="location.href = 'saison-2.html';"></span></div>
+        <div class="slider"><span class="arrow-left" onclick="location.href = 'saison-1.html';"></span> Saison 2 <span class="arrow-right"></span></div>
     </div>
     <div class="content">
         <div class="ladder">
-            <div class="player"><span class="fen-round"></span> 4 - Nimrel</div>
-            <div class="player"><span class="fen-round"></span> 5 - ZazaLaRiboule</div>
-            <div class="player"><span class="fen-round"></span> 5 - Keg</div>
-            <div class="player"><span class="teija-round"></span> 7 - McFlaie</div>
-            <div class="player"><span class="sigismar-round"></span> 7 - Marbull</div>
-            <div class="player"><span class="kojo-round"></span> 9 - Autilus</div>
-            <div class="player"><span class="teija-round"></span> 9 - Yann</div>
-            <div class="player"><span class="auraq-round"></span> 9 - RoyaumeDuDe</div>
+            <div class="player"><span class="none-round"></span> 4 - ???</div>
+            <div class="player"><span class="treyst-round"></span> 5 - JacquesCeler</div>
+            <div class="player"><span class="basira-round"></span> 5 - Djaack</div>
+            <div class="player"><span class="fen-round"></span> 5 - Marbull</div>
+            <div class="player"><span class="sigismar-round"></span> 5 - Legende</div>
+            <div class="player"><span class="afanas-round"></span> 9 - Hedi</div>
+            <div class="player"><span class="treyst-round"></span> 9 - Renable</div>
+            <div class="player"><span class="teija-round"></span> 9 - McFlaie</div>
+            <div class="player"><span class="gulrang-round"></span> 9 - Raloufifa</div>
             <div class="player"><span class="afanas-round"></span> 9 - Y04nn</div>
-            <div class="player"><span class="fen-round"></span> 13 - Malo</div>
-            <div class="player"><span class="waru-round"></span> 13 - Irex</div>
-            <div class="player"><span class="waru-round"></span> 13 - EverydayLife</div>
-            <div class="player"><span class="fen-round"></span> 13 - Gothon</div>
-            <div class="player"><span class="afanas-round"></span> 17 - Hurricane</div>
-            <div class="player"><span class="teija-round"></span> 17 - Zupaw</div>
+            <div class="player"><span class="kojo-round"></span> 9 - XAT</div>
+            <div class="player"><span class="afanas-round"></span> 9 - JolieRougeGorge</div>
+            <div class="player"><span class="treyst-round"></span> 9 - Nijisa</div>
+            <div class="player"><span class="treyst-round"></span> Bliisters</div>
+            <div class="player"><span class="fen-round"></span> Malo</div>
+            <div class="player"><span class="akesha-round"></span> Calcifer</div>
+            <div class="player"><span class="lindiwe-round"></span> PetitRequinBleu</div>
+            <div class="player"><span class="fen-round"></span> Nimrel</div>
+            <div class="player"><span class="waru-round"></span> EverydayLife</div>
         </div>
         <div class="podium">
-            <div class="afanas">
-                <div class="nickname">GrankorSalade</div>
+            <div class="lindiwe">
+                <div class="nickname">Ashaf</div>
                 <div class="gem silver"></div>
             </div>
-            <div class="treyst">
-                <div class="nickname">Xanders</div>
+            <div class="afanas">
+                <div class="nickname">Delula</div>
                 <div class="gem gold"></div>
             </div>
-            <div class="lindiwe">
-                <div class="nickname">JolieRougeGorge</div>
+            <div class="none">
+                <div class="nickname">???</div>
                 <div class="gem copper"></div>
             </div>
         </div>
         <div class="ladder">
-            <div class="player">Nijisa - 17 <span class="subhash-round"></span></div>
-            <div class="player">Edgesouls - 17 <span class="sigismar-round"></span></div>
-            <div class="player">Djaack - 17 <span class="basira-round"></span></div>
-            <div class="player">Calcifer - 17 <span class="akesha-round"></span></div>
-            <div class="player">Xathros - 17 <span class="kojo-round"></span></div>
-            <div class="player">JacquesCeler - 17 <span class="treyst-round"></span></div>
-            <div class="player">Bliisters - 25 <span class="rin-round"></span></div>
-            <div class="player">Loar - 25 <span class="rin-round"></span></div>
-            <div class="player">Loutre - 25 <span class="teija-round"></span></div>
-            <div class="player">Raloufifa - 25 <span class="afanas-round"></span></div>
-            <div class="player">Pikevchu - 25 <span class="rin-round"></span></div>
-            <div class="player">Folzoqua - 25 <span class="teija-round"></span></div>
-            <div class="player">Hedi - 25 <span class="afanas-round"></span></div>
-            <div class="player">Edco - 25 <span class="auraq-round"></span></div>
+            <div class="player">Kafock <span class="sierra-round"></span></div>
+            <div class="player">Keg <span class="fen-round"></span></div>
+            <div class="player">Yann <span class="teija-round"></span></div>
+            <div class="player">Folzoqua <span class="teija-round"></span></div>
+            <div class="player">LeRoyaumeDuDe <span class="lindiwe-round"></span></div>
+            <div class="player">Loutre <span class="arjun-round"></span></div>
+            <div class="player">Edgesouls <span class="sigismar-round"></span></div>
+            <div class="player">ZazaLaRiboule <span class="fen-round"></span></div>
+            <div class="player">Krazyk <span class="waru-round"></span></div>
+            <div class="player">GrankorSalade <span class="afanas-round"></span></div>
+            <div class="player">Pikevchu <span class="rin-round"></span></div>
+            <div class="player">CafardAgile <span class="teija-round"></span></div>
+            <div class="player">Zupaw <span class="teija-round"></span></div>
+            <div class="player">Stentorr <span class="sigismar-round"></span></div>
+            <div class="player">Kalhamn <span class="kojo-round"></span></div>
+            <div class="player">Insoula <span class="subhash-round"></span></div>
+            <div class="player">Hydra-Moana <span class="teija-round"></span></div>
+            <div class="player">Edco <span class="nevenka-round"></span></div>
         </div>
     </div>
 </body>
