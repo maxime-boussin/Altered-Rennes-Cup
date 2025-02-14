@@ -1,0 +1,478 @@
+* {
+  font-family: "tiller", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.marginApp {
+  max-width: 1440px;
+  padding: 0 36px 0 36px;
+  margin: auto;
+}
+@media (max-width: 600px) {
+  .marginApp {
+    padding: 0 16px 0 16px;
+  }
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header img {
+  width: 100%;
+}
+header .header__img__mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  header .header__img__mobile {
+    display: block;
+  }
+  header .header__img__desktop {
+    display: none;
+  }
+}
+header select {
+  margin: 24px 0 36px 0;
+  font-size: 18px;
+  padding: 8px 12px 8px 12px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #f4efef;
+  font-weight: 400;
+  width: 250px;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  gap: 48px;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  nav ul {
+    gap: 24px;
+  }
+}
+nav ul li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  opacity: 0.3;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+nav ul li #linkFinale {
+  pointer-events: none !important;
+}
+@media (max-width: 600px) {
+  nav ul li {
+    padding-bottom: 8px;
+  }
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navActiv {
+  border-bottom: 2px solid black;
+  opacity: 1;
+}
+
+body section {
+  height: 100%;
+  padding-top: 36px;
+  background-color: #f4efef;
+  padding-bottom: 72px;
+}
+
+#sectionTournament, #sectionLoser {
+  height: 100%;
+}
+
+#sectionCartes {
+  background: greenyellow;
+  display: none;
+}
+
+#sectionGroups #listeArticles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px 24px;
+}
+#sectionGroups article {
+  flex-grow: 1;
+  width: 48%;
+  gap: 24px;
+}
+#sectionGroups article > p {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+}
+@media (max-width: 1000px) {
+  #sectionGroups article {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) and (max-width: 600px) {
+  #sectionGroups article > p {
+    margin-left: 16px;
+  }
+}
+
+.poules__container {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+}
+.poules__container__onglets {
+  display: flex;
+  gap: 6px;
+}
+.poules__container__onglets button {
+  font-size: 14px;
+  border-radius: 8px;
+  border: 0;
+  padding: 4px 8px;
+  background-color: white;
+  cursor: pointer;
+}
+.poules__container__onglets button.btnActif {
+  background-color: #f4efef;
+}
+@media (max-width: 600px) {
+  .poules__container {
+    padding: 16px;
+    border-radius: 0px;
+  }
+}
+
+.poules__container__classement__legendes {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+.poules__container__classement__legendes div {
+  display: flex;
+  gap: 36px;
+}
+.poules__container__classement__legendes p {
+  font-weight: 400;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.poules__container__classement__listJoueurs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.poules__container__classement__listJoueurs__joueur {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4efef;
+  border-radius: 8px;
+  padding: 4px 16px 4px 4px;
+  align-items: center;
+}
+.poules__container__classement__listJoueurs__joueur p {
+  margin: 0;
+}
+.poules__container__classement__listJoueurs__joueur div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.poules__container__classement__listJoueurs__joueur img {
+  width: 36px;
+  height: 36px;
+}
+.poules__container__classement__listJoueurs__joueur .joueur__ptsDecklist {
+  display: flex;
+  gap: 64px;
+}
+.poules__container__classement__listJoueurs__joueur .joueur__ptsDecklist p {
+  width: 14px;
+}
+.poules__container__classement__listJoueurs__joueur .joueur__ptsDecklist a {
+  width: 24px;
+  height: 24px;
+  margin-left: 3px;
+}
+.poules__container__classement__listJoueurs__joueur .joueur__ptsDecklist a img {
+  width: 100%;
+  height: 100%;
+}
+
+.poules__container__matchs {
+  display: none;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 18px;
+  margin-top: 12px;
+}
+.poules__container__matchs__versus {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+.poules__container__matchs__versus .vs {
+  font-weight: 400;
+  margin: 0;
+}
+.poules__container__matchs__versus__joueur {
+  padding: 4px 8px 4px 4px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4efef;
+  width: 100%;
+}
+.poules__container__matchs__versus__joueur > p {
+  margin: 0;
+  color: #e9b901;
+}
+.poules__container__matchs__versus__joueur div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.poules__container__matchs__versus__joueur div img {
+  width: 36px;
+  height: 36px;
+}
+@media (max-width: 600px) {
+  .poules__container__matchs__versus__joueur div img {
+    width: 24px;
+    height: 24px;
+  }
+}
+.poules__container__matchs__versus__joueur div p {
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .poules__container__matchs {
+    font-size: 14px;
+  }
+  .poules__container__matchs img {
+    width: 24px;
+  }
+}
+
+/* SECTION WINRATE */
+#sectionStats {
+  display: none;
+}
+
+#winrate > p {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+@media (max-width: 600px) {
+  #winrate > p {
+    margin-left: 16px;
+  }
+}
+
+.winrate__list {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+@media (max-width: 600px) {
+  .winrate__list {
+    border-radius: 0px;
+    padding: 16px;
+    gap: 16px;
+  }
+}
+.winrate__list__card {
+  width: 198px;
+  background-color: #f4efef;
+  font-size: 14px;
+  border-radius: 8px;
+  flex: auto;
+}
+@media (max-width: 600px) {
+  .winrate__list__card {
+    width: 120px;
+  }
+}
+.winrate__list__card__icon {
+  background: white;
+  border-radius: 8px;
+  height: 24px;
+  padding: 2px 6px 2px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40px;
+}
+.winrate__list__card__icon img {
+  width: 21px;
+  height: 14px;
+}
+.winrate__list__card__top {
+  background-image: url(assets/heros/large/l-nevenka.webp);
+  background-size: cover;
+  background-position: center;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 8px 8px 0 0px;
+}
+.winrate__list__card__top__grade {
+  background: white;
+  height: 24px;
+  padding: 2px 6px 2px 6px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.winrate__list__card__top__grade p {
+  margin: 0;
+}
+.winrate__list__card__bot {
+  padding: 16px;
+  border-radius: 0 0 8px 8px;
+}
+.winrate__list__card__bot p {
+  margin: 0;
+}
+.winrate__list__card__bot .winTitre {
+  font-weight: 400;
+}
+.winrate__list__card__bot .winPourcentage {
+  font-size: 48px;
+}
+@media (max-width: 600px) {
+  .winrate__list__card__bot .winPourcentage {
+    font-size: 36px;
+  }
+}
+.winrate__list__card__bot__vs {
+  display: flex;
+  gap: 4px;
+}
+
+.winrateFactions__list {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.winrateFactions__list > p {
+  margin-top: 24px;
+}
+@media (max-width: 600px) {
+  .winrateFactions__list {
+    border-radius: 0px;
+    padding: 16px;
+    gap: 16px;
+  }
+}
+
+/* SECTION FINALE */
+.listTour {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  flex-grow: 1;
+  overflow-x: scroll;
+}
+@media (max-width: 600px) {
+  .listTour {
+    gap: 24px;
+  }
+}
+.listTour .sectionFinale__listMatchs {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+@media (max-width: 600px) {
+  .listTour .sectionFinale__listMatchs {
+    gap: 16px;
+  }
+}
+.listTour .sectionFinale__listMatchs__match {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.listTour .sectionFinale__listMatchs__match__joueur {
+  width: 200px;
+  padding: 4px 8px 4px 4px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.listTour .sectionFinale__listMatchs__match__joueur > p {
+  margin: 0;
+  color: #e9b901;
+}
+.listTour .sectionFinale__listMatchs__match__joueur div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.listTour .sectionFinale__listMatchs__match__joueur div img {
+  width: 36px;
+  height: 36px;
+}
+@media (max-width: 600px) {
+  .listTour .sectionFinale__listMatchs__match__joueur div img {
+    width: 24px;
+    height: 24px;
+  }
+}
+.listTour .sectionFinale__listMatchs__match__joueur div p {
+  margin: 0;
+}
+
+.finaliste {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.joueur__bo {
+  margin: 0;
+  background-color: white;
+  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joueur__bo p {
+  text-align: center;
+  margin: 0;
+}
+
+.bo__win {
+  color: #e9b901;
+}/*# sourceMappingURL=style.css.map */

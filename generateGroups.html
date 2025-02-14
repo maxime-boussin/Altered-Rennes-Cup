@@ -1,0 +1,41 @@
+<body>
+    <pre id="json-display"></pre>
+</body>
+<script>
+        const playerAmount = 40;
+        const groupAmount = 8; 
+        const playersPerGroup = 5;
+        const pre = document.getElementById("json-display");
+
+        let groups = [];
+        let result = [];
+        let player = 1;
+
+        for (let i = 0; i < groupAmount; i++) {
+            let group = [];
+            for (let j = 0; j < playersPerGroup; j++) {
+                if (player <= playerAmount) {
+                    group.push(player);
+                }
+                player++;
+            }
+            groups.push(group);
+        }
+
+        pre.textContent += "["
+        groups.forEach(group => {
+            let matches = [];
+            for (let i = 0; i < group.length; i++) {
+                for (let j = i + 1; j < group.length; j++) {
+                    matches.push({
+                        opponents: [group[i],group[j]],
+                        winner: 0,
+                        link: ""
+                    });
+                }
+            }
+            pre.textContent += "\n  {\n    \"players\": "+JSON.stringify(group)+",\n    ";
+            pre.textContent += "\"matches\": [\n      "+matches.map(group => JSON.stringify(group)).join(",\n      ")+"\n    ]\n  },";
+        });
+        pre.textContent = pre.textContent.slice(0, -1)+"\n]";
+</script>

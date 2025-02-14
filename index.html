@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Altered Rennes Cup</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/xuf2usu.css" />
+    <link rel="icon" href="assets/altered-bzh.webp" />
+  </head>
+  <body>
+    <header>
+      <img class="header__img__desktop" src="assets/top.png" />
+      <img class="header__img__mobile" src="assets/top-mobile.png" />
+      <div class="marginApp">
+        <select name="saison" id="saison-select">
+          <option value="3">Saison 3 (fév. 2025)</option>
+          <option value="2" selected>Saison 2 (jan. 2025)</option>
+          <option value="1">Saison 1 (déc. 2024)</option>
+        </select>
+      </div>
+    </header>
+    <nav class="marginApp">
+      <ul>
+        <li id="linkGroups" class="navActiv">Poules</li>
+        <li id="linkTournament">Tournoi</li>
+        <li id="linkLoser">Loser Bracket</li>
+        <li id="linkStats">Statistiques</li>
+      </ul>
+    </nav>
+    <section id="sectionGroups">
+      <div id="listeArticles" class="marginApp"></div>
+    </section>
+
+    <section id="sectionTournament">
+      <div class="listTour marginApp"></div>
+    </section>
+
+    <section id="sectionLoser">
+      <div class="listTour marginApp"></div>
+    </section>
+
+    <section id="sectionStats">
+      <div id="winrate" class="marginApp">
+        <p>Winrate Héros</p>
+        <div class="winrate__list"></div>
+        <p>Winrate Factions</p>
+        <div class="winrateFactions__list"></div>
+      </div>
+    </section>
+
+    <script type="module" src="script.js" defer></script>
+  </body>
+</html>
