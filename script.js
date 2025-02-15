@@ -84,6 +84,9 @@ function buildDeckCategory(cards, category) {
 
 async function displayDecklist(decklistId) {
   decklistBox.style.display = "block";
+  decklistBox.querySelector(".uniques").style.display = "none";
+  decklistBox.querySelector(".others").style.display = "none";
+
   const data = await (getJsonData("https://api.altered.gg/deck_user_lists/" + decklistId));
   if(!data) {
     decklistBox.querySelector(".others").innerHTML = "Decklist introuvable.";
@@ -108,6 +111,8 @@ async function displayDecklist(decklistId) {
     }
   });
   await Promise.all(promises);
+  decklistBox.querySelector(".uniques").style.display = "";
+  decklistBox.querySelector(".others").style.display = "";
 }
 
 
