@@ -89,7 +89,7 @@ async function displayDecklist(decklistId) {
 
   const data = await (getJsonData("https://api.altered.gg/deck_user_lists/" + decklistId));
   if(!data) {
-    decklistBox.querySelector(".others").display = "";
+    decklistBox.querySelector(".others").style.display = "";
     decklistBox.querySelector(".others").innerHTML = "Decklist introuvable.";
     return false;
   }
