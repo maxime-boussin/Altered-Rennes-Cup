@@ -28,12 +28,16 @@ if (window.innerWidth < 600) {
 const seasonSelector = document.getElementById("saison-select");
 const linkGroups = document.getElementById("linkGroups");
 const linkLoser = document.getElementById("linkLoser");
+const decklistBox = document.querySelector("#decklistBox");
 
 seasonSelector.addEventListener("change", function () {
   activeSeason = parseInt(seasonSelector.value);
   fetchData();
   linkLoser.style.display = "";
   linkGroups.style.display = "";
+});
+decklistBox.querySelector("button.close").addEventListener("click", function () {
+  decklistBox.style.display = "none";
 });
 
 async function getJsonData(url) {
@@ -44,6 +48,66 @@ async function getJsonData(url) {
   } catch (err) {
       return false;
   }
+}
+
+function buildDeckCategory(cards, category) {
+  let cardList = [];
+  let uniques = [];
+  cards.deckUserListCard.forEach((card) => {
+    const cardFamily = cardList.find(x => x.family === card.card.familyReference);
+    if(cardFamily){
+      cardFamily.quantity += card.quantity;
+    }
+    else if(card.card.rarity.reference === "UNIQUE"){
+      uniques.push(card.card.imagePath);
+    }
+    else {
+      cardList.push({"family":card.card.familyReference, "quantity":card.quantity, "image": card.card.imagePath})
+    }
+  });
+  uniques.forEach((card) => {
+    const cardBox = document.createElement("div");
+    cardBox.classList.add("cardBox");
+    cardBox.style.backgroundImage = `url(https://www.altered.gg/image-transform/?width=300&format=auto&quality=100&image=${card})`;
+    decklistBox.querySelector(".uniques").appendChild(cardBox);
+  });
+  cardList.forEach((card) => {
+    const cardBox = document.createElement("div");
+    cardBox.classList.add("cardBox");
+    cardBox.style.backgroundImage = `url(https://www.altered.gg/image-transform/?width=200&format=auto&quality=100&image=${card.image})`;
+    const cardQuantity = document.createElement("p");
+    cardQuantity.innerHTML = card.quantity;
+    cardBox.appendChild(cardQuantity);
+    decklistBox.querySelector(".others").appendChild(cardBox);
+  });
+}
+
+async function displayDecklist(decklistId) {
+  decklistBox.style.display = "block";
+  const data = await (getJsonData("https://api.altered.gg/deck_user_lists/" + decklistId));
+  if(!data) {
+    decklistBox.querySelector(".others").innerHTML = "Decklist introuvable.";
+    return false;
+  }
+  buildDeckCategory(data.deckCardsByType.character, "Personnages");
+  buildDeckCategory(data.deckCardsByType.permanent, "Permanents");
+  buildDeckCategory(data.deckCardsByType.spell, "Sorts");
+  const promises = [];
+  decklistBox.querySelectorAll(".cardBox").forEach(card => {
+    const url = getComputedStyle(card).backgroundImage;
+    if (url && url !== "none") {
+      const match = url.match(/url\(["']?(.*?)["']?\)/);
+      if (match) {
+          const img = new Image();
+          img.src = match[1];
+          promises.push(new Promise(resolve => {
+              img.onload = resolve;
+              img.onerror = resolve;
+          }));
+      }
+    }
+  });
+  await Promise.all(promises);
 }
 
 
@@ -208,8 +272,18 @@ const fetchData = async () => {
 
           // <a> joueur decklist
           const joueurDecklistLink = document.createElement("a");
-          joueurDecklistLink.href = "https://www.altered.gg/fr-fr/decks/" + players[j].obj.deck;
-          joueurDecklistLink.setAttribute("target", "_blank");
+          joueurDecklistLink.href = "#";
+          // joueurDecklistLink.href = "https://www.altered.gg/fr-fr/decks/" + players[j].obj.deck;
+          // joueurDecklistLink.setAttribute("target", "_blank");
+          joueurDecklistLink.addEventListener("click", function () {
+            const loader = decklistBox.querySelector(".loaderContainer");
+            decklistBox.querySelector(".others").innerHTML = "";
+            decklistBox.querySelector(".uniques").innerHTML = "";
+            loader.style.display = "";
+            displayDecklist(players[j].obj.deck).then(() => {
+              loader.style.display = "none";
+            });
+          });
           joueurPointsDecklists.appendChild(joueurDecklistLink);
           // <img> icon decklist
           const joueurDecklistImg = document.createElement("img");

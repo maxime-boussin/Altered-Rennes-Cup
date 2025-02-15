@@ -476,3 +476,111 @@ body section {
 .bo__win {
   color: #e9b901;
 }/*# sourceMappingURL=style.css.map */
+
+#decklistBox {
+  z-index: 1;
+  display: block;
+  position: fixed;
+  padding: 5vh 5vw;
+  width: 90vw;
+  height: 90vh;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+
+#decklistBox > div {
+  border-radius: 2vh;
+  height: calc(100% - 70px);
+  width: fit-content;
+  max-width: 1300px;
+  max-height: 800px;
+  padding: 20px;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#decklistBox .uniques {
+  border-radius: 1vh 0 0 1vh;
+}
+#decklistBox .others {
+  border-radius: 0 1vh 1vh 0;
+}
+#decklistBox .uniques, #decklistBox .others {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#decklistBox .cardBox {
+  width: auto;
+  object-fit: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  aspect-ratio: 0.72;
+  display:flex;
+  align-items: end;
+  justify-content: end;
+}
+
+#decklistBox .cardBox p {
+  margin: 12px 8px;
+  background-color: #f4efef;
+  padding: 8px 9px 2px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+#decklistBox .uniques .cardBox {
+  height: 33.33%;
+}
+
+#decklistBox .others .cardBox {
+  height: 25%;
+}
+
+#decklistBox button.close {
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  background: no-repeat center center / 20px 20px;
+  background-image: url(assets/icon-cross.png);
+  background-color: #ffffff;
+  border-radius: 1vh;
+  right:0;
+  top:0;
+}
+
+#decklistBox .loaderContainer {
+  width:600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 5px solid #929292;
+  border-right: 5px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
