@@ -492,7 +492,6 @@ body section {
   border-radius: 2vh;
   height: calc(100% - 70px);
   width: fit-content;
-  max-width: 1300px;
   max-height: 800px;
   padding: 20px;
   background-color: #fff;
@@ -502,21 +501,112 @@ body section {
   justify-content: center;
 }
 
+#decklistBox .blockView {
+  display: flex;
+  height: 100%;
+  background-color: #fff;
+}
+
+#decklistBox .listView {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#decklistBox .listView .previewBox {
+  margin-top: 30px;
+  width: 300px;
+  height: 418px;
+  border-radius: 10px;
+}
+
+#decklistBox .listView .listBox {
+  width: 300px;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  height: 100%;
+}
+
+.divider {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, 
+    transparent,
+    #d4af37 50%,
+    transparent
+  );
+}
+#decklistBox .listView .listBox p {
+  text-transform: uppercase;
+    font-size: 18px;
+    margin: 5px 0 5px 8px;
+}
+
+#decklistBox .listView .cardBox .rarityIcon {
+  width: 33px;
+  height: 13px;
+  background-size: cover;
+  margin-right: 8px;
+}
+.rarityIcon.common {
+  background-image: url(assets/common-icon.png);
+}
+.rarityIcon.rare {
+  background-image: url(assets/rare-icon.png);
+}
+.rarityIcon.unique {
+  background-image: url(assets/unique-icon.png);
+}
+
+#decklistBox .listView .cardBox .quantityIcon {
+  width: 32px;
+  height: 18px;
+  background-size: cover;
+  margin-left: auto;
+}
+.quantityIcon.one {
+  background-image: url(assets/1card-icon.png);
+}
+.quantityIcon.two {
+  background-image: url(assets/2cards-icon.png);
+}
+.quantityIcon.three {
+  background-image: url(assets/3cards-icon.png);
+}
+
+#decklistBox .listView .cardBox .nameBox {
+  width: 190px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#decklistBox .listView .cardBox {
+  width: calc(100% - 20px);
+  display: flex;
+  background-color: #f4efef;
+  border-radius: 8px;
+  padding: 6px;
+  align-items: center;
+  margin-top: 5px;
+}
+
 #decklistBox .uniques {
   border-radius: 1vh 0 0 1vh;
 }
 #decklistBox .others {
   border-radius: 0 1vh 1vh 0;
 }
-#decklistBox .uniques, #decklistBox .others {
+#decklistBox .blockView .uniques, #decklistBox .blockView .others {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   overflow: hidden;
 }
 
-#decklistBox .cardBox {
+#decklistBox .blockView .cardBox {
   width: auto;
   object-fit: cover;
   background-size: contain;
@@ -528,7 +618,7 @@ body section {
   justify-content: end;
 }
 
-#decklistBox .cardBox p {
+#decklistBox .blockView .cardBox p {
   margin: 12px 8px;
   background-color: #f4efef;
   padding: 8px 9px 2px;
@@ -536,15 +626,15 @@ body section {
   font-size: 18px;
 }
 
-#decklistBox .uniques .cardBox {
+#decklistBox .blockView .uniques .cardBox {
   height: 33.33%;
 }
 
-#decklistBox .others .cardBox {
+#decklistBox .blockView .others .cardBox {
   height: 25%;
 }
 
-#decklistBox button.close {
+#decklistBox button.close, #decklistBox button.list {
   height: 20px;
   width: 20px;
   padding: 20px;
@@ -552,11 +642,18 @@ body section {
   position: absolute;
   border: none;
   background: no-repeat center center / 20px 20px;
-  background-image: url(assets/icon-cross.png);
   background-color: #ffffff;
-  border-radius: 1vh;
-  right:0;
   top:0;
+}
+#decklistBox button.list {
+  background-image: url(assets/icon-list.png);
+  border-radius: 0 0 0 1vh;
+  right:40px;
+}
+#decklistBox button.close {
+  background-image: url(assets/icon-cross.png);
+  border-radius: 0 1vh 0 0;
+  right:0;
 }
 
 #decklistBox .loaderContainer {

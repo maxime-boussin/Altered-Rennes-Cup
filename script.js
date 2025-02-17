@@ -38,6 +38,26 @@ seasonSelector.addEventListener("change", function () {
 });
 decklistBox.querySelector("button.close").addEventListener("click", function () {
   decklistBox.style.display = "none";
+  decklistBox.querySelector(".listView").style.display = "";
+  decklistBox.querySelector(".blockView").style.display = "";
+  decklistBox.querySelector("button.list").style.backgroundImage = "";
+});
+
+function toggleDeckListView() {
+  if(decklistBox.querySelector(".blockView").style.display !== "none"){
+    decklistBox.querySelector(".listView").style.display = "flex";
+    decklistBox.querySelector(".blockView").style.display = "none";
+    decklistBox.querySelector("button.list").style.backgroundImage = "url(assets/icon-image.png)";
+  }
+  else {
+    decklistBox.querySelector(".listView").style.display = "none";
+    decklistBox.querySelector(".blockView").style.display = "flex";
+    decklistBox.querySelector("button.list").style.backgroundImage = "";
+  }
+}
+
+decklistBox.querySelector("button.list").addEventListener("click", function () {
+  toggleDeckListView();
 });
 
 async function getJsonData(url) {
@@ -51,34 +71,90 @@ async function getJsonData(url) {
 }
 
 function buildDeckCategory(cards, category) {
+  if(cards.deckUserListCard.length === 0){
+    return false;
+  }
   let cardList = [];
   let uniques = [];
+  const imgLink = "url(https://www.altered.gg/image-transform/?width=300&format=auto&quality=100&image=";
+  
+  const divider = document.createElement("div");
+  divider.classList.add("divider");
+  const title = document.createElement("p");
+  title.innerHTML = category;
+  decklistBox.querySelector(".listBox").appendChild(title);
+  decklistBox.querySelector(".listBox").appendChild(divider);
   cards.deckUserListCard.forEach((card) => {
     const cardFamily = cardList.find(x => x.family === card.card.familyReference);
-    if(cardFamily){
+    if(cardFamily) {
       cardFamily.quantity += card.quantity;
     }
-    else if(card.card.rarity.reference === "UNIQUE"){
-      uniques.push(card.card.imagePath);
+    else if(card.card.rarity.reference === "UNIQUE") {
+      uniques.push({
+        "image": card.card.imagePath, 
+        "name": card.card.name,
+        "mana": [card.card.elements.MAIN_COST,card.card.elements.RECALL_COST]
+      });
     }
     else {
-      cardList.push({"family":card.card.familyReference, "quantity":card.quantity, "image": card.card.imagePath})
+      cardList.push({
+        "family":card.card.familyReference, 
+        "quantity":card.quantity, 
+        "image": card.card.imagePath, 
+        "name": card.card.name,
+        "rarity": card.card.rarity.reference,
+        "mana": [card.card.elements.MAIN_COST,card.card.elements.RECALL_COST]
+      });
     }
   });
+
   uniques.forEach((card) => {
     const cardBox = document.createElement("div");
     cardBox.classList.add("cardBox");
-    cardBox.style.backgroundImage = `url(https://www.altered.gg/image-transform/?width=300&format=auto&quality=100&image=${card})`;
-    decklistBox.querySelector(".uniques").appendChild(cardBox);
+    const listCardBox = cardBox.cloneNode(true);
+    cardBox.style.backgroundImage = imgLink + card.image + ")";
+    listCardBox.innerHTML = card.name;
+    const rarityIcon = document.createElement("span");
+    rarityIcon.classList.add("rarityIcon", "unique");
+    listCardBox.prepend(rarityIcon);
+    decklistBox.querySelector(".blockView .uniques").appendChild(cardBox);
+    decklistBox.querySelector(".listView .listBox").appendChild(listCardBox);
+    listCardBox.addEventListener("mouseenter", () => {
+      decklistBox.querySelector(".listView .previewBox").style.backgroundImage = imgLink + card.image + ")";
+    });
   });
   cardList.forEach((card) => {
     const cardBox = document.createElement("div");
     cardBox.classList.add("cardBox");
-    cardBox.style.backgroundImage = `url(https://www.altered.gg/image-transform/?width=200&format=auto&quality=100&image=${card.image})`;
+    const listCardBox = cardBox.cloneNode(true);
+    cardBox.style.backgroundImage = imgLink + card.image + ")";
+    const nameBox = document.createElement("span");
+    nameBox.classList.add("nameBox");
+    nameBox.innerHTML = card.name;
+    listCardBox.appendChild(nameBox);
+    const rarityIcon = document.createElement("span");
+    rarityIcon.classList.add("rarityIcon");
+    if(card.rarity === "RARE"){
+      rarityIcon.classList.add("rare");
+    }
+    else {
+      rarityIcon.classList.add("common");
+    }
+    listCardBox.prepend(rarityIcon);
+    const quantityIcon = document.createElement("div");
+    const quantity = card.quantity === 1 ? "one" : (card.quantity === 2 ? "two" : "three");
+    quantityIcon.classList.add("quantityIcon", quantity);
+    listCardBox.appendChild(quantityIcon);
+    cardBox.style.backgroundImage = imgLink + card.image + ")";
     const cardQuantity = document.createElement("p");
     cardQuantity.innerHTML = card.quantity;
     cardBox.appendChild(cardQuantity);
-    decklistBox.querySelector(".others").appendChild(cardBox);
+    listCardBox.addEventListener("mouseenter", () => {
+      decklistBox.querySelector(".listView .previewBox").style.backgroundImage = imgLink + card.image + ")";
+    });
+    decklistBox.querySelector(".blockView .others").appendChild(cardBox);
+    decklistBox.querySelector(".listView .listBox").appendChild(listCardBox);
+    // decklistBox.querySelector(".listView .others").appendChild(cardBox.cloneNode(true));
   });
 }
 
@@ -93,6 +169,7 @@ async function displayDecklist(decklistId) {
     decklistBox.querySelector(".others").innerHTML = "Decklist introuvable.";
     return false;
   }
+  decklistBox.querySelector(".listView .previewBox").style.backgroundImage = `url(https://www.altered.gg/image-transform/?width=300&format=auto&quality=100&image=${data.alterator.imagePath})`;
   buildDeckCategory(data.deckCardsByType.character, "Personnages");
   buildDeckCategory(data.deckCardsByType.permanent, "Permanents");
   buildDeckCategory(data.deckCardsByType.spell, "Sorts");
@@ -285,6 +362,8 @@ const fetchData = async () => {
             const loader = decklistBox.querySelector(".loaderContainer");
             decklistBox.querySelector(".others").innerHTML = "";
             decklistBox.querySelector(".uniques").innerHTML = "";
+            decklistBox.querySelector(".listBox").innerHTML = "";
+            decklistBox.querySelector(".previewBox").innerHTML = "";
             loader.style.display = "";
             displayDecklist(players[j].obj.deck).then(() => {
               loader.style.display = "none";
