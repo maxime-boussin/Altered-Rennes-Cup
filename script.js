@@ -313,11 +313,13 @@ const fetchData = async () => {
             "obj" : dataPlayers.find(playerData => playerData.id === player),
           });
         });
+        console.log(dataGroups[i])
         dataGroups[i].matches.forEach(match => {
           if(match.winner > 0) {
             players.find(playerData =>  playerData.id === match.winner).points++;
           }
         });
+        console.log(dataGroups[i])
 
         players.sort(
           (a, b) => parseInt(b.points) - parseInt(a.points)

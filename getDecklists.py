@@ -86,7 +86,7 @@ for i in range(groupAmount):
     end_idx = start_idx + playersPerGroup
     group_players = player_range[start_idx:end_idx]
     rawFile += '    "players": ' + json.dumps(group_players, ensure_ascii=False) + ',\n'
-    rawFile += '    "match": [\n'
+    rawFile += '    "matches": [\n'
     for j in range(playersPerGroup):
         for k in range(j + 1, playersPerGroup):
             match = {

@@ -4,7 +4,7 @@ import json
 import requests
 
 # Lire le contenu du fichier HTML
-with open("fichier.html", "r", encoding="utf-8") as f:
+with open("bga.html", "r", encoding="utf-8") as f:
     html_content = f.read()
 
 # Expression régulière pour capturer l'objet JSON
@@ -18,8 +18,9 @@ for i, match in enumerate(matches, start=1):
     try:
         json_obj = json.loads(cleaned_match)
         deck_id = json_obj["id"]
+        deckName = json_obj["deckName"]
         if not os.path.exists(f"decklists/{deck_id}.json"):
-            deck = {"name": json_obj["deckName"], "alterator": {}, "deckCardsByType": { 
+            deck = {"name": deckName, "alterator": {}, "deckCardsByType": { 
                 "character": {"deckUserListCard": []}, 
                 "spell": {"deckUserListCard": []}, 
                 "permanent": {"deckUserListCard": []}
@@ -57,6 +58,8 @@ for i, match in enumerate(matches, start=1):
         
             with open(f"decklists/{deck_id}.json", "w", encoding="utf-8") as f:
                 f.write(json.dumps(deck, indent=2, ensure_ascii=False))
+            
+            print(f"Réccupération du deck: {deckName}")
     except json.JSONDecodeError as e:
         print(f"Erreur de conversion JSON pour l'objet {i} : {e}")
         
