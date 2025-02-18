@@ -1,0 +1,1077 @@
+{
+    "@context": "/contexts/DeckUserList",
+    "@id": "/deck_user_lists/01JGAJP45YT67ASJWHGN3TDWJB",
+    "@type": "DeckUserList",
+    "name": "Fen_tournoi_rennais",
+    "user": {
+        "@id": "/users/01J68DE2QM175EYKAZ8K4ZBP5R",
+        "@type": "User",
+        "id": "01J68DE2QM175EYKAZ8K4ZBP5R"
+    },
+    "faction": {
+        "@id": "/factions/LY",
+        "@type": "Faction",
+        "reference": "LY",
+        "color": "#cf4171",
+        "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+        "name": "Lyra"
+    },
+    "alterator": {
+        "@id": "/cards/ALT_CORE_B_LY_03_C",
+        "@type": "Card",
+        "cardType": {
+            "@id": "/card_types/01GE7AC9WGQTNRP28T63FH8TZD",
+            "@type": "CardType",
+            "reference": "HERO",
+            "id": "01GE7AC9WGQTNRP28T63FH8TZD",
+            "name": "Héros"
+        },
+        "rarity": {
+            "@id": "/rarities/COMMON",
+            "@type": "Rarity",
+            "reference": "COMMON",
+            "name": "Commun"
+        },
+        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_03/JPG/fr_FR/5d8d3e7f65e17cc5d77657883be95be2.jpg",
+        "inMyCollection": 0,
+        "assets": {
+            "HERO_WIDE": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_03/ALT_CORE_B_LY_03_C_HERO_WIDE.jpg"
+            ],
+            "WEB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_03/ALT_CORE_B_LY_03_C_WEB.jpg"
+            ],
+            "HERO_THUMB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_03/ALT_CORE_B_LY_03_C_HERO_THUMB.jpg"
+            ]
+        },
+        "reference": "ALT_CORE_B_LY_03_C",
+        "id": "01HKAFJNRA3YZ6YZZ4S724E4B9",
+        "familyReference": "LY_03_C",
+        "mainFaction": {
+            "@id": "/factions/LY",
+            "@type": "Faction",
+            "reference": "LY",
+            "color": "#cf4171",
+            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+            "name": "Lyra"
+        },
+        "name": "Fen & Crowbar",
+        "elements": {
+            "MAIN_COST": "0",
+            "RECALL_COST": "0",
+            "PERMANENT": "2",
+            "RESERVE": "2",
+            "MAIN_EFFECT": "Le Matin, piochez une seule carte. Puis, mettez la première carte de votre deck dans votre zone de Mana, au lieu d'une carte de votre main.  À Midi — [Ravitaillez]. (Mettez la première carte de votre deck en Réserve.)  Ignorez mes capacités le premier Jour."
+        },
+        "siblingReference": "LY_03"
+    },
+    "gameType": {
+        "@id": "/game_types/01GDNGQY64G6NRWBZ7PYP0Z3E3",
+        "@type": "GameType",
+        "reference": "CONSTRUCTED",
+        "name": "Construit"
+    },
+    "public": false,
+    "cardQuantity": 39,
+    "deckLegality": {
+        "@type": "DeckLegality",
+        "@id": "/.well-known/genid/9ef81f8b9d7ebd90663d",
+        "resume": {
+            "nbRare": true,
+            "isOwned": true,
+            "nbUnique": true,
+            "isSameFaction": true,
+            "nbFamily": true,
+            "nbHero": true,
+            "nbCards": true,
+            "globalValidity": true,
+            "errorFamily": []
+        }
+    },
+    "deckCardsByType": {
+        "@type": "DeckCard",
+        "@id": "/.well-known/genid/6066d7f876115ed9dfd9",
+        "character": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/ef334a92ddddfc28a298",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/069eb720cd4aee31d995",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_MU_14_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_14/JPG/fr_FR/a7bc67733cd1a9bcc001198fa3e16739.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_14/ALT_CORE_B_MU_14_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_14/ALT_CORE_B_MU_14_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_14/ALT_CORE_B_MU_14_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_MU_14_R2",
+                        "id": "01HKAFJP7DRSAKBMZ5S7GSTNHW",
+                        "familyReference": "MU_14_R2",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Cernunnos",
+                        "elements": {
+                            "MAIN_COST": "#3#",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "4",
+                            "MOUNTAIN_POWER": "4",
+                            "FOREST_POWER": "4"
+                        },
+                        "siblingReference": "MU_14"
+                    },
+                    "id": "01JGAJP46S1FJT6K6AXVM8AT7S"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/1528a4f794484471b2c0",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_LY_04_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_04/JPG/fr_FR/4b582822149e7c7041dc9de98cfbe577.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_COREKS_B_LY_04_C",
+                        "id": "01HN5TXRA48J8F85WZZXFCFXNJ",
+                        "familyReference": "LY_04_C",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Martengale",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "1",
+                            "FOREST_POWER": "1",
+                            "ECHO_EFFECT": "{D} : La prochaine carte que vous jouez ce tour coûte {1} de moins. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "LY_04"
+                    },
+                    "id": "01JGAJP479RR2HWDHDBR6AAANR"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/abdcd804eaee7fd698b9",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_BR_23_U_4209",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/UNIQUE",
+                            "@type": "Rarity",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_23/UNIQUE/JPG/fr_FR/e9e3c36c4485b028c66ec9d06988da98.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_COREKS_B_BR_23_U_4209",
+                        "id": "1CFKY7FVA89PCT8E86BEF1WVQN",
+                        "familyReference": "BR_23_U_4209",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Tomoe Gozen",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "3",
+                            "MOUNTAIN_POWER": "3",
+                            "OCEAN_POWER": "3",
+                            "FOREST_POWER": "4",
+                            "MAIN_EFFECT": "[][]Je ne peux pas être joué si vous avez moins de six Orbes de Mana.  {R} Vous pouvez payer {1}. Si vous le faites : Je gagne 1 boost par carte dans la Réserve de chaque joueur."
+                        },
+                        "siblingReference": "BR_23"
+                    },
+                    "id": "01JGAJP481331XXA9BT5VCP5VD"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/5fa0dc7fb26efc5c0d23",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_LY_07_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_07/JPG/fr_FR/1775b335f115b9e8e92e76857fcd1d7e.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_COREKS_B_LY_07_C",
+                        "id": "01HN5TXRAG0QDR3X25BNQJK2FM",
+                        "familyReference": "LY_07_C",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Hathor",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "3",
+                            "FOREST_POWER": "3",
+                            "ECHO_EFFECT": "{D} : Renvoyez une autre carte de votre Réserve dans votre main. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "LY_07"
+                    },
+                    "id": "01JGAJP48D8469TR8CE9Q5X66S"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/1de82dedd442d5f0c7db",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_MU_09_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_09/JPG/fr_FR/ffd0a34ba6ca0ef6fee48d32a8b10ce2.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_CORE_B_MU_09_R2",
+                        "id": "01HKAFJP6S03V57NMR6QQKH571",
+                        "familyReference": "MU_09_R2",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Kodama",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "3",
+                            "MOUNTAIN_POWER": "3",
+                            "FOREST_POWER": "3",
+                            "MAIN_EFFECT": "{H} Je gagne [[Endormi]]. (Au Crépuscule, ignorez mes statistiques. Au Repos, je ne vais pas en Réserve et je perds Endormi.)",
+                            "ECHO_EFFECT": "#{D} : Un Personnage ciblé de Coût de Main {3} ou moins gagne [[Ancré]].# (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "MU_09"
+                    },
+                    "id": "01JGAK62551G803M6365ATZQV4"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/0093a1312ccd987bf26d",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_LY_10_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_10/JPG/fr_FR/2abc2c899d2fb62f1485544e26220dad.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_COREKS_B_LY_10_C",
+                        "id": "01HN5TXRAWX201G7TZS53R00Z7",
+                        "familyReference": "LY_10_C",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Encrière de l'Ouroboros",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "2",
+                            "MOUNTAIN_POWER": "3",
+                            "FOREST_POWER": "3",
+                            "MAIN_EFFECT": "Lorsque je vais en Réserve depuis la zone d'Expédition — Vous pouvez renvoyer une autre carte de votre Réserve dans votre main."
+                        },
+                        "siblingReference": "LY_10"
+                    },
+                    "id": "01JH0001MC7QRGKHE6R8M4E9E5"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/d9c8faf2347800341fe1",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_LY_13_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_13/JPG/fr_FR/31c44c613d23cd39fb1ee107dbd70160.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_COREKS_B_LY_13_C",
+                        "id": "01HN5TXRBA6KJ1XWPWP07M4PF6",
+                        "familyReference": "LY_13_C",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Anansi",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "MOUNTAIN_POWER": "2",
+                            "FOREST_POWER": "2",
+                            "MAIN_EFFECT": "{J} Je gagne 1 boost[] pour chaque carte dans votre Réserve. (Un boost est un compteur +1/+1/+1. Retirez-le lorsqu'il quitte la zone d'Expédition.)"
+                        },
+                        "siblingReference": "LY_13"
+                    },
+                    "id": "01JGAJP47EC25HZGSQAMB93CDW"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/c68172d8cd6a9ded76f2",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_BR_23_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_23/JPG/fr_FR/d1b63ab4fb7beb3dfcdad38b4f91ae21.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_23/ALT_CORE_B_BR_23_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_23/ALT_CORE_B_BR_23_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_23/ALT_CORE_B_BR_23_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_BR_23_R2",
+                        "id": "01HKAFJNQAQY63VSVCKQX6ZQ0M",
+                        "familyReference": "BR_23_R2",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Tomoe Gozen",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "5",
+                            "MOUNTAIN_POWER": "5",
+                            "FOREST_POWER": "2",
+                            "MAIN_EFFECT": "Je ne peux pas être jouée si vous avez moins de #six Orbes de Mana#."
+                        },
+                        "siblingReference": "BR_23"
+                    },
+                    "id": "01JGAJP48QTZ2ZQ691JZ1FH23K"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/2a136c8a20be58edc9e7",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_MU_16_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_16/JPG/fr_FR/d4375ffda6f25b94314a2ec6f9549610.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_CORE_B_MU_16_R2",
+                        "id": "01HKAFJP7NZPBMVWSM16CVYCXE",
+                        "familyReference": "MU_16_R2",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Aloe Vera",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "4",
+                            "MOUNTAIN_POWER": "2",
+                            "FOREST_POWER": "2",
+                            "MAIN_EFFECT": "#{J} Vous pouvez payer {1} pour que je gagne [[Ancré]].# (Au Repos, je ne vais pas en Réserve et je perds Ancré.)  À Midi — [Ravitaillez]. (Mettez la première carte de votre deck en Réserve.)"
+                        },
+                        "siblingReference": "MU_16"
+                    },
+                    "id": "01JGAJP46N8JXBNYQFP4JSW6YG"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/3233a4f1e9e3b09ca505",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_BR_19_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_19/JPG/fr_FR/70e3fd29a4698ec2fa9ea98396b831b8.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_COREKS_B_BR_19_R2",
+                        "id": "01HN5TXR8KR3DVT8TJQBWBSWJ8",
+                        "familyReference": "BR_19_R2",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Puissant Jinn",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "4",
+                            "FOREST_POWER": "4",
+                            "MAIN_EFFECT": "Lorsque je quitte la zone d'Expédition — Vous pouvez me mettre dans la zone de Mana de mon propriétaire (en tant qu'Orbe de Mana épuisé)."
+                        },
+                        "siblingReference": "BR_19"
+                    },
+                    "id": "01JGAJP48KH92VWXKVJHV5713H"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/185493ddbefebccb96b4",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_LY_18_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_18/JPG/fr_FR/43fc1743100023340253b35dfa16a233.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_COREKS_B_LY_18_C",
+                        "id": "01HN5TXRC0W45Z8V6ZA8N96BVW",
+                        "familyReference": "LY_18_C",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Le Chapelier",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "5",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "5",
+                            "FOREST_POWER": "5",
+                            "ECHO_EFFECT": "{D} : Un Personnage ciblé de Coût de Main {3} ou moins gagne [[Ancré]]. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "LY_18"
+                    },
+                    "id": "01JGAJP489JF0ARXTJ39GRHZFW"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/299593f22a886141a7b1",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_BR_19_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_19/JPG/fr_FR/2ad9a04929c3b173576d7631d36de6c2.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_19/ALT_CORE_B_BR_19_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_19/ALT_CORE_B_BR_19_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_19/ALT_CORE_B_BR_19_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_BR_19_R2",
+                        "id": "01HKAFJNPSVBX1DC1K0QVS55RZ",
+                        "familyReference": "BR_19_R2",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Puissant Djinn",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "4",
+                            "FOREST_POWER": "4",
+                            "MAIN_EFFECT": "Lorsque je quitte la zone d'Expédition — Vous pouvez me mettre dans la zone de Mana de mon propriétaire (en tant qu'Orbe de Mana épuisé)."
+                        },
+                        "siblingReference": "BR_19"
+                    },
+                    "id": "01JGAJP46C2ZMA0EVXJQTXDFGF"
+                }
+            ],
+            "number": 25
+        },
+        "spell": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/efd1503f6af572027301",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/f29841adb6926ad37f1a",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_LY_22_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_22/JPG/fr_FR/8f4ad48503d4222a9f97b8ad0fc00f13.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_COREKS_B_LY_22_C",
+                        "id": "01HN5TXRCNGK27N1S4DJVG9S0S",
+                        "familyReference": "LY_22_C",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Entraînement A Cappella",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "Un Personnage ciblé gagne [[Fugace]]. (S'il devait être envoyé en Réserve, défaussez-le à la place.)"
+                        },
+                        "siblingReference": "LY_22"
+                    },
+                    "id": "01JGAJP47KV6FVZPTVPVSWYNQ2"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/3e8b4995edb2d7d62b14",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_AX_20_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_20/JPG/fr_FR/3cfdf88d947533ad2389811ab0f66291.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_20/ALT_CORE_B_AX_20_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_20/ALT_CORE_B_AX_20_R_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_AX_20_R2",
+                        "id": "01HKAFJNKE344DBPZD3AKDB28P",
+                        "familyReference": "AX_20_R2",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Happé",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "Un Personnage ciblé change d'Expédition. (Il quitte son Expédition et rejoint l'autre Expédition de son contrôleur.)"
+                        },
+                        "siblingReference": "AX_20"
+                    },
+                    "id": "01JGAJSKE5VZNCYT45P0ZST435"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/597e2acac1e3004b1980",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_LY_23_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_23/JPG/fr_FR/861c317817edce90ede446007e153aaf.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_COREKS_B_LY_23_C",
+                        "id": "01HN5TXRD5B3Y5NW22Q1HMCFS3",
+                        "familyReference": "LY_23_C",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Meunier, Tu Dors",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "Un Personnage ciblé gagne [[Endormi]]. (Au Crépuscule, ignorez ses statistiques. Au Repos, il ne va pas en Réserve et il perd Endormi.)",
+                            "ECHO_EFFECT": "{D} : La prochaine carte que vous jouez ce tour coûte {1} de moins. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "LY_23"
+                    },
+                    "id": "01JGAJP47R76Y87EA2P3EGEW9Q"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/849d9436cfa67e6bbcae",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_YZ_22_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_22/JPG/fr_FR/b6e2d3e0bf585290948c77104eb90740.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_COREKS_B_YZ_22_R2",
+                        "id": "01HN5TXRMSR2A45FZSA98JX2P9",
+                        "familyReference": "YZ_22_R2",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Espionnage",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  [Sabotez], puis [Ravitaillez]. (Défaussez jusqu'à une carte d'une Réserve. Mettez la première carte de votre deck en Réserve.)"
+                        },
+                        "siblingReference": "YZ_22"
+                    },
+                    "id": "01JGAJP475N0899PADDMKFNH8G"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/e0bf04a466350e2bff69",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_YZ_22_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_22/JPG/fr_FR/47f9ba9f3eabeba6da35a03af70aedda.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_22/WEB_9ff49616f03e665a4476d8cf4d09bd00",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_22/WEB_d18a92617f6cf2d507c17600acb46f9c"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_YZ_22_R2",
+                        "id": "01HKAFJP4M1XCHN6QKEPK5ZX46",
+                        "familyReference": "YZ_22_R2",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Espionnage",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  [Sabotez], puis [Ravitaillez]. (Défaussez jusqu'à une carte d'une Réserve. Mettez la première carte de votre deck en Réserve.)"
+                        },
+                        "siblingReference": "YZ_22"
+                    },
+                    "id": "01JGAJP46Y1ZSSSPM0S4HQ607V"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/8d2003ffd0130aa95b16",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_LY_24_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_24/JPG/fr_FR/f06452bd5a16b8210d3be28fa92ab9c5.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_COREKS_B_LY_24_C",
+                        "id": "01HN5TXRDAZS49XY6FM34RTSQ6",
+                        "familyReference": "LY_24_C",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Cocon d'Étoffe",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Choisissez l'un :  • Défaussez un Personnage [[Fugace]], [[Ancré]] ou [[Endormi]] ciblé.  • Défaussez un Permanent ciblé."
+                        },
+                        "siblingReference": "LY_24"
+                    },
+                    "id": "01JGAJP47WX7KEZH8D3FP2JN42"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/f845c1939b4cc63ca1d3",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_LY_26_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_26/JPG/fr_FR/75b4e068539033bfc1cd7d6af06be8e2.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_COREKS_B_LY_26_C",
+                        "id": "01HN5TXRDK28Q27ZADZCMQT6D9",
+                        "familyReference": "LY_26_C",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "name": "Prison de Peinture",
+                        "elements": {
+                            "MAIN_COST": "5",
+                            "RECALL_COST": "5",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Vous pouvez défausser une carte de votre Réserve pour réduire mon coût de {2}.  Renvoyez un Personnage ou Permanent ciblé sur le dessus du deck de son propriétaire."
+                        },
+                        "siblingReference": "LY_26"
+                    },
+                    "id": "01JGZYGD8NKYBXJARYMC1A0VST"
+                }
+            ],
+            "number": 14
+        },
+        "permanent": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/392bfaa9c552b91bd5f0",
+            "deckUserListCard": [],
+            "number": 0
+        }
+    },
+    "cardsByRarityData": [
+        [
+            "Commun",
+            23
+        ],
+        [
+            "Rare",
+            15
+        ],
+        [
+            "Unique",
+            1
+        ]
+    ],
+    "updatedAt": "2025-01-07T09:02:13+00:00",
+    "id": "01JGAJP45YT67ASJWHGN3TDWJB",
+    "description": "",
+    "legal": true,
+    "cardIndexes": {
+        "/cards/ALT_CORE_B_BR_19_R2": 2,
+        "/cards/ALT_CORE_B_MU_16_R2": 2,
+        "/cards/ALT_CORE_B_MU_14_R2": 3,
+        "/cards/ALT_CORE_B_YZ_22_R2": 1,
+        "/cards/ALT_COREKS_B_YZ_22_R2": 1,
+        "/cards/ALT_COREKS_B_LY_04_C": 3,
+        "/cards/ALT_COREKS_B_LY_13_C": 3,
+        "/cards/ALT_COREKS_B_LY_22_C": 3,
+        "/cards/ALT_COREKS_B_LY_23_C": 3,
+        "/cards/ALT_COREKS_B_LY_24_C": 2,
+        "/cards/ALT_COREKS_B_BR_23_U_4209": 1,
+        "/cards/ALT_COREKS_B_LY_18_C": 2,
+        "/cards/ALT_COREKS_B_LY_07_C": 3,
+        "/cards/ALT_COREKS_B_BR_19_R2": 1,
+        "/cards/ALT_CORE_B_BR_23_R2": 1,
+        "/cards/ALT_CORE_B_AX_20_R2": 2,
+        "/cards/ALT_CORE_B_MU_09_R2": 2,
+        "/cards/ALT_COREKS_B_LY_26_C": 2,
+        "/cards/ALT_COREKS_B_LY_10_C": 2
+    }
+}

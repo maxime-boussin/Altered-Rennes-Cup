@@ -526,6 +526,11 @@ body section {
   scrollbar-gutter: stable;
   height: 100%;
 }
+@media (max-width: 600px) {
+  #decklistBox .listView .listBox {
+    height: calc(100% - 450px);
+  }
+}
 
 .divider {
   height: 4px;

@@ -70,6 +70,24 @@ async function getJsonData(url) {
   }
 }
 
+async function getDecklistData(decklistId) {
+  const localUrl = `data/saison-${activeSeason}/decklists/${decklistId}.json`;
+
+  try {
+    const localResponse = await fetch(localUrl);
+
+    if (localResponse.ok) {
+      const localData = await localResponse.json();
+      return localData;
+    }
+  } catch (error) {
+    console.log(`Le fichier local n'a pas pu être trouvé : ${error}`);
+  }
+
+  const data = await getJsonData(`https://api.altered.gg/deck_user_lists/${decklistId}`);
+  return data;
+}
+
 function buildDeckCategory(cards, category) {
   if(cards.deckUserListCard.length === 0){
     return false;
@@ -92,8 +110,7 @@ function buildDeckCategory(cards, category) {
     else if(card.card.rarity.reference === "UNIQUE") {
       uniques.push({
         "image": card.card.imagePath, 
-        "name": card.card.name,
-        "mana": [card.card.elements.MAIN_COST,card.card.elements.RECALL_COST]
+        "name": card.card.name
       });
     }
     else {
@@ -102,8 +119,7 @@ function buildDeckCategory(cards, category) {
         "quantity":card.quantity, 
         "image": card.card.imagePath, 
         "name": card.card.name,
-        "rarity": card.card.rarity.reference,
-        "mana": [card.card.elements.MAIN_COST,card.card.elements.RECALL_COST]
+        "rarity": card.card.rarity.reference
       });
     }
   });
@@ -163,7 +179,8 @@ async function displayDecklist(decklistId) {
   decklistBox.querySelector(".uniques").style.display = "none";
   decklistBox.querySelector(".others").style.display = "none";
 
-  const data = await (getJsonData("https://api.altered.gg/deck_user_lists/" + decklistId));
+  const data = await getDecklistData(decklistId);
+
   if(!data) {
     decklistBox.querySelector(".others").style.display = "";
     decklistBox.querySelector(".others").innerHTML = "Decklist introuvable.";
