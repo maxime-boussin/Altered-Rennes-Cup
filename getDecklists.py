@@ -8,7 +8,7 @@ playerAmount = 40
 groupAmount = 8
 playersPerGroup = 5
 topCut = 16
-season = 2
+season = 3
 
 players_file = f"data/saison-{season}/players.json"
 decklists_dir = f"data/saison-{season}/decklists"

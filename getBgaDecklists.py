@@ -3,6 +3,12 @@ import os
 import json
 import requests
 
+def remove_spaces(text):
+    # Regex pour capturer le texte entre guillemets et tout le reste
+    matches = re.findall(r'("[^"]*")|(\S+)', text, re.S)
+    
+    # Reconstruire la chaîne en supprimant les espaces et les sauts de ligne en dehors des guillemets
+    return ''.join(m[0] if m[0] else m[1] for m in matches)
 # Lire le contenu du fichier HTML
 with open("bga.html", "r", encoding="utf-8") as f:
     html_content = f.read()
@@ -11,7 +17,8 @@ with open("bga.html", "r", encoding="utf-8") as f:
 pattern = r'{"deckName":.*?"synchro"'
 
 # Trouver toutes les occurrences
-matches = re.findall(pattern, html_content)
+matches = re.findall(pattern, remove_spaces(html_content))
+print(f"{len(matches)} matches")
 # Afficher les résultats
 for i, match in enumerate(matches, start=1):
     cleaned_match = match[:-13]

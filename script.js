@@ -221,10 +221,10 @@ const fetchData = async () => {
     const loserData = await (getJsonData(path + "loser.json"));
     const tornamentData = await (getJsonData(path + "tournament.json"));
     const heroes = await (getJsonData("data/heroes.json"));
-    if(!loserData){
+    if(!loserData) {
       linkLoser.style.display = "none";
     }
-    if(!dataGroups){
+    if(!dataGroups) {
       linkGroups.style.display = "none";
       selectSection(document.getElementById("linkTournament"));
     }
