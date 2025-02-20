@@ -564,6 +564,22 @@ const fetchData = async () => {
           sectionFinale__listMatchs__match.classList.add(
             "sectionFinale__listMatchs__match"
           );
+          const replayBox = document.createElement("div");
+          replayBox.classList.add("replay");
+          if (matches[j].link === "x") {
+            replayBox.innerHTML = "Jouée en physique";
+            sectionFinale__listMatchs__match.appendChild(replayBox);
+          }
+          else if (matches[j].link.length > 0) {
+            replayBox.innerHTML = "Voir le replay";
+            const bgaIcon = document.createElement("span");
+            bgaIcon.classList.add("bga-icon");
+            replayBox.appendChild(bgaIcon);
+            replayBox.addEventListener("click", function () {
+              window.open("https://boardgamearena.com/table?table=" + matches[j].link, "_blank");
+            });
+            sectionFinale__listMatchs__match.appendChild(replayBox);
+          }
           sectionFinale__listMatchs.appendChild(
             sectionFinale__listMatchs__match
           );

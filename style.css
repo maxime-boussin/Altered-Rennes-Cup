@@ -229,23 +229,28 @@ body section {
   align-items: center;
   gap: 4px;
 }
-.poules__container__matchs__versus:hover .replay {
+.poules__container__matchs__versus:hover .replay, 
+.sectionFinale__listMatchs__match:hover .replay {
   display: flex;
   cursor: pointer;
 }
 .replay {
   display: none;
-  width: calc(100% - 8px);
-  height: calc(100% - 8px);
+  width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
   z-index: 1;
-  border: 4px #f4efef solid;
   position: absolute;
   background: #ffffff;
   color: #000000;
   border-radius: 5px;
   white-space: nowrap;
+}
+.poules__container__matchs__versus .replay {
+  border: 4px #f4efef solid;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
 }
 .bga-icon {
   width: 36px;
@@ -443,6 +448,7 @@ body section {
 }
 .listTour .sectionFinale__listMatchs__match {
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 4px;
 }
