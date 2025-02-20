@@ -407,6 +407,22 @@ const fetchData = async () => {
           poulesContainerMatchsVersus.classList.add(
             "poules__container__matchs__versus"
           );
+          const replayBox = document.createElement("div");
+          replayBox.classList.add("replay");
+          if (matches[m].link === "x") {
+            replayBox.innerHTML = "Joué en physique";
+            poulesContainerMatchsVersus.appendChild(replayBox);
+          }
+          else if (matches[m].link.length > 0) {
+            replayBox.innerHTML = "Voir le replay";
+            const bgaIcon = document.createElement("span");
+            bgaIcon.classList.add("bga-icon");
+            replayBox.appendChild(bgaIcon);
+            replayBox.addEventListener("click", function () {
+              window.open("https://boardgamearena.com/table?table=" + matches[m].link, "_blank");
+            });
+            poulesContainerMatchsVersus.appendChild(replayBox);
+          }
           poulesContainerMatchs.appendChild(poulesContainerMatchsVersus);
 
           // JOUEUR 1 //

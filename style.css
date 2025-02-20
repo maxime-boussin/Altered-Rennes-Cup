@@ -223,10 +223,36 @@ body section {
 }
 .poules__container__matchs__versus {
   width: 100%;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 4px;
+}
+.poules__container__matchs__versus:hover .replay {
+  display: flex;
+  cursor: pointer;
+}
+.replay {
+  display: none;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border: 4px #f4efef solid;
+  position: absolute;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+.bga-icon {
+  width: 36px;
+  height: 36px;
+  background-image: url(assets/bga.png);
+  background-size: cover;
+  margin-left: 10px;
 }
 .poules__container__matchs__versus .vs {
   font-weight: 400;
