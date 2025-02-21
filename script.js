@@ -185,7 +185,18 @@ function buildDeckCategory(cards, category) {
     // decklistBox.querySelector(".listView .others").appendChild(cardBox.cloneNode(true));
   });
 }
-
+function decklistButton(deck) {
+  console.log(deck);
+  const loader = decklistBox.querySelector(".loaderContainer");
+  decklistBox.querySelector(".others").innerHTML = "";
+  decklistBox.querySelector(".uniques").innerHTML = "";
+  decklistBox.querySelector(".listBox").innerHTML = "";
+  decklistBox.querySelector(".previewBox").innerHTML = "";
+  loader.style.display = "";
+  displayDecklist(deck).then(() => {
+    loader.style.display = "none";
+  });
+}
 async function displayDecklist(decklistId) {
   decklistBox.style.display = "block";
   decklistBox.querySelector(".uniques").style.display = "none";
@@ -327,14 +338,12 @@ const fetchData = async () => {
             obj: dataPlayers.find((playerData) => playerData.id === player),
           });
         });
-        console.log(dataGroups[i]);
         dataGroups[i].matches.forEach((match) => {
           if (match.winner > 0) {
             players.find((playerData) => playerData.id === match.winner)
               .points++;
           }
         });
-        console.log(dataGroups[i]);
 
         players.sort((a, b) => parseInt(b.points) - parseInt(a.points));
 
@@ -390,20 +399,10 @@ const fetchData = async () => {
 
           // <a> joueur decklist
           const joueurDecklistLink = document.createElement("a");
-          joueurDecklistLink.href = "#";
+          joueurDecklistLink.href = "#"; 
           // joueurDecklistLink.href = "https://www.altered.gg/fr-fr/decks/" + players[j].obj.deck;
           // joueurDecklistLink.setAttribute("target", "_blank");
-          joueurDecklistLink.addEventListener("click", function () {
-            const loader = decklistBox.querySelector(".loaderContainer");
-            decklistBox.querySelector(".others").innerHTML = "";
-            decklistBox.querySelector(".uniques").innerHTML = "";
-            decklistBox.querySelector(".listBox").innerHTML = "";
-            decklistBox.querySelector(".previewBox").innerHTML = "";
-            loader.style.display = "";
-            displayDecklist(players[j].obj.deck).then(() => {
-              loader.style.display = "none";
-            });
-          });
+          joueurDecklistLink.addEventListener("click", () => decklistButton(players[j].obj.deck));
           joueurPointsDecklists.appendChild(joueurDecklistLink);
           // <img> icon decklist
           const joueurDecklistImg = document.createElement("img");
@@ -584,7 +583,6 @@ const fetchData = async () => {
           sectionFinale__listMatchs__match.classList.add(
             "sectionFinale__listMatchs__match"
           );
-          /*
           const replayBox = document.createElement("div");
           replayBox.classList.add("replay");
           if (matches[j].link === "x") {
@@ -603,7 +601,6 @@ const fetchData = async () => {
             });
             sectionFinale__listMatchs__match.appendChild(replayBox);
           }
-            */
           sectionFinale__listMatchs.appendChild(
             sectionFinale__listMatchs__match
           );
@@ -638,19 +635,7 @@ const fetchData = async () => {
           const joueurDecklistLink1 = document.createElement("a");
           joueurDecklistLink1.href = "#";
           joueurDecklistLink1.classList.add("linkDecklist")
-          // joueurDecklistLink1.href = "https://www.altered.gg/fr-fr/decks/" + players[j].obj.deck;
-          // joueurDecklistLink1.setAttribute("target", "_blank");
-          joueurDecklistLink1.addEventListener("click", function () {
-            const loader = decklistBox.querySelector(".loaderContainer");
-            decklistBox.querySelector(".others").innerHTML = "";
-            decklistBox.querySelector(".uniques").innerHTML = "";
-            decklistBox.querySelector(".listBox").innerHTML = "";
-            decklistBox.querySelector(".previewBox").innerHTML = "";
-            loader.style.display = "";
-            displayDecklist(players[j].obj.deck).then(() => {
-              loader.style.display = "none";
-            });
-          });
+          joueurDecklistLink1.addEventListener("click", () => decklistButton(matches[j].opponents[0].deck));
           joueur__imgNom1.appendChild(joueurDecklistLink1);
           // <img> icon decklist
           const joueurDecklistImg1 = document.createElement("img");
@@ -690,17 +675,7 @@ const fetchData = async () => {
           joueurDecklistLink2.classList.add("linkDecklist")
           // joueurDecklistLink2.href = "https://www.altered.gg/fr-fr/decks/" + players[j].obj.deck;
           // joueurDecklistLink2.setAttribute("target", "_blank");
-          joueurDecklistLink2.addEventListener("click", function () {
-            const loader = decklistBox.querySelector(".loaderContainer");
-            decklistBox.querySelector(".others").innerHTML = "";
-            decklistBox.querySelector(".uniques").innerHTML = "";
-            decklistBox.querySelector(".listBox").innerHTML = "";
-            decklistBox.querySelector(".previewBox").innerHTML = "";
-            loader.style.display = "";
-            displayDecklist(players[j].obj.deck).then(() => {
-              loader.style.display = "none";
-            });
-          });
+          joueurDecklistLink2.addEventListener("click", () => decklistButton(matches[j].opponents[1].deck));
           joueur__imgNom2.appendChild(joueurDecklistLink2);
           // <img> icon decklist
           const joueurDecklistImg2 = document.createElement("img");
