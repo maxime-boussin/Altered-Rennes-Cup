@@ -14,7 +14,7 @@ async function initChart(rawData) {
   data = google.visualization.arrayToDataTable(rawData);
   options = {
       is3D: true,
-      width: window.innerWidth - 120,
+      width: Math.min(window.innerWidth - 120, 800),
       height: 500,
       pieSliceText: 'none',
       colors: [
@@ -217,7 +217,6 @@ function buildDeckCategory(cards, category) {
   });
 }
 function decklistButton(deck) {
-  console.log(deck);
   const loader = decklistBox.querySelector(".loaderContainer");
   decklistBox.querySelector(".others").innerHTML = "";
   decklistBox.querySelector(".uniques").innerHTML = "";
