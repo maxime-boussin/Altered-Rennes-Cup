@@ -425,8 +425,7 @@ body section {
   display: flex;
   gap: 4px;
 }
-
-.winrateFactions__list {
+.winrateFactions__list, .charts__list {
   background: white;
   border-radius: 8px;
   padding: 24px;
@@ -434,15 +433,21 @@ body section {
   flex-wrap: wrap;
   gap: 24px;
 }
-.winrateFactions__list > p {
+.winrateFactions__list {
+  margin-bottom: 36px;
+}
+.winrateFactions__list > p, .charts__list > p {
   margin-top: 24px;
 }
 @media (max-width: 600px) {
-  .winrateFactions__list {
+  .winrateFactions__list, .charts__list {
     border-radius: 0px;
     padding: 16px;
     gap: 16px;
   }
+}
+.charts__list {
+  justify-content: center;
 }
 
 /* SECTION FINALE */
