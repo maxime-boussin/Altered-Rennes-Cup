@@ -1,4 +1,35 @@
-let activeSeason = 2;
+let chart, data, options, activeSeason = 2;
+
+google.charts.load("current", {packages:["corechart"]});
+
+function loadGoogleCharts() {
+  return new Promise(resolve => {
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(() => { resolve() });
+  });
+}
+
+async function initChart(rawData) {
+  await loadGoogleCharts();
+  data = google.visualization.arrayToDataTable(rawData);
+  options = {
+      is3D: true,
+      width: window.innerWidth - 120,
+      height: 500,
+      pieSliceText: 'none',
+      colors: [
+        '#b1491e','#973a18','#7d2b12',
+        '#cd002c','#bc0023','#ab001a',
+        '#e9337e','#e12965','#d91f4c',
+        '#268746','#1e6c38','#16512a',
+        '#0181b1','#016797','#014d7d',
+        '#9a55b0','#7b4495','#5c337a',
+      ]
+  };
+
+  chart = new google.visualization.PieChart(document.getElementById('heroesAmountChart'));
+  chart.draw(data, options);
+}
 
 document.querySelectorAll("li").forEach((lii) => {
   lii.addEventListener("click", function () {
@@ -313,13 +344,11 @@ const fetchData = async () => {
             "obj" : dataPlayers.find(playerData => playerData.id === player),
           });
         });
-        console.log(dataGroups[i])
         dataGroups[i].matches.forEach(match => {
           if(match.winner > 0) {
             players.find(playerData =>  playerData.id === match.winner).points++;
           }
         });
-        console.log(dataGroups[i])
 
         players.sort(
           (a, b) => parseInt(b.points) - parseInt(a.points)
@@ -743,6 +772,8 @@ const fetchData = async () => {
         faction.winrate = (faction.matches > 0 ? Math.round((faction.victories / faction.matches) * 100) : -1);
         faction.top = (hero.top < faction.top ? hero.top : faction.top || hero.top);
       });
+      let heroesAmount = [['Héros', 'Nombre']];
+      heroesAmount.push(...heroes.map((h, index) => [h.name, h.amount]));
       heroes.sort((a, b) => {
         if (a.top !== b.top) return a.top - b.top;
         return b.winrate - a.winrate;
@@ -941,6 +972,7 @@ const fetchData = async () => {
         nbWinImg.src = "assets/icon-win.png";
         nbWin.appendChild(nbWinImg);
       }
+      initChart(heroesAmount);
     }
 
     generatorWinrateHeros(heroes, tornamentData, dataGroups, loserData, dataPlayers);
