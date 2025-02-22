@@ -603,6 +603,7 @@ const fetchData = async () => {
             ],
             winner: match.winner,
             link: match.link,
+            score: match.score
           });
         });
         // <div> liste match
@@ -690,6 +691,12 @@ const fetchData = async () => {
             joueurDecklistImg1.src = "assets/icon-decklist.png";
             joueurDecklistLink1.appendChild(joueurDecklistImg1);
           }
+          if(matches[j].score) {
+            const scoreBox1 = document.createElement("div");
+            scoreBox1.classList.add("scoreBox");
+            scoreBox1.innerHTML = matches[j].score[0];
+            sectionFinale__listMatchs__match__joueur1.appendChild(scoreBox1);
+          }
 
           // JOUEUR 2 //
           // <div> joueur2
@@ -732,17 +739,29 @@ const fetchData = async () => {
             joueurDecklistImg2.src = "assets/icon-decklist.png";
             joueurDecklistLink2.appendChild(joueurDecklistImg2);
           }
+          if(matches[j].score) {
+            const scoreBox2 = document.createElement("div");
+            scoreBox2.classList.add("scoreBox");
+            scoreBox2.innerHTML = matches[j].score[1];
+            sectionFinale__listMatchs__match__joueur2.appendChild(scoreBox2);
+          }
 
           // WIN
           if (matches[j].winner === matches[j].opponents[0].id) {
-            sectionFinale__listMatchs__match__joueur1.style.boxShadow = "0px 0px 0px 2px #E9B901 inset"
+            sectionFinale__listMatchs__match__joueur1.style.boxShadow = "0px 0px 0px 2px #E9B901 inset";
             joueur2Nom.style.opacity = "0.5";
             joueur2Img.style.opacity = "0.5";
+            if(matches[j].score) {
+              sectionFinale__listMatchs__match__joueur1.querySelector(".scoreBox").style.backgroundColor = "#E9B901";
+            }
           } 
           else if (matches[j].winner === matches[j].opponents[1].id) {
-            sectionFinale__listMatchs__match__joueur2.style.boxShadow = "0px 0px 0px 2px #E9B901 inset"
+            sectionFinale__listMatchs__match__joueur2.style.boxShadow = "0px 0px 0px 2px #E9B901 inset";
             joueur__imgNom1.style.opacity = "0.5";
             joueur1Img.style.opacity = "0.5";
+            if(matches[j].score) {
+              sectionFinale__listMatchs__match__joueur2.querySelector(".scoreBox").style.backgroundColor = "#E9B901";
+            }
           }
 
           /*          
