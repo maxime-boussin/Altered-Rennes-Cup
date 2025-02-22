@@ -190,10 +190,13 @@ function buildDeckCategory(cards, category) {
     decklistBox.querySelector(".blockView .uniques").appendChild(cardBox);
     decklistBox.querySelector(".listView .listBox").appendChild(listCardBox);
     listCardBox.addEventListener("mouseenter", () => {
-      decklistBox.querySelector(".listView .previewBox").style.backgroundImage =
-        imgLink + card.image + ")";
+      decklistBox.querySelector(".listView .previewBox").style.backgroundImage = imgLink + card.image + ")";
     });
   });
+  if (uniques.length > 0) {
+    let w = (window.innerHeight*0.9-70)/3*0.72;
+    decklistBox.querySelector(".blockView .uniques").style.width = w+"px";
+  }
   cardList.forEach((card) => {
     const cardBox = document.createElement("div");
     cardBox.classList.add("cardBox");
@@ -212,8 +215,7 @@ function buildDeckCategory(cards, category) {
     }
     listCardBox.prepend(rarityIcon);
     const quantityIcon = document.createElement("div");
-    const quantity =
-      card.quantity === 1 ? "one" : card.quantity === 2 ? "two" : "three";
+    const quantity = card.quantity === 1 ? "one" : card.quantity === 2 ? "two" : "three";
     quantityIcon.classList.add("quantityIcon", quantity);
     listCardBox.appendChild(quantityIcon);
     cardBox.style.backgroundImage = imgLink + card.image + ")";
@@ -221,8 +223,7 @@ function buildDeckCategory(cards, category) {
     cardQuantity.innerHTML = card.quantity;
     cardBox.appendChild(cardQuantity);
     listCardBox.addEventListener("mouseenter", () => {
-      decklistBox.querySelector(".listView .previewBox").style.backgroundImage =
-        imgLink + card.image + ")";
+      decklistBox.querySelector(".listView .previewBox").style.backgroundImage = imgLink + card.image + ")";
     });
     decklistBox.querySelector(".blockView .others").appendChild(cardBox);
     decklistBox.querySelector(".listView .listBox").appendChild(listCardBox);
@@ -275,6 +276,9 @@ async function displayDecklist(decklistId) {
       }
     }
   });
+  let columnAmount = Math.floor(decklistBox.querySelectorAll(".others .cardBox").length / 4)+1;
+  let w = columnAmount*((window.innerHeight*0.9-70)/4*0.72);
+  decklistBox.querySelector(".blockView .others").style.width = w+"px";
   await Promise.all(promises);
   decklistBox.querySelector(".uniques").style.display = "";
   decklistBox.querySelector(".others").style.display = "";

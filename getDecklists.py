@@ -117,7 +117,7 @@ tournament_structure = []
 while topCut > 1:
     topCut = topCut / 2
     tournament_structure.append(
-        [{"opponents": [0, 0], "winner": 0, "link": ""} for _ in range(int(topCut))]
+        [{"opponents": [0, 0], "winner": 0, "link": "", "diff": 0} for _ in range(int(topCut))]
         )
 rawFile = '[\n'
 for i, phase in enumerate(tournament_structure):
