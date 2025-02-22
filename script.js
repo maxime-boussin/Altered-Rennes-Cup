@@ -162,13 +162,19 @@ function buildDeckCategory(cards, category) {
         name: card.card.name,
       });
     } else {
-      cardList.push({
+      let obj = {
         family: card.card.familyReference,
         quantity: card.quantity,
         image: card.card.imagePath,
         name: card.card.name,
         rarity: card.card.rarity.reference,
-      });
+      };
+      if(obj.rarity === "RARE"){
+        cardList.unshift(obj);
+      }
+      else {
+        cardList.push(obj);
+      }
     }
   });
 
