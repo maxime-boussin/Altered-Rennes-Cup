@@ -1,4 +1,4 @@
-let chart, data, options, activeSeason = 2;
+let chart, data, options, activeSeason = 3;
 
 google.charts.load("current", {packages:["corechart"]});
 
@@ -24,7 +24,14 @@ async function initChart(rawData) {
         '#268746','#1e6c38','#16512a',
         '#0181b1','#016797','#014d7d',
         '#9a55b0','#7b4495','#5c337a',
-      ]
+      ],
+      legend: {
+        position: 'right',
+        maxLines: 2,
+        textStyle: {
+            fontSize: 12
+        }
+    }
   };
 
   chart = new google.visualization.PieChart(document.getElementById('heroesAmountChart'));
@@ -579,10 +586,10 @@ const fetchData = async () => {
             opponents: [
               dataPlayers.find(
                 (playerData) => playerData.id === match.opponents[0]
-              ),
+              ) ?? {"id": -1, "name": "", "hero": "none", "bg": "x", "deck": ""},
               dataPlayers.find(
                 (playerData) => playerData.id === match.opponents[1]
-              ),
+              ) ??  {"id": -1, "name": "", "hero": "none", "bg": "x", "deck": ""},
             ],
             winner: match.winner,
             link: match.link,
@@ -661,16 +668,18 @@ const fetchData = async () => {
           joueur__imgNom1.appendChild(joueur1Nom);
 
           // <a> joueur decklist
-          const joueurDecklistLink1 = document.createElement("a");
-          joueurDecklistLink1.href = "#";
-          joueurDecklistLink1.classList.add("linkDecklist")
-          joueurDecklistLink1.addEventListener("click", () => decklistButton(matches[j].opponents[0].deck));
-          joueur__imgNom1.appendChild(joueurDecklistLink1);
-          // <img> icon decklist
-          const joueurDecklistImg1 = document.createElement("img");
-          joueurDecklistImg1.classList.add("iconDecklist")
-          joueurDecklistImg1.src = "assets/icon-decklist.png";
-          joueurDecklistLink1.appendChild(joueurDecklistImg1);
+          if(matches[j].opponents[0].deck !== ""){
+            const joueurDecklistLink1 = document.createElement("a");
+            joueurDecklistLink1.href = "#";
+            joueurDecklistLink1.classList.add("linkDecklist")
+            joueurDecklistLink1.addEventListener("click", () => decklistButton(matches[j].opponents[0].deck));
+            joueur__imgNom1.appendChild(joueurDecklistLink1);
+            // <img> icon decklist
+            const joueurDecklistImg1 = document.createElement("img");
+            joueurDecklistImg1.classList.add("iconDecklist")
+            joueurDecklistImg1.src = "assets/icon-decklist.png";
+            joueurDecklistLink1.appendChild(joueurDecklistImg1);
+          }
 
           // JOUEUR 2 //
           // <div> joueur2
@@ -699,18 +708,20 @@ const fetchData = async () => {
           joueur__imgNom2.appendChild(joueur2Nom);
 
           // <a> joueur decklist
-          const joueurDecklistLink2 = document.createElement("a");
-          joueurDecklistLink2.href = "#";
-          joueurDecklistLink2.classList.add("linkDecklist")
-          // joueurDecklistLink2.href = "https://www.altered.gg/fr-fr/decks/" + players[j].obj.deck;
-          // joueurDecklistLink2.setAttribute("target", "_blank");
-          joueurDecklistLink2.addEventListener("click", () => decklistButton(matches[j].opponents[1].deck));
-          joueur__imgNom2.appendChild(joueurDecklistLink2);
-          // <img> icon decklist
-          const joueurDecklistImg2 = document.createElement("img");
-          joueurDecklistImg2.classList.add("iconDecklist")
-          joueurDecklistImg2.src = "assets/icon-decklist.png";
-          joueurDecklistLink2.appendChild(joueurDecklistImg2);
+          if(matches[j].opponents[1].deck !== "") {
+            const joueurDecklistLink2 = document.createElement("a");
+            joueurDecklistLink2.href = "#";
+            joueurDecklistLink2.classList.add("linkDecklist")
+            // joueurDecklistLink2.href = "https://www.altered.gg/fr-fr/decks/" + players[j].obj.deck;
+            // joueurDecklistLink2.setAttribute("target", "_blank");
+            joueurDecklistLink2.addEventListener("click", () => decklistButton(matches[j].opponents[1].deck));
+            joueur__imgNom2.appendChild(joueurDecklistLink2);
+            // <img> icon decklist
+            const joueurDecklistImg2 = document.createElement("img");
+            joueurDecklistImg2.classList.add("iconDecklist")
+            joueurDecklistImg2.src = "assets/icon-decklist.png";
+            joueurDecklistLink2.appendChild(joueurDecklistImg2);
+          }
 
           // WIN
           if (matches[j].winner === matches[j].opponents[0].id) {
@@ -780,9 +791,11 @@ const fetchData = async () => {
                 (playerData) => playerData.id === playerId
               );
               const hero = heroes.find((hero) => hero.name === player.hero);
-              hero.matches = (hero.matches || 0) + 1;
-              if (playerId === match.winner) {
-                hero.victories = (hero.victories || 0) + 1;
+              if (match.winner > 0) {
+                hero.matches = (hero.matches || 0) + 1;
+                if (playerId === match.winner) {
+                  hero.victories = (hero.victories || 0) + 1;
+                }
               }
             });
           });
@@ -793,21 +806,25 @@ const fetchData = async () => {
       tornamentData.forEach((round) => {
         round.forEach((match) => {
           match.opponents.forEach((playerId) => {
-            let player = dataPlayers.find(
-              (playerData) => playerData.id === playerId
-            );
-            const hero = heroes.find((hero) => hero.name === player.hero);
-            hero.matches = (hero.matches || 0) + 1;
-            if (playerId === match.winner) {
-              hero.victories = (hero.victories || 0) + 1;
+            if (playerId > 0){
+              let player = dataPlayers.find(
+                (playerData) => playerData.id === playerId
+              );
+              const hero = heroes.find((hero) => hero.name === player.hero);
+              if (match.winner > 0) {
+                hero.matches = (hero.matches || 0) + 1;
+                if (playerId === match.winner) {
+                  hero.victories = (hero.victories || 0) + 1;
+                }
+                hero.top = Math.pow(
+                  2,
+                  tornamentData.length -
+                    (i === tornamentData.length - 1 && playerId === match.winner
+                      ? tornamentData.length
+                      : i)
+                );
+              }
             }
-            hero.top = Math.pow(
-              2,
-              tornamentData.length -
-                (i === tornamentData.length - 1 && playerId === match.winner
-                  ? tornamentData.length
-                  : i)
-            );
           });
         });
         i++;
@@ -818,15 +835,19 @@ const fetchData = async () => {
         loserData.forEach((round) => {
           round.forEach((match) => {
             match.opponents.forEach((playerId) => {
-              let player = dataPlayers.find(
-                (playerData) => playerData.id === playerId
-              );
-              const hero = heroes.find((hero) => hero.name === player.hero);
-              hero.matches = (hero.matches || 0) + 1;
-              if (playerId === match.winner) {
-                hero.victories = (hero.victories || 0) + 1;
-              } else if (i < hero.top) {
-                hero.top = i;
+              if (playerId > 0){
+                let player = dataPlayers.find(
+                  (playerData) => playerData.id === playerId
+                );
+                const hero = heroes.find((hero) => hero.name === player.hero);
+                if (match.winner > 0) {
+                  hero.matches = (hero.matches || 0) + 1;
+                  if (playerId === match.winner) {
+                    hero.victories = (hero.victories || 0) + 1;
+                  } else if (i < hero.top) {
+                    hero.top = i;
+                  }
+                }
               }
             });
           });
@@ -859,7 +880,7 @@ const fetchData = async () => {
           hero.top < faction.top ? hero.top : faction.top || hero.top;
       });
       let heroesAmount = [['Héros', 'Nombre']];
-      heroesAmount.push(...heroes.map((h, index) => [h.name, h.amount]));
+      heroesAmount.push(...heroes.map((h, i) => [h.name, h.amount]));
       heroes.sort((a, b) => {
         if (a.top !== b.top) return a.top - b.top;
         return b.winrate - a.winrate;
@@ -885,9 +906,7 @@ const fetchData = async () => {
         // <div> card top
         const cardTop = document.createElement("div");
         cardTop.classList.add("winrate__list__card__top");
-        cardTop.style.backgroundImage = `url(assets/heros/large/${hero.faction.charAt(
-          0
-        )}-${hero.name}.png)`;
+        cardTop.style.backgroundImage = `url(assets/heros/large/${hero.faction.charAt(0)}-${hero.name}.png)`;
         card.appendChild(cardTop);
         // <div> grade
         const cardTopGrade = document.createElement("div");
@@ -992,6 +1011,8 @@ const fetchData = async () => {
           cardTopGrade.style.backgroundColor = "#e9b901";
         } else if (faction.top === 2) {
           cardTopGrade.style.backgroundColor = "#C0C0C0";
+        } else if (faction.top === 1000) {
+          cardTopGrade.style.opacity = 0;
         }
 
         // <p> top 1

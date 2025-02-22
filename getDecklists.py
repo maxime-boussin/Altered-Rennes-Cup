@@ -4,11 +4,12 @@ import requests
 import time
 import random
 
-playerAmount = 40
+playerAmount = 46
 groupAmount = 8
-playersPerGroup = 5
+playersPerGroup = 6
 topCut = 16
 season = 3
+playerMissing = groupAmount * playersPerGroup - playerAmount
 
 players_file = f"data/saison-{season}/players.json"
 decklists_dir = f"data/saison-{season}/decklists"
@@ -37,7 +38,7 @@ def fetch_and_save_deck(deck_id):
     # Vérifier si le fichier existe déjà
     if os.path.exists(file_path):
         print(f"⏩ Déjà existant : {file_path}, passage...")
-        return
+        return False
 
     # Faire la requête API
     url = f"{api_base_url}{deck_id}"
@@ -52,13 +53,14 @@ def fetch_and_save_deck(deck_id):
         print(f"✅ Sauvegardée")
     else:
         print(f"❌ Erreur {response.status_code}")
+    return True
 
 # 🔄 Télécharger les decks pour chaque joueur
 for player in players:
     if "deck" in player:
         print(f"Decklist de {player.get('name')}")
-        fetch_and_save_deck(player["deck"])
-        time.sleep(0.5)  # ⏳ Pause pour éviter de spammer l'API
+        if fetch_and_save_deck(player["deck"]):
+            time.sleep(0.5)  # ⏳ Pause pour éviter de spammer l'API
     else:
         print(f"⚠️ Pas de deck trouvé pour {player.get('name', 'Joueur inconnu')}")
 
@@ -81,23 +83,27 @@ with open(players_file, "w", encoding="utf-8") as f:
 
 rawFile = '[\n  {\n'
 player_range = list(range(1, playerAmount + 1))
+start_idx = 0
 for i in range(groupAmount):
-    start_idx = i * playersPerGroup
-    end_idx = start_idx + playersPerGroup
+    playersInGroup = playersPerGroup
+    if groupAmount - i - playerMissing <= 0:
+        playersInGroup -= 1
+    end_idx = start_idx + playersInGroup
     group_players = player_range[start_idx:end_idx]
     rawFile += '    "players": ' + json.dumps(group_players, ensure_ascii=False) + ',\n'
     rawFile += '    "matches": [\n'
-    for j in range(playersPerGroup):
-        for k in range(j + 1, playersPerGroup):
+    for j in range(playersInGroup):
+        for k in range(j + 1, playersInGroup):
             match = {
                 "opponents": [group_players[j], group_players[k]],
                 "winner": 0,
                 "link": ""
             }
             rawFile += '      ' + json.dumps(match, ensure_ascii=False)
-            if not (j == playersPerGroup - 2 and k == playersPerGroup - 1):
+            if not (j == playersInGroup - 2 and k == playersInGroup - 1):
                 rawFile += ','
             rawFile += '\n'
+        start_idx += 1
     rawFile += '    ]\n  }'
     if i != groupAmount - 1:
         rawFile += ',\n  {'
