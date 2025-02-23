@@ -697,6 +697,9 @@ const fetchData = async () => {
             scoreBox1.classList.add("scoreBox");
             scoreBox1.innerHTML = matches[j].score[0];
             sectionFinale__listMatchs__match__joueur1.appendChild(scoreBox1);
+            if(matches[j].opponents[0].name === "") {
+              scoreBox1.style.color = "#f4efef";
+            }
           }
 
           // JOUEUR 2 //
@@ -745,6 +748,9 @@ const fetchData = async () => {
             scoreBox2.classList.add("scoreBox");
             scoreBox2.innerHTML = matches[j].score[1];
             sectionFinale__listMatchs__match__joueur2.appendChild(scoreBox2);
+            if(matches[j].opponents[1].name === "") {
+              scoreBox2.style.color = "#f4efef";
+            }
           }
 
           // WIN
