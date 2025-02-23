@@ -582,6 +582,11 @@ body section {
   display: flex;
   height: 100%;
   background-color: #fff;
+  @media (max-width: 600px){
+    width: 100%;
+    flex-direction: column;
+    overflow-x: auto;
+  }
 }
 
 #decklistBox .listView {
@@ -682,7 +687,10 @@ body section {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
-  overflow: hidden;
+  @media (max-width: 600px){
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 #decklistBox .blockView .cardBox {
@@ -707,10 +715,18 @@ body section {
 
 #decklistBox .blockView .uniques .cardBox {
   height: 33.33%;
+  @media (max-width: 600px){
+    height: unset;
+    width: 33.33%;
+  }
 }
 
 #decklistBox .blockView .others .cardBox {
   height: 25%;
+  @media (max-width: 600px){
+    height: unset;
+    width: 25%;
+  }
 }
 
 #decklistBox button.close,

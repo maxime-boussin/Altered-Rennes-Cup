@@ -193,12 +193,12 @@ function buildDeckCategory(cards, category) {
       decklistBox.querySelector(".listView .previewBox").style.backgroundImage = imgLink + card.image + ")";
     });
   });
-  if (uniques.length > 0) {
+  if (uniques.length > 0 && window.innerWidth > 600) {
     let w = (window.innerHeight*0.9-70)/3*0.72;
     decklistBox.querySelector(".blockView .uniques").style.width = w+"px";
   }
-  else {
-    decklistBox.querySelector(".blockView .uniques").style.width = ""
+  else if(category === "Personnages") {
+      decklistBox.querySelector(".blockView .uniques").style.width = ""
   }
   cardList.forEach((card) => {
     const cardBox = document.createElement("div");
@@ -281,7 +281,9 @@ async function displayDecklist(decklistId) {
   });
   let columnAmount = Math.floor((decklistBox.querySelectorAll(".others .cardBox").length - 1) / 4)+1;
   let w = columnAmount*((window.innerHeight*0.9-70)/4*0.72);
-  decklistBox.querySelector(".blockView .others").style.width = w+"px";
+  if(window.innerWidth > 600) {
+    decklistBox.querySelector(".blockView .others").style.width = w+"px";
+  }
   await Promise.all(promises);
   decklistBox.querySelector(".uniques").style.display = "";
   decklistBox.querySelector(".others").style.display = "";
