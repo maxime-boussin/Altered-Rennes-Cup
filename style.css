@@ -105,11 +105,6 @@ body section {
   height: 100%;
 }
 
-#sectionCartes {
-  background: greenyellow;
-  display: none;
-}
-
 #sectionGroups #listeArticles {
   display: flex;
   flex-wrap: wrap;
@@ -169,7 +164,7 @@ body section {
 }
 .poules__container__classement__legendes div {
   display: flex;
-  gap: 36px;
+  gap: 24px;
 }
 .poules__container__classement__legendes p {
   font-weight: 400;
@@ -204,7 +199,7 @@ body section {
 }
 .poules__container__classement__listJoueurs__joueur .joueur__ptsDecklist {
   display: flex;
-  gap: 64px;
+  gap: 69px;
 }
 .poules__container__classement__listJoueurs__joueur .joueur__ptsDecklist p {
   width: 14px;
@@ -763,10 +758,10 @@ body section {
 .sectionInfo__titre {
   margin: 0 0 12px 0;
   font-size: 18px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     margin-left: 16px;
   }
-} 
+}
 
 .sectionInfo__details__bloc__content {
   font-weight: 400;
@@ -774,7 +769,7 @@ body section {
   padding: 24px;
   border-radius: 8px;
   margin: 0;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     border-radius: 0px;
   }
 }
@@ -795,7 +790,7 @@ body section {
   border-radius: 8px;
   padding: 24px;
   gap: 24px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     border-radius: 0px;
   }
 }
@@ -803,8 +798,111 @@ body section {
 .sectionInfo__ban__bloc__listeCartes img {
   width: 10%;
   border-radius: 8px;
-  flex:auto;
-  @media (max-width: 600px){
+  flex: auto;
+  @media (max-width: 600px) {
     width: 40%;
   }
+}
+
+/* ONGLETS NAV STATISTIQUES */
+
+#navStats {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 24px;
+  @media (max-width: 600px){
+    margin-bottom: 16px;
+
+  }
+  button {
+    font-size: 14px;
+    border-radius: 8px;
+    border: 0;
+    padding: 4px 8px;
+    background-color: #f4efef;
+    cursor: pointer;
+  }
+  .btnActif {
+    background-color: white;
+  }
+}
+
+
+
+/* CARTES JOUÉES */
+
+#cartesJouees, #cartesUniques {
+  display: none;
+}
+
+.cartesJouees__bloc {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  @media (max-width: 600px){
+    border-radius: 0px;
+    padding: 16px;
+  }
+}
+
+.cartesJouees__bloc__details {
+  display: flex;
+  gap: 8px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  align-items: center;
+  div {
+    display: flex;
+    img {
+      margin-right: -6px
+    }
+  }
+  p {
+    margin: 0 0 0 8px
+  }
+}
+
+.cartesJouees__bloc__details__logoFaction {
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
+}
+
+.cartesJouees__bloc__details__nbheros {
+  background-color: #f4efef;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0px 2px 0px 8px;
+  border-radius: 20px;  
+}
+
+.cartesJouees__bloc__details__nbheros p {
+  margin: 0;
+}
+
+.cartesJouees__bloc__details__nbheros img {
+  width: 32px;
+}
+
+.cartesJouees__bloc__listeCarte, .cartesUniques__bloc__listeCarte {
+  display: flex;
+  gap: 16px;
+  overflow-x: scroll;
+}
+
+.cartesJouees__bloc__listeCarte div img, .cartesUniques__bloc__listeCarte div img {
+  width: 200px;
+  border-radius: 8px;
+  @media (max-width: 600px){
+    width: 150px;
+  }
+}
+
+.cartesJouees__bloc__listeCarte div p, .cartesUniques__bloc__listeCarte div p {
+  margin: 4px 0 0 0;
+  font-size: 24px;
+  text-align: center;
 }
