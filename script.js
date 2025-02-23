@@ -1072,7 +1072,7 @@ const fetchData = async () => {
         cartesJoueesBloc.appendChild(cartesJoueesBlocDetails);
         // <img> cartesJouees details logo faction
         const logoFaction = document.createElement("img");
-        logoFaction.src = `assets/icon-factions/icon-faction-${[i + 1]}.png`; //TODO : RENDRE DYNAMIQUE
+        logoFaction.src = `assets/icon-factions/icon-faction-${[i + 1]}.png`;
         logoFaction.classList.add("cartesJouees__bloc__details__logoFaction");
         cartesJoueesBlocDetails.appendChild(logoFaction);
         for (let j = 0; j < 3; j++) {
