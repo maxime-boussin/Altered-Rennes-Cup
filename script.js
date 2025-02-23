@@ -1058,7 +1058,6 @@ const fetchData = async () => {
       }
 
 
-
       /* CARTES JOUÉES */
 
       for (let i = 0; i < factions.length; i++) {
@@ -1111,14 +1110,17 @@ const fetchData = async () => {
           const pCarte = document.createElement("p");
           pCarte.innerText = "100%"; //TODO : RENDRE DYNAMIQUE
           /*
-            nombre de joueur dans la faction x 3 = total max d'exemplaire d'une carte 
-            nb d'exemplaire de la carte j x 100 / total max d'exemplaire d'une carte 
-            pCarte.innerText = ;
+            const nbExemplaireTotal = Récupérer le nb de joueur qui joue un héros de la faction f
+            nbExemplaireTotal *= 3
+            nbExemplaireCarte = Récupérer le nb d'exemplaire de la carte
+            nbExemplaireCarte *= 100 / nbExemplaireTotal
+            pCarte.innerText = nbExemplaireCarte;
           */
           blocCarte.appendChild(pCarte);
         }
       }
 
+      // CARTES UNIQUES
       for (let j = 0; j < 15; j++) {
         const containerCartesUniques = document.querySelector(".cartesUniques__bloc__listeCarte");
         const blocCarte = document.createElement("div");
