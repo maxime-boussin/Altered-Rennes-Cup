@@ -294,6 +294,7 @@ const fetchData = async () => {
     const loserData = await getJsonData(path + "loser.json");
     const tornamentData = await getJsonData(path + "tournament.json");
     const heroes = await getJsonData("data/heroes.json");
+    const info = await getJsonData("data/info.json");
     if (!loserData) {
       linkLoser.style.display = "none";
     }
@@ -1117,6 +1118,25 @@ const fetchData = async () => {
       loserData,
       dataPlayers
     );
+
+    function getInfo(info) {
+      const seasonInfo = info.find((x) => x.season === activeSeason);
+      document.querySelector("#context").innerHTML = seasonInfo.context;
+      document.querySelector("#format").innerHTML = seasonInfo.format;
+      document.querySelector("#banCards").innerHTML = "";
+      seasonInfo.bans.forEach((url) => {
+        let img = document.createElement("img");
+        img.src = url;
+        document.querySelector("#banCards").appendChild(img);
+      });
+      document.querySelector("#errata").innerHTML = "";
+      seasonInfo.errata.forEach((url) => {
+        let img = document.createElement("img");
+        img.src = url;
+        document.querySelector("#errata").appendChild(img);
+      });
+    }
+    getInfo(info);
   } catch (error) {
     console.error("Erreur lors de la récupération des données :", error);
   }

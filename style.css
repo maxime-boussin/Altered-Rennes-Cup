@@ -798,12 +798,10 @@ body section {
   }
 }
 
-#sectionInfo__ban {
-  margin-top: 36px;
-}
 
 .sectionInfo__ban__bloc {
   width: 100%;
+  margin-top: 36px;
 }
 
 .sectionInfo__ban__bloc__listeCartes {
@@ -820,7 +818,7 @@ body section {
 }
 
 .sectionInfo__ban__bloc__listeCartes img {
-  width: 10%;
+  max-width: 14%;
   border-radius: 8px;
   flex:auto;
   @media (max-width: 600px){
