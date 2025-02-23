@@ -529,6 +529,9 @@ body section {
   border-radius: 8px;
   margin-left: 215px;
   font-size: 18px;
+  @media (max-width: 600px) {
+    height:28px;
+  }
 }
 
 .joueur__bo {
