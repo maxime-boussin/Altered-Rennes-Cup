@@ -565,6 +565,7 @@ body section {
   border-radius: 2vh;
   height: calc(100% - 70px);
   width: fit-content;
+  max-width: calc(90vw - 40px);
   max-height: 800px;
   padding: 20px;
   background-color: #fff;
@@ -572,6 +573,9 @@ body section {
   position: relative;
   display: flex;
   justify-content: center;
+  @media (max-width: 600px){
+    overflow-x: scroll;
+  }
 }
 
 #decklistBox .blockView {
