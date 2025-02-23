@@ -197,6 +197,9 @@ function buildDeckCategory(cards, category) {
     let w = (window.innerHeight*0.9-70)/3*0.72;
     decklistBox.querySelector(".blockView .uniques").style.width = w+"px";
   }
+  else {
+    decklistBox.querySelector(".blockView .uniques").style.width = ""
+  }
   cardList.forEach((card) => {
     const cardBox = document.createElement("div");
     cardBox.classList.add("cardBox");
@@ -276,7 +279,7 @@ async function displayDecklist(decklistId) {
       }
     }
   });
-  let columnAmount = Math.floor(decklistBox.querySelectorAll(".others .cardBox").length / 4)+1;
+  let columnAmount = Math.floor((decklistBox.querySelectorAll(".others .cardBox").length - 1) / 4)+1;
   let w = columnAmount*((window.innerHeight*0.9-70)/4*0.72);
   decklistBox.querySelector(".blockView .others").style.width = w+"px";
   await Promise.all(promises);
