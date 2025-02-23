@@ -11,7 +11,7 @@ function selectSection(item) {
   item.classList.add("navActiv");
   document.querySelectorAll("body section").forEach((sec) => {
     if (sec.id.slice(7) === item.id.slice(4)) {
-      sec.style.display = "flex";
+      sec.style.display = "block";
     } else {
       sec.style.display = "none";
     }
@@ -23,11 +23,13 @@ const listeArticles = document.getElementById("listeArticles");
 const blocWinrate = document.getElementById("winrate");
 const sectionInfoBan = document.getElementById("sectionInfo__ban");
 const sectionInfoDetails = document.getElementById("sectionInfo__details");
+const cartesJouees = document.getElementById("cartesJouees");
 if (window.innerWidth < 600) {
   listeArticles.classList.remove("marginApp");
   listeArticles.classList.remove("marginApp");
   sectionInfoBan.classList.remove("marginApp");
   sectionInfoDetails.classList.remove("marginApp");
+  cartesJouees.classList.remove("marginApp");
 }
 
 const seasonSelector = document.getElementById("saison-select");
@@ -302,7 +304,7 @@ const fetchData = async () => {
         poulesContainerClassementLegendes.appendChild(legendePointsDescklistes);
         // <p> légendes points
         const legendePoints = document.createElement("p");
-        legendePoints.innerText = "Points";
+        legendePoints.innerText = "Victoires";
         legendePointsDescklistes.appendChild(legendePoints);
         // <p> légendes decklist
         const legendeDecklist = document.createElement("p");
@@ -499,11 +501,13 @@ const fetchData = async () => {
 
           // WIN
           if (matches[m].winner === matches[m].opponents[0].id) {
-            poulesContainerMatchsVersusJoueur1.style.boxShadow = "0px 0px 0px 2px #E9B901 inset"
+            poulesContainerMatchsVersusJoueur1.style.boxShadow =
+              "0px 0px 0px 2px #E9B901 inset";
             versusJoueur2Nom.style.opacity = "0.5";
             versusJoueur2Img.style.opacity = "0.5";
           } else if (matches[m].winner === matches[m].opponents[1].id) {
-            poulesContainerMatchsVersusJoueur2.style.boxShadow = "0px 0px 0px 2px #E9B901 inset"
+            poulesContainerMatchsVersusJoueur2.style.boxShadow =
+              "0px 0px 0px 2px #E9B901 inset";
             versusJoueur1Nom.style.opacity = "0.5";
             versusJoueur1Img.style.opacity = "0.5";
           }
@@ -637,7 +641,7 @@ const fetchData = async () => {
           // <a> joueur decklist
           const joueurDecklistLink1 = document.createElement("a");
           joueurDecklistLink1.href = "#";
-          joueurDecklistLink1.classList.add("linkDecklist")
+          joueurDecklistLink1.classList.add("linkDecklist");
           // joueurDecklistLink1.href = "https://www.altered.gg/fr-fr/decks/" + players[j].obj.deck;
           // joueurDecklistLink1.setAttribute("target", "_blank");
           joueurDecklistLink1.addEventListener("click", function () {
@@ -654,7 +658,7 @@ const fetchData = async () => {
           joueur__imgNom1.appendChild(joueurDecklistLink1);
           // <img> icon decklist
           const joueurDecklistImg1 = document.createElement("img");
-          joueurDecklistImg1.classList.add("iconDecklist")
+          joueurDecklistImg1.classList.add("iconDecklist");
           joueurDecklistImg1.src = "assets/icon-decklist.png";
           joueurDecklistLink1.appendChild(joueurDecklistImg1);
 
@@ -687,7 +691,7 @@ const fetchData = async () => {
           // <a> joueur decklist
           const joueurDecklistLink2 = document.createElement("a");
           joueurDecklistLink2.href = "#";
-          joueurDecklistLink2.classList.add("linkDecklist")
+          joueurDecklistLink2.classList.add("linkDecklist");
           // joueurDecklistLink2.href = "https://www.altered.gg/fr-fr/decks/" + players[j].obj.deck;
           // joueurDecklistLink2.setAttribute("target", "_blank");
           joueurDecklistLink2.addEventListener("click", function () {
@@ -704,18 +708,19 @@ const fetchData = async () => {
           joueur__imgNom2.appendChild(joueurDecklistLink2);
           // <img> icon decklist
           const joueurDecklistImg2 = document.createElement("img");
-          joueurDecklistImg2.classList.add("iconDecklist")
+          joueurDecklistImg2.classList.add("iconDecklist");
           joueurDecklistImg2.src = "assets/icon-decklist.png";
           joueurDecklistLink2.appendChild(joueurDecklistImg2);
 
           // WIN
           if (matches[j].winner === matches[j].opponents[0].id) {
-            sectionFinale__listMatchs__match__joueur1.style.boxShadow = "0px 0px 0px 2px #E9B901 inset"
-            joueur2Nom.style.opacity = "0.5";
+            sectionFinale__listMatchs__match__joueur1.style.boxShadow =
+              "0px 0px 0px 2px #E9B901 inset";
+            joueur__imgNom2.style.opacity = "0.5";
             joueur2Img.style.opacity = "0.5";
-          } 
-          else if (matches[j].winner === matches[j].opponents[1].id) {
-            sectionFinale__listMatchs__match__joueur2.style.boxShadow = "0px 0px 0px 2px #E9B901 inset"
+          } else if (matches[j].winner === matches[j].opponents[1].id) {
+            sectionFinale__listMatchs__match__joueur2.style.boxShadow =
+              "0px 0px 0px 2px #E9B901 inset";
             joueur__imgNom1.style.opacity = "0.5";
             joueur1Img.style.opacity = "0.5";
           }
@@ -1051,7 +1056,112 @@ const fetchData = async () => {
         nbWinImg.src = "assets/icon-win.png";
         nbWin.appendChild(nbWinImg);
       }
+
+
+
+      /* CARTES JOUÉES */
+
+      for (let i = 0; i < factions.length; i++) {
+        const containerCartesJouees = document.querySelector("#cartesJouees");
+        // <article> cartesJouees bloc
+        const cartesJoueesBloc = document.createElement("article");
+        cartesJoueesBloc.classList.add("cartesJouees__bloc");
+        containerCartesJouees.appendChild(cartesJoueesBloc);
+        // <div> cartesJouees details
+        const cartesJoueesBlocDetails = document.createElement("div");
+        cartesJoueesBlocDetails.classList.add("cartesJouees__bloc__details");
+        cartesJoueesBloc.appendChild(cartesJoueesBlocDetails);
+        // <img> cartesJouees details logo faction
+        const logoFaction = document.createElement("img");
+        logoFaction.src = `assets/icon-factions/icon-faction-${[i + 1]}.png`; //TODO : RENDRE DYNAMIQUE
+        logoFaction.classList.add("cartesJouees__bloc__details__logoFaction");
+        cartesJoueesBlocDetails.appendChild(logoFaction);
+        for (let j = 0; j < 3; j++) {
+          // <div> cartesJouees nb héros
+          const cartesJoueesBlocDetailsNbHeros = document.createElement("div");
+          cartesJoueesBlocDetailsNbHeros.classList.add(
+            "cartesJouees__bloc__details__nbheros"
+          );
+          cartesJoueesBlocDetails.appendChild(cartesJoueesBlocDetailsNbHeros);
+          // <p> cartesJouees nb héros
+          const cartesJoueesBlocDetailsNbHerosP = document.createElement("p");
+          cartesJoueesBlocDetailsNbHerosP.innerText = "8x"; //TODO : RENDRE DYNAMIQUE
+          cartesJoueesBlocDetailsNbHeros.appendChild(
+            cartesJoueesBlocDetailsNbHerosP
+          );
+          // <img> cartesJouees nb héros
+          const logoHeros = document.createElement("img");
+          logoHeros.src = "assets/heros/small/a-sierra.png"; //TODO : RENDRE DYNAMIQUE
+          cartesJoueesBlocDetailsNbHeros.appendChild(logoHeros);
+        }
+        // <div> liste cartesJouees
+        const cartesJoueesBlocListeCarte = document.createElement("div");
+        cartesJoueesBlocListeCarte.classList.add(
+          "cartesJouees__bloc__listeCarte"
+        );
+        cartesJoueesBloc.appendChild(cartesJoueesBlocListeCarte);
+        for (let j = 0; j < 15; j++) {
+          const blocCarte = document.createElement("div");
+          cartesJoueesBlocListeCarte.appendChild(blocCarte);
+          // <img> carte
+          const imgCarte = document.createElement("img");
+          imgCarte.src = "assets/ban/meduse-U.webp"; //TODO : RENDRE DYNAMIQUE
+          blocCarte.appendChild(imgCarte);
+          // <p> %
+          const pCarte = document.createElement("p");
+          pCarte.innerText = "100%"; //TODO : RENDRE DYNAMIQUE
+          /*
+            nombre de joueur dans la faction x 3 = total max d'exemplaire d'une carte 
+            nb d'exemplaire de la carte j x 100 / total max d'exemplaire d'une carte 
+            pCarte.innerText = ;
+          */
+          blocCarte.appendChild(pCarte);
+        }
+      }
+
+      for (let j = 0; j < 15; j++) {
+        const containerCartesUniques = document.querySelector(".cartesUniques__bloc__listeCarte");
+        const blocCarte = document.createElement("div");
+        containerCartesUniques.appendChild(blocCarte);
+        // <img> carte
+        const imgCarte = document.createElement("img");
+        imgCarte.src = "assets/ban/meduse-U.webp"; //TODO : RENDRE DYNAMIQUE
+        blocCarte.appendChild(imgCarte);
+        // <p> %
+        const pCarte = document.createElement("p");
+        pCarte.innerText = "5"; //TODO : RENDRE DYNAMIQUE
+        blocCarte.appendChild(pCarte);
+      }
+
     }
+
+    // Switch onglet STATS
+    const navStats = document.querySelector("#navStats");
+    const navStatsButtons = navStats.children;
+    const btnWinrate = document.querySelector(".btnWinrate");
+    const btnCartesJouees = document.querySelector(".btnCartes");
+    for (let i = 0; i < navStatsButtons.length; i++) {
+      navStatsButtons[i].addEventListener("click", function () {
+        navStatsButtons[0].classList.remove("btnActif");
+        navStatsButtons[1].classList.remove("btnActif");
+        navStatsButtons[i].classList.add("btnActif");
+      });
+    }
+    // Onglet winrate
+    const containerWinrate = document.querySelector("#winrate");
+    const containerCartesJouees = document.querySelector("#cartesJouees");
+    const containerCartesUniques = document.querySelector("#cartesUniques");
+    btnWinrate.addEventListener("click", function () {
+      containerWinrate.style.display = "block";
+      containerCartesJouees.style.display = "none";
+      containerCartesUniques.style.display = "none";
+    });
+    // Onglet cartes jouées
+    btnCartesJouees.addEventListener("click", function () {
+      containerWinrate.style.display = "none";
+      containerCartesJouees.style.display = "block";
+      containerCartesUniques.style.display = "block";
+    });
 
     generatorWinrateHeros(
       heroes,
