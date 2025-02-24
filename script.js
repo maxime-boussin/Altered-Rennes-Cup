@@ -1151,7 +1151,7 @@ const fetchData = async () => {
           let name = card.card.familyReference.replace(/_(\d+)$/, '');
           let quantity = card.quantity;
           let type = name.charAt(name.length-1) === "U" ? "uniques" : "others";
-          let hasWeb = type === "uniques" && card.card.assets && card.card.assets.WEB && card.card.assets.WEB.length === 3;
+          let hasWeb = type === "uniques" && card.card.assets?.WEB?.length === 3;
           let img = hasWeb ? card.card.assets.WEB[2] : card.card.imagePath;
           let globalType = type === "uniques" ? globalUniques : globalCards[faction];
           let cardSlot = globalType.find(x => x.ref === name);
