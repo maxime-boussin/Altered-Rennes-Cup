@@ -1141,7 +1141,6 @@ const fetchData = async () => {
       });
       for (const player of playerData) {
         let data = await getDecklistData(player.deck);
-        console.log(data)
         let faction = data.faction.reference.charAt(0).toLowerCase();
         data = [
           ...data.deckCardsByType.character.deckUserListCard,
@@ -1156,9 +1155,6 @@ const fetchData = async () => {
           let img = hasWeb ? card.card.assets.WEB[2] : card.card.imagePath;
           let globalType = type === "uniques" ? globalUniques : globalCards[faction];
           let cardSlot = globalType.find(x => x.ref === name);
-          if(type === "uniques") {
-            console.log({ "ref": name, "quantity": quantity, "img": img })
-          }
           if(cardSlot) {
             cardSlot.quantity += quantity;
           }
