@@ -399,7 +399,12 @@ const fetchData = async () => {
           }
         });
 
-        players.sort((a, b) => parseInt(b.points) - parseInt(a.points));
+        players.sort((a, b) => {
+          if (b.points !== a.points) {
+              return b.points - a.points;
+          }
+          return b.diff - a.diff;
+        });
 
         let matches = [];
         dataGroups[i].matches.forEach((match) => {
@@ -430,6 +435,9 @@ const fetchData = async () => {
           // <div> container img nom
           const imgNom = document.createElement("div");
           poulesContainerClassementListJoueursJoueur.appendChild(imgNom);
+          if(players[j].obj.diff){
+            poulesContainerClassementListJoueursJoueur.style.boxShadow = "0px 0px 0px 2px #E9B901 inset";
+          }
           // <img> joueur img héros
           const joueurHeros = document.createElement("img");
           let hero = players[j].obj.hero.toLowerCase();
