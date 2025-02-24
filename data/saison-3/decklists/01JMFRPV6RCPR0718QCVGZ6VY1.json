@@ -1,0 +1,1036 @@
+{
+    "@context": "/contexts/DeckUserList",
+    "@id": "/deck_user_lists/01JMFRPV6RCPR0718QCVGZ6VY1",
+    "@type": "DeckUserList",
+    "name": "Altered Rennes Cup 3",
+    "user": {
+        "@id": "/users/01J83201PQ27E1MDBDFBV9DMV1",
+        "@type": "User",
+        "id": "01J83201PQ27E1MDBDFBV9DMV1"
+    },
+    "faction": {
+        "@id": "/factions/MU",
+        "@type": "Faction",
+        "reference": "MU",
+        "color": "#3d6b42",
+        "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+        "name": "Muna"
+    },
+    "alterator": {
+        "@id": "/cards/ALT_CORE_B_MU_03_C",
+        "@type": "Card",
+        "cardType": {
+            "@id": "/card_types/01GE7AC9WGQTNRP28T63FH8TZD",
+            "@type": "CardType",
+            "reference": "HERO",
+            "id": "01GE7AC9WGQTNRP28T63FH8TZD",
+            "name": "Héros"
+        },
+        "rarity": {
+            "@id": "/rarities/COMMON",
+            "@type": "Rarity",
+            "reference": "COMMON",
+            "name": "Commun"
+        },
+        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_03/JPG/fr_FR/e341af9cf9cdb3b64296ad350a8893ae.jpg",
+        "inMyCollection": 0,
+        "assets": {
+            "WEB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_03/ALT_CORE_B_MU_03_C_WEB.jpg"
+            ],
+            "HERO_WIDE": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_03/ALT_CORE_B_MU_03_C_HERO_WIDE.jpg"
+            ],
+            "HERO_THUMB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_03/ALT_CORE_B_MU_03_C_HERO_THUMB.jpg"
+            ]
+        },
+        "reference": "ALT_CORE_B_MU_03_C",
+        "id": "01HKAFJP63PYSKCM61GJX4RC4G",
+        "familyReference": "MU_03_C",
+        "mainFaction": {
+            "@id": "/factions/MU",
+            "@type": "Faction",
+            "reference": "MU",
+            "color": "#3d6b42",
+            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+            "name": "Muna"
+        },
+        "name": "Rin & Orchid",
+        "elements": {
+            "MAIN_COST": "0",
+            "RECALL_COST": "0",
+            "PERMANENT": "2",
+            "RESERVE": "2",
+            "MAIN_EFFECT": "Lorsqu'une de vos Expéditions avance grâce à {V} — Piochez une carte, puis mettez une carte de votre main en Réserve."
+        },
+        "siblingReference": "MU_03"
+    },
+    "gameType": {
+        "@id": "/game_types/01GDNGQY64G6NRWBZ7PYP0Z3E3",
+        "@type": "GameType",
+        "reference": "CONSTRUCTED",
+        "name": "Construit"
+    },
+    "public": false,
+    "cardQuantity": 39,
+    "deckLegality": {
+        "@type": "DeckLegality",
+        "@id": "/.well-known/genid/8e67e1426cdcf8e90e83",
+        "resume": {
+            "nbRare": true,
+            "isOwned": true,
+            "nbUnique": true,
+            "isSameFaction": true,
+            "nbFamily": true,
+            "nbHero": true,
+            "nbCards": true,
+            "isSuspended": true,
+            "globalValidity": true,
+            "errorFamily": []
+        }
+    },
+    "deckCardsByType": {
+        "@type": "DeckCard",
+        "@id": "/.well-known/genid/52642fe6e41b2548d850",
+        "character": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/0d01d23877590ddbf89e",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/52291ab9bbb774fbb017",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_MU_33_R1",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/JPG/fr_FR/f9118a923e56f2149f19799026f8c3f9.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/WEB_dd3ca128cd9a8859c87e916005fd5466",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/WEB_a29913a460868f171aa09a5bd3ef6a5c",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/WEB_b2f8829799c6ae3c7310533d78346b6e"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_MU_33_R1",
+                        "id": "01J1Q4P4SDA8SPK4V8SP1KVFBH",
+                        "familyReference": "MU_33_R1",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Perséphone",
+                        "elements": {
+                            "MAIN_COST": "#3#",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "0",
+                            "FOREST_POWER": "3",
+                            "MOUNTAIN_POWER": "0",
+                            "MAIN_EFFECT": "Ma région #et la région de l'Expédition qui me fait face# sont {V} #et perdent leurs autres terrains.#"
+                        },
+                        "siblingReference": "MU_33"
+                    },
+                    "id": "01JMFRPV785RXFX0HH4T59EWKJ"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/16103cf139447ea81730",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_MU_04_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_04/JPG/fr_FR/f29ab1cac5b846ccb0be45648e99b016.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_04/ALT_CORE_B_MU_04_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_04/ALT_CORE_B_MU_04_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_04/ALT_CORE_B_MU_04_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_MU_04_C",
+                        "id": "01HKAFJP64DTP54AX02MG25X44",
+                        "familyReference": "MU_04_C",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Soigneuse Muna",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "1",
+                            "FOREST_POWER": "0",
+                            "ECHO_EFFECT": "{D} : Un Personnage ciblé de Coût de Main {3} ou moins gagne [[Ancré]]. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "MU_04"
+                    },
+                    "id": "01JMFRPV8FFGM3QHC0T362P7XG"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/c326c607f3138460e70b",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_MU_06_R1",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_06/JPG/fr_FR/c76cff936aedf17a4d1183b49b7b8e8b.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_06/ALT_CORE_B_MU_06_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_06/ALT_CORE_B_MU_06_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_06/ALT_CORE_B_MU_06_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_MU_06_R1",
+                        "id": "01HKAFJP6D1KDKXM7JJGQAXA8N",
+                        "familyReference": "MU_06_R1",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Vendangeurs du Fuseau",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "0",
+                            "FOREST_POWER": "1",
+                            "MAIN_EFFECT": "{J} Je gagne [[Ancré]]. (Au Repos, je ne vais pas en Réserve et je perds Ancré.)  #À Midi — Si j'ai au moins 2 boosts, [Ravitaillez].# (Mettez la première carte de votre deck en Réserve.)"
+                        },
+                        "siblingReference": "MU_06"
+                    },
+                    "id": "01JMFRPV7JXRVGEMDFWVSX7QK7"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/ffb171d4eea64e59ca0a",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_MU_32_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_32/JPG/fr_FR/ca798e88df00292cc68579406f534236.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_32/WEB_77d2e7b25d10fd6be4ec8fef331363d6",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_32/WEB_7b406ab8ec42cd3a8c5810eb583f5ce9",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_32/WEB_94b168a5810a5498fc6a84b06a0389ce"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_MU_32_C",
+                        "id": "01J1Q4P4SDA8SPK4V8SP1KVFB5",
+                        "familyReference": "MU_32_C",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Champignon Exténueur",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "3",
+                            "MOUNTAIN_POWER": "0",
+                            "ECHO_EFFECT": "{D} : Un Personnage ciblé que vous contrôlez de Coût de Main {4} ou moins gagne [[Endormi]]. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "MU_32"
+                    },
+                    "id": "01JMFRPV8X1E22KCBTT80W3VCS"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/abe8680d5a9334695b3d",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_AX_06_U_4544",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/UNIQUE",
+                            "@type": "Rarity",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_AX_06/UNIQUE/JPG/fr_FR/24074d45b5de87bef824b22f9eeaa5cf.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_06/ALT_CORE_B_AX_06_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_06/ALT_CORE_B_AX_06_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_06/ALT_CORE_B_AX_06_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_AX_06_U_4544",
+                        "id": "4MAG5P10WS9V9V355C0TERA5VZ",
+                        "familyReference": "AX_06_U_4544",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Ogun",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MOUNTAIN_POWER": "2",
+                            "OCEAN_POWER": "0",
+                            "FOREST_POWER": "1",
+                            "MAIN_EFFECT": "{J} Si vous contrôlez au moins un Repère : Les Plantes que vous contrôlez autres que moi gagnent 1 boost.  {R} Vous pouvez payer {1}. Si vous le faites : Vous pouvez donner 2 boosts à une Plante ciblée."
+                        },
+                        "siblingReference": "AX_06"
+                    },
+                    "id": "01JMFRPV80FA5Z44VDT9B463GT"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/f8953f04ab0a4d576211",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_MU_04_U_5042",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/UNIQUE",
+                            "@type": "Rarity",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_MU_04/UNIQUE/JPG/fr_FR/6ef398187d54d11870a63261c16e5240.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_04/ALT_CORE_B_MU_04_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_04/ALT_CORE_B_MU_04_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_04/ALT_CORE_B_MU_04_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_MU_04_U_5042",
+                        "id": "003E8MXN9T9ZRST68NV5DHP6VY",
+                        "familyReference": "MU_04_U_5042",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Soigneuse Muna",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MOUNTAIN_POWER": "0",
+                            "OCEAN_POWER": "1",
+                            "FOREST_POWER": "1",
+                            "MAIN_EFFECT": "{J} Vous pouvez payer {1}. Si vous le faites : Vous pouvez donner 2 boosts à une Plante ciblée.  {R} Si vous contrôlez au moins deux Personnages [[Boostés]] : Un Personnage ciblé gagne 1 boost.",
+                            "ECHO_EFFECT": "{D} : []Vous pouvez faire gagner [[Ancré]] à un Personnage ciblé de Coût de Main {3} ou moins autre que moi."
+                        },
+                        "siblingReference": "MU_04"
+                    },
+                    "id": "01JMFRPV85A76VPP7DZ49146K5"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/6bdabac57ed1fa051131",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_MU_05_U_2845",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/UNIQUE",
+                            "@type": "Rarity",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_MU_05/UNIQUE/JPG/fr_FR/4faced19cc7620d2dcfbb6d514f9d7df.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_05/ALT_CORE_B_MU_05_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_05/ALT_CORE_B_MU_05_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_05/ALT_CORE_B_MU_05_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_MU_05_U_2845",
+                        "id": "0P9DERSE4M9JWT34V3Q00M7EFC",
+                        "familyReference": "MU_05_U_2845",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Kitsune",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MOUNTAIN_POWER": "0",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "1",
+                            "MAIN_EFFECT": "{R} []Chaque joueur pioche une carte.  Lorsqu'un autre Personnage rejoint vos Expéditions — Si vous contrôlez au moins trois Personnages : Je gagne 2 boosts."
+                        },
+                        "siblingReference": "MU_05"
+                    },
+                    "id": "01JMFRPV8APX4ACTWG2W2F5B3N"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/c0f3db89bf9bffe5c363",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_AX_14_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_14/JPG/fr_FR/867996a42e0b5ad12644270f45dab40f.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_14/ALT_CORE_B_AX_14_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_14/ALT_CORE_B_AX_14_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_14/ALT_CORE_B_AX_14_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_AX_14_R2",
+                        "id": "01HKAFJNJRRH63R8VPC1DV2AWJ",
+                        "familyReference": "AX_14_R2",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Coppélia",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "#3#",
+                            "FOREST_POWER": "#3#",
+                            "MAIN_EFFECT": "Lorsque je vais en Réserve depuis votre main — Vous pouvez me jouer gratuitement et je gagne [[Endormi]]. (Au Crépuscule, ignorez mes statistiques. Au Repos, je ne vais pas en Réserve et je perds Endormi.)"
+                        },
+                        "siblingReference": "AX_14"
+                    },
+                    "id": "01JMFRPV96Z2ZMFBSBB1GVJQG0"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/27fcd6a5d1d7403343fd",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_MU_07_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_07/JPG/fr_FR/63ccc5a0e556ef7bf934f29b5b756af4.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_07/ALT_CORE_B_MU_07_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_07/ALT_CORE_B_MU_07_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_07/ALT_CORE_B_MU_07_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_MU_07_C",
+                        "id": "01HKAFJP6FNCANTX1VE5X3BN5K",
+                        "familyReference": "MU_07_C",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Mowgli",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "0",
+                            "FOREST_POWER": "3"
+                        },
+                        "siblingReference": "MU_07"
+                    },
+                    "id": "01JMFRPV9BGSMK19BK4C7E544A"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/51440167822c41852e69",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_LY_35_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_35/JPG/fr_FR/a1c576a7f77b2da95d66bae115e6ba43.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_35/WEB_10eb076f6aab8585608dbd5d6e419beb",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_35/WEB_c85e43c93433154b635f3d2935f59f6c",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_35/WEB_48212de12f3c15b774889ab27a9cc14d"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_LY_35_R2",
+                        "id": "01J1Q4P4S8VRS4MQ8C3VSJRWPT",
+                        "familyReference": "LY_35_R2",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Feu Follet",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "0",
+                            "FOREST_POWER": "#3#",
+                            "MOUNTAIN_POWER": "0",
+                            "MAIN_EFFECT": "Si une Expédition qui me fait face est dans #{V}#, elle ne peut pas avancer, sauf grâce à #{V}.#",
+                            "ECHO_EFFECT": "{D} : La prochaine carte que vous jouez ce tour coûte {1} de moins. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "LY_35"
+                    },
+                    "id": "01JMFRR388MYRZ98MJP7BAQW3Y"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/a929163ae6ab28a3fc66",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_MU_35_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_35/JPG/fr_FR/d75a27e0e88507e8037331b0c3cb5b6a.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_35/WEB_b040b9f608f1d4358f66a24a376dfc55",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_35/WEB_6a4a97dbf99ca2a609d6ba481ee4aaec",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_35/WEB_2efaaa3bc0f433b466505c5a89368524"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_MU_35_C",
+                        "id": "01J1Q4P4SEE4HDV4CVAPEW8SVR",
+                        "familyReference": "MU_35_C",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Saskia, Naturaliste Rusée",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "2",
+                            "MOUNTAIN_POWER": "2",
+                            "MAIN_EFFECT": "{J} Vous pouvez donner 2 boosts à un autre Personnage ciblé dans {V}."
+                        },
+                        "siblingReference": "MU_35"
+                    },
+                    "id": "01JMFRPV7WXZA46VB0SX31YN9F"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/6ff823dd5490bf18f724",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_MU_13_R1",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_13/JPG/fr_FR/e90f7183bf17272b1b0bf5e2a8529a82.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_13/ALT_CORE_B_MU_13_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_13/ALT_CORE_B_MU_13_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_13/ALT_CORE_B_MU_13_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_MU_13_R1",
+                        "id": "01HKAFJP77PADR6ZZFBCTYVMTA",
+                        "familyReference": "MU_13_R1",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Druide Muna",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "#1#",
+                            "MOUNTAIN_POWER": "#1#",
+                            "FOREST_POWER": "#2#",
+                            "MAIN_EFFECT": "#{H} Jusqu'à une Plante ciblée gagne 2 boosts.#",
+                            "ECHO_EFFECT": "{D} : Un Personnage ciblé de Coût de Main {3} ou moins gagne [[Ancré]]. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "MU_13"
+                    },
+                    "id": "01JMFRPV9GRNH73W9D0SPFB6XZ"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/60ab27dabe4c9d5fa4d3",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_MU_16_R1",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_16/JPG/fr_FR/a1fbd2b8b530bf109ccecdfa75bb8066.jpg",
+                        "inMyCollection": 0,
+                        "assets": [],
+                        "reference": "ALT_CORE_B_MU_16_R1",
+                        "id": "01HKAFJP7METGDJDTXD4WRZMH0",
+                        "familyReference": "MU_16_R1",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Aloe Vera",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "4",
+                            "MOUNTAIN_POWER": "2",
+                            "FOREST_POWER": "2",
+                            "MAIN_EFFECT": "#{J} Vous pouvez payer {1} pour que je gagne [[Ancré]].# (Au Repos, je ne vais pas en Réserve et je perds Ancré.)  À Midi — [Ravitaillez]. (Mettez la première carte de votre deck en Réserve.)"
+                        },
+                        "siblingReference": "MU_16"
+                    },
+                    "id": "01JMFRPV92JDS1RM614V509X55"
+                }
+            ],
+            "number": 28
+        },
+        "spell": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/5665ed01576cb5cd83c4",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/c31f1a710560826ec571",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_MU_42_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_42/JPG/fr_FR/7d41650fbceb0076e9b9e75149b3fb8f.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_42/WEB_2262155b2f5b863e293219b0f9b49411",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_42/WEB_d9b689e66ce65e4dde1bfe6c108f59c9"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_MU_42_C",
+                        "id": "01J1Q4P4SGG6TEVFRSKNDKQK6D",
+                        "familyReference": "MU_42_C",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Perdu en Forêt",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "MAIN_EFFECT": "[[Fugace]].  Choisissez l'un :  • Envoyez un Personnage ciblé dans {V} en Réserve.  • Défaussez un Permanent ciblé."
+                        },
+                        "siblingReference": "MU_42"
+                    },
+                    "id": "01JMFRPV7DQD6WHR7QZTPC0Z1P"
+                }
+            ],
+            "number": 3
+        },
+        "permanent": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/16f0692e87a5fafc1d29",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/e694f4b6591c0f86ddec",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_MU_44_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q7ASAYXTSM3DH772C70PV5",
+                            "@type": "CardType",
+                            "reference": "EXPEDITION_PERMANENT",
+                            "id": "01J1Q7ASAYXTSM3DH772C70PV5",
+                            "name": "Permanent d’Expédition"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_44/JPG/fr_FR/badb4213c84bfc663b003186faaa97e1.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_44/WEB_3d6c78a8e34fa5d87a1a2d351a7fde20",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_44/WEB_1fc7ad33fd9c8afe4ee29534b2b00b70"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_MU_44_C",
+                        "id": "01J1Q4P4SGG6TEVFRSKNDKQK6Z",
+                        "familyReference": "MU_44_C",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Tente Florale",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "MAIN_EFFECT": "{J} [Ravitaillez]. (Mettez la première carte de votre deck en Réserve.)  Si un Personnage [[Ancré]] devait quitter mon Expédition pendant l'Après-midi, il perd [[Ancré]] à la place."
+                        },
+                        "siblingReference": "MU_44"
+                    },
+                    "id": "01JMFRPV8RK3JVW2C1YJFXSXF0"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/994fc696885b466a11a2",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_MU_45_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_45/JPG/fr_FR/280c8d1eb0c6e0cfb36c807099227d2e.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_45/WEB_871b124253ceaf289f0c45f5a5e6d361",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_45/WEB_561a2a31e2f4a90f93f401aa791195fd"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_MU_45_C",
+                        "id": "01J1Q4P4SHH5PQKMZMP6NZNHX9",
+                        "familyReference": "MU_45_C",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Taïga Saisie par les Glaces",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "MAIN_EFFECT": "Lorsque vous jouez un Personnage — S'il est dans {V}, je gagne 1 compteur Épreuve.  Lorsque je gagne mon troisième compteur Épreuve — Sacrifiez-moi. Si vous le faites, créez un jeton Illusion [5/5/5 Reflet Draconique] dans une Expédition ciblée, puis il gagne [[Ancré]]."
+                        },
+                        "siblingReference": "MU_45"
+                    },
+                    "id": "01JMFRPV7Q773XP0YQ2H6BMYM8"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/767557de7d41014bff2c",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_MU_30_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X78DXSNKNB15KCF69Z",
+                            "@type": "CardType",
+                            "reference": "PERMANENT",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69Z",
+                            "name": "Permanent"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_30/JPG/fr_FR/e5279265060d9069a8601d8da9c6b176.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_30/WEB_b727e511c9933fd15eb0f248038ce4f1",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_30/WEB_cd61c302b8e1d3d3dbc53ccc0701e68f"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_MU_30_C",
+                        "id": "01HKAFJP9S96TB9RED5MAJ5VJK",
+                        "familyReference": "MU_30_C",
+                        "mainFaction": {
+                            "@id": "/factions/MU",
+                            "@type": "Faction",
+                            "reference": "MU",
+                            "color": "#3d6b42",
+                            "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+                            "name": "Muna"
+                        },
+                        "name": "Le Fuseau, Bastion Muna",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "MAIN_EFFECT": "Les Personnages que vous contrôlez sont [Coriaces 2]. (Les adversaires doivent payer {2} pour les cibler.)"
+                        },
+                        "siblingReference": "MU_30"
+                    },
+                    "id": "01JMFRPV8KMVVFC0YER538G3N9"
+                }
+            ],
+            "number": 8
+        }
+    },
+    "cardsByRarityData": [
+        [
+            "Commun",
+            21
+        ],
+        [
+            "Rare",
+            15
+        ],
+        [
+            "Unique",
+            3
+        ]
+    ],
+    "updatedAt": "2025-02-19T18:50:50+00:00",
+    "id": "01JMFRPV6RCPR0718QCVGZ6VY1",
+    "description": "",
+    "legal": true,
+    "cardIndexes": {
+        "/cards/ALT_ALIZE_B_MU_33_R1": 3,
+        "/cards/ALT_ALIZE_B_MU_42_C": 3,
+        "/cards/ALT_CORE_B_MU_06_R1": 3,
+        "/cards/ALT_ALIZE_B_MU_45_C": 3,
+        "/cards/ALT_ALIZE_B_MU_35_C": 3,
+        "/cards/ALT_COREKS_B_AX_06_U_4544": 1,
+        "/cards/ALT_COREKS_B_MU_04_U_5042": 1,
+        "/cards/ALT_COREKS_B_MU_05_U_2845": 1,
+        "/cards/ALT_CORE_B_MU_04_C": 2,
+        "/cards/ALT_CORE_B_MU_30_C": 2,
+        "/cards/ALT_ALIZE_B_MU_44_C": 3,
+        "/cards/ALT_ALIZE_B_MU_32_C": 2,
+        "/cards/ALT_CORE_B_MU_16_R1": 3,
+        "/cards/ALT_CORE_B_MU_07_C": 3,
+        "/cards/ALT_CORE_B_MU_13_R1": 3,
+        "/cards/ALT_ALIZE_B_LY_35_R2": 1,
+        "/cards/ALT_CORE_B_AX_14_R2": 2
+    }
+}

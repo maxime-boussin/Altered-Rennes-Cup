@@ -1,0 +1,1352 @@
+{
+    "@context": "/contexts/DeckUserList",
+    "@id": "/deck_user_lists/01JMKRJ2ZQ01TYFJ4K9TC3HQJN",
+    "@type": "DeckUserList",
+    "name": "Arc3 v2",
+    "user": {
+        "@id": "/users/01HN0BCGY6AANZ0RR20006JJ8P",
+        "@type": "User",
+        "id": "01HN0BCGY6AANZ0RR20006JJ8P"
+    },
+    "faction": {
+        "@id": "/factions/YZ",
+        "@type": "Faction",
+        "reference": "YZ",
+        "color": "#764891",
+        "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+        "name": "Yzmir"
+    },
+    "alterator": {
+        "@id": "/cards/ALT_CORE_B_YZ_01_C",
+        "@type": "Card",
+        "cardType": {
+            "@id": "/card_types/01GE7AC9WGQTNRP28T63FH8TZD",
+            "@type": "CardType",
+            "reference": "HERO",
+            "id": "01GE7AC9WGQTNRP28T63FH8TZD",
+            "name": "Héros"
+        },
+        "rarity": {
+            "@id": "/rarities/COMMON",
+            "@type": "Rarity",
+            "reference": "COMMON",
+            "name": "Commun"
+        },
+        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_01/JPG/fr_FR/b63c1fd1d5a5cdc7040da4c2bd86ca81.jpg",
+        "inMyCollection": 0,
+        "assets": {
+            "HERO_WIDE": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_01/ALT_CORE_B_YZ_01_C_HERO_WIDE.jpg"
+            ],
+            "WEB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_01/ALT_CORE_B_YZ_01_C_WEB.jpg"
+            ],
+            "HERO_THUMB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_01/ALT_CORE_B_YZ_01_C_HERO_THUMB.jpg"
+            ]
+        },
+        "reference": "ALT_CORE_B_YZ_01_C",
+        "id": "01HKAFJNZ1MNKTQDTZKDWNT420",
+        "familyReference": "YZ_01_C",
+        "mainFaction": {
+            "@id": "/factions/YZ",
+            "@type": "Faction",
+            "reference": "YZ",
+            "color": "#764891",
+            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+            "name": "Yzmir"
+        },
+        "name": "Akesha & Taru",
+        "elements": {
+            "MAIN_COST": "0",
+            "RECALL_COST": "0",
+            "PERMANENT": "2",
+            "RESERVE": "2",
+            "MAIN_EFFECT": "{T} : [Après vous]. Vous pouvez seulement activer cela si vous êtes le premier joueur. (Terminez votre tour comme si vous aviez joué une carte. Vous pouvez encore jouer des cartes plus tard ce Jour.)"
+        },
+        "siblingReference": "YZ_01"
+    },
+    "gameType": {
+        "@id": "/game_types/01GDNGQY64G6NRWBZ7PYP0Z3E3",
+        "@type": "GameType",
+        "reference": "CONSTRUCTED",
+        "name": "Construit"
+    },
+    "public": false,
+    "cardQuantity": 39,
+    "deckLegality": {
+        "@type": "DeckLegality",
+        "@id": "/.well-known/genid/899d6433ff78e1a3428f",
+        "resume": {
+            "nbRare": true,
+            "isOwned": true,
+            "nbUnique": true,
+            "isSameFaction": true,
+            "nbFamily": true,
+            "nbHero": true,
+            "nbCards": true,
+            "isSuspended": true,
+            "globalValidity": true,
+            "errorFamily": []
+        }
+    },
+    "deckCardsByType": {
+        "@type": "DeckCard",
+        "@id": "/.well-known/genid/9741eed390399fb91fac",
+        "character": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/b54a26a2f6ee2549d6dd",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/38107cf042a0bc60cf8f",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_YZ_32_R1",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_32/JPG/fr_FR/a16abfaa7aa1e2ad037f22969d2333b9.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_32/WEB_cbc5f7c37d558c0887887c9cc7ee3841",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_32/WEB_1634df5fb3ac2d716b10d538b747e43c",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_32/WEB_4cd72a4f90eaea49e74b44445bbbc457"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_YZ_32_R1",
+                        "id": "01J1Q4P4SS1510DW0H3674JC86",
+                        "familyReference": "YZ_32_R1",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Larve de Phalène",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "1",
+                            "FOREST_POWER": "1",
+                            "MOUNTAIN_POWER": "0",
+                            "MAIN_EFFECT": "#{J}# S'il y a au moins deux cartes épuisées en Réserve, je gagne 1 boost.",
+                            "ECHO_EFFECT": "#{D} : Épuisez une carte ciblée en Réserve.# (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "YZ_32"
+                    },
+                    "id": "01JMKSGMA25QAQ30PP8WV572FA"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/5bfb4d65b216f269736d",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_AX_33_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_33/JPG/fr_FR/640b5f0658cc66baa6aeba9eac4d5374.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_33/WEB_eed071ded32d9e10882d6c5bf5344b0f",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_33/WEB_5f1bcef6e3f59c90cd503e3724a02868",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_33/WEB_3e4d7880f08bcd659501480cec544a5f"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_AX_33_R2",
+                        "id": "01J1Q4P4RPMZ8VWX4YR153F1Y3",
+                        "familyReference": "AX_33_R2",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Macareux à Roquettes",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "3",
+                            "FOREST_POWER": "2",
+                            "MOUNTAIN_POWER": "0",
+                            "MAIN_EFFECT": "{J} Vous pouvez redresser une carte épuisée en Réserve. #Si vous le faites, je gagne 1 boost.#"
+                        },
+                        "siblingReference": "AX_33"
+                    },
+                    "id": "01JMKRJ32RG3C5KDP6QHBACZ64"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/079a677470dc99701629",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_AX_35_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_35/JPG/fr_FR/2ba4fba7ebd2c7a9f76e9a4de29c38d3.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_35/WEB_fb2e5c6674c581da280d09951941ea7c",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_35/WEB_c9b9e6617652694111d0e7a9d4bc60ee",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_35/WEB_faf38f5d933835bd0b6eaae0860e3ab3"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_AX_35_R2",
+                        "id": "01J1Q4P4RPMZ8VWX4YR153F1YN",
+                        "familyReference": "AX_35_R2",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Vaike, l'Énergéticienne",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "#1#",
+                            "MOUNTAIN_POWER": "2",
+                            "MAIN_EFFECT": "Vous pouvez jouer les cartes épuisées de votre Réserve.  #{R} [Ravitaillez Épuisé].# (Mettez la première carte de votre deck en Réserve, puis épuisez-la {T}.)"
+                        },
+                        "siblingReference": "AX_35"
+                    },
+                    "id": "01JMKRJ31RVG1V38QPEB3V1GTQ"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/4ab11810fe89f60cca6f",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_YZ_33_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_33/JPG/fr_FR/7461cdecc676c8e9232c72f8500fd04c.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_33/WEB_400fd54a644da01c50ca1e1399d96200",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_33/WEB_cf148154922041962fd95b2854353ed4",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_33/WEB_a8bf2ac3f915697d387d97068f3ae423"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_YZ_33_C",
+                        "id": "01J1Q4P4SS1510DW0H3674JC8C",
+                        "familyReference": "YZ_33_C",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Chrysalide",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "2",
+                            "MOUNTAIN_POWER": "1",
+                            "MAIN_EFFECT": "[Défenseur]. (Mon Expédition ne peut pas avancer au Crépuscule.)  Lorsque je quitte la zone d'Expédition — Créez un jeton Illusion [2/2/2 Phalène de Mana] dans mon Expédition."
+                        },
+                        "siblingReference": "YZ_33"
+                    },
+                    "id": "01JMKRJ32ABMVRYB5JEVVH2TMF"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/49112647beb6ecdbe3a8",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_YZ_34_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_34/JPG/fr_FR/55d54cc05e5a1b57a7aef129b2ee44b1.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_34/WEB_06adce73ea533144a8508b48979e2635",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_34/WEB_8473b35d6fcb7c74da16f1a9de458307",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_34/WEB_695e42314cae552c9b70e2eb65bc142d"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_YZ_34_C",
+                        "id": "01J1Q4P4SS1510DW0H3674JC8N",
+                        "familyReference": "YZ_34_C",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Pamola",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "0",
+                            "MOUNTAIN_POWER": "3",
+                            "ECHO_EFFECT": "{D} : Épuisez une carte ciblée en Réserve. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "YZ_34"
+                    },
+                    "id": "01JMKSHP914AV0CNGEN04RH4H5"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/61e82e139c22243fd546",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_A_OR_38_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_A_OR_38/JPG/fr_FR/ea305c9687c3d10121801ecc3c432fd1.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_A_OR_38/WEB_e987662d5a82474cf8387f447dc20827",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_A_OR_38/WEB_1ebe17e783a775f981f24df1bce7bc9e",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_A_OR_38/WEB_78d406b4c2e3792d95c6d08f16a3e1e1"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_A_OR_38_R2",
+                        "id": "01J3GTS39HZD7BD2N3RRRY0X6S",
+                        "familyReference": "OR_38_R2",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Sunisa, Enseigne Dévouée",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "4",
+                            "FOREST_POWER": "4",
+                            "MOUNTAIN_POWER": "4",
+                            "MAIN_EFFECT": "[Défenseuse]. (Mon Expédition ne peut pas avancer au Crépuscule.)  Si mon Expédition est en retard, les Personnages [Défenseurs] ne l'empêchent pas d'avancer."
+                        },
+                        "siblingReference": "OR_38"
+                    },
+                    "id": "01JMKRJ31KJH067101MWHPMBEX"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/f99a51fece78e0d4b9a3",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_AX_37_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_37/JPG/fr_FR/cd67e12059a226cf02f61f1b154d8fcc.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_37/WEB_b54cc629947078e00d7406002fc8be63",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_37/WEB_043d733f0dbbb18c1dc2147665ca6d8b",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_37/WEB_2dc52b769d21191704f9154656caba92"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_AX_37_R2",
+                        "id": "01J1Q4P4RTGYQGABCPS4EW5487",
+                        "familyReference": "AX_37_R2",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Porteuse Intrépide",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "2",
+                            "MOUNTAIN_POWER": "3",
+                            "MAIN_EFFECT": "#{J}# [Ravitaillez Épuisé]. (Une carte épuisée ne peut pas être jouée et n'a pas de capacité de Soutien.)"
+                        },
+                        "siblingReference": "AX_37"
+                    },
+                    "id": "01JMKRJ321G2SBX4HH98SXTSHS"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/ee425b9d620cc8b89dd9",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_OR_38_U_16892",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/UNIQUE",
+                            "@type": "Rarity",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_OR_38/UNIQUE/JPG/fr_FR/01fb22cc4bf71c283989c8d119f72969.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_OR_38/WEB_f77d77e02e3eae1b8de74ef8532f2092",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_OR_38/WEB_9c0e0e7ed15787e3b9e23615cb5db49c",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_OR_38/WEB_b6cb2ed73b46c78b4b4a5a2b53692313"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_OR_38_U_16892",
+                        "id": "6NDC7G4DZB8D7BZ3AHP6RPSMNM",
+                        "familyReference": "OR_38_U_16892",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Sunisa, Enseigne Dévouée",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "MOUNTAIN_POWER": "5",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "4",
+                            "MAIN_EFFECT": "[][]Je suis [Défenseur].  []Si votre Réserve est vide : Les Personnages [Défenseur] n'empêchent pas mon Expédition d'avancer.  {J} Si mon Expédition est en retard : Un Personnage ciblé autre que moi gagne 1 boost."
+                        },
+                        "siblingReference": "OR_38"
+                    },
+                    "id": "01JMKRJ30A31XY1EGSC7RXFT41"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/7156554d8add66f1192c",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_YZ_35_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_35/JPG/fr_FR/2156b41b9ac76dd523c4a3a221b4989b.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_35/WEB_fb1ba27c02fd9e8111aa0af1f18a8fc3",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_35/WEB_a2a96b8c38629ff4e4c83e06604a1cd6",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_35/WEB_015765bb612e4beaab09e0c39d950e88"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_YZ_35_C",
+                        "id": "01J1Q4P4STVYKQPX3X8SF0WV9J",
+                        "familyReference": "YZ_35_C",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Belasenka",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "3",
+                            "FOREST_POWER": "3",
+                            "MOUNTAIN_POWER": "0",
+                            "MAIN_EFFECT": "{H} Vous pouvez épuiser ({T}) une carte ciblée en Réserve. (Une carte épuisée ne peut pas être jouée et n'a pas de capacité de Soutien.)"
+                        },
+                        "siblingReference": "YZ_35"
+                    },
+                    "id": "01JMKRJ332BJAXRYSR5HEQX788"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/fb853038152d7f7987d6",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_YZ_11_R1",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/JPG/fr_FR/ad14868a7ceccd0baa79debfcc6e656c.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/WEB_536e85193617153cada9849433e5a352",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/WEB_6378dcaffe7293bcfbb6b4dca45d93c7",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/WEB_3165b2f65a9a9cf0c265eed69094317c"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_YZ_11_R1",
+                        "id": "01HN5TXRK2CQXH3KESD5M6G4TA",
+                        "familyReference": "YZ_11_R1",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Baba Yaga",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "MOUNTAIN_POWER": "#2#",
+                            "FOREST_POWER": "#3#",
+                            "MAIN_EFFECT": "{H} Piochez une carte."
+                        },
+                        "siblingReference": "YZ_11"
+                    },
+                    "id": "01JMKRJ32XQ30YD64SZ4GJBKM8"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/2ea822a9eb4c2c9a15cb",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_YZ_13_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_13/JPG/fr_FR/80bca611c841874dc5a7ff4b327692a4.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_13/ALT_CORE_B_YZ_13_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_13/ALT_CORE_B_YZ_13_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_13/ALT_CORE_B_YZ_13_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_YZ_13_C",
+                        "id": "01HN5TXRK97G8DCPVXK1YX7C2M",
+                        "familyReference": "YZ_13_C",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Alice",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "4",
+                            "MOUNTAIN_POWER": "2",
+                            "FOREST_POWER": "2",
+                            "ECHO_EFFECT": "{D} : [Après vous]. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "YZ_13"
+                    },
+                    "id": "01JMKRJ30QTP1PGZ9517M8ESJ3"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/7ed29a3972edf1e2c427",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_YZ_14_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_14/JPG/fr_FR/3b0f0be28e5e2ed2fd9356607e19b5a8.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_14/ALT_CORE_B_YZ_14_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_14/ALT_CORE_B_YZ_14_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_14/ALT_CORE_B_YZ_14_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_YZ_14_C",
+                        "id": "01HN5TXRKDKPCEN97XERNC109H",
+                        "familyReference": "YZ_14_C",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Flamel",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "3",
+                            "MOUNTAIN_POWER": "3",
+                            "FOREST_POWER": "4",
+                            "MAIN_EFFECT": "{H} Vous pouvez renvoyer un Sort de votre Réserve dans votre main.",
+                            "ECHO_EFFECT": "{D} : Le prochain Sort que vous jouez ce tour coûte {1} de moins. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "YZ_14"
+                    },
+                    "id": "01JMKRJ311YKN38DXWWPM71PZ2"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/781b87ed687f00e12091",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_YZ_35_U_14722",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/UNIQUE",
+                            "@type": "Rarity",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_35/UNIQUE/JPG/fr_FR/a206dc4e198c84b734a9b6930f69ef55.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_35/WEB_fb1ba27c02fd9e8111aa0af1f18a8fc3",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_35/WEB_a2a96b8c38629ff4e4c83e06604a1cd6",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_35/WEB_015765bb612e4beaab09e0c39d950e88"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_YZ_35_U_14722",
+                        "id": "0J99DZHR8C89H8BEMGN0XCMXFC",
+                        "familyReference": "YZ_35_U_14722",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Belasenka",
+                        "elements": {
+                            "MAIN_COST": "5",
+                            "RECALL_COST": "2",
+                            "MOUNTAIN_POWER": "1",
+                            "OCEAN_POWER": "4",
+                            "FOREST_POWER": "1",
+                            "MAIN_EFFECT": "{H} []Épuisez jusqu'à deux cartes en Réserve.  {H} S'il y a au moins deux cartes épuisées en Réserve : Un Personnage ciblé gagne 3 boosts."
+                        },
+                        "siblingReference": "YZ_35"
+                    },
+                    "id": "01JMKRJ3058J6FT0MZG859N553"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/203eb57b9578f3bd4695",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_YZ_14_U_1371",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/UNIQUE",
+                            "@type": "Rarity",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_14/UNIQUE/JPG/fr_FR/1e6df04864872e6c39b9d02dc01aefd9.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_14/ALT_CORE_B_YZ_14_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_14/ALT_CORE_B_YZ_14_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_14/ALT_CORE_B_YZ_14_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_YZ_14_U_1371",
+                        "id": "2E1P7YCF608GF9NXKK5J98H1A4",
+                        "familyReference": "YZ_14_U_1371",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Flamel",
+                        "elements": {
+                            "MAIN_COST": "5",
+                            "RECALL_COST": "4",
+                            "MOUNTAIN_POWER": "2",
+                            "OCEAN_POWER": "4",
+                            "FOREST_POWER": "4",
+                            "MAIN_EFFECT": "{J} Vous pouvez mettre une carte de votre main en Réserve. Si vous le faites : Un Personnage ciblé gagne 3 boosts.  Au Crépuscule — []Vous pouvez renvoyer un Sort de votre Réserve dans votre main."
+                        },
+                        "siblingReference": "YZ_14"
+                    },
+                    "id": "01JMKRJ33BCY13M5GJB0TC3ACF"
+                }
+            ],
+            "number": 23
+        },
+        "spell": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/fcd12c76ff1e313f00b0",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/21ba8923cc1113dee81b",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_YZ_40_R1",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_40/JPG/fr_FR/ffd42aa204f10ca4799828427ed58c3a.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_40/WEB_966a6b9e56a3e03d39fcac747bfd6182",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_40/WEB_e99054ecc7cd2b7745193d7eb19e9f64"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_YZ_40_R1",
+                        "id": "01J1Q4P4SVH0BDDPS6F3F8Y5XD",
+                        "familyReference": "YZ_40_R1",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Gel",
+                        "elements": {
+                            "MAIN_COST": "#3#",
+                            "RECALL_COST": "4",
+                            "MAIN_EFFECT": "[Rafraîchissement]. (Si je vais en Réserve après résolution de mon effet, épuisez-moi {T}.)  Envoyez un Personnage ciblé en Réserve, puis épuisez-le ({T})."
+                        },
+                        "siblingReference": "YZ_40"
+                    },
+                    "id": "01JMKRJ31A6KZ1CR95XDNXMGB2"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/d42c79ecc604fe225111",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_YZ_39_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_39/JPG/fr_FR/21e3de893f02bb2efb0358b02cd4d44b.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_39/WEB_5754e5b74281d002dc234dda53de42e3",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_39/WEB_a3dd4c5cccea0da4ee48892043234a13"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_YZ_39_C",
+                        "id": "01J1Q4P4SVH0BDDPS6F3F8Y5X1",
+                        "familyReference": "YZ_39_C",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Givre",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "2",
+                            "MAIN_EFFECT": "Épuisez ({T}) une carte ciblée en Réserve. (Une carte épuisée ne peut pas être jouée et n'a pas de capacité de Soutien.)"
+                        },
+                        "siblingReference": "YZ_39"
+                    },
+                    "id": "01JMKRK4K9WC36828SN9B85HH7"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/3a53ff9f8deff3253a3b",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_YZ_21_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_21/JPG/fr_FR/48c86a301a5c09aa0b2297a2968bb10e.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_21/WEB_266fce66842b7dcbd366992fc758f65a",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_21/WEB_09aa59abd0ff62063f1e8069d60d4416"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_YZ_21_C",
+                        "id": "01HN5TXRMJ0MPWA2J23ENQ0FJE",
+                        "familyReference": "YZ_21_C",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Zou !",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "4",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "Envoyez en Réserve un Personnage ciblé de Coût de Main {3} ou moins."
+                        },
+                        "siblingReference": "YZ_21"
+                    },
+                    "id": "01JMKRJ326SJ7EZJBKZ48B3FSZ"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/ff5aea6ecb2519a5f5d0",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_YZ_24_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_24/JPG/fr_FR/b5672607bd35405487df3058716ef4fd.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_24/ALT_CORE_B_YZ_24_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_24/ALT_CORE_B_YZ_24_R_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_YZ_24_C",
+                        "id": "01HKAFJP4XNQFBYBWBM148GMT9",
+                        "familyReference": "YZ_24_C",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Portail de Bannissement",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "4",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Défaussez un Personnage ou Permanent ciblé."
+                        },
+                        "siblingReference": "YZ_24"
+                    },
+                    "id": "01JMKRMM2QDBJ1K0KG5ZDT8J98"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/1e9f7224d710eb18dab9",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_YZ_42_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_42/JPG/fr_FR/9db8fbbfcd3ebe385f4e79fb56be0aa8.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_42/WEB_afaf5adb5c8143c362f946f8b4b3b83e",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_42/WEB_301e5d8029ff1fbf4a42e6e263887c80"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_YZ_42_C",
+                        "id": "01J1Q4P4SWD7ABYG5VK63B8RNC",
+                        "familyReference": "YZ_42_C",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Blizzard",
+                        "elements": {
+                            "MAIN_COST": "5",
+                            "RECALL_COST": "5",
+                            "MAIN_EFFECT": "[[Fugace]].  Envoyez en Réserve tous les Personnages d'une Expédition ciblée, puis épuisez-les ({T}). (Une carte épuisée ne peut pas être jouée et n'a pas de capacité de Soutien.)"
+                        },
+                        "siblingReference": "YZ_42"
+                    },
+                    "id": "01JMKRJ30WJZ44H8NRMSMWQ083"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/20cf226ff4d2ba5e3e6a",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_YZ_25_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_25/JPG/fr_FR/41557f74942a621dc653cc656e097efa.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_25/WEB_500c01ba51e662279af146537aa49452",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_25/WEB_94adf198134cbebbbd300a2b748bbfab"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_YZ_25_C",
+                        "id": "01HN5TXRN35MG2DYDPZ86QB3EQ",
+                        "familyReference": "YZ_25_C",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Petit Pas, Bond de Géant",
+                        "elements": {
+                            "MAIN_COST": "6",
+                            "RECALL_COST": "6",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Une Expédition ciblée avance d'une région."
+                        },
+                        "siblingReference": "YZ_25"
+                    },
+                    "id": "01JMKRJ31F54ZZKVASHCX3V819"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/22f5b233b6cd084cc6ea",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_YZ_37_R1",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_37/JPG/fr_FR/21a14d10d7d95678efdeee1664b685bc.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_37/WEB_5c0d4932c8e1f4ed3f66013d6fa87ced",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_37/WEB_3b0931125661939b3d75ac48d30ad665"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_YZ_37_R1",
+                        "id": "01J1Q4P4STVYKQPX3X8SF0WVA7",
+                        "familyReference": "YZ_37_R1",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Nova Hivernale",
+                        "elements": {
+                            "MAIN_COST": "8",
+                            "RECALL_COST": "8",
+                            "MAIN_EFFECT": "[[Fugace]].  Choisissez trois#, vous pouvez choisir la même option plusieurs fois# :  • Épuisez jusqu'à deux cartes en Réserve.  • Créez deux jetons Illusion [2/2/2 Phalène de Mana] dans une Expédition ciblée.  • Défaussez un Permanent ciblé.  • Un joueur ciblé sacrifie un Personnage."
+                        },
+                        "siblingReference": "YZ_37"
+                    },
+                    "id": "01JMKRK2V4J518G2TVPK2P78RJ"
+                }
+            ],
+            "number": 12
+        },
+        "permanent": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/454f1b38c398627b4853",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/8932ee2941b6a825b060",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_OR_47_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_OR_47/JPG/fr_FR/e37cf4050a07a221d9b68f99c90dec71.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_OR_47/WEB_ecf8bebcc2e3b0e654146304a1dfa040",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_OR_47/WEB_f426ed3e2e41c7c050f7fe27cbafeea6"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_OR_47_R2",
+                        "id": "01J1Q4P4SQPNA2YQYR2C1KF8ZD",
+                        "familyReference": "OR_47_R2",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Lac Saisi par les Glaces",
+                        "elements": {
+                            "MAIN_COST": "#2#",
+                            "RECALL_COST": "#2#",
+                            "MAIN_EFFECT": "Lorsque vous jouez un Personnage — Si son Expédition est en retard, je gagne 1 compteur Épreuve.  Lorsque je gagne mon troisième compteur Épreuve — Sacrifiez-moi. Si vous le faites, créez un jeton Illusion [5/5/5 Reflet Draconique] dans une Expédition ciblée, puis un Personnage ciblé gagne [[Endormi]]."
+                        },
+                        "siblingReference": "OR_47"
+                    },
+                    "id": "01JMKRJ3371XWRFXYPAJC9QW0C"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/278b7d58e97fdcd42b35",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_YZ_45_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_45/JPG/fr_FR/75629ec49455b12f325c656738db4d26.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_45/WEB_47f0415b9edb3daaa72470eb7955ecc1",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_45/WEB_c58b22a14250166ef1438d61fd450458"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_YZ_45_C",
+                        "id": "01J1Q4P4SXE7Q45FWVT059K86N",
+                        "familyReference": "YZ_45_C",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "name": "Le Nilam, Arbre-Monde Flétri",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "4",
+                            "MAIN_EFFECT": "Lorsque vous épuisez une carte en Réserve — Vous pouvez m'épuiser ({T}) pour créer un jeton Illusion [2/2/2 Phalène de Mana] dans une Expédition ciblée.  {J} Vous pouvez épuiser une carte ciblée en Réserve. (Une carte épuisée ne peut pas être jouée et n'a pas de capacité de Soutien.)"
+                        },
+                        "siblingReference": "YZ_45"
+                    },
+                    "id": "01JMKRJ30KF569VV64HZ281WVC"
+                }
+            ],
+            "number": 4
+        }
+    },
+    "cardsByRarityData": [
+        [
+            "Commun",
+            21
+        ],
+        [
+            "Rare",
+            15
+        ],
+        [
+            "Unique",
+            3
+        ]
+    ],
+    "updatedAt": "2025-02-21T09:19:32+00:00",
+    "id": "01JMKRJ2ZQ01TYFJ4K9TC3HQJN",
+    "description": "",
+    "legal": true,
+    "cardIndexes": {
+        "/cards/ALT_ALIZE_B_YZ_35_U_14722": 1,
+        "/cards/ALT_ALIZE_B_OR_38_U_16892": 1,
+        "/cards/ALT_ALIZE_B_YZ_45_C": 3,
+        "/cards/ALT_COREKS_B_YZ_13_C": 2,
+        "/cards/ALT_ALIZE_B_YZ_42_C": 1,
+        "/cards/ALT_COREKS_B_YZ_14_C": 1,
+        "/cards/ALT_ALIZE_B_YZ_40_R1": 2,
+        "/cards/ALT_COREKS_B_YZ_25_C": 2,
+        "/cards/ALT_ALIZE_A_OR_38_R2": 2,
+        "/cards/ALT_ALIZE_B_AX_35_R2": 2,
+        "/cards/ALT_ALIZE_B_AX_37_R2": 1,
+        "/cards/ALT_COREKS_B_YZ_21_C": 2,
+        "/cards/ALT_ALIZE_B_YZ_33_C": 2,
+        "/cards/ALT_COREKS_B_YZ_11_R1": 2,
+        "/cards/ALT_ALIZE_B_YZ_35_C": 2,
+        "/cards/ALT_ALIZE_B_OR_47_R2": 1,
+        "/cards/ALT_COREKS_B_YZ_14_U_1371": 1,
+        "/cards/ALT_ALIZE_B_YZ_37_R1": 1,
+        "/cards/ALT_ALIZE_B_YZ_39_C": 2,
+        "/cards/ALT_CORE_B_YZ_24_C": 2,
+        "/cards/ALT_ALIZE_B_AX_33_R2": 2,
+        "/cards/ALT_ALIZE_B_YZ_32_R1": 2,
+        "/cards/ALT_ALIZE_B_YZ_34_C": 2
+    }
+}

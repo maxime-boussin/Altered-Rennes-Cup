@@ -1,0 +1,1250 @@
+{
+    "@context": "/contexts/DeckUserList",
+    "@id": "/deck_user_lists/01JM5NWWZGRM71374AYC6W7QXS",
+    "@type": "DeckUserList",
+    "name": "SigiS2",
+    "user": {
+        "@id": "/users/01J3E4JE7H3D31WJCGJ1MZBQT5",
+        "@type": "User",
+        "id": "01J3E4JE7H3D31WJCGJ1MZBQT5"
+    },
+    "faction": {
+        "@id": "/factions/OR",
+        "@type": "Faction",
+        "reference": "OR",
+        "color": "#0f6593",
+        "id": "01GE7AC9X78DXSNKNB15KCF69X",
+        "name": "Ordis"
+    },
+    "alterator": {
+        "@id": "/cards/ALT_CORE_B_OR_01_C",
+        "@type": "Card",
+        "cardType": {
+            "@id": "/card_types/01GE7AC9WGQTNRP28T63FH8TZD",
+            "@type": "CardType",
+            "reference": "HERO",
+            "id": "01GE7AC9WGQTNRP28T63FH8TZD",
+            "name": "Héros"
+        },
+        "rarity": {
+            "@id": "/rarities/COMMON",
+            "@type": "Rarity",
+            "reference": "COMMON",
+            "name": "Commun"
+        },
+        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_01/JPG/fr_FR/324a868c471eb334b99205b8c94246f4.jpg",
+        "inMyCollection": 0,
+        "assets": {
+            "WEB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_01/WEB_c4424b7abf20989cbb30a260a802724c"
+            ],
+            "HERO_WIDE": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_01/HERO_WIDE_57ea11e069a699df24955688f1247b29"
+            ],
+            "HERO_THUMB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_01/HERO_THUMB_2b3966dee10b73e5c94df30cdc327dc7"
+            ]
+        },
+        "reference": "ALT_CORE_B_OR_01_C",
+        "id": "01HKAFJNVK19S8CP6JE98T9T4W",
+        "familyReference": "OR_01_C",
+        "mainFaction": {
+            "@id": "/factions/OR",
+            "@type": "Faction",
+            "reference": "OR",
+            "color": "#0f6593",
+            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+            "name": "Ordis"
+        },
+        "name": "Sigismar & Wingspan",
+        "elements": {
+            "MAIN_COST": "0",
+            "RECALL_COST": "0",
+            "PERMANENT": "2",
+            "RESERVE": "2",
+            "MAIN_EFFECT": "À Midi — Créez un jeton Soldat [1/1/1 Recrue Ordis] dans votre Expédition Héros."
+        },
+        "siblingReference": "OR_01"
+    },
+    "gameType": {
+        "@id": "/game_types/01GDNGQY64G6NRWBZ7PYP0Z3E3",
+        "@type": "GameType",
+        "reference": "CONSTRUCTED",
+        "name": "Construit"
+    },
+    "public": false,
+    "cardQuantity": 39,
+    "deckLegality": {
+        "@type": "DeckLegality",
+        "@id": "/.well-known/genid/840a8e189632da2018a4",
+        "resume": {
+            "nbRare": true,
+            "isOwned": true,
+            "nbUnique": true,
+            "isSameFaction": true,
+            "nbFamily": true,
+            "nbHero": true,
+            "nbCards": true,
+            "isSuspended": true,
+            "globalValidity": true,
+            "errorFamily": []
+        }
+    },
+    "deckCardsByType": {
+        "@type": "DeckCard",
+        "@id": "/.well-known/genid/5082ef884913fd21ce17",
+        "character": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/fbebcb9e5ac83c290e20",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/dd8f1114c625b73b5eb3",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_OR_16_R1",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_OR_16/JPG/fr_FR/50add94b3e35d8e42ac3d270940e84f0.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_16/ALT_CORE_B_OR_16_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_16/ALT_CORE_B_OR_16_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_16/ALT_CORE_B_OR_16_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_OR_16_R1",
+                        "id": "01HN5TXRG5SBSNZNS8992JVKXY",
+                        "familyReference": "OR_16_R1",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Procuratrice Ordis",
+                        "elements": {
+                            "MAIN_COST": "#2#",
+                            "RECALL_COST": "#2#",
+                            "OCEAN_POWER": "#2#",
+                            "MOUNTAIN_POWER": "#2#",
+                            "FOREST_POWER": "2",
+                            "MAIN_EFFECT": "Lorsque mon Expédition n'avance pas pendant le Crépuscule — Piochez une carte."
+                        },
+                        "siblingReference": "OR_16"
+                    },
+                    "id": "01JM5NY7AMM3PHX33XWV3KN98N"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/2a8cf06cb379f8f7e3ac",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_AX_07_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_AX_07/JPG/fr_FR/c36eaad6b0604b3214d7c954767d05a4.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_AX_07/WEB_979372d60f5841dca22473380064e856",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_AX_07/WEB_ffe71a769c78660116c1da9133eaf930",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_AX_07/WEB_a0d889a05478d890b7df4157be2a08be"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_AX_07_R2",
+                        "id": "01HN5TXR2Y1G6XJEYA836Z1Z6S",
+                        "familyReference": "AX_07_R2",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Mécanicienne de la Fonderie",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "#2#",
+                            "MOUNTAIN_POWER": "1",
+                            "FOREST_POWER": "#1#",
+                            "ECHO_EFFECT": "{D} : Le prochain Permanent que vous jouez ce tour coûte {1} de moins. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "AX_07"
+                    },
+                    "id": "01JM5NZGTXYGQ6FVHKGAQ7NA69"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/e9fddb90c5358792ffec",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_OR_05_R1",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_OR_05/JPG/fr_FR/0263fa69aa5c61eb7b126587cda94e89.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_05/ALT_CORE_B_OR_05_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_05/ALT_CORE_B_OR_05_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_05/ALT_CORE_B_OR_05_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_OR_05_R1",
+                        "id": "01HN5TXREQ8M6JS498EQ5B0BJ7",
+                        "familyReference": "OR_05_R1",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Troupière Ordis",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "#2#",
+                            "MOUNTAIN_POWER": "#2#",
+                            "FOREST_POWER": "1"
+                        },
+                        "siblingReference": "OR_05"
+                    },
+                    "id": "01JM5P0MEC3XYP12S9B801E2MJ"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/47aaf3ce36b57ae20aa2",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_OR_09_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_OR_09/JPG/fr_FR/cc10af604f7d90495468410735a999df.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_09/ALT_CORE_B_OR_09_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_09/ALT_CORE_B_OR_09_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_09/ALT_CORE_B_OR_09_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_OR_09_C",
+                        "id": "01HN5TXRF7Q3TJMV23TD5N99VP",
+                        "familyReference": "OR_09_C",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Le Roi-Grenouille",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "3",
+                            "FOREST_POWER": "3",
+                            "MOUNTAIN_POWER": "0"
+                        },
+                        "siblingReference": "OR_09"
+                    },
+                    "id": "01JM5P22C00KKZBH9PFKV521WT"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/77c172c797b464fcdc7e",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_OR_04_U_6876",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/UNIQUE",
+                            "@type": "Rarity",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_04/UNIQUE/JPG/fr_FR/bf0545a1642ecf85b4b3865fa9228849.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_04/ALT_CORE_B_OR_04_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_04/ALT_CORE_B_OR_04_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_04/ALT_CORE_B_OR_04_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_OR_04_U_6876",
+                        "id": "6SZGMMPGZ38TJ85B1V4BBV08QR",
+                        "familyReference": "OR_04_U_6876",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Héraut de Papier",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MOUNTAIN_POWER": "0",
+                            "OCEAN_POWER": "1",
+                            "FOREST_POWER": "1",
+                            "MAIN_EFFECT": "Lorsqu'un autre Personnage non-jeton rejoint vos Expéditions — []Créez deux jetons Soldat [1/1/1 Recrue Ordis] dans mon Expédition.",
+                            "ECHO_EFFECT": "{D} : []Créez un jeton Soldat [1/1/1 Recrue Ordis] dans votre Expédition Compagnon."
+                        },
+                        "siblingReference": "OR_04"
+                    },
+                    "id": "01JM5P901SZSKMVR2QP4RTM8C6"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/c2020e6a5580526f6633",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_OR_07_R1",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_07/JPG/fr_FR/fc4971ed3440464f16527895a66d1b58.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_07/ALT_CORE_B_OR_07_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_07/ALT_CORE_B_OR_07_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_07/ALT_CORE_B_OR_07_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_OR_07_R1",
+                        "id": "01HKAFJNW4GKZ5QKM6R97XMC1B",
+                        "familyReference": "OR_07_R1",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Scribe Runique du Monolithe",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "MOUNTAIN_POWER": "2",
+                            "FOREST_POWER": "#1#",
+                            "MAIN_EFFECT": "#{H} Si vous contrôlez un jeton, [Ravitaillez].# (Mettez la première carte de votre deck en Réserve.)"
+                        },
+                        "siblingReference": "OR_07"
+                    },
+                    "id": "01JM5P1P2T9K6F76Q6GXJDZ51V"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/da16c88af3d64a126f8f",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_OR_11_U_3332",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/UNIQUE",
+                            "@type": "Rarity",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_11/UNIQUE/JPG/fr_FR/3c4273231851492241e502c740f494a0.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_11/ALT_CORE_B_OR_11_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_11/ALT_CORE_B_OR_11_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_11/ALT_CORE_B_OR_11_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_OR_11_U_3332",
+                        "id": "6TWC7XMYAV8ZVTB80TAJA2CHC4",
+                        "familyReference": "OR_11_U_3332",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Ozma",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "3",
+                            "MOUNTAIN_POWER": "1",
+                            "OCEAN_POWER": "0",
+                            "FOREST_POWER": "1",
+                            "MAIN_EFFECT": "{H} Sauf si vous avez au moins huit Orbes de Mana : Piochez une carte.  Lorsqu'un autre Personnage non-jeton rejoint vos Expéditions — Si vous contrôlez au moins un Repère : Créez deux jetons Soldat [1/1/1 Recrue Ordis] dans mon Expédition."
+                        },
+                        "siblingReference": "OR_11"
+                    },
+                    "id": "01JMJ2A6B2ETNXPEQ1V6DZ9VXK"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/ddf7350b59b777dddad0",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_BR_17_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/fr_FR/978aaa852d49cb6f041c92e64ff59e6e.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_17/ALT_CORE_B_BR_17_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_17/ALT_CORE_B_BR_17_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_17/ALT_CORE_B_BR_17_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_BR_17_R2",
+                        "id": "01HN5TXR8BE49RV4YDRDGQRG3F",
+                        "familyReference": "BR_17_R2",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Guerrière de Havre",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "4",
+                            "MOUNTAIN_POWER": "#4#",
+                            "FOREST_POWER": "4",
+                            "ECHO_EFFECT": "#{D} : Le prochain Personnage que vous jouez ce tour gagne 1 boost.# (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "siblingReference": "BR_17"
+                    },
+                    "id": "01JM5P30CJ5TTQATR0W3E3RNC0"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/7f586c093125e9b75d83",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_LY_15_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_15/JPG/fr_FR/37cf721411da82b53c748a094aa17a44.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_15/ALT_CORE_B_LY_15_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_15/ALT_CORE_B_LY_15_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_15/ALT_CORE_B_LY_15_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_LY_15_R2",
+                        "id": "01HN5TXRBNF62GVTEM7MDJ4XYC",
+                        "familyReference": "LY_15_R2",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Le Marchand de Sable",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "#2#",
+                            "OCEAN_POWER": "3",
+                            "MOUNTAIN_POWER": "3",
+                            "FOREST_POWER": "0",
+                            "MAIN_EFFECT": "{H} Jusqu'à un Personnage ciblé gagne [[Endormi]]. #Vous pouvez lui faire gagner 2 boosts.# (Au Crépuscule, ignorez ses statistiques. Au Repos, il ne va pas en Réserve et il perd Endormi.)"
+                        },
+                        "siblingReference": "LY_15"
+                    },
+                    "id": "01JM5P3E77BEYCG00MW4KASXKH"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/09b43d655571f9d587dc",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_YZ_11_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/JPG/fr_FR/6b109ac013bb336f8ab6ddc1ade22b08.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/WEB_536e85193617153cada9849433e5a352",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/WEB_6378dcaffe7293bcfbb6b4dca45d93c7",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/WEB_3165b2f65a9a9cf0c265eed69094317c"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_YZ_11_R2",
+                        "id": "01HN5TXRK33ZPJ2XJSV4Y8G7FM",
+                        "familyReference": "YZ_11_R2",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Baba Yaga",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "2",
+                            "MOUNTAIN_POWER": "#2#",
+                            "FOREST_POWER": "#3#",
+                            "OCEAN_POWER": "2",
+                            "MAIN_EFFECT": "{H} Piochez une carte."
+                        },
+                        "siblingReference": "YZ_11"
+                    },
+                    "id": "01JM5P4EDSNQP7WTYMFQFAWYAP"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/9f74ae5aab79a2ba3ad1",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_OR_13_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_13/JPG/fr_FR/445a6a104124fb4aa52da361e0e1b499.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_13/ALT_CORE_B_OR_13_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_13/ALT_CORE_B_OR_13_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_13/ALT_CORE_B_OR_13_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_OR_13_C",
+                        "id": "01HKAFJNWTWQDQCCMFNMP255P8",
+                        "familyReference": "OR_13_C",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Gardienne Ordis",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "1",
+                            "MOUNTAIN_POWER": "3",
+                            "FOREST_POWER": "1",
+                            "MAIN_EFFECT": "{J} Créez un jeton Soldat [1/1/1 Recrue Ordis] dans votre autre Expédition."
+                        },
+                        "siblingReference": "OR_13"
+                    },
+                    "id": "01JM5P3RNW28X8ANRWN4T56HY7"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/a94f10250661c9b679ed",
+                    "quantity": 3,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_OR_14_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_14/JPG/fr_FR/1c474d8247d1ee8946e3184250be6e43.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_14/ALT_CORE_B_OR_14_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_14/ALT_CORE_B_OR_14_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_14/ALT_CORE_B_OR_14_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_OR_14_C",
+                        "id": "01HKAFJNWYMJ61GVP4T4KWNF4S",
+                        "familyReference": "OR_14_C",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Espionne Ordis",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "MOUNTAIN_POWER": "2",
+                            "FOREST_POWER": "2",
+                            "MAIN_EFFECT": "{H} [Sabotez]. (Défaussez jusqu'à une carte d'une Réserve.)"
+                        },
+                        "siblingReference": "OR_14"
+                    },
+                    "id": "01JM5P400ZF38RAB344HQJAZMM"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/1495e9b1ac8e9e0eaddc",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_YZ_11_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_11/JPG/fr_FR/0ab2185f4c9fdae209649146fd60a8b1.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_11/ALT_CORE_B_YZ_11_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_11/ALT_CORE_B_YZ_11_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_11/ALT_CORE_B_YZ_11_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_YZ_11_R2",
+                        "id": "01HKAFJP0730JFBTTK089DB8JM",
+                        "familyReference": "YZ_11_R2",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Baba Yaga",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "2",
+                            "FOREST_POWER": "#3#",
+                            "OCEAN_POWER": "2",
+                            "MOUNTAIN_POWER": "#2#",
+                            "MAIN_EFFECT": "{H} Piochez une carte."
+                        },
+                        "siblingReference": "YZ_11"
+                    },
+                    "id": "01JM5P4BPRYMTHA6S15Q8ZCY1X"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/5996d1b19e04102273a0",
+                    "quantity": 1,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_OR_15_U_1917",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/UNIQUE",
+                            "@type": "Rarity",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_OR_15/UNIQUE/JPG/fr_FR/91a338366757348e7603c360c3990724.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_15/ALT_CORE_B_OR_15_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_15/ALT_CORE_B_OR_15_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_15/ALT_CORE_B_OR_15_U_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_OR_15_U_1917",
+                        "id": "62YWK97DNV8428F9TYM7FKZT11",
+                        "familyReference": "OR_15_U_1917",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Kakoba, Commandant de Légion",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "4",
+                            "MOUNTAIN_POWER": "3",
+                            "OCEAN_POWER": "3",
+                            "FOREST_POWER": "3",
+                            "MAIN_EFFECT": "{J} Si vous contrôlez au moins quatre Personnages : Les Personnages que vous contrôlez gagnent 1 boost.  {H} Si vous contrôlez au moins deux Repères : Créez un jeton Soldat [1/1/1 Recrue Ordis] dans votre Expédition Héros.",
+                            "ECHO_EFFECT": "{D} : []Créez un jeton Soldat [1/1/1 Recrue Ordis] dans une Expédition ciblée."
+                        },
+                        "siblingReference": "OR_15"
+                    },
+                    "id": "01JM89RZRTE5B7FR4VRCMMB4SH"
+                }
+            ],
+            "number": 25
+        },
+        "spell": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/d5c0b9694da382cafe31",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/7c529e0433eef8e6de36",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_ALIZE_B_OR_42_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_OR_42/JPG/fr_FR/7b2f5d9c8d2f436e1e78fba1a3f13bab.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_OR_42/WEB_11fb440c7d2027197b70c3d6e7d5371d",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_OR_42/WEB_d48f47ad302b9170ae3ef91b889013dd"
+                            ]
+                        },
+                        "reference": "ALT_ALIZE_B_OR_42_C",
+                        "id": "01J1Q4P4SN8RYANNFV99ET5V4D",
+                        "familyReference": "OR_42_C",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Case Prison",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MAIN_EFFECT": "[[Fugace]].  Envoyez en Réserve un Personnage ciblé dont aucune statistique n'est supérieure à 3."
+                        },
+                        "siblingReference": "OR_42"
+                    },
+                    "id": "01JM5P5BXPJKJPGB3C5N00HW3T"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/5f774f62600b52fab8f4",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_OR_24_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_OR_24/JPG/fr_FR/b626ae97399831510fb5cd9df7fbd7aa.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_24/ALT_CORE_B_OR_24_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_24/ALT_CORE_B_OR_24_R_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_OR_24_C",
+                        "id": "01HN5TXRH5S26WXRQQDYV8769S",
+                        "familyReference": "OR_24_C",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Entraînement à l'Esprit d'Équipe",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Envoyez en Réserve un Personnage ciblé avec un Coût de Main {X} ou moins, où X est le nombre de Personnages que vous contrôlez."
+                        },
+                        "siblingReference": "OR_24"
+                    },
+                    "id": "01JM5P6D9FMGJC5Q7S5A6AENA9"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/e20c27f73db87dcb3f62",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_COREKS_B_YZ_20_R2",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/RARE",
+                            "@type": "Rarity",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_20/JPG/fr_FR/4ac64e4851a4c0ade1de337a48a0e986.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_20/WEB_3bea2ef84e558b564477329b7efdbbd9",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_20/WEB_179c908cf15b1b4020cb969f68e59432"
+                            ]
+                        },
+                        "reference": "ALT_COREKS_B_YZ_20_R2",
+                        "id": "01HN5TXRMC58ATW47YM8R3ZFSJ",
+                        "familyReference": "YZ_20_R2",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Don de Soi",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Sacrifiez un Personnage. Si vous le faites, piochez deux cartes."
+                        },
+                        "siblingReference": "YZ_20"
+                    },
+                    "id": "01JMJ8SMA7D90M7FDEM7D2G7FR"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/dbe439c0064c171b691b",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_OR_23_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_23/JPG/fr_FR/f78e6f848c03761b23e171959155ea34.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_23/ALT_CORE_B_OR_23_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_23/ALT_CORE_B_OR_23_R_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_OR_23_C",
+                        "id": "01HKAFJNY1NTF1W3G2JMD35NFS",
+                        "familyReference": "OR_23_C",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Chargez !",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Les Personnages que vous contrôlez gagnent 1 boost[]. (Les cartes en Réserve ne sont pas contrôlées. Un boost est un compteur +1/+1/+1. Retirez-le lorsqu'il quitte la zone d'Expédition.)"
+                        },
+                        "siblingReference": "OR_23"
+                    },
+                    "id": "01JM5P5T234FN1W31M6WASEMED"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/9b894f2ca7d5e6eaf885",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_OR_25_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_25/JPG/fr_FR/4af28e27e66a7cd469ddb250f7de6379.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_25/ALT_CORE_B_OR_25_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_25/ALT_CORE_B_OR_25_R_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_OR_25_C",
+                        "id": "01HKAFJNY9D5NDM96EZTV7DXWC",
+                        "familyReference": "OR_25_C",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Sceaux Adhésifs",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Choisissez l'un :  • Envoyez en Réserve un Personnage ciblé avec un Coût de Main {4} ou plus.  • Défaussez un Permanent ciblé avec un Coût de Main {4} ou plus."
+                        },
+                        "siblingReference": "OR_25"
+                    },
+                    "id": "01JM5P6YWWQ3EQWY7AV2D3ZV37"
+                }
+            ],
+            "number": 10
+        },
+        "permanent": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/07c9b84683baf6d74673",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/23da7ce1eb80a9b2345f",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_OR_30_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X78DXSNKNB15KCF69Z",
+                            "@type": "CardType",
+                            "reference": "PERMANENT",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69Z",
+                            "name": "Permanent"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_30/JPG/fr_FR/a4ccfb19807e78f9ab4779916c50c83f.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_30/ALT_CORE_B_OR_30_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_30/ALT_CORE_B_OR_30_R_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_OR_30_C",
+                        "id": "01HKAFJNYW66Y6SX2Q0QZ7TKSX",
+                        "familyReference": "OR_30_C",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Transporteur Ordis",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "MAIN_EFFECT": "À Midi — Créez un jeton Soldat [1/1/1 Recrue Ordis] dans votre Expédition Compagnon."
+                        },
+                        "siblingReference": "OR_30"
+                    },
+                    "id": "01JMJ2871ZQA0VZRBTE9BMG8Q1"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/5cdf5b1e4930f0e93ba4",
+                    "quantity": 2,
+                    "card": {
+                        "@id": "/cards/ALT_CORE_B_OR_28_C",
+                        "@type": "Card",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X78DXSNKNB15KCF69Z",
+                            "@type": "CardType",
+                            "reference": "PERMANENT",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69Z",
+                            "name": "Permanent"
+                        },
+                        "rarity": {
+                            "@id": "/rarities/COMMON",
+                            "@type": "Rarity",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_28/JPG/fr_FR/14031f51a24fe77b7a84f563e5ad32ae.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_28/ALT_CORE_B_OR_28_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_28/ALT_CORE_B_OR_28_R_WEB.jpg"
+                            ]
+                        },
+                        "reference": "ALT_CORE_B_OR_28_C",
+                        "id": "01HKAFJNYM6QR4V4QTR9J7P9RS",
+                        "familyReference": "OR_28_C",
+                        "mainFaction": {
+                            "@id": "/factions/OR",
+                            "@type": "Faction",
+                            "reference": "OR",
+                            "color": "#0f6593",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69X",
+                            "name": "Ordis"
+                        },
+                        "name": "Le Monolithe, Bastion Ordis",
+                        "elements": {
+                            "MAIN_COST": "5",
+                            "RECALL_COST": "5",
+                            "MAIN_EFFECT": "Lorsqu'un Personnage rejoint vos Expéditions — Il gagne 1 boost[]. (Un boost est un compteur +1/+1/+1. Retirez-le lorsqu'il quitte la zone d'Expédition.)"
+                        },
+                        "siblingReference": "OR_28"
+                    },
+                    "id": "01JM5P7C2ZVZQBMR7NDR7TDRFQ"
+                }
+            ],
+            "number": 4
+        }
+    },
+    "cardsByRarityData": [
+        [
+            "Commun",
+            21
+        ],
+        [
+            "Rare",
+            15
+        ],
+        [
+            "Unique",
+            3
+        ]
+    ],
+    "updatedAt": "2025-02-20T18:10:58+00:00",
+    "id": "01JM5NWWZGRM71374AYC6W7QXS",
+    "description": "tournoi rennes",
+    "legal": true,
+    "cardIndexes": {
+        "/cards/ALT_CORE_B_OR_30_C": 2,
+        "/cards/ALT_CORE_B_OR_11_U_3332": 1,
+        "/cards/ALT_COREKS_B_YZ_20_R2": 2,
+        "/cards/ALT_COREKS_B_OR_16_R1": 1,
+        "/cards/ALT_COREKS_B_AX_07_R2": 2,
+        "/cards/ALT_COREKS_B_OR_05_R1": 2,
+        "/cards/ALT_CORE_B_OR_07_R1": 2,
+        "/cards/ALT_COREKS_B_OR_09_C": 3,
+        "/cards/ALT_COREKS_B_BR_17_R2": 1,
+        "/cards/ALT_COREKS_B_LY_15_R2": 2,
+        "/cards/ALT_CORE_B_OR_13_C": 3,
+        "/cards/ALT_CORE_B_OR_14_C": 3,
+        "/cards/ALT_CORE_B_YZ_11_R2": 1,
+        "/cards/ALT_COREKS_B_YZ_11_R2": 2,
+        "/cards/ALT_ALIZE_B_OR_42_C": 2,
+        "/cards/ALT_CORE_B_OR_23_C": 2,
+        "/cards/ALT_COREKS_B_OR_24_C": 2,
+        "/cards/ALT_CORE_B_OR_25_C": 2,
+        "/cards/ALT_CORE_B_OR_28_C": 2,
+        "/cards/ALT_CORE_B_OR_04_U_6876": 1,
+        "/cards/ALT_COREKS_B_OR_15_U_1917": 1
+    }
+}

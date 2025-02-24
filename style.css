@@ -420,8 +420,7 @@ body section {
   display: flex;
   gap: 4px;
 }
-
-.winrateFactions__list {
+.winrateFactions__list, .charts__list {
   background: white;
   border-radius: 8px;
   padding: 24px;
@@ -429,15 +428,23 @@ body section {
   flex-wrap: wrap;
   gap: 24px;
 }
-.winrateFactions__list > p {
+.winrateFactions__list {
+  margin-bottom: 36px;
+}
+.winrateFactions__list > p, .charts__list > p {
   margin-top: 24px;
 }
 @media (max-width: 600px) {
-  .winrateFactions__list {
+  .winrateFactions__list, .charts__list {
     border-radius: 0px;
     padding: 16px;
     gap: 16px;
   }
+}
+.charts__list {
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
 }
 
 /* SECTION FINALE */
@@ -507,6 +514,21 @@ body section {
   gap: 4px;
 }
 
+.scoreBox {
+  position: absolute;
+  height: 40px;
+  width: 25px;
+  justify-content: center;
+  padding-top: 4px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-left: 215px;
+  font-size: 18px;
+  @media (max-width: 600px) {
+    height:28px;
+  }
+}
+
 .joueur__bo {
   margin: 0;
   background-color: white;
@@ -541,6 +563,7 @@ body section {
   border-radius: 2vh;
   height: calc(100% - 70px);
   width: fit-content;
+  max-width: calc(90vw - 40px);
   max-height: 800px;
   padding: 20px;
   background-color: #fff;
@@ -548,12 +571,20 @@ body section {
   position: relative;
   display: flex;
   justify-content: center;
+  @media (max-width: 600px){
+    overflow-x: scroll;
+  }
 }
 
 #decklistBox .blockView {
   display: flex;
   height: 100%;
   background-color: #fff;
+  @media (max-width: 600px){
+    width: 100%;
+    flex-direction: column;
+    overflow-x: auto;
+  }
 }
 
 #decklistBox .listView {
@@ -654,7 +685,10 @@ body section {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
-  overflow: hidden;
+  @media (max-width: 600px){
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 #decklistBox .blockView .cardBox {
@@ -679,10 +713,18 @@ body section {
 
 #decklistBox .blockView .uniques .cardBox {
   height: 33.33%;
+  @media (max-width: 600px){
+    height: unset;
+    width: 33.33%;
+  }
 }
 
 #decklistBox .blockView .others .cardBox {
   height: 25%;
+  @media (max-width: 600px){
+    height: unset;
+    width: 25%;
+  }
 }
 
 #decklistBox button.close,
@@ -774,12 +816,10 @@ body section {
   }
 }
 
-#sectionInfo__ban {
-  margin-top: 36px;
-}
 
 .sectionInfo__ban__bloc {
   width: 100%;
+  margin-top: 36px;
 }
 
 .sectionInfo__ban__bloc__listeCartes {
@@ -796,7 +836,7 @@ body section {
 }
 
 .sectionInfo__ban__bloc__listeCartes img {
-  width: 10%;
+  max-width: 14%;
   border-radius: 8px;
   flex: auto;
   @media (max-width: 600px) {

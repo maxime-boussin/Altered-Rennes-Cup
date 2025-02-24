@@ -31,9 +31,9 @@
       <img class="header__img__mobile" src="assets/top-mobile.png" />
       <div class="marginApp">
         <select name="saison" id="saison-select">
-          <option value="3">Saison 3 (fév. 2025)</option>
-          <option value="2" selected>Saison 2 (jan. 2025)</option>
-          <option value="1">Saison 1 (déc. 2024)</option>
+          <option value="3" selected>Saison 3</option>
+          <option value="2">Saison 2</option>
+          <option value="1">Saison 1</option>
         </select>
       </div>
     </header>
@@ -68,6 +68,10 @@
         <div class="winrate__list"></div>
         <p>Factions</p>
         <div class="winrateFactions__list"></div>
+        <p>Graphiques</p>
+        <div class="charts__list">
+          <div id="heroesAmountChart"></div>
+        </div>
       </div>
       <div id="cartesJouees" class="marginApp"></div>
       <div id="cartesUniques" class="marginApp">
@@ -89,40 +93,30 @@
         </article>
       </div>
     </section>
-
     <section id="sectionInfo">
       <div id="sectionInfo__details" class="marginApp">
         <div class="sectionInfo__details__bloc">
           <p class="sectionInfo__titre">Date</p>
           <p class="sectionInfo__details__bloc__content">
-            La saison 3 de l’Altered Rennes Cup débute le 22 février 2025. Les
-            decklists se limitent aux deux premières extensions d'Altered,
-            Beyond The Gates et Trial By Frost.
           </p>
         </div>
         <div class="sectionInfo__details__bloc">
           <p class="sectionInfo__titre">Format</p>
-          <p class="sectionInfo__details__bloc__content">
-            Construit. Les règles de construction de deck classiques sont
-            appliquées. Waru est joué d'après son errata du 31 janvier 2025.
-          </p>
+          <p id="format" class="sectionInfo__details__bloc__content"></p>
         </div>
       </div>
       <div id="sectionInfo__ban" class="marginApp">
         <div class="sectionInfo__ban__bloc">
           <p class="sectionInfo__titre">Cartes suspendues</p>
-          <div class="sectionInfo__ban__bloc__listeCartes">
-            <img src="assets/ban/havreBastionBravos-R.webp" />
-            <img src="assets/ban/armuriere-U.webp" />
-            <img src="assets/ban/gericht-U.webp" />
-            <img src="assets/ban/ozma-C.webp" />
-            <img src="assets/ban/ozma-R.webp" />
-            <img src="assets/ban/meduse-U.webp" />
-          </div>
+          <div id="banCards" class="sectionInfo__ban__bloc__listeCartes"></div>
+        </div>
+        <div class="sectionInfo__ban__bloc">
+          <p class="sectionInfo__titre">Errata récents</p>
+          <div id="errata" class="sectionInfo__ban__bloc__listeCartes"></div>
         </div>
       </div>
     </section>
-
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="module" src="script.js" defer></script>
   </body>
 </html>
