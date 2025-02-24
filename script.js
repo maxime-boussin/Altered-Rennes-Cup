@@ -49,7 +49,7 @@ function selectSection(item) {
   item.classList.add("navActiv");
   document.querySelectorAll("body section").forEach((sec) => {
     if (sec.id.slice(7) === item.id.slice(4)) {
-      sec.style.display = "flex";
+      sec.style.display = "block";
     } else {
       sec.style.display = "none";
     }
@@ -61,11 +61,13 @@ const listeArticles = document.getElementById("listeArticles");
 const blocWinrate = document.getElementById("winrate");
 const sectionInfoBan = document.getElementById("sectionInfo__ban");
 const sectionInfoDetails = document.getElementById("sectionInfo__details");
+const cartesJouees = document.getElementById("cartesJouees");
 if (window.innerWidth < 600) {
   listeArticles.classList.remove("marginApp");
   listeArticles.classList.remove("marginApp");
   sectionInfoBan.classList.remove("marginApp");
   sectionInfoDetails.classList.remove("marginApp");
+  cartesJouees.classList.remove("marginApp");
 }
 
 const seasonSelector = document.getElementById("saison-select");
@@ -366,7 +368,7 @@ const fetchData = async () => {
         poulesContainerClassementLegendes.appendChild(legendePointsDescklistes);
         // <p> légendes points
         const legendePoints = document.createElement("p");
-        legendePoints.innerText = "Points";
+        legendePoints.innerText = "Victoires";
         legendePointsDescklistes.appendChild(legendePoints);
         // <p> légendes decklist
         const legendeDecklist = document.createElement("p");
@@ -550,11 +552,13 @@ const fetchData = async () => {
 
           // WIN
           if (matches[m].winner === matches[m].opponents[0].id) {
-            poulesContainerMatchsVersusJoueur1.style.boxShadow = "0px 0px 0px 2px #E9B901 inset"
+            poulesContainerMatchsVersusJoueur1.style.boxShadow =
+              "0px 0px 0px 2px #E9B901 inset";
             versusJoueur2Nom.style.opacity = "0.5";
             versusJoueur2Img.style.opacity = "0.5";
           } else if (matches[m].winner === matches[m].opponents[1].id) {
-            poulesContainerMatchsVersusJoueur2.style.boxShadow = "0px 0px 0px 2px #E9B901 inset"
+            poulesContainerMatchsVersusJoueur2.style.boxShadow =
+              "0px 0px 0px 2px #E9B901 inset";
             versusJoueur1Nom.style.opacity = "0.5";
             versusJoueur1Img.style.opacity = "0.5";
           }
@@ -738,8 +742,6 @@ const fetchData = async () => {
             const joueurDecklistLink2 = document.createElement("a");
             joueurDecklistLink2.href = "#";
             joueurDecklistLink2.classList.add("linkDecklist")
-            // joueurDecklistLink2.href = "https://www.altered.gg/fr-fr/decks/" + players[j].obj.deck;
-            // joueurDecklistLink2.setAttribute("target", "_blank");
             joueurDecklistLink2.addEventListener("click", () => decklistButton(matches[j].opponents[1].deck));
             joueur__imgNom2.appendChild(joueurDecklistLink2);
             // <img> icon decklist
@@ -761,16 +763,14 @@ const fetchData = async () => {
           // WIN
           if (matches[j].winner === matches[j].opponents[0].id) {
             sectionFinale__listMatchs__match__joueur1.style.boxShadow = "0px 0px 0px 2px #E9B901 inset";
-            joueur2Nom.style.opacity = "0.5";
-            joueur2Img.style.opacity = "0.5";
+            sectionFinale__listMatchs__match__joueur2.style.opacity = "0.5";
             if(matches[j].score) {
               sectionFinale__listMatchs__match__joueur1.querySelector(".scoreBox").style.backgroundColor = "#E9B901";
             }
           } 
           else if (matches[j].winner === matches[j].opponents[1].id) {
             sectionFinale__listMatchs__match__joueur2.style.boxShadow = "0px 0px 0px 2px #E9B901 inset";
-            joueur__imgNom1.style.opacity = "0.5";
-            joueur1Img.style.opacity = "0.5";
+            sectionFinale__listMatchs__match__joueur1.style.opacity = "0.5";
             if(matches[j].score) {
               sectionFinale__listMatchs__match__joueur2.querySelector(".scoreBox").style.backgroundColor = "#E9B901";
             }
@@ -921,6 +921,7 @@ const fetchData = async () => {
           hero.top < faction.top ? hero.top : faction.top || hero.top;
       });
       let heroesAmount = [['Héros', 'Nombre']];
+      let orderedHeroes = [...heroes];
       heroesAmount.push(...heroes.map((h, i) => [h.name, h.amount]));
       heroes.sort((a, b) => {
         if (a.top !== b.top) return a.top - b.top;
@@ -1120,7 +1121,152 @@ const fetchData = async () => {
         nbWin.appendChild(nbWinImg);
       }
       initChart(heroesAmount);
+      buildCardStats(playerData, factions, orderedHeroes);
     }
+
+    async function buildCardStats(playerData, factions, orderedHeroes) {
+      let globalCards = {};
+      let globalUniques = [];
+      factions.sort((a, b) => a.name.localeCompare(b.name));
+      factions.map(faction => faction.name.charAt(0)).forEach(f => {
+        globalCards[f] = [];
+      });
+      for (const player of playerData) {
+        let data = await getDecklistData(player.deck);
+        console.log(data)
+        let faction = data.faction.reference.charAt(0).toLowerCase();
+        data = [
+          ...data.deckCardsByType.character.deckUserListCard,
+          ...data.deckCardsByType.permanent.deckUserListCard,
+          ...data.deckCardsByType.spell.deckUserListCard
+        ];
+        data.forEach((card) => {
+          let name = card.card.familyReference.replace(/_(\d+)$/, '');
+          let quantity = card.quantity;
+          let type = name.charAt(name.length-1) === "U" ? "uniques" : "others";
+          let hasWeb = type === "uniques" && card.card.assets && card.card.assets.WEB && card.card.assets.WEB.length === 3;
+          let img = hasWeb ? card.card.assets.WEB[2] : card.card.imagePath;
+          let globalType = type === "uniques" ? globalUniques : globalCards[faction];
+          let cardSlot = globalType.find(x => x.ref === name);
+          if(type === "uniques") {
+            console.log({ "ref": name, "quantity": quantity, "img": img })
+          }
+          if(cardSlot) {
+            cardSlot.quantity += quantity;
+          }
+          else {
+            globalType.push({ "ref": name, "quantity": quantity, "img": img });
+          }
+        });
+      }
+      for (const faction in globalCards) {
+        globalCards[faction].sort((a, b) => b.quantity - a.quantity);
+        globalUniques.sort((a, b) => b.quantity - a.quantity);
+      }
+      const containerCartesJouees = document.querySelector("#cartesJouees");
+      const containerCartesUniques = document.querySelector(".cartesUniques__bloc__listeCarte");
+      containerCartesJouees.innerHTML = "";
+      containerCartesUniques.innerHTML = "";
+      for (let i = 0; i < factions.length; i++) {
+        // <article> cartesJouees bloc
+        const cartesJoueesBloc = document.createElement("article");
+        cartesJoueesBloc.classList.add("cartesJouees__bloc");
+        containerCartesJouees.appendChild(cartesJoueesBloc);
+        // <div> cartesJouees details
+        const cartesJoueesBlocDetails = document.createElement("div");
+        cartesJoueesBlocDetails.classList.add("cartesJouees__bloc__details");
+        cartesJoueesBloc.appendChild(cartesJoueesBlocDetails);
+        // <img> cartesJouees details logo faction
+        const logoFaction = document.createElement("img");
+        logoFaction.src = `assets/icon-factions/icon-faction-${[i + 1]}.png`;
+        logoFaction.classList.add("cartesJouees__bloc__details__logoFaction");
+        cartesJoueesBlocDetails.appendChild(logoFaction);
+        for (let j = 0; j < 3; j++) {
+          let hero = orderedHeroes[i*3+j];
+          // <div> cartesJouees nb héros
+          const cartesJoueesBlocDetailsNbHeros = document.createElement("div");
+          cartesJoueesBlocDetailsNbHeros.classList.add("cartesJouees__bloc__details__nbheros");
+          cartesJoueesBlocDetails.appendChild(cartesJoueesBlocDetailsNbHeros);
+          // <p> cartesJouees nb héros
+          const cartesJoueesBlocDetailsNbHerosP = document.createElement("p");
+          cartesJoueesBlocDetailsNbHerosP.innerText = hero.amount;
+          cartesJoueesBlocDetailsNbHeros.appendChild(cartesJoueesBlocDetailsNbHerosP);
+          // <img> cartesJouees nb héros
+          const logoHeros = document.createElement("img");
+          logoHeros.src = `assets/heros/small/${hero.faction.charAt(0)}-${hero.name}.png`;
+          cartesJoueesBlocDetailsNbHeros.appendChild(logoHeros);
+        }
+        // <div> liste cartesJouees
+        const cartesJoueesBlocListeCarte = document.createElement("div");
+        cartesJoueesBlocListeCarte.classList.add(
+          "cartesJouees__bloc__listeCarte"
+        );
+        cartesJoueesBloc.appendChild(cartesJoueesBlocListeCarte);
+        let factionCards = globalCards[factions[i].name.charAt(0)];
+        factionCards.forEach(factionCard => {
+          const blocCarte = document.createElement("div");
+          cartesJoueesBlocListeCarte.appendChild(blocCarte);
+          // <img> carte
+          const imgCarte = document.createElement("img");
+          imgCarte.src = factionCard.img;
+          blocCarte.appendChild(imgCarte);
+          // <p> %
+          const pCarte = document.createElement("p");
+          let percent = (factionCard.quantity / (factions[i].amount*3))*100;
+          pCarte.innerText = (percent % 1 === 0 ? percent : percent.toFixed(1)) + "%";
+          /*
+            const nbExemplaireTotal = Récupérer le nb de joueur qui joue un héros de la faction f
+            nbExemplaireTotal *= 3
+            nbExemplaireCarte = Récupérer le nb d'exemplaire de la carte
+            nbExemplaireCarte *= 100 / nbExemplaireTotal
+            pCarte.innerText = nbExemplaireCarte;
+          */
+          blocCarte.appendChild(pCarte);
+        });
+      }
+
+      // CARTES UNIQUES
+      globalUniques.forEach(uniqueCard => {
+        const blocCarte = document.createElement("div");
+        containerCartesUniques.appendChild(blocCarte);
+        // <img> carte
+        const imgCarte = document.createElement("img");
+        imgCarte.src = uniqueCard.img;
+        blocCarte.appendChild(imgCarte);
+        // <p> %
+        const pCarte = document.createElement("p");
+        pCarte.innerText = uniqueCard.quantity;
+        blocCarte.appendChild(pCarte);
+      });
+    }
+
+    // Switch onglet STATS
+    const navStats = document.querySelector("#navStats");
+    const navStatsButtons = navStats.children;
+    const btnWinrate = document.querySelector(".btnWinrate");
+    const btnCartesJouees = document.querySelector(".btnCartes");
+    for (let i = 0; i < navStatsButtons.length; i++) {
+      navStatsButtons[i].addEventListener("click", function () {
+        navStatsButtons[0].classList.remove("btnActif");
+        navStatsButtons[1].classList.remove("btnActif");
+        navStatsButtons[i].classList.add("btnActif");
+      });
+    }
+    // Onglet winrate
+    const containerWinrate = document.querySelector("#winrate");
+    const containerCartesJouees = document.querySelector("#cartesJouees");
+    const containerCartesUniques = document.querySelector("#cartesUniques");
+    btnWinrate.addEventListener("click", function () {
+      containerWinrate.style.display = "block";
+      containerCartesJouees.style.display = "none";
+      containerCartesUniques.style.display = "none";
+    });
+    // Onglet cartes jouées
+    btnCartesJouees.addEventListener("click", function () {
+      containerWinrate.style.display = "none";
+      containerCartesJouees.style.display = "block";
+      containerCartesUniques.style.display = "block";
+    });
 
     generatorWinrateHeros(
       heroes,

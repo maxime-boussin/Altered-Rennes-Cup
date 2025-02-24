@@ -59,15 +59,36 @@
     </section>
 
     <section id="sectionStats">
+      <div id="navStats" class="marginApp">
+        <button class="btnWinrate btnActif">WINRATE</button>
+        <button class="btnCartes">CARTES JOUÉES</button>
+      </div>
       <div id="winrate" class="marginApp">
-        <p>Winrate Héros</p>
+        <p>Héros</p>
         <div class="winrate__list"></div>
-        <p>Winrate Factions</p>
+        <p>Factions</p>
         <div class="winrateFactions__list"></div>
-        <p>Graphiques</p>
+        <p>Répartition</p>
         <div class="charts__list">
           <div id="heroesAmountChart"></div>
         </div>
+      </div>
+      <div id="cartesJouees" class="marginApp"></div>
+      <div id="cartesUniques" class="marginApp">
+        <article class="cartesJouees__bloc">
+          <div class="cartesJouees__bloc__details">
+            <div>
+              <img class="cartesJouees__bloc__details__logoFaction" src="assets/icon-factions/icon-faction-1.png" />
+              <img class="cartesJouees__bloc__details__logoFaction" src="assets/icon-factions/icon-faction-2.png" />
+              <img class="cartesJouees__bloc__details__logoFaction" src="assets/icon-factions/icon-faction-3.png" />
+              <img class="cartesJouees__bloc__details__logoFaction" src="assets/icon-factions/icon-faction-4.png" />
+              <img class="cartesJouees__bloc__details__logoFaction" src="assets/icon-factions/icon-faction-5.png" />
+              <img class="cartesJouees__bloc__details__logoFaction" src="assets/icon-factions/icon-faction-6.png" />
+            </div>
+            <p>Uniques</p>
+          </div>
+          <div class="cartesUniques__bloc__listeCarte"></div>
+        </article>
       </div>
     </section>
     <section id="sectionInfo">
