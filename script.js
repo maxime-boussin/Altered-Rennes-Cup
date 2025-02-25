@@ -143,8 +143,7 @@ function buildDeckCategory(cards, category) {
   }
   let cardList = [];
   let uniques = [];
-  const imgLink =
-    "url(https://www.altered.gg/image-transform/?width=300&format=auto&quality=100&image=";
+  const imgLink = "url(https://www.altered.gg/image-transform/?width=300&format=auto&quality=100&image=";
 
   const divider = document.createElement("div");
   divider.classList.add("divider");
@@ -1075,7 +1074,6 @@ const fetchData = async () => {
         cardTop.appendChild(cardTopNombre);
         // <p> nombre
         const nombreHerosP = document.createElement("p");
-        const nomFaction = faction.name;
         nombreHerosP.innerText = faction.amount;
         cardTopNombre.appendChild(nombreHerosP);
         // <img> nombre
@@ -1212,7 +1210,7 @@ const fetchData = async () => {
           cartesJoueesBlocListeCarte.appendChild(blocCarte);
           // <img> carte
           const imgCarte = document.createElement("img");
-          imgCarte.src = factionCard.img;
+          imgCarte.src = `https://www.altered.gg/image-transform/?width=300&format=auto&quality=90&image=${factionCard.img}`;
           blocCarte.appendChild(imgCarte);
           // <p> %
           const pCarte = document.createElement("p");
@@ -1235,7 +1233,7 @@ const fetchData = async () => {
         containerCartesUniques.appendChild(blocCarte);
         // <img> carte
         const imgCarte = document.createElement("img");
-        imgCarte.src = uniqueCard.img;
+        imgCarte.src = `https://www.altered.gg/image-transform/?width=300&format=auto&quality=90&image=${uniqueCard.img}`;
         blocCarte.appendChild(imgCarte);
         // <p> %
         const pCarte = document.createElement("p");
