@@ -426,7 +426,7 @@ const fetchData = async () => {
           if (b.points !== a.points) {
             return b.points - a.points;
           }
-          return b.diff - a.diff;
+          return b.obj.diff - a.obj.diff;
         });
 
         let matches = [];
