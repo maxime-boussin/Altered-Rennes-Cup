@@ -1,11 +1,16 @@
-let chart, data, options, activeSeason = 3;
+let chart,
+  data,
+  options,
+  activeSeason = 3;
 
-google.charts.load("current", {packages:["corechart"]});
+google.charts.load("current", { packages: ["corechart"] });
 
 function loadGoogleCharts() {
-  return new Promise(resolve => {
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(() => { resolve() });
+  return new Promise((resolve) => {
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(() => {
+      resolve();
+    });
   });
 }
 
@@ -13,28 +18,42 @@ async function initChart(rawData) {
   await loadGoogleCharts();
   data = google.visualization.arrayToDataTable(rawData);
   options = {
-      is3D: true,
-      width: Math.min(window.innerWidth - 120, 800),
-      height: 500,
-      pieSliceText: 'none',
-      colors: [
-        '#b1491e','#973a18','#7d2b12',
-        '#cd002c','#bc0023','#ab001a',
-        '#e9337e','#e12965','#d91f4c',
-        '#268746','#1e6c38','#16512a',
-        '#0181b1','#016797','#014d7d',
-        '#9a55b0','#7b4495','#5c337a',
-      ],
-      legend: {
-        position: 'right',
-        maxLines: 2,
-        textStyle: {
-            fontSize: 12
-        }
-    }
+    is3D: true,
+    width: Math.min(window.innerWidth - 120, 800),
+    height: 500,
+    pieSliceText: "none",
+    colors: [
+      "#b1491e",
+      "#973a18",
+      "#7d2b12",
+      "#cd002c",
+      "#bc0023",
+      "#ab001a",
+      "#e9337e",
+      "#e12965",
+      "#d91f4c",
+      "#268746",
+      "#1e6c38",
+      "#16512a",
+      "#0181b1",
+      "#016797",
+      "#014d7d",
+      "#9a55b0",
+      "#7b4495",
+      "#5c337a",
+    ],
+    legend: {
+      position: "right",
+      maxLines: 2,
+      textStyle: {
+        fontSize: 12,
+      },
+    },
   };
 
-  chart = new google.visualization.PieChart(document.getElementById('heroesAmountChart'));
+  chart = new google.visualization.PieChart(
+    document.getElementById("heroesAmountChart")
+  );
   chart.draw(data, options);
 }
 
@@ -171,10 +190,9 @@ function buildDeckCategory(cards, category) {
         name: card.card.name,
         rarity: card.card.rarity.reference,
       };
-      if(obj.rarity === "RARE"){
+      if (obj.rarity === "RARE") {
         cardList.unshift(obj);
-      }
-      else {
+      } else {
         cardList.push(obj);
       }
     }
@@ -192,15 +210,15 @@ function buildDeckCategory(cards, category) {
     decklistBox.querySelector(".blockView .uniques").appendChild(cardBox);
     decklistBox.querySelector(".listView .listBox").appendChild(listCardBox);
     listCardBox.addEventListener("mouseenter", () => {
-      decklistBox.querySelector(".listView .previewBox").style.backgroundImage = imgLink + card.image + ")";
+      decklistBox.querySelector(".listView .previewBox").style.backgroundImage =
+        imgLink + card.image + ")";
     });
   });
   if (uniques.length > 0 && window.innerWidth > 600) {
-    let w = (window.innerHeight*0.9-70)/3*0.72;
-    decklistBox.querySelector(".blockView .uniques").style.width = w+"px";
-  }
-  else if(category === "Personnages") {
-      decklistBox.querySelector(".blockView .uniques").style.width = ""
+    let w = ((window.innerHeight * 0.9 - 70) / 3) * 0.72;
+    decklistBox.querySelector(".blockView .uniques").style.width = w + "px";
+  } else if (category === "Personnages") {
+    decklistBox.querySelector(".blockView .uniques").style.width = "";
   }
   cardList.forEach((card) => {
     const cardBox = document.createElement("div");
@@ -220,7 +238,8 @@ function buildDeckCategory(cards, category) {
     }
     listCardBox.prepend(rarityIcon);
     const quantityIcon = document.createElement("div");
-    const quantity = card.quantity === 1 ? "one" : card.quantity === 2 ? "two" : "three";
+    const quantity =
+      card.quantity === 1 ? "one" : card.quantity === 2 ? "two" : "three";
     quantityIcon.classList.add("quantityIcon", quantity);
     listCardBox.appendChild(quantityIcon);
     cardBox.style.backgroundImage = imgLink + card.image + ")";
@@ -228,7 +247,8 @@ function buildDeckCategory(cards, category) {
     cardQuantity.innerHTML = card.quantity;
     cardBox.appendChild(cardQuantity);
     listCardBox.addEventListener("mouseenter", () => {
-      decklistBox.querySelector(".listView .previewBox").style.backgroundImage = imgLink + card.image + ")";
+      decklistBox.querySelector(".listView .previewBox").style.backgroundImage =
+        imgLink + card.image + ")";
     });
     decklistBox.querySelector(".blockView .others").appendChild(cardBox);
     decklistBox.querySelector(".listView .listBox").appendChild(listCardBox);
@@ -281,10 +301,13 @@ async function displayDecklist(decklistId) {
       }
     }
   });
-  let columnAmount = Math.floor((decklistBox.querySelectorAll(".others .cardBox").length - 1) / 4)+1;
-  let w = columnAmount*((window.innerHeight*0.9-70)/4*0.72);
-  if(window.innerWidth > 600) {
-    decklistBox.querySelector(".blockView .others").style.width = w+"px";
+  let columnAmount =
+    Math.floor(
+      (decklistBox.querySelectorAll(".others .cardBox").length - 1) / 4
+    ) + 1;
+  let w = columnAmount * (((window.innerHeight * 0.9 - 70) / 4) * 0.72);
+  if (window.innerWidth > 600) {
+    decklistBox.querySelector(".blockView .others").style.width = w + "px";
   }
   await Promise.all(promises);
   decklistBox.querySelector(".uniques").style.display = "";
@@ -393,15 +416,16 @@ const fetchData = async () => {
             obj: dataPlayers.find((playerData) => playerData.id === player),
           });
         });
-        dataGroups[i].matches.forEach(match => {
-          if(match.winner > 0) {
-            players.find(playerData =>  playerData.id === match.winner).points++;
+        dataGroups[i].matches.forEach((match) => {
+          if (match.winner > 0) {
+            players.find((playerData) => playerData.id === match.winner)
+              .points++;
           }
         });
 
         players.sort((a, b) => {
           if (b.points !== a.points) {
-              return b.points - a.points;
+            return b.points - a.points;
           }
           return b.diff - a.diff;
         });
@@ -435,8 +459,9 @@ const fetchData = async () => {
           // <div> container img nom
           const imgNom = document.createElement("div");
           poulesContainerClassementListJoueursJoueur.appendChild(imgNom);
-          if(players[j].obj.diff){
-            poulesContainerClassementListJoueursJoueur.style.boxShadow = "0px 0px 0px 2px #E9B901 inset";
+          if (players[j].obj.diff) {
+            poulesContainerClassementListJoueursJoueur.style.boxShadow =
+              "0px 0px 0px 2px #E9B901 inset";
           }
           // <img> joueur img héros
           const joueurHeros = document.createElement("img");
@@ -461,10 +486,12 @@ const fetchData = async () => {
 
           // <a> joueur decklist
           const joueurDecklistLink = document.createElement("a");
-          joueurDecklistLink.href = "#"; 
+          joueurDecklistLink.href = "#";
           // joueurDecklistLink.href = "https://www.altered.gg/fr-fr/decks/" + players[j].obj.deck;
           // joueurDecklistLink.setAttribute("target", "_blank");
-          joueurDecklistLink.addEventListener("click", () => decklistButton(players[j].obj.deck));
+          joueurDecklistLink.addEventListener("click", () =>
+            decklistButton(players[j].obj.deck)
+          );
           joueurPointsDecklists.appendChild(joueurDecklistLink);
           // <img> icon decklist
           const joueurDecklistImg = document.createElement("img");
@@ -614,14 +641,14 @@ const fetchData = async () => {
             opponents: [
               dataPlayers.find(
                 (playerData) => playerData.id === match.opponents[0]
-              ) ?? {"id": -1, "name": "", "hero": "none", "bg": "x", "deck": ""},
+              ) ?? { id: -1, name: "", hero: "none", bg: "x", deck: "" },
               dataPlayers.find(
                 (playerData) => playerData.id === match.opponents[1]
-              ) ??  {"id": -1, "name": "", "hero": "none", "bg": "x", "deck": ""},
+              ) ?? { id: -1, name: "", hero: "none", bg: "x", deck: "" },
             ],
             winner: match.winner,
             link: match.link,
-            score: match.score
+            score: match.score,
           });
         });
         // <div> liste match
@@ -697,24 +724,26 @@ const fetchData = async () => {
           joueur__imgNom1.appendChild(joueur1Nom);
 
           // <a> joueur decklist
-          if(matches[j].opponents[0].deck !== ""){
+          if (matches[j].opponents[0].deck !== "") {
             const joueurDecklistLink1 = document.createElement("a");
             joueurDecklistLink1.href = "#";
-            joueurDecklistLink1.classList.add("linkDecklist")
-            joueurDecklistLink1.addEventListener("click", () => decklistButton(matches[j].opponents[0].deck));
+            joueurDecklistLink1.classList.add("linkDecklist");
+            joueurDecklistLink1.addEventListener("click", () =>
+              decklistButton(matches[j].opponents[0].deck)
+            );
             joueur__imgNom1.appendChild(joueurDecklistLink1);
             // <img> icon decklist
             const joueurDecklistImg1 = document.createElement("img");
-            joueurDecklistImg1.classList.add("iconDecklist")
+            joueurDecklistImg1.classList.add("iconDecklist");
             joueurDecklistImg1.src = "assets/icon-decklist.png";
             joueurDecklistLink1.appendChild(joueurDecklistImg1);
           }
-          if(matches[j].score) {
+          if (matches[j].score) {
             const scoreBox1 = document.createElement("div");
             scoreBox1.classList.add("scoreBox");
             scoreBox1.innerHTML = matches[j].score[0];
             sectionFinale__listMatchs__match__joueur1.appendChild(scoreBox1);
-            if(matches[j].opponents[0].name === "") {
+            if (matches[j].opponents[0].name === "") {
               scoreBox1.style.color = "#f4efef";
             }
           }
@@ -746,41 +775,48 @@ const fetchData = async () => {
           joueur__imgNom2.appendChild(joueur2Nom);
 
           // <a> joueur decklist
-          if(matches[j].opponents[1].deck !== "") {
+          if (matches[j].opponents[1].deck !== "") {
             const joueurDecklistLink2 = document.createElement("a");
             joueurDecklistLink2.href = "#";
-            joueurDecklistLink2.classList.add("linkDecklist")
-            joueurDecklistLink2.addEventListener("click", () => decklistButton(matches[j].opponents[1].deck));
+            joueurDecklistLink2.classList.add("linkDecklist");
+            joueurDecklistLink2.addEventListener("click", () =>
+              decklistButton(matches[j].opponents[1].deck)
+            );
             joueur__imgNom2.appendChild(joueurDecklistLink2);
             // <img> icon decklist
             const joueurDecklistImg2 = document.createElement("img");
-            joueurDecklistImg2.classList.add("iconDecklist")
+            joueurDecklistImg2.classList.add("iconDecklist");
             joueurDecklistImg2.src = "assets/icon-decklist.png";
             joueurDecklistLink2.appendChild(joueurDecklistImg2);
           }
-          if(matches[j].score) {
+          if (matches[j].score) {
             const scoreBox2 = document.createElement("div");
             scoreBox2.classList.add("scoreBox");
             scoreBox2.innerHTML = matches[j].score[1];
             sectionFinale__listMatchs__match__joueur2.appendChild(scoreBox2);
-            if(matches[j].opponents[1].name === "") {
+            if (matches[j].opponents[1].name === "") {
               scoreBox2.style.color = "#f4efef";
             }
           }
 
           // WIN
           if (matches[j].winner === matches[j].opponents[0].id) {
-            sectionFinale__listMatchs__match__joueur1.style.boxShadow = "0px 0px 0px 2px #E9B901 inset";
+            sectionFinale__listMatchs__match__joueur1.style.boxShadow =
+              "0px 0px 0px 2px #E9B901 inset";
             sectionFinale__listMatchs__match__joueur2.style.opacity = "0.5";
-            if(matches[j].score) {
-              sectionFinale__listMatchs__match__joueur1.querySelector(".scoreBox").style.backgroundColor = "#E9B901";
+            if (matches[j].score) {
+              sectionFinale__listMatchs__match__joueur1.querySelector(
+                ".scoreBox"
+              ).style.backgroundColor = "#E9B901";
             }
-          } 
-          else if (matches[j].winner === matches[j].opponents[1].id) {
-            sectionFinale__listMatchs__match__joueur2.style.boxShadow = "0px 0px 0px 2px #E9B901 inset";
+          } else if (matches[j].winner === matches[j].opponents[1].id) {
+            sectionFinale__listMatchs__match__joueur2.style.boxShadow =
+              "0px 0px 0px 2px #E9B901 inset";
             sectionFinale__listMatchs__match__joueur1.style.opacity = "0.5";
-            if(matches[j].score) {
-              sectionFinale__listMatchs__match__joueur2.querySelector(".scoreBox").style.backgroundColor = "#E9B901";
+            if (matches[j].score) {
+              sectionFinale__listMatchs__match__joueur2.querySelector(
+                ".scoreBox"
+              ).style.backgroundColor = "#E9B901";
             }
           }
 
@@ -855,7 +891,7 @@ const fetchData = async () => {
       tornamentData.forEach((round) => {
         round.forEach((match) => {
           match.opponents.forEach((playerId) => {
-            if (playerId > 0){
+            if (playerId > 0) {
               let player = dataPlayers.find(
                 (playerData) => playerData.id === playerId
               );
@@ -884,7 +920,7 @@ const fetchData = async () => {
         loserData.forEach((round) => {
           round.forEach((match) => {
             match.opponents.forEach((playerId) => {
-              if (playerId > 0){
+              if (playerId > 0) {
                 let player = dataPlayers.find(
                   (playerData) => playerData.id === playerId
                 );
@@ -928,7 +964,7 @@ const fetchData = async () => {
         faction.top =
           hero.top < faction.top ? hero.top : faction.top || hero.top;
       });
-      let heroesAmount = [['Héros', 'Nombre']];
+      let heroesAmount = [["Héros", "Nombre"]];
       let orderedHeroes = [...heroes];
       heroesAmount.push(...heroes.map((h, i) => [h.name, h.amount]));
       heroes.sort((a, b) => {
@@ -956,7 +992,9 @@ const fetchData = async () => {
         // <div> card top
         const cardTop = document.createElement("div");
         cardTop.classList.add("winrate__list__card__top");
-        cardTop.style.backgroundImage = `url(assets/heros/large/${hero.faction.charAt(0)}-${hero.name}.png)`;
+        cardTop.style.backgroundImage = `url(assets/heros/large/${hero.faction.charAt(
+          0
+        )}-${hero.name}.png)`;
         card.appendChild(cardTop);
         // <div> grade
         const cardTopGrade = document.createElement("div");
@@ -1136,30 +1174,34 @@ const fetchData = async () => {
       let globalCards = {};
       let globalUniques = [];
       factions.sort((a, b) => a.name.localeCompare(b.name));
-      factions.map(faction => faction.name.charAt(0)).forEach(f => {
-        globalCards[f] = [];
-      });
+      factions
+        .map((faction) => faction.name.charAt(0))
+        .forEach((f) => {
+          globalCards[f] = [];
+        });
       for (const player of playerData) {
         let data = await getDecklistData(player.deck);
         let faction = data.faction.reference.charAt(0).toLowerCase();
         data = [
           ...data.deckCardsByType.character.deckUserListCard,
           ...data.deckCardsByType.permanent.deckUserListCard,
-          ...data.deckCardsByType.spell.deckUserListCard
+          ...data.deckCardsByType.spell.deckUserListCard,
         ];
         data.forEach((card) => {
-          let name = card.card.familyReference.replace(/_(\d+)$/, '');
+          let name = card.card.familyReference.replace(/_(\d+)$/, "");
           let quantity = card.quantity;
-          let type = name.charAt(name.length-1) === "U" ? "uniques" : "others";
-          let hasWeb = type === "uniques" && card.card.assets?.WEB?.length === 3;
+          let type =
+            name.charAt(name.length - 1) === "U" ? "uniques" : "others";
+          let hasWeb =
+            type === "uniques" && card.card.assets?.WEB?.length === 3;
           let img = hasWeb ? card.card.assets.WEB[2] : card.card.imagePath;
-          let globalType = type === "uniques" ? globalUniques : globalCards[faction];
-          let cardSlot = globalType.find(x => x.ref === name);
-          if(cardSlot) {
+          let globalType =
+            type === "uniques" ? globalUniques : globalCards[faction];
+          let cardSlot = globalType.find((x) => x.ref === name);
+          if (cardSlot) {
             cardSlot.quantity += quantity;
-          }
-          else {
-            globalType.push({ "ref": name, "quantity": quantity, "img": img });
+          } else {
+            globalType.push({ ref: name, quantity: quantity, img: img });
           }
         });
       }
@@ -1168,7 +1210,9 @@ const fetchData = async () => {
         globalUniques.sort((a, b) => b.quantity - a.quantity);
       }
       const containerCartesJouees = document.querySelector("#cartesJouees");
-      const containerCartesUniques = document.querySelector(".cartesUniques__bloc__listeCarte");
+      const containerCartesUniques = document.querySelector(
+        ".cartesUniques__bloc__listeCarte"
+      );
       containerCartesJouees.innerHTML = "";
       containerCartesUniques.innerHTML = "";
       for (let i = 0; i < factions.length; i++) {
@@ -1186,18 +1230,24 @@ const fetchData = async () => {
         logoFaction.classList.add("cartesJouees__bloc__details__logoFaction");
         cartesJoueesBlocDetails.appendChild(logoFaction);
         for (let j = 0; j < 3; j++) {
-          let hero = orderedHeroes[i*3+j];
+          let hero = orderedHeroes[i * 3 + j];
           // <div> cartesJouees nb héros
           const cartesJoueesBlocDetailsNbHeros = document.createElement("div");
-          cartesJoueesBlocDetailsNbHeros.classList.add("cartesJouees__bloc__details__nbheros");
+          cartesJoueesBlocDetailsNbHeros.classList.add(
+            "cartesJouees__bloc__details__nbheros"
+          );
           cartesJoueesBlocDetails.appendChild(cartesJoueesBlocDetailsNbHeros);
           // <p> cartesJouees nb héros
           const cartesJoueesBlocDetailsNbHerosP = document.createElement("p");
           cartesJoueesBlocDetailsNbHerosP.innerText = hero.amount;
-          cartesJoueesBlocDetailsNbHeros.appendChild(cartesJoueesBlocDetailsNbHerosP);
+          cartesJoueesBlocDetailsNbHeros.appendChild(
+            cartesJoueesBlocDetailsNbHerosP
+          );
           // <img> cartesJouees nb héros
           const logoHeros = document.createElement("img");
-          logoHeros.src = `assets/heros/small/${hero.faction.charAt(0)}-${hero.name}.png`;
+          logoHeros.src = `assets/heros/small/${hero.faction.charAt(0)}-${
+            hero.name
+          }.png`;
           cartesJoueesBlocDetailsNbHeros.appendChild(logoHeros);
         }
         // <div> liste cartesJouees
@@ -1207,7 +1257,7 @@ const fetchData = async () => {
         );
         cartesJoueesBloc.appendChild(cartesJoueesBlocListeCarte);
         let factionCards = globalCards[factions[i].name.charAt(0)];
-        factionCards.forEach(factionCard => {
+        factionCards.forEach((factionCard) => {
           const blocCarte = document.createElement("div");
           cartesJoueesBlocListeCarte.appendChild(blocCarte);
           // <img> carte
@@ -1216,8 +1266,9 @@ const fetchData = async () => {
           blocCarte.appendChild(imgCarte);
           // <p> %
           const pCarte = document.createElement("p");
-          let percent = (factionCard.quantity / (factions[i].amount*3))*100;
-          pCarte.innerText = (percent % 1 === 0 ? percent : percent.toFixed(1)) + "%";
+          let percent = (factionCard.quantity / (factions[i].amount * 3)) * 100;
+          pCarte.innerText =
+            (percent % 1 === 0 ? percent : percent.toFixed(1)) + "%";
           /*
             const nbExemplaireTotal = Récupérer le nb de joueur qui joue un héros de la faction f
             nbExemplaireTotal *= 3
@@ -1230,7 +1281,7 @@ const fetchData = async () => {
       }
 
       // CARTES UNIQUES
-      globalUniques.forEach(uniqueCard => {
+      globalUniques.forEach((uniqueCard) => {
         const blocCarte = document.createElement("div");
         containerCartesUniques.appendChild(blocCarte);
         // <img> carte
@@ -1282,20 +1333,44 @@ const fetchData = async () => {
 
     function getInfo(info) {
       const seasonInfo = info.find((x) => x.season === activeSeason);
+      const blocBan = document.querySelector("#sectionInfo__ban__bloc");
+      const blocErrata = document.querySelector("#sectionInfo__errata__bloc");
       document.querySelector("#context").innerHTML = seasonInfo.context;
       document.querySelector("#format").innerHTML = seasonInfo.format;
-      document.querySelector("#banCards").innerHTML = "";
-      seasonInfo.bans.forEach((url) => {
-        let img = document.createElement("img");
-        img.src = url;
-        document.querySelector("#banCards").appendChild(img);
-      });
-      document.querySelector("#errata").innerHTML = "";
-      seasonInfo.errata.forEach((url) => {
-        let img = document.createElement("img");
-        img.src = url;
-        document.querySelector("#errata").appendChild(img);
-      });
+      const banCards = document.querySelector("#banCards")
+      banCards.innerHTML = "";
+      if (seasonInfo.bans.length === 0) {
+        blocBan.style.display = "none";
+      } else {
+        blocBan.style.display = "block";
+        seasonInfo.bans.forEach((url) => {
+          let img = document.createElement("img");
+          img.src = url;
+          document.querySelector("#banCards").appendChild(img);
+        });
+      }
+      if(seasonInfo.bans.length > 5){
+        banCards.style.justifyContent = "space-between";
+      } else {
+        banCards.style.justifyContent = "start";
+      }
+      const errataCards = document.querySelector("#errata")
+      errataCards.innerHTML = "";
+      if (seasonInfo.errata.length === 0) {
+        blocErrata.style.display = "none";
+      } else {
+        blocErrata.style.display = "block";
+        seasonInfo.errata.forEach((url) => {
+          let img = document.createElement("img");
+          img.src = url;
+          document.querySelector("#errata").appendChild(img);
+        });
+      }
+      if(seasonInfo.bans.length > 6){
+        errataCards.style.justifyContent = "space-between";
+      } else {
+        errataCards.style.justifyContent = "start";
+      }
     }
     getInfo(info);
   } catch (error) {

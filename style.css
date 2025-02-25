@@ -836,9 +836,11 @@ body section {
 }
 
 .sectionInfo__ban__bloc__listeCartes img {
-  max-width: 14%;
   border-radius: 8px;
   flex: auto;
+  @media (min-width: 601px){
+    max-width: 14%;
+  }
   @media (max-width: 600px) {
     width: 40%;
   }
