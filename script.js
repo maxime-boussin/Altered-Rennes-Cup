@@ -675,6 +675,8 @@ const fetchData = async () => {
           sectionFinale__listMatchs__match.classList.add(
             "sectionFinale__listMatchs__match"
           );
+
+          /* REPLAY GRANKORSALADE
           const replayBox = document.createElement("div");
           replayBox.classList.add("replay");
           if (matches[j].link === "x") {
@@ -693,9 +695,16 @@ const fetchData = async () => {
             });
             sectionFinale__listMatchs__match.appendChild(replayBox);
           }
+          */
           sectionFinale__listMatchs.appendChild(
             sectionFinale__listMatchs__match
           );
+
+          const div2joueurs = document.createElement("div");
+          sectionFinale__listMatchs__match.appendChild(div2joueurs);
+          const blocScore = document.createElement("div");
+          sectionFinale__listMatchs__match.appendChild(blocScore);
+          blocScore.classList.add("blocScore");
 
           // JOUEUR 1 //
           // <div> joueur1
@@ -704,9 +713,7 @@ const fetchData = async () => {
           sectionFinale__listMatchs__match__joueur1.classList.add(
             "sectionFinale__listMatchs__match__joueur"
           );
-          sectionFinale__listMatchs__match.appendChild(
-            sectionFinale__listMatchs__match__joueur1
-          );
+          div2joueurs.appendChild(sectionFinale__listMatchs__match__joueur1);
           // <div> joueur1 container ImgNom
           const joueur__imgNom1 = document.createElement("div");
           sectionFinale__listMatchs__match__joueur1.appendChild(
@@ -724,27 +731,32 @@ const fetchData = async () => {
           joueur__imgNom1.appendChild(joueur1Nom);
 
           // <a> joueur decklist
+          const joueurDecklistLink1 = document.createElement("a");
           if (matches[j].opponents[0].deck !== "") {
-            const joueurDecklistLink1 = document.createElement("a");
             joueurDecklistLink1.href = "#";
             joueurDecklistLink1.classList.add("linkDecklist");
             joueurDecklistLink1.addEventListener("click", () =>
               decklistButton(matches[j].opponents[0].deck)
             );
-            joueur__imgNom1.appendChild(joueurDecklistLink1);
+            sectionFinale__listMatchs__match__joueur1.appendChild(
+              joueurDecklistLink1
+            );
             // <img> icon decklist
             const joueurDecklistImg1 = document.createElement("img");
             joueurDecklistImg1.classList.add("iconDecklist");
             joueurDecklistImg1.src = "assets/icon-decklist.png";
             joueurDecklistLink1.appendChild(joueurDecklistImg1);
           }
+
           if (matches[j].score) {
             const scoreBox1 = document.createElement("div");
-            scoreBox1.classList.add("scoreBox");
-            scoreBox1.innerHTML = matches[j].score[0];
-            sectionFinale__listMatchs__match__joueur1.appendChild(scoreBox1);
+            scoreBox1.classList.add("scoreBox1");
+            const scoreP1 = document.createElement("p");
+            scoreP1.innerHTML = matches[j].score[0];
+            blocScore.appendChild(scoreBox1);
+            scoreBox1.appendChild(scoreP1);
             if (matches[j].opponents[0].name === "") {
-              scoreBox1.style.color = "#f4efef";
+              scoreP1.style.color = "#f4efef";
             }
           }
 
@@ -755,9 +767,7 @@ const fetchData = async () => {
           sectionFinale__listMatchs__match__joueur2.classList.add(
             "sectionFinale__listMatchs__match__joueur"
           );
-          sectionFinale__listMatchs__match.appendChild(
-            sectionFinale__listMatchs__match__joueur2
-          );
+          div2joueurs.appendChild(sectionFinale__listMatchs__match__joueur2);
           // <div> joueur2 container ImgNom
           const joueur__imgNom2 = document.createElement("div");
           sectionFinale__listMatchs__match__joueur2.appendChild(
@@ -775,28 +785,60 @@ const fetchData = async () => {
           joueur__imgNom2.appendChild(joueur2Nom);
 
           // <a> joueur decklist
+          const joueurDecklistLink2 = document.createElement("a");
           if (matches[j].opponents[1].deck !== "") {
-            const joueurDecklistLink2 = document.createElement("a");
             joueurDecklistLink2.href = "#";
             joueurDecklistLink2.classList.add("linkDecklist");
             joueurDecklistLink2.addEventListener("click", () =>
               decklistButton(matches[j].opponents[1].deck)
             );
-            joueur__imgNom2.appendChild(joueurDecklistLink2);
+            sectionFinale__listMatchs__match__joueur2.appendChild(
+              joueurDecklistLink2
+            );
             // <img> icon decklist
             const joueurDecklistImg2 = document.createElement("img");
             joueurDecklistImg2.classList.add("iconDecklist");
             joueurDecklistImg2.src = "assets/icon-decklist.png";
             joueurDecklistLink2.appendChild(joueurDecklistImg2);
           }
+
           if (matches[j].score) {
             const scoreBox2 = document.createElement("div");
-            scoreBox2.classList.add("scoreBox");
-            scoreBox2.innerHTML = matches[j].score[1];
-            sectionFinale__listMatchs__match__joueur2.appendChild(scoreBox2);
+            scoreBox2.classList.add("scoreBox2");
+            const scoreP2 = document.createElement("p");
+            scoreP2.innerHTML = matches[j].score[1];
+
+            blocScore.appendChild(scoreBox2);
+            scoreBox2.appendChild(scoreP2);
             if (matches[j].opponents[1].name === "") {
-              scoreBox2.style.color = "#f4efef";
+              scoreP2.style.color = "#f4efef";
             }
+          }
+
+          // REPLAY
+          const lienReplay = document.createElement("a");
+          lienReplay.classList.add("lienReplay");
+          sectionFinale__listMatchs__match.appendChild(lienReplay);
+          const iconReplay = document.createElement("img");
+          iconReplay.classList.add("iconReplay");
+          lienReplay.appendChild(iconReplay);
+
+          if (matches[j].link === "") {
+            joueurDecklistLink1.style.right = "8px";
+            joueurDecklistLink2.style.right = "8px";
+          } else if (matches[j].link === "x") {
+            lienReplay.style.display = "flex";
+            iconReplay.src = "assets/icon-noreplay.png";
+            lienReplay.style.cursor = "not-allowed";
+          } else if (matches[j].link.length > 0) {
+            lienReplay.style.display = "flex";
+            iconReplay.src = "assets/icon-replay.png";
+            lienReplay.addEventListener("click", function () {
+              window.open(
+                "https://boardgamearena.com/table?table=" + matches[j].link,
+                "_blank"
+              );
+            });
           }
 
           // WIN
@@ -805,18 +847,18 @@ const fetchData = async () => {
               "0px 0px 0px 2px #E9B901 inset";
             sectionFinale__listMatchs__match__joueur2.style.opacity = "0.5";
             if (matches[j].score) {
-              sectionFinale__listMatchs__match__joueur1.querySelector(
-                ".scoreBox"
-              ).style.backgroundColor = "#E9B901";
+              blocScore.querySelector(".scoreBox1").style.backgroundColor =
+                "#E9B901";
+              blocScore.querySelector(".scoreBox2").style.opacity = "0.5";
             }
           } else if (matches[j].winner === matches[j].opponents[1].id) {
             sectionFinale__listMatchs__match__joueur2.style.boxShadow =
               "0px 0px 0px 2px #E9B901 inset";
             sectionFinale__listMatchs__match__joueur1.style.opacity = "0.5";
             if (matches[j].score) {
-              sectionFinale__listMatchs__match__joueur2.querySelector(
-                ".scoreBox"
-              ).style.backgroundColor = "#E9B901";
+              blocScore.querySelector(".scoreBox2").style.backgroundColor =
+                "#E9B901";
+              blocScore.querySelector(".scoreBox1").style.opacity = "0.5";
             }
           }
 
@@ -1337,7 +1379,7 @@ const fetchData = async () => {
       const blocErrata = document.querySelector("#sectionInfo__errata__bloc");
       document.querySelector("#context").innerHTML = seasonInfo.context;
       document.querySelector("#format").innerHTML = seasonInfo.format;
-      const banCards = document.querySelector("#banCards")
+      const banCards = document.querySelector("#banCards");
       banCards.innerHTML = "";
       if (seasonInfo.bans.length === 0) {
         blocBan.style.display = "none";
@@ -1349,12 +1391,12 @@ const fetchData = async () => {
           document.querySelector("#banCards").appendChild(img);
         });
       }
-      if(seasonInfo.bans.length > 5){
+      if (seasonInfo.bans.length > 5) {
         banCards.style.justifyContent = "space-between";
       } else {
         banCards.style.justifyContent = "start";
       }
-      const errataCards = document.querySelector("#errata")
+      const errataCards = document.querySelector("#errata");
       errataCards.innerHTML = "";
       if (seasonInfo.errata.length === 0) {
         blocErrata.style.display = "none";
@@ -1366,7 +1408,7 @@ const fetchData = async () => {
           document.querySelector("#errata").appendChild(img);
         });
       }
-      if(seasonInfo.bans.length > 6){
+      if (seasonInfo.bans.length > 6) {
         errataCards.style.justifyContent = "space-between";
       } else {
         errataCards.style.justifyContent = "start";
