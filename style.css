@@ -217,8 +217,7 @@ body section {
 .linkDecklist {
   width: 24px;
   height: 24px;
-  right: 8px;
-  position: absolute;
+  right: 42px;
 }
 
 .iconDecklist {
@@ -473,9 +472,32 @@ body section {
 .listTour .sectionFinale__listMatchs__match {
   display: flex;
   position: relative;
+  gap: 2px;
+  align-items: center;
+}
+
+/* REPLAY TOURNAMENT */
+.lienReplay {
+  cursor: pointer;
+  background-color: white;
+  width: 32px;
+  height: 32px;
+  display: none;
+  border-radius: 30px;
+  img {
+    width: 22px;
+    height: 22px;
+    background:white; 
+    margin:auto;
+  }
+}
+
+.listTour .sectionFinale__listMatchs__match > div {
+  display: flex;
   flex-direction: column;
   gap: 4px;
 }
+
 .listTour .sectionFinale__listMatchs__match__joueur {
   width: 200px;
   padding: 4px 8px 4px 4px;
@@ -514,16 +536,19 @@ body section {
   gap: 4px;
 }
 
-.scoreBox {
-  position: absolute;
+.scoreBox1, .scoreBox2 {
   height: 40px;
   width: 25px;
+  display: flex;
+  align-items: center;
   justify-content: center;
   padding-top: 4px;
   background-color: #ffffff;
   border-radius: 8px;
-  margin-left: 215px;
   font-size: 18px;
+  p {
+    margin:0;
+  }
   @media (max-width: 600px) {
     height:28px;
   }
@@ -949,3 +974,5 @@ body section {
   font-size: 24px;
   text-align: center;
 }
+
+
