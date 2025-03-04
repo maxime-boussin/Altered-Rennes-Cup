@@ -1,3 +1,59 @@
+const { createApp, ref, onMounted } = Vue;
+
+createApp({
+  setup() {
+    const menuItems = ref([
+      { label: "Poules" },
+      { label: "Tournoi" },
+      { label: "Loser Bracket" },
+      { label: "Statistiques" },
+      { label: "Info" }
+    ]);
+
+    const seasons = ref([]);
+    const activeSeason = ref(3);
+    const activeItem = ref(0);
+
+    const selectSection = (index) => {
+      activeItem.value = index;
+    };
+
+    const fetchData = async () => {
+      try {
+        const info = await getJsonData("data/info.json");
+        seasons.value = info.map((item) => ({
+          name: `Saison ${item.season}`,
+          number: item.season,
+          selected: activeSeason.value === item.season
+        }));
+      } catch (error) {
+        console.error("Erreur de récupération des données:", error);
+      }
+    };
+
+    const onSeasonChange = () => {
+      console.log(`Saison sélectionnée: ${activeSeason.value}`);
+      fetchData();
+    };
+
+    onMounted(fetchData);
+
+    return {
+      menuItems,
+      seasons,
+      activeSeason,
+      activeItem,
+      selectSection,
+      fetchData,
+      onSeasonChange
+    };
+  }
+}).mount("body");
+
+// TODO: MIGRER
+const linkLoser = document.querySelector("nav.marginApp li:nth-child(3)");
+// :TODO
+
 let chart,
   data,
   options,
@@ -57,49 +113,7 @@ async function initChart(rawData) {
   chart.draw(data, options);
 }
 
-document.querySelectorAll("li").forEach((lii) => {
-  lii.addEventListener("click", function () {
-    selectSection(lii);
-  });
-});
-
-function selectSection(item) {
-  document.querySelector(".navActiv")?.classList.remove("navActiv");
-  item.classList.add("navActiv");
-  document.querySelectorAll("body section").forEach((sec) => {
-    if (sec.id.slice(7) === item.id.slice(4)) {
-      sec.style.display = "block";
-    } else {
-      sec.style.display = "none";
-    }
-  });
-}
-
-// Suppr de marginApp sur listeArticles
-const listeArticles = document.getElementById("listeArticles");
-const blocWinrate = document.getElementById("winrate");
-const sectionInfoBan = document.getElementById("sectionInfo__ban");
-const sectionInfoDetails = document.getElementById("sectionInfo__details");
-const cartesJouees = document.getElementById("cartesJouees");
-if (window.innerWidth < 600) {
-  listeArticles.classList.remove("marginApp");
-  listeArticles.classList.remove("marginApp");
-  sectionInfoBan.classList.remove("marginApp");
-  sectionInfoDetails.classList.remove("marginApp");
-  cartesJouees.classList.remove("marginApp");
-}
-
-const seasonSelector = document.getElementById("saison-select");
-const linkGroups = document.getElementById("linkGroups");
-const linkLoser = document.getElementById("linkLoser");
 const decklistBox = document.querySelector("#decklistBox");
-
-seasonSelector.addEventListener("change", function () {
-  activeSeason = parseInt(seasonSelector.value);
-  fetchData();
-  linkLoser.style.display = "";
-  linkGroups.style.display = "";
-});
 decklistBox
   .querySelector("button.close")
   .addEventListener("click", function () {
@@ -327,12 +341,14 @@ const fetchData = async () => {
     if (!loserData) {
       linkLoser.style.display = "none";
     }
-    if (!dataGroups) {
-      linkGroups.style.display = "none";
-      selectSection(document.getElementById("linkTournament"));
-    } else {
-      selectSection(linkGroups);
-    }
+    // TODO: MIGRER
+    // if (!dataGroups) {
+    //   linkGroups.style.display = "none";
+    //   selectSection(document.getElementById("linkTournament"));
+    // } else {
+    //   selectSection(linkGroups);
+    // }
+    // :TODO
 
     function generatorPoules(dataGroups, dataPlayers) {
       const listeArticles = document.querySelector("#listeArticles");

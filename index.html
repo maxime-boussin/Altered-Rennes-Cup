@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Altered Rennes Cup</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/xuf2usu.css" />
     <link rel="icon" href="assets/altered-bzh.webp" />
@@ -30,35 +31,36 @@
       <img class="header__img__desktop" src="assets/top.png" />
       <img class="header__img__mobile" src="assets/top-mobile.png" />
       <div class="marginApp">
-        <select name="saison" id="saison-select">
-          <option value="3" selected>Saison 3</option>
-          <option value="2">Saison 2</option>
-          <option value="1">Saison 1</option>
+        <select name="saison" id="saison-select" @change="onSeasonChange">
+          <option v-for="season in seasons" :value="season.number" :selected="season.selected">{{season.name}}</option>
         </select>
       </div>
     </header>
     <nav class="marginApp">
       <ul>
-        <li id="linkGroups" class="navActiv">Poules</li>
-        <li id="linkTournament">Tournoi</li>
-        <li id="linkLoser">Loser Bracket</li>
-        <li id="linkStats">Statistiques</li>
-        <li id="linkInfo">Info</li>
+        <li 
+          v-for="(item, index) in menuItems" 
+          :key="index"
+          @click="selectSection(index)"
+          :class="{ navActiv: activeItem === index }"
+        >
+          {{ item.label }}
+        </li>
       </ul>
     </nav>
-    <section id="sectionGroups">
+    <section id="sectionGroups" v-show="activeItem === 0">
       <div id="listeArticles" class="marginApp"></div>
     </section>
 
-    <section id="sectionTournament">
+    <section id="sectionTournament" v-show="activeItem === 1">
       <div class="listTour marginApp"></div>
     </section>
 
-    <section id="sectionLoser">
+    <section id="sectionLoser" v-show="activeItem === 2">
       <div class="listTour marginApp"></div>
     </section>
 
-    <section id="sectionStats">
+    <section id="sectionStats" v-show="activeItem === 3">
       <div id="navStats" class="marginApp">
         <button class="btnWinrate btnActif">WINRATE</button>
         <button class="btnCartes">CARTES JOUÉES</button>
@@ -91,7 +93,7 @@
         </article>
       </div>
     </section>
-    <section id="sectionInfo">
+    <section id="sectionInfo" v-show="activeItem === 4">
       <div id="sectionInfo__details" class="marginApp">
         <div class="sectionInfo__details__bloc">
           <p class="sectionInfo__titre">Date</p>
