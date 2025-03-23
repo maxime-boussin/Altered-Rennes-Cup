@@ -975,4 +975,21 @@ body section {
   text-align: center;
 }
 
+/* INFO BANNER */
+#infoBanner {
+  background-color: #f4efef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  @media (max-width: 600px){
+    padding: 0 16px 0 16px;
+  }
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 
