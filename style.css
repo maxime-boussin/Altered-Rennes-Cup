@@ -977,18 +977,30 @@ body section {
 
 /* INFO BANNER */
 #infoBanner {
+  white-space: nowrap;
   background-color: #f4efef;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  @media (max-width: 600px){
-    padding: 0 16px 0 16px;
+  padding: 10px 0;
+  div {
+    display: inline-block;
+    font-size: 14px;
+    animation: marquee 40s linear infinite;
+    display: flex;
+    gap: 200px;
+    @media (max-width: 600px){
+      animation: marquee 10s linear infinite;
+    }
+    a {
+      color: black
+    }
   }
-  img {
-    width: 18px;
-    height: 18px;
+}
+
+@keyframes marquee {
+  from {
+      transform: translateX(10%);
+  }
+  to {
+      transform: translateX(-174.7%)
   }
 }
 
