@@ -4,11 +4,11 @@ import requests
 import time
 import random
 
-playerAmount = 46
+playerAmount = 44
 groupAmount = 8
 playersPerGroup = 6
 topCut = 16
-season = 3
+season = 4
 playerMissing = groupAmount * playersPerGroup - playerAmount
 
 players_file = f"data/saison-{season}/players.json"

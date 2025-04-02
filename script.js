@@ -1,7 +1,7 @@
 let chart,
   data,
   options,
-  activeSeason = 3;
+  activeSeason = 4;
 
 google.charts.load("current", { packages: ["corechart"] });
 
@@ -485,7 +485,6 @@ const fetchData = async () => {
 
           // <a> joueur decklist
           const joueurDecklistLink = document.createElement("a");
-          joueurDecklistLink.href = "#";
           // joueurDecklistLink.href = "https://www.altered.gg/fr-fr/decks/" + players[j].obj.deck;
           // joueurDecklistLink.setAttribute("target", "_blank");
           joueurDecklistLink.addEventListener("click", () =>
@@ -732,7 +731,6 @@ const fetchData = async () => {
           // <a> joueur decklist
           const joueurDecklistLink1 = document.createElement("a");
           if (matches[j].opponents[0].deck !== "") {
-            joueurDecklistLink1.href = "#";
             joueurDecklistLink1.classList.add("linkDecklist");
             joueurDecklistLink1.addEventListener("click", () =>
               decklistButton(matches[j].opponents[0].deck)
@@ -786,7 +784,6 @@ const fetchData = async () => {
           // <a> joueur decklist
           const joueurDecklistLink2 = document.createElement("a");
           if (matches[j].opponents[1].deck !== "") {
-            joueurDecklistLink2.href = "#";
             joueurDecklistLink2.classList.add("linkDecklist");
             joueurDecklistLink2.addEventListener("click", () =>
               decklistButton(matches[j].opponents[1].deck)
