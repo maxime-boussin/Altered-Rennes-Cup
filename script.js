@@ -339,6 +339,7 @@ const fetchData = async () => {
       listeArticles.innerHTML = "";
       /*————— GÉNÉRATOR POULE —————*/
       for (let i = 0; i < dataGroups.length; i++) {
+        let matchesDone = !dataGroups[i].matches.some(m => m.winner === 0);
         // <article>
         const article = document.createElement("article");
         listeArticles.appendChild(article);
@@ -390,8 +391,14 @@ const fetchData = async () => {
         poulesContainerClassementLegendes.appendChild(legendePointsDescklistes);
         // <p> légendes points
         const legendePoints = document.createElement("p");
-        legendePoints.innerText = "Victoires";
+        legendePoints.innerText = "Points";
         legendePointsDescklistes.appendChild(legendePoints);
+        if(matchesDone) {
+          // <p> légendes buccholz
+          const legendeBuchholz = document.createElement("p");
+          legendeBuchholz.innerText = "Diff.";
+          legendePointsDescklistes.appendChild(legendeBuchholz);
+        }
         // <p> légendes decklist
         const legendeDecklist = document.createElement("p");
         legendeDecklist.innerText = "Listes";
@@ -412,6 +419,7 @@ const fetchData = async () => {
           players.push({
             id: player,
             points: 0,
+            buchholz: 0,
             obj: dataPlayers.find((playerData) => playerData.id === player),
           });
         });
@@ -421,11 +429,21 @@ const fetchData = async () => {
               .points++;
           }
         });
-
+        if(matchesDone) {
+          dataGroups[i].matches.forEach((match) => {
+            let loserId =  match.opponents.find(opponent => opponent !== match.winner);
+            players.find((playerData) => playerData.id === match.winner)
+              .buchholz += players.find((playerData) => playerData.id === loserId).points;
+          });
+        }
         players.sort((a, b) => {
           if (b.points !== a.points) {
             return b.points - a.points;
           }
+          if (b.buchholz !== a.buchholz) {
+            return b.buchholz - a.buchholz;
+          }
+          // TODO: qui a gagné dans le duel direct
           return b.obj.diff - a.obj.diff;
         });
 
@@ -482,6 +500,14 @@ const fetchData = async () => {
           const joueurPoints = document.createElement("p");
           joueurPoints.innerText = players[j].points;
           joueurPointsDecklists.appendChild(joueurPoints);
+          if(matchesDone) {
+            // <p> joueur buchholz
+            const joueurBuchholz = document.createElement("p");
+            joueurBuchholz.style.marginRight = "-14px";
+            joueurBuchholz.style.color = "#5e8ea5";
+            joueurBuchholz.innerText = players[j].buchholz;
+            joueurPointsDecklists.appendChild(joueurBuchholz);
+          }
 
           // <a> joueur decklist
           const joueurDecklistLink = document.createElement("a");
