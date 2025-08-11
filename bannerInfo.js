@@ -7,6 +7,6 @@ for (let i = 0; i < 14; i++) {
     >Les inscriptions pour la saison 4 de l'Altered Rennes Cup sont
     ouvertes jusqu'au 1er avril 10h !</a
   >`;*/
-  message.innerHTML = `Les 8èmes de finales doivent être joués avant le 14 avril !`;
+  message.innerHTML = `Les matchs de poule doivent être joués avant le 20 août !`;
   banner.appendChild(message);
 }

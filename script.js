@@ -1,7 +1,7 @@
 let chart,
   data,
   options,
-  activeSeason = 4;
+  activeSeason = 5;
 
 google.charts.load("current", { packages: ["corechart"] });
 
