@@ -1,0 +1,1379 @@
+{
+    "@context": "/contexts/DeckUserList",
+    "@id": "/deck_user_lists/01K88NVJ781SREPKWTRRM0W2KW",
+    "@type": "DeckUserList",
+    "name": "Phalènes de Moyo",
+    "user": {
+        "@id": "/users/01HNJKTH8FDDY9VNKQNT2NVCCC",
+        "@type": "User",
+        "id": "01HNJKTH8FDDY9VNKQNT2NVCCC"
+    },
+    "faction": {
+        "@id": "/factions/YZ",
+        "@type": "Faction",
+        "reference": "YZ",
+        "color": "#764891",
+        "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+        "name": "Yzmir"
+    },
+    "alterator": {
+        "@id": "/cards/ALT_CYCLONE_B_YZ_65_C",
+        "@type": "Card",
+        "cardType": {
+            "@id": "/card_types/01GE7AC9WGQTNRP28T63FH8TZD",
+            "@type": "CardType",
+            "reference": "HERO",
+            "id": "01GE7AC9WGQTNRP28T63FH8TZD",
+            "name": "Héros"
+        },
+        "rarity": {
+            "@type": "Rarity",
+            "@id": "/.well-known/genid/22d6a82421e84d8ffb8c",
+            "reference": "COMMON",
+            "name": "Commun"
+        },
+        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_65/JPG/fr_FR/ae6e015b084a96d2fcf5ad71a264a6b5.jpg",
+        "inMyCollection": 0,
+        "assets": {
+            "WEB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_65/WEB_a781b95e511aae868a9ff2b8dcdac7c6"
+            ],
+            "HERO_WIDE": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_65/HERO_WIDE_451752a95b81b9f71aeb49e8cbe8b151"
+            ],
+            "HERO_THUMB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_65/HERO_THUMB_fd33d29efb99b887faf25e45a2fc406e"
+            ]
+        },
+        "numberCopyAvailable": 0,
+        "isExclusive": false,
+        "isOwnerless": false,
+        "reference": "ALT_CYCLONE_B_YZ_65_C",
+        "id": "01JN9HNDYHP5AYER5YSMR6TTW3",
+        "mainFaction": {
+            "@id": "/factions/YZ",
+            "@type": "Faction",
+            "reference": "YZ",
+            "color": "#764891",
+            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+            "name": "Yzmir"
+        },
+        "allImagePath": [],
+        "name": "Moyo & Silk",
+        "elements": {
+            "MAIN_COST": "0",
+            "RECALL_COST": "0",
+            "PERMANENT": "2",
+            "RESERVE": "2",
+            "MAIN_EFFECT": "Lorsque vous jouez un Sort de Coût de Base {4} ou plus — Vous pouvez m'épuiser ({T}) pour créer un jeton Illusion [2/2/2 Phalène de Mana] dans votre Expédition Héros. Si le Coût de Base était d'au moins {7}, piochez aussi une carte. (Coût de Main, ou Coût de Réserve si joué depuis la Réserve.)"
+        },
+        "isSuspended": false,
+        "isErrated": false,
+        "isBanned": false,
+        "siblingReference": "YZ_65",
+        "familyReference": "YZ_65_C"
+    },
+    "eventFormat": "STANDARD",
+    "public": false,
+    "cardQuantity": 39,
+    "deckLegality": {
+        "@type": "DeckLegality",
+        "@id": "/.well-known/genid/41ca996547bc0fd6ebd5",
+        "resume": {
+            "nbRare": true,
+            "isOwned": true,
+            "nbUnique": true,
+            "isSameFaction": true,
+            "nbFamily": true,
+            "nbHero": true,
+            "nbCards": true,
+            "isSuspended": true,
+            "isBanned": true,
+            "cardSetValidity": true,
+            "globalValidity": true,
+            "errorFamily": []
+        }
+    },
+    "deckCardsByType": {
+        "@type": "DeckCard",
+        "@id": "/.well-known/genid/e91f5ca30afddf3bdce4",
+        "character": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/86865f108cc501047c29",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/1cc118d354535388e90f",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_YZ_04_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/22d6a82421e84d8ffb8c",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_04/JPG/fr_FR/1d577b3ff8f567d00eebeedefb90b3e0.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_04/ALT_CORE_B_YZ_04_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_04/ALT_CORE_B_YZ_04_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_04/ALT_CORE_B_YZ_04_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_YZ_04_C",
+                        "id": "01HN5TXRJ5E45KDWM55M1393RX",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_04/JPG/en_US/244d72d9dbd7ba47d8a473804a570d2c.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_04/JPG/it_IT/4616cdbf12f08bb148019ea92707592b.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_04/JPG/de_DE/11f62935f76c7a8d935e28a23c757372.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_04/JPG/es_ES/f7bb59b69bb41bc4dfa4d2f1211906f9.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_04/JPG/fr_FR/1d577b3ff8f567d00eebeedefb90b3e0.jpg"
+                        },
+                        "name": "Disciple Studieux",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "1",
+                            "MOUNTAIN_POWER": "1",
+                            "FOREST_POWER": "0",
+                            "ECHO_EFFECT": "{D} : Le prochain Sort que vous jouez ce tour coûte {1} de moins. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_04",
+                        "familyReference": "YZ_04_C"
+                    },
+                    "id": "01K88PNYV4GDM2N23KAXAVXMKM"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/f083089427f98f884404",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_AX_13_U_1521",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/ef02f8f39e5d839b9cb8",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/UNIQUE/JPG/fr_FR/24228a69261b3ee0e22272a8469e5206.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/ALT_CORE_B_AX_13_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/ALT_CORE_B_AX_13_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/ALT_CORE_B_AX_13_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_AX_13_U_1521",
+                        "id": "259Y4KQKQT8CSVRD2HQ6ZNEGYP",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/UNIQUE/JPG/fr_FR/24228a69261b3ee0e22272a8469e5206.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/UNIQUE/JPG/es_ES/acdaf65120c2252eedc3c7e9a20fe855.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/UNIQUE/JPG/it_IT/fbedc38b8e5c525ba29dc3cf747bafa9.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/UNIQUE/JPG/de_DE/3e61328b6dd7561030951fbda628e842.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/UNIQUE/JPG/en_US/bafa39ce1b8578bbf93d352a59c70d38.jpg"
+                        },
+                        "name": "Ada Lovelace",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "1",
+                            "MOUNTAIN_POWER": "2",
+                            "OCEAN_POWER": "0",
+                            "FOREST_POWER": "2",
+                            "MAIN_EFFECT": "{J} Vous pouvez mettre une carte de votre main en Réserve. Si vous le faites : Vous pouvez renvoyer un Sort de votre Réserve dans votre main.",
+                            "ECHO_EFFECT": "{D} : []Vous pouvez renvoyer une carte de votre Réserve dans votre main."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_13",
+                        "familyReference": "AX_13_U_1521"
+                    },
+                    "id": "01K93J5J013B3ARQ5Y9F272J5J"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/ae0738d3309081d04a5f",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_YZ_68_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/22d6a82421e84d8ffb8c",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_68/JPG/fr_FR/65aeebe6787ba2e2e7e7d1f25dabdb65.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_68/WEB_6a2de383c5b0362dafb71b8c35591257",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_68/WEB_e2667404f3b78c39d539e35b551ae4b4",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_68/WEB_bd748900c095d3ab4c471f1b9dc4087e"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_YZ_68_C",
+                        "id": "01JN9HNDYHP5AYER5YSMR6TTWT",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_68/JPG/de_DE/5f37503bd077fcecdbc14c40cecc449d.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_68/JPG/fr_FR/65aeebe6787ba2e2e7e7d1f25dabdb65.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_68/JPG/it_IT/5999a19463e67e1bf2a0de7186160153.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_68/JPG/en_US/493828e14094d6a981c7e485a93ec759.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_68/JPG/es_ES/afcd080250d8f571739fd505019b8c46.jpg"
+                        },
+                        "name": "Acolyte Studieux",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "1",
+                            "FOREST_POWER": "1",
+                            "MOUNTAIN_POWER": "1",
+                            "MAIN_EFFECT": "Vous pouvez jouer les Sorts pour {1} de moins si leur Coût de Base est {4} ou plus. (Coût de Main, ou Coût de Réserve si joué depuis la Réserve.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_68",
+                        "familyReference": "YZ_68_C"
+                    },
+                    "id": "01K88PNMMER4VSC3NQR3J1PR2M"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/098a99401494d92ebe41",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_YZ_11_R1",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/b0cff35997dd1c21c1c5",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/JPG/fr_FR/ad14868a7ceccd0baa79debfcc6e656c.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/WEB_536e85193617153cada9849433e5a352",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/WEB_6378dcaffe7293bcfbb6b4dca45d93c7",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/WEB_3165b2f65a9a9cf0c265eed69094317c"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": true,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_YZ_11_R1",
+                        "id": "01HN5TXRK2CQXH3KESD5M6G4TA",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/JPG/es_ES/a2a1e0d3bad937ba4bb9d81e678664eb.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/JPG/it_IT/35f0d550c435de04f6e20f9dd16dbea8.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/JPG/fr_FR/ad14868a7ceccd0baa79debfcc6e656c.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/JPG/en_US/323313855c2e6d879ec69b51b1454c2a.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_COREKS_B_YZ_11/JPG/de_DE/410c8b2e012aa61b7671f1e745545bd7.jpg"
+                        },
+                        "name": "Baba Yaga",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "MOUNTAIN_POWER": "#2#",
+                            "FOREST_POWER": "#3#",
+                            "MAIN_EFFECT": "{H} Piochez une carte."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_11",
+                        "familyReference": "YZ_11_R1"
+                    },
+                    "id": "01K88PPD0H2K9RSBENWZ1V2S0Q"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/01359af905dcaacdb623",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_YZ_70_U_3927",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/ef02f8f39e5d839b9cb8",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_70/UNIQUE/JPG/fr_FR/fe6ff4b40963ca22e9747ccb19b6e8a8.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_70/WEB_642a407cb95fc4cda1c9bec091c06bec",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_70/WEB_1d7c1c1eb580e60041059672788650f4",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_70/WEB_431ccd505e00249bd64faf0fba30f6c0"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_YZ_70_U_3927",
+                        "id": "5AR4ZMG6N186486BW1090EETN7",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "de-de": "",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_70/UNIQUE/JPG/en_US/141c3adb413abb47e4d42a0cb498050c.jpg",
+                            "es-es": "",
+                            "it-it": "",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_70/UNIQUE/JPG/fr_FR/fe6ff4b40963ca22e9747ccb19b6e8a8.jpg"
+                        },
+                        "name": "Suha, Opératrice du Qorgan",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "MOUNTAIN_POWER": "2",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "4",
+                            "MAIN_EFFECT": "{J} Si votre Expédition Compagnon est en retard : [Ravitaillez].  Lorsque je vais en Réserve depuis la zone d'Expédition — [][Sabotez]."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_70",
+                        "familyReference": "YZ_70_U_3927"
+                    },
+                    "id": "01K8BN27563Q2TP42DYMD74W2H"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/a322c4229a9c667154ca",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_BR_12_U_5336",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/ef02f8f39e5d839b9cb8",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_12/UNIQUE/JPG/fr_FR/ccf73e5b2fc38b25779daa4cb8c45bc9.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_12/ALT_CORE_B_BR_12_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_12/ALT_CORE_B_BR_12_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_12/ALT_CORE_B_BR_12_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_BR_12_U_5336",
+                        "id": "709HAKF0K28W1RHZYE2PQ75VJM",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_12/UNIQUE/JPG/fr_FR/ccf73e5b2fc38b25779daa4cb8c45bc9.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_12/UNIQUE/JPG/es_ES/cb5600cb935532268d2197b991d78e71.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_12/UNIQUE/JPG/it_IT/d0470f7f80e4e1ae02dc35e4a5e32a07.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_12/UNIQUE/JPG/de_DE/5b025eaa80c9079ebcb29d1e75176e75.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_12/UNIQUE/JPG/en_US/c9a5c982a1a0e44edf93e2c8e86fc333.jpg"
+                        },
+                        "name": "Hua Mulan",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "2",
+                            "MOUNTAIN_POWER": "2",
+                            "OCEAN_POWER": "3",
+                            "FOREST_POWER": "2",
+                            "MAIN_EFFECT": "{H} []Vous pouvez envoyer en Réserve un Personnage ciblé de Coût de Main {3} ou moins.  Au Crépuscule — Vous pouvez mettre une carte de votre main en Réserve. Si vous le faites : Je perds [[Fugace]]."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_12",
+                        "familyReference": "BR_12_U_5336"
+                    },
+                    "id": "01K88W81AMWW8RT5MXVVTE0KBW"
+                }
+            ],
+            "number": 11
+        },
+        "spell": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/9ff5aba27c95ae21dfc8",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/4646c9ca4d44175ae763",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_YZ_41_R1",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/b0cff35997dd1c21c1c5",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_41/JPG/fr_FR/763a14d061fba213dd1c27c6ac31ba75.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_41/WEB_933bf14001597d7b07fa1e7c3c9690bd",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_41/WEB_7b20382c6064821bfea2289196096006"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_YZ_41_R1",
+                        "id": "01J1Q4P4SWD7ABYG5VK63B8RN6",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_41/JPG/en_US/a12fcd72c8f43091f01e5bff79713f40.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_41/JPG/de_DE/9964eefcf7517a0800295ac3e613cb09.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_41/JPG/it_IT/0e8a434d105423d6e525af899e89d99a.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_41/JPG/es_ES/5b24b368baa7bf4c6f053ee87a995ef8.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_41/JPG/fr_FR/763a14d061fba213dd1c27c6ac31ba75.jpg"
+                        },
+                        "name": "Invocation de Phalène",
+                        "elements": {
+                            "MAIN_COST": "#4#",
+                            "RECALL_COST": "#3#",
+                            "MAIN_EFFECT": "[Rafraîchissement]. (Si je vais en Réserve après résolution de mon effet, épuisez-moi {T}.)  Créez un jeton Illusion [2/2/2 Phalène de Mana] #dans chacune de vos Expéditions#."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_41",
+                        "familyReference": "YZ_41_R1"
+                    },
+                    "id": "01K88PR4HZXVX8572Y0QE99T2J"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/ecac1c79677cd89e524e",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_YZ_23_R1",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/b0cff35997dd1c21c1c5",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_23/JPG/fr_FR/1718977c11c473e2a79aa553c9ae2113.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_23/ALT_CORE_B_YZ_23_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_23/ALT_CORE_B_YZ_23_R_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_YZ_23_R1",
+                        "id": "01HN5TXRMWJT2M5SP7NRB84CNB",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_23/JPG/it_IT/ae5c8472d2951441788c62c11009bf70.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_23/JPG/en_US/5b8e0e0ef944b89e588f40fd5c58e5b6.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_23/JPG/de_DE/be2c63df4167a4c0172e94f32bd27b53.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_23/JPG/fr_FR/1718977c11c473e2a79aa553c9ae2113.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_23/JPG/es_ES/00fc73f07ba0d2af58e9b073ceda6bb3.jpg"
+                        },
+                        "name": "Sceau de Conjuration",
+                        "elements": {
+                            "MAIN_COST": "#4#",
+                            "RECALL_COST": "5",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "Piochez #trois cartes#."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_23",
+                        "familyReference": "YZ_23_R1"
+                    },
+                    "id": "01K88PPVK7JCFTJX8QK7NZ77F3"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/6de11e814e5e85785070",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_OR_27_R2",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/b0cff35997dd1c21c1c5",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_OR_27/JPG/fr_FR/3944b11b4b41303df88c611537c91565.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_27/ALT_CORE_B_OR_27_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_OR_27/ALT_CORE_B_OR_27_R_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_OR_27_R2",
+                        "id": "01HN5TXRHKMR7YBVT33E1NKMP2",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_OR_27/JPG/it_IT/1de6ad18b23385888d2991eda2a9a083.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_OR_27/JPG/es_ES/e3cde3270a2ac42be78bdb7ccdccb289.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_OR_27/JPG/de_DE/d90ad1b6c9ed3af7dc3b86cb812cbfc6.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_OR_27/JPG/en_US/a6d2965ca9c101b8f92f1f335f199013.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_OR_27/JPG/fr_FR/3944b11b4b41303df88c611537c91565.jpg"
+                        },
+                        "name": "Jour de Célébration",
+                        "elements": {
+                            "MAIN_COST": "#8#",
+                            "RECALL_COST": "#8#",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  #Les Expéditions# ne peuvent pas avancer ce Jour."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "OR_27",
+                        "familyReference": "OR_27_R2"
+                    },
+                    "id": "01K88PVG8XB9983TG7T18WGSKZ"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/bd02ece9a5ee89c4b2b7",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_YZ_19_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/22d6a82421e84d8ffb8c",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_19/JPG/fr_FR/a2c78b6c862490db634abc5ca8723068.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_19/WEB_17c22a407f782954aa960759102a191b",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_19/WEB_e15ca09454686f1cf676008de3db08a5"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_YZ_19_C",
+                        "id": "01HN5TXRM332B4PDZY2G89VR1T",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_19/JPG/es_ES/309868bbdcd6d5208e556e72f96b5d41.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_19/JPG/de_DE/34d19e7348d1be16feb075d46476145f.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_19/JPG/it_IT/19e33a851644d3e059f16910647ef49c.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_19/JPG/fr_FR/a2c78b6c862490db634abc5ca8723068.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_19/JPG/en_US/9fa3d90d6b5217ff124219128ac0649c.jpg"
+                        },
+                        "name": "Entraînement Magique",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "Piochez une carte."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_19",
+                        "familyReference": "YZ_19_C"
+                    },
+                    "id": "01K88Q2GXD478E387XAXCFBWMN"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/8d31eb948d76f026bd3c",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_YZ_76_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/22d6a82421e84d8ffb8c",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_76/JPG/fr_FR/0cbe427d64579219f555de757e0bc5e4.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_76/WEB_a4f3e9096508ec8ffe11ccc73b6d185f",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_76/WEB_0d75142983dba63ae51dc175fb6b2e5b"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_YZ_76_C",
+                        "id": "01JN9HNDYMWT4CV99J1YHPMTS4",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_76/JPG/de_DE/c07416bc2d4e519b7ecbefe9f1f10a9d.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_76/JPG/es_ES/fcc31757e9b36997bf3b244816683157.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_76/JPG/it_IT/b0cda9f613eee310499bce186aa183c0.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_76/JPG/en_US/cc60bbb92b373ab1ab2727197080ba89.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_76/JPG/fr_FR/0cbe427d64579219f555de757e0bc5e4.jpg"
+                        },
+                        "name": "Sceau Yzmir",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "4",
+                            "MAIN_EFFECT": "Choisissez l'un :  • Envoyez en Réserve un Personnage ciblé de Coût de Main {2} ou moins.  • [Sabotez].  • Piochez une carte."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_76",
+                        "familyReference": "YZ_76_C"
+                    },
+                    "id": "01K88PNACYBE88APQF3V6GSFZV"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/82058f28a9238fd765be",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_YZ_24_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/22d6a82421e84d8ffb8c",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_24/JPG/fr_FR/ee4c1874999b101293ffc59e4cf57f1d.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_24/ALT_CORE_B_YZ_24_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_24/ALT_CORE_B_YZ_24_R_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_YZ_24_C",
+                        "id": "01HN5TXRMZP62CSTD42SYCEVD1",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_24/JPG/es_ES/27a1945c0ed5b0ccce6d1ba8537b5b82.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_24/JPG/it_IT/e254bb006133ac6cbd7989c24ff64b23.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_24/JPG/en_US/ba625a789f346a7642965e8b05b5557a.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_24/JPG/fr_FR/ee4c1874999b101293ffc59e4cf57f1d.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_24/JPG/de_DE/57493b122309f8c334f2f92e0afd21bd.jpg"
+                        },
+                        "name": "Portail de Bannissement",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "4",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Défaussez un Personnage ou Permanent ciblé."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_24",
+                        "familyReference": "YZ_24_C"
+                    },
+                    "id": "01K88PQDBDVBY758XP88X1F02N"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/01a3badf6f079da5c269",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_YZ_75_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/22d6a82421e84d8ffb8c",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_75/JPG/fr_FR/2deaac4bcad6da4363f3bbfb20fb5a9a.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_75/WEB_8a25c8c749977bcc287bff33b313cff8",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_75/WEB_aad06e6c184230427ec7c5d026370fe6"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_YZ_75_C",
+                        "id": "01JN9HNDYMWT4CV99J1YHPMTRV",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_75/JPG/fr_FR/2deaac4bcad6da4363f3bbfb20fb5a9a.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_75/JPG/it_IT/680e06ad270d496080bc0caf23d9641a.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_75/JPG/en_US/ae615db0410a1518d4076386db55168a.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_75/JPG/es_ES/6c951cf958e75955a2cef5224e2dd945.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_75/JPG/de_DE/9d7853014fb0dbbd2116dc2f61c7ad4e.jpg"
+                        },
+                        "name": "Collision de Phalènes",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "4",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Si vous contrôlez une Illusion, je coûte {1} de moins.  Défaussez un Personnage ciblé."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_75",
+                        "familyReference": "YZ_75_C"
+                    },
+                    "id": "01K93H5WZ6XEBXZV7FGYA0MYN1"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/bdbc69a17e091b580933",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_YZ_78_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/22d6a82421e84d8ffb8c",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_78/JPG/fr_FR/decf0e373d8e6d88c8710734dbc26df4.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_78/WEB_7edca3f431db6825ed791ba40dd80038",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_78/WEB_b3df905b16e504b01cdbbfd0fc0d39db"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_YZ_78_C",
+                        "id": "01JN9HNDYNGEPC8J3KAD3CRWS7",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_78/JPG/fr_FR/decf0e373d8e6d88c8710734dbc26df4.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_78/JPG/it_IT/02fde166ba0ba63844282dde57e74abb.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_78/JPG/de_DE/c5b0f7d20348b7170df4cdb013d3a1a4.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_78/JPG/es_ES/044c95e94fa4c3594cbfbfc1d74690be.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_78/JPG/en_US/0be9e37d692d2970848e9fb13e4fc9a7.jpg"
+                        },
+                        "name": "Apparition de Phalène",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "5",
+                            "MAIN_EFFECT": "Créez un jeton Illusion [2/2/2 Phalène de Mana] dans une Expédition ciblée.  Piochez une carte."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_78",
+                        "familyReference": "YZ_78_C"
+                    },
+                    "id": "01K88PTXZ2SW9NAFM6QE656S7C"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/c7e82036d929971e38cb",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_YZ_42_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/22d6a82421e84d8ffb8c",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_42/JPG/fr_FR/9db8fbbfcd3ebe385f4e79fb56be0aa8.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_42/WEB_afaf5adb5c8143c362f946f8b4b3b83e",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_42/WEB_301e5d8029ff1fbf4a42e6e263887c80"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_YZ_42_C",
+                        "id": "01J1Q4P4SWD7ABYG5VK63B8RNC",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_42/JPG/fr_FR/9db8fbbfcd3ebe385f4e79fb56be0aa8.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_42/JPG/de_DE/f26e3994d49e041eef759b6d018fc68b.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_42/JPG/es_ES/ad10695d62827c3bde9d38c173ff64b6.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_42/JPG/it_IT/6ca180c77ff7610b81014574b3f6d758.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_42/JPG/en_US/c0c54881c5af381ddbd0c50a141880c8.jpg"
+                        },
+                        "name": "Blizzard",
+                        "elements": {
+                            "MAIN_COST": "5",
+                            "RECALL_COST": "5",
+                            "MAIN_EFFECT": "[[Fugace]].  Envoyez en Réserve tous les Personnages d'une Expédition ciblée, puis épuisez-les ({T}). (Une carte épuisée ne peut pas être jouée et n'a pas de capacité de Soutien.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_42",
+                        "familyReference": "YZ_42_C"
+                    },
+                    "id": "01K8BN1Y5WN6P6KF0YA68395A7"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/b365b8853467d66caa48",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_YZ_80_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/22d6a82421e84d8ffb8c",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_80/JPG/fr_FR/ac851659c06b71d422cc33732fcdfe06.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_80/WEB_f7592d457611c7fe0de89fe9e88dbcc7",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_80/WEB_80088ab7bb6947d03dd092ee54add11a"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_YZ_80_C",
+                        "id": "01JN9HNDYNGEPC8J3KAD3CRWSS",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_80/JPG/de_DE/0b7cb010880331aee6f0b8c1f0c308e9.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_80/JPG/en_US/ea231c234e3ad267f41109fd327945a3.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_80/JPG/it_IT/7f46dfb08525f51d4036505cd0335ec7.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_80/JPG/es_ES/0f8efa86dc1bc5ff3b8cb6db92b69be9.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_80/JPG/fr_FR/ac851659c06b71d422cc33732fcdfe06.jpg"
+                        },
+                        "name": "Fureur de Sakarabru",
+                        "elements": {
+                            "MAIN_COST": "5",
+                            "RECALL_COST": "5",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Une Expédition ciblée recule d'une région."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_80",
+                        "familyReference": "YZ_80_C"
+                    },
+                    "id": "01K88PVYEXFHZMVJ5WY0XSTG2B"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/1c654be1b527dd08152c",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_YZ_77_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/22d6a82421e84d8ffb8c",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_77/JPG/fr_FR/8d3808ef8eb13e224b8ad08d4243ac48.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_77/WEB_decf7d89fadffe80b1f64971f4f64dd9",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_77/WEB_2debcda6af7b9e295916d639481f887d"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_YZ_77_C",
+                        "id": "01JN9HNDYMWT4CV99J1YHPMTSD",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_77/JPG/it_IT/260f55319dc6421951809ffaf23d942c.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_77/JPG/en_US/a1ec27967781b27321509a77f0be1ed1.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_77/JPG/de_DE/4fddc3f58f1055078742114b7fb57b12.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_77/JPG/es_ES/cd2f17f3bdedd1f0972d8f73da4ee502.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_YZ_77/JPG/fr_FR/8d3808ef8eb13e224b8ad08d4243ac48.jpg"
+                        },
+                        "name": "Trahison",
+                        "elements": {
+                            "MAIN_COST": "7",
+                            "RECALL_COST": "7",
+                            "MAIN_EFFECT": "[[Fugace]].  Un Personnage ciblé trahit. (Il rejoint l'Expédition qui lui fait face et change de contrôleur. S'il devait aller dans votre Réserve ou dans une autre zone personnelle, il va dans celle de son propriétaire à la place.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_77",
+                        "familyReference": "YZ_77_C"
+                    },
+                    "id": "01K88PWSPGDRBD1PGP11JS3ZH3"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/e270eec9923459d4031b",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_YZ_37_R1",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/b0cff35997dd1c21c1c5",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_37/JPG/fr_FR/21a14d10d7d95678efdeee1664b685bc.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_37/WEB_5c0d4932c8e1f4ed3f66013d6fa87ced",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_37/WEB_3b0931125661939b3d75ac48d30ad665"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_YZ_37_R1",
+                        "id": "01J1Q4P4STVYKQPX3X8SF0WVA7",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_37/JPG/de_DE/7d4d022a1fc847f5f1551c908259f1a4.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_37/JPG/en_US/0e5b792c3a5f6893fd457d610d9f5ae6.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_37/JPG/it_IT/07b1c7dc6d8e75dc4b8b1a5d3796cbf6.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_37/JPG/es_ES/bf7453dc39962f9e37c948b870cac349.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_YZ_37/JPG/fr_FR/21a14d10d7d95678efdeee1664b685bc.jpg"
+                        },
+                        "name": "Nova Hivernale",
+                        "elements": {
+                            "MAIN_COST": "8",
+                            "RECALL_COST": "8",
+                            "MAIN_EFFECT": "[[Fugace]].  Choisissez trois. #Vous pouvez choisir la même option plusieurs fois# :  • Épuisez jusqu'à deux cartes en Réserve.  • Créez deux jetons Illusion [2/2/2 Phalène de Mana] dans une Expédition ciblée.  • Défaussez un Permanent ciblé.  • Un joueur ciblé sacrifie un Personnage."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_37",
+                        "familyReference": "YZ_37_R1"
+                    },
+                    "id": "01K88PSVRB2823MB220VYNWS7N"
+                }
+            ],
+            "number": 25
+        },
+        "permanent": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/2849519d344ff5a6c257",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/b81af716b4244cec8e59",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_YZ_30_R1",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X78DXSNKNB15KCF69Z",
+                            "@type": "CardType",
+                            "reference": "PERMANENT",
+                            "id": "01GE7AC9X78DXSNKNB15KCF69Z",
+                            "name": "Permanent"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/b0cff35997dd1c21c1c5",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_30/JPG/fr_FR/27fd789f1bfa2c2a9a3c8a838a433b8e.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_30/ALT_CORE_B_YZ_30_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_30/ALT_CORE_B_YZ_30_R_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_YZ_30_R1",
+                        "id": "01HN5TXRNZ2EEMGTC6TS3EPDBY",
+                        "mainFaction": {
+                            "@id": "/factions/YZ",
+                            "@type": "Faction",
+                            "reference": "YZ",
+                            "color": "#764891",
+                            "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+                            "name": "Yzmir"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_30/JPG/it_IT/4180839e91ecb6aa11feba1d9da7d36b.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_30/JPG/es_ES/d7ed50ae2aebae131e4131ffed9758fe.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_30/JPG/en_US/aa6a3613d889d86a52b8b771bba37150.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_30/JPG/fr_FR/27fd789f1bfa2c2a9a3c8a838a433b8e.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_30/JPG/de_DE/6899d934b936a0b0c57c2ccf6a0a7bb1.jpg"
+                        },
+                        "name": "Le Kadigir, Bastion Yzmir",
+                        "elements": {
+                            "MAIN_COST": "8",
+                            "RECALL_COST": "8",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "{T} : Le prochain Sort que vous jouez ce tour est gratuit. #Si vous le jouez de votre main, il perd [[Fugace]].#"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_30",
+                        "familyReference": "YZ_30_R1"
+                    },
+                    "id": "01K88PXJEBD01GXT3NY0WEM1PZ"
+                }
+            ],
+            "number": 3
+        }
+    },
+    "cardsByRarityData": [
+        [
+            "Commun",
+            21
+        ],
+        [
+            "Rare",
+            15
+        ],
+        [
+            "Unique",
+            3
+        ]
+    ],
+    "updatedAt": "2025-11-03T09:40:29+00:00",
+    "id": "01K88NVJ781SREPKWTRRM0W2KW",
+    "description": "",
+    "legal": true,
+    "cardIndexes": {
+        "/cards/ALT_CYCLONE_B_YZ_76_C": 2,
+        "/cards/ALT_CYCLONE_B_YZ_68_C": 3,
+        "/cards/ALT_COREKS_B_YZ_04_C": 3,
+        "/cards/ALT_COREKS_B_YZ_11_R1": 2,
+        "/cards/ALT_COREKS_B_YZ_24_C": 2,
+        "/cards/ALT_ALIZE_B_YZ_41_R1": 3,
+        "/cards/ALT_ALIZE_B_YZ_37_R1": 2,
+        "/cards/ALT_CYCLONE_B_YZ_78_C": 2,
+        "/cards/ALT_COREKS_B_OR_27_R2": 2,
+        "/cards/ALT_CYCLONE_B_YZ_80_C": 3,
+        "/cards/ALT_CYCLONE_B_YZ_77_C": 1,
+        "/cards/ALT_COREKS_B_YZ_30_R1": 3,
+        "/cards/ALT_COREKS_B_YZ_23_R1": 3,
+        "/cards/ALT_COREKS_B_YZ_19_C": 3,
+        "/cards/ALT_CORE_B_BR_12_U_5336": 1,
+        "/cards/ALT_ALIZE_B_YZ_42_C": 1,
+        "/cards/ALT_CYCLONE_B_YZ_70_U_3927": 1,
+        "/cards/ALT_CYCLONE_B_YZ_75_C": 1,
+        "/cards/ALT_CORE_B_AX_13_U_1521": 1
+    }
+}

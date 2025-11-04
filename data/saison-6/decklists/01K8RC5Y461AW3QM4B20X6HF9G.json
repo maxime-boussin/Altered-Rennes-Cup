@@ -1,0 +1,1534 @@
+{
+    "@context": "/contexts/DeckUserList",
+    "@id": "/deck_user_lists/01K8RC5Y461AW3QM4B20X6HF9G",
+    "@type": "DeckUserList",
+    "name": "Sol V2🐠",
+    "user": {
+        "@id": "/users/01HNGKVWEVH9FQ1SPZ4P9VCWPS",
+        "@type": "User",
+        "id": "01HNGKVWEVH9FQ1SPZ4P9VCWPS"
+    },
+    "faction": {
+        "@id": "/factions/BR",
+        "@type": "Faction",
+        "reference": "BR",
+        "color": "#c32637",
+        "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+        "name": "Bravos"
+    },
+    "alterator": {
+        "@id": "/cards/ALT_CYCLONE_B_BR_65_C",
+        "@type": "Card",
+        "cardType": {
+            "@id": "/card_types/01GE7AC9WGQTNRP28T63FH8TZD",
+            "@type": "CardType",
+            "reference": "HERO",
+            "id": "01GE7AC9WGQTNRP28T63FH8TZD",
+            "name": "Héros"
+        },
+        "rarity": {
+            "@type": "Rarity",
+            "@id": "/.well-known/genid/1503f26c3dacff647328",
+            "reference": "COMMON",
+            "name": "Commun"
+        },
+        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_65/JPG/fr_FR/442dc18f051bf1e37e99f54f3bb173ac.jpg",
+        "inMyCollection": 0,
+        "assets": {
+            "WEB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_65/WEB_0bd6374afa94942823892c37a328ecd9"
+            ],
+            "HERO_WIDE": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_65/HERO_WIDE_e29983ea0001809c95a92f477feebce3"
+            ],
+            "HERO_THUMB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_65/HERO_THUMB_96da0af0dd504ba0e1d854af3187075a"
+            ]
+        },
+        "numberCopyAvailable": 0,
+        "isExclusive": false,
+        "isOwnerless": false,
+        "reference": "ALT_CYCLONE_B_BR_65_C",
+        "id": "01JN9HNDXESZGQSX75X8D6P0HH",
+        "mainFaction": {
+            "@id": "/factions/BR",
+            "@type": "Faction",
+            "reference": "BR",
+            "color": "#c32637",
+            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+            "name": "Bravos"
+        },
+        "allImagePath": [],
+        "name": "Sol & Halua",
+        "elements": {
+            "MAIN_COST": "0",
+            "RECALL_COST": "0",
+            "PERMANENT": "2",
+            "RESERVE": "2",
+            "MAIN_EFFECT": "Lorsque vous passez en premier (vous arrêtez de jouer des tours avant les autres joueurs) — Je gagne 1 compteur Quête. Puis, si j'ai au moins 3 compteurs Quête, créez un jeton [2/2/2 Halua] dans votre Expédition Compagnon. (C'est un jeton Compagnon Léviathan avec « Si votre Héros a au moins 5 compteurs Quête, je suis Gigantesque. »)"
+        },
+        "isSuspended": false,
+        "isErrated": false,
+        "isBanned": false,
+        "siblingReference": "BR_65",
+        "familyReference": "BR_65_C"
+    },
+    "eventFormat": "STANDARD",
+    "public": false,
+    "cardQuantity": 39,
+    "deckLegality": {
+        "@type": "DeckLegality",
+        "@id": "/.well-known/genid/656240972256455bad7d",
+        "resume": {
+            "nbRare": true,
+            "isOwned": true,
+            "nbUnique": true,
+            "isSameFaction": true,
+            "nbFamily": true,
+            "nbHero": true,
+            "nbCards": true,
+            "isSuspended": true,
+            "isBanned": true,
+            "cardSetValidity": true,
+            "globalValidity": true,
+            "errorFamily": []
+        }
+    },
+    "deckCardsByType": {
+        "@type": "DeckCard",
+        "@id": "/.well-known/genid/dad3c9418345db6ccc17",
+        "character": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/d95ac2b49d81f9e6cb3c",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/93240d31689125b8e0ee",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_BR_06_R1",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/af0a60b551c58cf7ea46",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_06/JPG/fr_FR/ea5c0227cc4577b24022aa00f192dcea.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_06/ALT_CORE_B_BR_06_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_06/ALT_CORE_B_BR_06_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_06/ALT_CORE_B_BR_06_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_BR_06_R1",
+                        "id": "01HKAFJNN3TX2M33WCHV8JRMHX",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_06/JPG/de_DE/16daf2c94a962f025035beb80e77c67a.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_06/JPG/it_IT/a70cc83478d7b53383d1d47a24e21999.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_06/JPG/en_US/3d092ae04e946584440eb9061f5be2ac.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_06/JPG/fr_FR/ea5c0227cc4577b24022aa00f192dcea.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_06/JPG/es_ES/b168b8b4ac6504fb04a1456f502bfa67.jpg"
+                        },
+                        "name": "Petit Djinn",
+                        "elements": {
+                            "MAIN_COST": "#1#",
+                            "RECALL_COST": "#2#",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "#2#",
+                            "FOREST_POWER": "0",
+                            "MAIN_EFFECT": "Si je devais quitter la zone d'Expédition en étant [[Boosté]], mettez-moi dans la zone de Mana de mon propriétaire à la place (en tant qu'Orbe de Mana épuisé).  {R} Je gagne 1 boost."
+                        },
+                        "isSuspended": false,
+                        "isErrated": true,
+                        "isBanned": false,
+                        "siblingReference": "BR_06",
+                        "familyReference": "BR_06_R1"
+                    },
+                    "id": "01K8RC5Y5XXD67ME7MQ4MFGBK2"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/b90ccb5dc3717057f480",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_BISE_B_YZ_56_R2",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/af0a60b551c58cf7ea46",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_56/JPG/fr_FR/21cb703ce80034aa932cf0ce656750be.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_56/WEB_75f88b9229b287c6c75411f7c8066c63",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_56/WEB_84714aeb2fc4b0b42a623832bf5eecf9",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_56/WEB_1f41959220568b89cd81a65ac8e40892"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_BISE_B_YZ_56_R2",
+                        "id": "01JB1YGPC2Q3NTVGMMSJ2VZ704",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_56/JPG/de_DE/d72f6d9903e5721fa92c929914c2cb84.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_56/JPG/it_IT/a957d0114e96b7c8c04032a0fb16ffd4.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_56/JPG/en_US/718701cecb5db094e12e2d327646b0fa.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_56/JPG/fr_FR/21cb703ce80034aa932cf0ce656750be.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_56/JPG/es_ES/b4745b1dcaf7c047c5f9b05c2aeeb84c.jpg"
+                        },
+                        "name": "L'Affamé",
+                        "elements": {
+                            "MAIN_COST": "#8#",
+                            "RECALL_COST": "#6#",
+                            "OCEAN_POWER": "3",
+                            "FOREST_POWER": "3",
+                            "MOUNTAIN_POWER": "3",
+                            "MAIN_EFFECT": "{H} Défaussez toutes les autres cartes en jeu ou en Réserve.  Lorsqu'une carte va dans la défausse — Je gagne 1 boost.  #Si je suis [[Fugace]], je suis [Gigantesque].#"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_56",
+                        "familyReference": "YZ_56_R2"
+                    },
+                    "id": "01K8RC5Y5KCW299E3HT2075NP3"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/d32b0d2ff38b029202c6",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_BR_32_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/1503f26c3dacff647328",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_32/JPG/fr_FR/9a92ece96e74fcb3eab326d5e1e07a14.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_32/WEB_ecd22757d73477fd48b6bcc15e233f6d",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_32/WEB_009a5ebbc48a0c9e221efbfeadd4a138",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_32/WEB_0a6b07195d27235c0c876f928511c6f6"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_BR_32_C",
+                        "id": "01J1Q4P4S0NB0MZ5JKYA2527DN",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_32/JPG/en_US/526ef42a6e401fcdb0d19965d658ef50.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_32/JPG/fr_FR/9a92ece96e74fcb3eab326d5e1e07a14.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_32/JPG/de_DE/bfe1370bffe2c1872c91dbccc7fa5339.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_32/JPG/it_IT/f0f591726551d6a8c519e4fd92858a4c.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_32/JPG/es_ES/b696a0ad5a36769841eb28d43f3e52bb.jpg"
+                        },
+                        "name": "Lapin Ardent",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "0",
+                            "FOREST_POWER": "1",
+                            "MOUNTAIN_POWER": "1",
+                            "MAIN_EFFECT": "{H} Vous pouvez me faire gagner [[Fugace]]. Si vous le faites, un autre Personnage ciblé gagne 1 boost."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_32",
+                        "familyReference": "BR_32_C"
+                    },
+                    "id": "01K8RC5Y6E8667H8QNWN2H2X9E"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/b9835698c6ccc38733bc",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_BR_34_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/1503f26c3dacff647328",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/JPG/fr_FR/a54f4cae4c24866b00fe464894b8f700.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/WEB_d865360de938c343bfd21be56818dca5",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/WEB_4101215de65acd5aecd43196530dc333",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/WEB_d6bc73bb04247722faba819da0ae4fe6"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_BR_34_C",
+                        "id": "01J1Q4P4S1E6BR3CRG4TVW2HED",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/JPG/en_US/b903a40572178f04306f76eb3145a20b.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/JPG/de_DE/32add9bea5c0b78a327f8f2d8c809d1d.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/JPG/fr_FR/a54f4cae4c24866b00fe464894b8f700.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/JPG/it_IT/d1bf89802cc1ed721b11f22bfd045916.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/JPG/es_ES/c11fb68091bee982fcd1d332da34c12d.jpg"
+                        },
+                        "name": "Seiringar de Havre",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "1",
+                            "FOREST_POWER": "3",
+                            "MOUNTAIN_POWER": "1",
+                            "MAIN_EFFECT": "Lorsque je quitte la zone d'Expédition, si j'étais [[Fugace]] — Piochez une carte."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_34",
+                        "familyReference": "BR_34_C"
+                    },
+                    "id": "01K8RC5Y5R3F9XZRATVSEKB449"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/63947b41d66920a9dbaa",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_BR_67_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/1503f26c3dacff647328",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_67/JPG/fr_FR/0f3e866d4f789423ea4ebdbbed11435f.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_67/WEB_e590f8dec6e9146803900fe515dd9f15",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_67/WEB_89bfb4e61b9329ce01dab0d97d26616b",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_67/WEB_2355f473bc71ee99900402ce4b516cdd"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_BR_67_C",
+                        "id": "01JN9HNDXFT4B1FQDAQMHZ7RQX",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_67/JPG/de_DE/8683cd99e3834a591191c45e8192f35d.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_67/JPG/it_IT/e843324aa439a449ecf74a4e2bf19480.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_67/JPG/es_ES/7cf1fad33d21e2c5b99321f06212b081.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_67/JPG/en_US/98e73ffcdc8c9d6f71f7c91c415ef4be.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_67/JPG/fr_FR/0f3e866d4f789423ea4ebdbbed11435f.jpg"
+                        },
+                        "name": "Partenaire d'Altrun",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "1",
+                            "FOREST_POWER": "2",
+                            "MOUNTAIN_POWER": "2",
+                            "MAIN_EFFECT": "{J} Vous pouvez [Foncer] pour me donner 1 boost. (Foncer signifie jouer une autre carte immédiatement.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_67",
+                        "familyReference": "BR_67_C"
+                    },
+                    "id": "01K8RC5Y61YF6E2SKS1X9TFD1P"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/798d95d06cbde6d7d787",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_BR_70_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/1503f26c3dacff647328",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_70/JPG/fr_FR/d4f2cf09395d6431bfc387c0b287ad1f.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_70/WEB_840e9a93513195cf74368d0fcec2e813",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_70/WEB_ae810d74d3339e49df5f01e0604f7c47",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_70/WEB_6abc39223a346a4a18b08a7144497a40"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_BR_70_C",
+                        "id": "01JN9HNDXG42EBJSZKQYQKANRX",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_70/JPG/es_ES/54ea2dc8e3ad8c82501e4702ba061df9.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_70/JPG/en_US/b7a50bdd15400836bef351e0c676275c.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_70/JPG/it_IT/91ae32cd05bda4de084a904d18d74106.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_70/JPG/de_DE/a824b500ab84a1c6c3ecc1afe335587f.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_70/JPG/fr_FR/d4f2cf09395d6431bfc387c0b287ad1f.jpg"
+                        },
+                        "name": "Tengu",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "2",
+                            "MOUNTAIN_POWER": "3"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_70",
+                        "familyReference": "BR_70_C"
+                    },
+                    "id": "01K8RC5Y66WCA94FCC8A6Z0K93"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/43601eb3b04bb34e8a84",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_BR_17_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/1503f26c3dacff647328",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/fr_FR/efbfed049a094ae988975249329a054e.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_17/ALT_CORE_B_BR_17_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_17/ALT_CORE_B_BR_17_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_17/ALT_CORE_B_BR_17_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_BR_17_C",
+                        "id": "01HN5TXR89J51RQW4PX8SDTAFT",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/de_DE/d1454ac8216fde39f8a246c0358dd667.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/it_IT/282b84bb5ad44b81345d258e331e1a55.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/fr_FR/efbfed049a094ae988975249329a054e.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/en_US/fce06b3c8fb2d48a5db7968bd6503650.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/es_ES/3c4b1133bc3190f8a48c175b87b4e28e.jpg"
+                        },
+                        "name": "Guerrière de Havre",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "4",
+                            "MOUNTAIN_POWER": "2",
+                            "FOREST_POWER": "4"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_17",
+                        "familyReference": "BR_17_C"
+                    },
+                    "id": "01K8TY8MRA0DHV8P4PZKMEQ0J4"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/22940edf30c93d50ae2c",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_BR_17_R1",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/af0a60b551c58cf7ea46",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/fr_FR/b7f792a67edaf0f26f2417c8f4ca2a5c.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_17/ALT_CORE_B_BR_17_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_17/ALT_CORE_B_BR_17_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_17/ALT_CORE_B_BR_17_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_BR_17_R1",
+                        "id": "01HN5TXR8AWR2QRF6FKSZDJ7ZH",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/es_ES/91a1f61cffb5f675218de4d580fb9fa4.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/de_DE/018e9feb5dc2e23669c051ec0ea90025.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/it_IT/a5b329e1a0f1f6376223c2fbfdea9660.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/en_US/e21125d1c793a58b93837f6637bb425d.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_17/JPG/fr_FR/b7f792a67edaf0f26f2417c8f4ca2a5c.jpg"
+                        },
+                        "name": "Guerrière de Havre",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "4",
+                            "MOUNTAIN_POWER": "#4#",
+                            "FOREST_POWER": "4",
+                            "ECHO_EFFECT": "#{D} : Le prochain Personnage que vous jouez ce tour gagne 1 boost.# (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_17",
+                        "familyReference": "BR_17_R1"
+                    },
+                    "id": "01K8RC5Y6KJ3JAVZB01B7F2GRE"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/dd81b050857bb651b9a1",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_BR_72_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/1503f26c3dacff647328",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/JPG/fr_FR/c4b939e8f4cfcf242f8b3c81e919f9be.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/WEB_1d5e9d1ee4a3c23007bf345cbf36be6a",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/WEB_b931bf81502bc5e25d6d620ceebd8371",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/WEB_fe7bf1395c1fc04c4e258f2b22328e5d"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_BR_72_C",
+                        "id": "01JN9HNDXHWBPYT5RAY1QC6CNZ",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/JPG/es_ES/9488dd9be47eddab941c92c46b0f5e81.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/JPG/de_DE/812827459ab8df6fe78fc210b0fd8cd4.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/JPG/it_IT/7ca982e05f4fcf09488ed50039120d22.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/JPG/en_US/4d8dcdb923ece064af07afa8cb9e1967.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/JPG/fr_FR/c4b939e8f4cfcf242f8b3c81e919f9be.jpg"
+                        },
+                        "name": "Parachutiste en Wingsuit",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "3",
+                            "FOREST_POWER": "2",
+                            "MOUNTAIN_POWER": "3",
+                            "MAIN_EFFECT": "{R} Vous pouvez [Foncer] pour piocher une carte. (Foncer signifie jouer une autre carte immédiatement.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_72",
+                        "familyReference": "BR_72_C"
+                    },
+                    "id": "01K8RC5Y4RHRGJN2D91A3Q62VR"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/98de83076752244ad6fa",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_BR_72_U_2455",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/0cca0e6070f199a97a26",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/UNIQUE/JPG/fr_FR/aa19b97dc6d625e64033cc503eb5e62e.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/WEB_1d5e9d1ee4a3c23007bf345cbf36be6a",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/WEB_b931bf81502bc5e25d6d620ceebd8371",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/WEB_fe7bf1395c1fc04c4e258f2b22328e5d"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_BR_72_U_2455",
+                        "id": "2CKHPGY7XB8BJTWQQ01J8469R3",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "de-de": "",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/UNIQUE/JPG/en_US/031f81b24d2068a80bb0db75fdfec299.jpg",
+                            "es-es": "",
+                            "it-it": "",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_72/UNIQUE/JPG/fr_FR/aa19b97dc6d625e64033cc503eb5e62e.jpg"
+                        },
+                        "name": "Parachutiste en Wingsuit",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "MOUNTAIN_POWER": "2",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "3",
+                            "MAIN_EFFECT": "{J} Vous pouvez [Foncer]. Si vous le faites : Piochez une carte.  {J} Si vous êtes le premier joueur : Créez un jeton [Aérolithe] dans les Repères d'un joueur ciblé."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_72",
+                        "familyReference": "BR_72_U_2455"
+                    },
+                    "id": "01K8RC5Y75G0N9GEAF0Q1R3F4T"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/4a53db416ac316608ea6",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_BR_73_R1",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/af0a60b551c58cf7ea46",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_73/JPG/fr_FR/94cadbc29f21ff2945e94e12dc89d6e7.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_73/WEB_247f11c81404027d737fa22aa2038812",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_73/WEB_28f17df68f252d26aaa6b1fc74188927",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_73/WEB_9d6f3f54c30898ee6d30d1fb88edb309"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_BR_73_R1",
+                        "id": "01JN9HNDXHWBPYT5RAY1QC6CPB",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_73/JPG/es_ES/e3b2fab9b3667327efb041bee497f220.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_73/JPG/fr_FR/94cadbc29f21ff2945e94e12dc89d6e7.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_73/JPG/en_US/b558189f844c4f59d6053a4417afd3de.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_73/JPG/de_DE/50d5aad8468638b461766d4f531ae6c0.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_73/JPG/it_IT/32fd660211066739628df84589d80b71.jpg"
+                        },
+                        "name": "Harponneuse Bravos",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "3",
+                            "MOUNTAIN_POWER": "#2#",
+                            "MAIN_EFFECT": "#{J}# Vous pouvez [Foncer] pour [Saboter]. (Foncer signifie jouer une autre carte immédiatement.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_73",
+                        "familyReference": "BR_73_R1"
+                    },
+                    "id": "01K8RC5Y6Q1C0DN105A4FMSQHF"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/a16787b3654e0d44118f",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_BR_19_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/1503f26c3dacff647328",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_19/JPG/fr_FR/935a5be819a43b8631c069509cd19b8c.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_19/ALT_CORE_B_BR_19_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_19/ALT_CORE_B_BR_19_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_19/ALT_CORE_B_BR_19_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_BR_19_C",
+                        "id": "01HN5TXR8HKK3Z4WYPGAA3WVD3",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_19/JPG/en_US/167b59343b812d6144cc1597aa9e594f.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_19/JPG/de_DE/b0ef3b512c0e3ff5ae3f4a20004127b3.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_19/JPG/it_IT/f22beee9cf5c3ff77b8febdc709d3551.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_19/JPG/fr_FR/935a5be819a43b8631c069509cd19b8c.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_19/JPG/es_ES/4f6bd001615485d6b7881200518612fa.jpg"
+                        },
+                        "name": "Puissant Djinn",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "4",
+                            "FOREST_POWER": "4",
+                            "MAIN_EFFECT": "Si je devais quitter la zone d’Expédition, vous pouvez me mettre dans la zone de Mana de mon propriétaire à la place."
+                        },
+                        "isSuspended": false,
+                        "isErrated": true,
+                        "isBanned": false,
+                        "siblingReference": "BR_19",
+                        "familyReference": "BR_19_C"
+                    },
+                    "id": "01K8RC5Y4KCAE4PGJVTMZDFEHN"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/326bd93bd958b2a49f81",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_BR_75_U_3461",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/0cca0e6070f199a97a26",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_75/UNIQUE/JPG/fr_FR/bc4fd996586402584bd61567c5938426.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_75/WEB_3eea16bbc321a79e2c973ffa0ddf9f9e",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_75/WEB_de3ca82e83e4b6f987326409f07eca34",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_75/WEB_1ab5253577e30a7ece926fe37809bf14"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_BR_75_U_3461",
+                        "id": "2QMDES2Z4R9QWB5K76W8ZYFHB9",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "es-es": "",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_75/UNIQUE/JPG/en_US/4ac92640bffeefa25ee3b74c8d93b1b2.jpg",
+                            "de-de": "",
+                            "it-it": "",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_75/UNIQUE/JPG/fr_FR/bc4fd996586402584bd61567c5938426.jpg"
+                        },
+                        "name": "Le Lièvre",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "4",
+                            "MOUNTAIN_POWER": "4",
+                            "OCEAN_POWER": "4",
+                            "FOREST_POWER": "5",
+                            "MAIN_EFFECT": "{J} Si vous êtes le premier joueur : Un joueur ciblé devient le premier joueur.  {R} Si la main d'un adversaire contient plus de cartes que la vôtre : [Sabotez]."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_75",
+                        "familyReference": "BR_75_U_3461"
+                    },
+                    "id": "01K8RC5Y5ER840NE6NXEHT4BC0"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/f9a2f1ff42060477751a",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_YZ_18_R2",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/af0a60b551c58cf7ea46",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_18/JPG/fr_FR/06249299aac137cf2070ad37781a6abd.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_18/ALT_CORE_B_YZ_18_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_18/ALT_CORE_B_YZ_18_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_18/ALT_CORE_B_YZ_18_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_YZ_18_R2",
+                        "id": "01HKAFJP3YX6766MWA69G2AY2A",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_18/JPG/fr_FR/06249299aac137cf2070ad37781a6abd.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_18/JPG/it_IT/c1213953c9f1d22bdd579492614f308d.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_18/JPG/en_US/cce97e1765a96cafec70b09b8bc2c692.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_18/JPG/de_DE/12bbf7c97f2af2f3e2e744f5ec476820.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_18/JPG/es_ES/5224e56c14dc5da55780d870657cf04d.jpg"
+                        },
+                        "name": "Sakarabru",
+                        "elements": {
+                            "MAIN_COST": "7",
+                            "RECALL_COST": "4",
+                            "OCEAN_POWER": "4",
+                            "MOUNTAIN_POWER": "4",
+                            "FOREST_POWER": "4",
+                            "MAIN_EFFECT": "{H} L'Expédition adverse qui me fait face recule d'une région."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_18",
+                        "familyReference": "YZ_18_R2"
+                    },
+                    "id": "01K8RC5Y4WV45CRQ5Y409NFBT8"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/69b59434417d133cf71c",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_BR_77_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/1503f26c3dacff647328",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/JPG/fr_FR/3278a104e45778154897c2d67885f76c.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/WEB_c191c53f250ce311996fa92d58ad7036",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/WEB_9c8e448eddaf60079a6939776fdb63a2",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/WEB_2a214bb8f0693dfc4ced2efedb971aac"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_BR_77_C",
+                        "id": "01JN9HNDXJ08EM6MFTJ8WSP8ZG",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/JPG/es_ES/452f8512861e33441ccb9c982567ad6d.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/JPG/de_DE/5a36554704c2335d4626e5333b560674.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/JPG/it_IT/ffd12286d7cc8ae4a0d8dffd5d6e759e.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/JPG/en_US/0f9f2b1815c8f7c4db47f05fa6a7a630.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/JPG/fr_FR/3278a104e45778154897c2d67885f76c.jpg"
+                        },
+                        "name": "Halua, Léviathan Déchaîné",
+                        "elements": {
+                            "MAIN_COST": "7",
+                            "RECALL_COST": "7",
+                            "OCEAN_POWER": "5",
+                            "FOREST_POWER": "5",
+                            "MOUNTAIN_POWER": "5",
+                            "MAIN_EFFECT": "[Gigantesque]. (Je suis considéré présent dans chacune de vos Expéditions.)  [Coriace 1]. (Les adversaires doivent payer {1} pour me cibler.)  Au Crépuscule — Chaque Personnage gagne [[Fugace]]."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_77",
+                        "familyReference": "BR_77_C"
+                    },
+                    "id": "01K8RC5Y70AT44B2N5E93FFTYA"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/803a7c144ac113c6654c",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_BR_77_U_6415",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/0cca0e6070f199a97a26",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/UNIQUE/JPG/fr_FR/3d452833b54f6eef932a2fb393aa31f9.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/WEB_c191c53f250ce311996fa92d58ad7036",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/WEB_9c8e448eddaf60079a6939776fdb63a2",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/WEB_2a214bb8f0693dfc4ced2efedb971aac"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_BR_77_U_6415",
+                        "id": "4REM2KFEJ184JS6QYHSKRMBMM8",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "es-es": "",
+                            "de-de": "",
+                            "it-it": "",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/UNIQUE/JPG/fr_FR/3d452833b54f6eef932a2fb393aa31f9.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_77/UNIQUE/JPG/en_US/18f10432962754528ace06ed337b8331.jpg"
+                        },
+                        "name": "Halua, Léviathan Déchaîné",
+                        "elements": {
+                            "MAIN_COST": "7",
+                            "RECALL_COST": "7",
+                            "MOUNTAIN_POWER": "6",
+                            "OCEAN_POWER": "6",
+                            "FOREST_POWER": "5",
+                            "MAIN_EFFECT": "[][]Je suis [Gigantesque] et [Coriace 1].  {J} Si vous êtes le premier joueur : Je gagne 2 boosts. Sinon, je gagne 1 boost.",
+                            "ECHO_EFFECT": "{D} : []Créez un jeton [Aérolithe] dans vos Repères."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_77",
+                        "familyReference": "BR_77_U_6415"
+                    },
+                    "id": "01K8RC5Y7BKYF7DYV92ZCZA5JT"
+                }
+            ],
+            "number": 31
+        },
+        "spell": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/0ee605db318f80a6afc3",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/c1746357baa33ee8fe0d",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_BR_29_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/1503f26c3dacff647328",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_29/JPG/fr_FR/638531edecf72e53e6ac7e1e0bd14b6f.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_29/ALT_CORE_B_BR_29_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_BR_29/ALT_CORE_B_BR_29_R_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_BR_29_C",
+                        "id": "01HN5TXR9QAMSDEJC4DETP78G2",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_29/JPG/de_DE/3a0ff3a43c3450ce9e8853de759da311.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_29/JPG/it_IT/b64bd72540d811479afd59696038cde3.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_29/JPG/es_ES/a4592cad701db1fa21a6b60826e29289.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_29/JPG/en_US/62277e8a8e4fcb03ff6c1d79b6499543.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_BR_29/JPG/fr_FR/638531edecf72e53e6ac7e1e0bd14b6f.jpg"
+                        },
+                        "name": "Éruption de Mana",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Défaussez un de vos Orbes de Mana. Si vous le faites, défaussez un Personnage ou Permanent ciblé."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_29",
+                        "familyReference": "BR_29_C"
+                    },
+                    "id": "01K8RC5Y5AWFXGTJXBRWYJK040"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/9d643892630586335dcf",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_MU_26_R2",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/af0a60b551c58cf7ea46",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_MU_26/JPG/fr_FR/7e4102782a46d4654968fa84d7ef50e4.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_26/ALT_CORE_B_MU_26_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_MU_26/ALT_CORE_B_MU_26_R_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_MU_26_R2",
+                        "id": "01HN5TXRSJDYCB5843FDMSTKN2",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_MU_26/JPG/es_ES/b5890cb5360b638155870cf10f91e51a.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_MU_26/JPG/en_US/f7fb87339a61e37d8aa0092b71fa53f2.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_MU_26/JPG/it_IT/3030650382f1528daf4d0317cf54dab8.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_MU_26/JPG/de_DE/a9dc596381829b5db4c1190ad929d0d4.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_MU_26/JPG/fr_FR/7e4102782a46d4654968fa84d7ef50e4.jpg"
+                        },
+                        "name": "Moisson de Mana",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Mettez un Personnage ou Permanent ciblé dans la zone de Mana de son Propriétaire (en tant qu'Orbe de Mana épuisé)."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "MU_26",
+                        "familyReference": "MU_26_R2"
+                    },
+                    "id": "01K8S2CV14N23M7VV2SZFAPSA2"
+                }
+            ],
+            "number": 3
+        },
+        "permanent": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/5dc12d74530351529764",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/642bcd5fa275e219eb1e",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_BR_82_R1",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/af0a60b551c58cf7ea46",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_82/JPG/fr_FR/15095d28a0c7c87dfd63bb856795982c.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_82/WEB_fecab85761341eeb87abfc94807003b1",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_82/WEB_840a700eaf173f0073a52c6badf2589b"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_BR_82_R1",
+                        "id": "01JN9HNDXMRM4000J5ZVTG2Z1J",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_82/JPG/de_DE/d7e0ec20719cc12df87001ed6cac507c.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_82/JPG/it_IT/04340662772551d36a891931a096613a.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_82/JPG/en_US/26756a4010f8e9f1224df3e6a5924acd.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_82/JPG/es_ES/4b7658e39c96f3c80908b5a70a15c492.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_82/JPG/fr_FR/15095d28a0c7c87dfd63bb856795982c.jpg"
+                        },
+                        "name": "Chantier Naval Volant",
+                        "elements": {
+                            "MAIN_COST": "#3#",
+                            "RECALL_COST": "#3#",
+                            "MAIN_EFFECT": "Lorsque vous passez en premier — #Un Personnage ciblé gagne 1 boost,# puis créez un jeton [Aérolithe] dans les Repères #d'un joueur ciblé.#"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_82",
+                        "familyReference": "BR_82_R1"
+                    },
+                    "id": "01K8RC5Y5146JF1RS5HPK0N6T4"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/261eb6d2fd84b7355a5f",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_BR_43_C",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q7ASAYXTSM3DH772C70PV5",
+                            "@type": "CardType",
+                            "reference": "EXPEDITION_PERMANENT",
+                            "id": "01J1Q7ASAYXTSM3DH772C70PV5",
+                            "name": "Permanent d’Expédition"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/1503f26c3dacff647328",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_43/JPG/fr_FR/6303bf08d427162157e64cbade63cc04.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_43/WEB_45f8342b1460275baf5510f97cf3d031",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_43/WEB_88dc4094659aabdee36cdce5e6c6ce0f"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_BR_43_C",
+                        "id": "01J1Q4P4S3CD549S9SSC7PCM6K",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_43/JPG/es_ES/c1cc19f6a8620d0a5a23ed7e8a0e8df6.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_43/JPG/fr_FR/6303bf08d427162157e64cbade63cc04.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_43/JPG/de_DE/e42ac3fc34e29fcfffc87dfa64665518.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_43/JPG/it_IT/aacf8c8e411d49639c65515a9c871813.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_43/JPG/en_US/7fa162ed4c816097f9b015f5ae5fb3fd.jpg"
+                        },
+                        "name": "Lait d'Arcolano",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "MAIN_EFFECT": "Lorsqu'un Personnage rejoint mon Expédition — Il gagne 1 boost et [[Fugace]]. (S'il devait être envoyé en Réserve, défaussez-le à la place.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_43",
+                        "familyReference": "BR_43_C"
+                    },
+                    "id": "01K8RC5Y6AN8J5SHA03BTBV906"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/7c90dde6056dd0d0f4da",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_BR_81_R1",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/af0a60b551c58cf7ea46",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_81/JPG/fr_FR/4b92eb15a4fd7d15c47555a716b1b0df.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_81/WEB_a75129b1070ebe2f4b5b8b59431ea5d4",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_81/WEB_49a2984ededef80e8a17e9043301bd36"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_BR_81_R1",
+                        "id": "01JN9HNDXMRM4000J5ZVTG2Z19",
+                        "mainFaction": {
+                            "@id": "/factions/BR",
+                            "@type": "Faction",
+                            "reference": "BR",
+                            "color": "#c32637",
+                            "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+                            "name": "Bravos"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_81/JPG/it_IT/38c79b8c220ccc64b71c50b3742dbfaa.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_81/JPG/de_DE/a7c68a55421e5c7027bec0677e14e39f.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_81/JPG/es_ES/e0c4538cca1f69cf23465b9304a5108b.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_81/JPG/en_US/c4ca7009999f11427f51a30a46c1ebd8.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_BR_81/JPG/fr_FR/4b92eb15a4fd7d15c47555a716b1b0df.jpg"
+                        },
+                        "name": "Parlement des Cendres",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MAIN_EFFECT": "{J} #Piochez une carte.#  Les Personnages que vous contrôlez sont [Coriaces 1]. (Les adversaires doivent payer {1} pour les cibler.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_81",
+                        "familyReference": "BR_81_R1"
+                    },
+                    "id": "01K8RC5Y555BSNGPHNKTYMNEAN"
+                }
+            ],
+            "number": 5
+        }
+    },
+    "cardsByRarityData": [
+        [
+            "Commun",
+            21
+        ],
+        [
+            "Rare",
+            15
+        ],
+        [
+            "Unique",
+            3
+        ]
+    ],
+    "updatedAt": "2025-11-03T11:37:43+00:00",
+    "id": "01K8RC5Y461AW3QM4B20X6HF9G",
+    "description": "",
+    "legal": true,
+    "cardIndexes": {
+        "/cards/ALT_COREKS_B_MU_26_R2": 2,
+        "/cards/ALT_COREKS_B_BR_19_C": 2,
+        "/cards/ALT_CYCLONE_B_BR_72_C": 2,
+        "/cards/ALT_CORE_B_YZ_18_R2": 2,
+        "/cards/ALT_CYCLONE_B_BR_82_R1": 2,
+        "/cards/ALT_CYCLONE_B_BR_81_R1": 1,
+        "/cards/ALT_COREKS_B_BR_29_C": 1,
+        "/cards/ALT_CYCLONE_B_BR_75_U_3461": 1,
+        "/cards/ALT_BISE_B_YZ_56_R2": 2,
+        "/cards/ALT_ALIZE_B_BR_34_C": 3,
+        "/cards/ALT_CORE_B_BR_06_R1": 3,
+        "/cards/ALT_CYCLONE_B_BR_67_C": 3,
+        "/cards/ALT_CYCLONE_B_BR_70_C": 3,
+        "/cards/ALT_ALIZE_B_BR_43_C": 2,
+        "/cards/ALT_ALIZE_B_BR_32_C": 3,
+        "/cards/ALT_COREKS_B_BR_17_R1": 1,
+        "/cards/ALT_CYCLONE_B_BR_73_R1": 2,
+        "/cards/ALT_CYCLONE_B_BR_77_C": 1,
+        "/cards/ALT_CYCLONE_B_BR_72_U_2455": 1,
+        "/cards/ALT_CYCLONE_B_BR_77_U_6415": 1,
+        "/cards/ALT_COREKS_B_BR_17_C": 1
+    }
+}

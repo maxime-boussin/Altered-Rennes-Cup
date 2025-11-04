@@ -1,0 +1,1581 @@
+{
+    "@context": "/contexts/DeckUserList",
+    "@id": "/deck_user_lists/01K74MA1VXVEWFVWYSNSWNTSA2",
+    "@type": "DeckUserList",
+    "name": "bis",
+    "user": {
+        "@id": "/users/01J7GW1MJNGBTKXFEJQXSR4NZR",
+        "@type": "User",
+        "id": "01J7GW1MJNGBTKXFEJQXSR4NZR"
+    },
+    "faction": {
+        "@id": "/factions/AX",
+        "@type": "Faction",
+        "reference": "AX",
+        "color": "#8c432a",
+        "id": "01GE7AC9XBG707G19F03A95TH1",
+        "name": "Axiom"
+    },
+    "alterator": {
+        "@id": "/cards/ALT_CYCLONE_B_AX_65_C",
+        "@type": "Card",
+        "cardType": {
+            "@id": "/card_types/01GE7AC9WGQTNRP28T63FH8TZD",
+            "@type": "CardType",
+            "reference": "HERO",
+            "id": "01GE7AC9WGQTNRP28T63FH8TZD",
+            "name": "Héros"
+        },
+        "rarity": {
+            "@type": "Rarity",
+            "@id": "/.well-known/genid/69b180f9a6762630049f",
+            "reference": "COMMON",
+            "name": "Commun"
+        },
+        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_65/JPG/fr_FR/7f0e70d4ebed273f2c6425e769c9c617.jpg",
+        "inMyCollection": 0,
+        "assets": {
+            "WEB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_65/WEB_ae3d866a0d5f4bb0c68d3603f42b1516"
+            ],
+            "HERO_WIDE": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_65/HERO_WIDE_995a8d6150f8ca160803f22bba4edac5"
+            ],
+            "HERO_THUMB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_65/HERO_THUMB_56c517b5d28c90bd317d57e534daf68b"
+            ]
+        },
+        "numberCopyAvailable": 0,
+        "isExclusive": false,
+        "isOwnerless": false,
+        "reference": "ALT_CYCLONE_B_AX_65_C",
+        "id": "01JN9HNDWYWT1SV8EB8BNSJSRZ",
+        "mainFaction": {
+            "@id": "/factions/AX",
+            "@type": "Faction",
+            "reference": "AX",
+            "color": "#8c432a",
+            "id": "01GE7AC9XBG707G19F03A95TH1",
+            "name": "Axiom"
+        },
+        "allImagePath": [],
+        "name": "Isaree & Pebble",
+        "elements": {
+            "MAIN_COST": "0",
+            "RECALL_COST": "0",
+            "PERMANENT": "2",
+            "RESERVE": "2",
+            "MAIN_EFFECT": "À Midi — Si vous êtes le premier joueur, créez un jeton [Aérolithe] dans vos Repères. (C'est un Permanent avec « Quand je suis sacrifié — Ravitaillez. {T}, {1} : Sacrifiez-moi. »)"
+        },
+        "isSuspended": false,
+        "isErrated": false,
+        "isBanned": false,
+        "siblingReference": "AX_65",
+        "familyReference": "AX_65_C"
+    },
+    "eventFormat": "STANDARD",
+    "public": false,
+    "cardQuantity": 39,
+    "deckLegality": {
+        "@type": "DeckLegality",
+        "@id": "/.well-known/genid/5fcee00e6400ee4c70b4",
+        "resume": {
+            "nbRare": true,
+            "isOwned": true,
+            "nbUnique": true,
+            "isSameFaction": true,
+            "nbFamily": true,
+            "nbHero": true,
+            "nbCards": true,
+            "isSuspended": true,
+            "isBanned": true,
+            "cardSetValidity": true,
+            "globalValidity": true,
+            "errorFamily": []
+        }
+    },
+    "deckCardsByType": {
+        "@type": "DeckCard",
+        "@id": "/.well-known/genid/2369f6664c90deaa9968",
+        "character": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/a8759ae65612bc7ad779",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/3523d5b6ce9d586bc7e1",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_AX_08_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/69b180f9a6762630049f",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_08/JPG/fr_FR/712714b01813f326b256aa70530bccfb.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_08/ALT_CORE_B_AX_08_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_08/ALT_CORE_B_AX_08_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_08/ALT_CORE_B_AX_08_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_AX_08_C",
+                        "id": "01HKAFJNHYMTQ379XADMW17MM1",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_08/JPG/en_US/3f97f3f54502ce702524e05aed7774a5.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_08/JPG/fr_FR/712714b01813f326b256aa70530bccfb.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_08/JPG/de_DE/496cae17b7d8badf1fcfdc582bb6da69.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_08/JPG/it_IT/94cbe3d81a5eb48c8182e81040289894.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_08/JPG/es_ES/ec39dd45af979fa3214e00ebf9745c1c.jpg"
+                        },
+                        "name": "Récupérateur Axiom",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "1",
+                            "MOUNTAIN_POWER": "1",
+                            "FOREST_POWER": "1",
+                            "MAIN_EFFECT": "{R} [Ravitaillez]. (Mettez la première carte de votre deck en Réserve.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_08",
+                        "familyReference": "AX_08_C"
+                    },
+                    "id": "01K8RAK5DXE3MPBNNPCM7S71W0"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/6977633f81e43dc940d8",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_AX_66_R1",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e19fab37c8ba7ee59a30",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_66/JPG/fr_FR/9a559ec77b37dd1da6832cc7bfa01e08.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_66/WEB_8670c396adb770c57aa0d6c68586204d",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_66/WEB_06a7d130ece5013bbc63df74c6ced9d5",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_66/WEB_549ec6ab76a7538f4368d30801b74608"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_AX_66_R1",
+                        "id": "01JN9HNDX25Y4ABQHR5RJV5MR1",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_66/JPG/es_ES/e6dddec72ff1095712bd8987fc383af9.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_66/JPG/it_IT/07f751050350b260ce1bdbc422f7f681.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_66/JPG/fr_FR/9a559ec77b37dd1da6832cc7bfa01e08.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_66/JPG/de_DE/7ea2b4800e96cbfc0029ce28305e6607.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_66/JPG/en_US/8b3e3bbbaf4b634f2f430ca3555072f9.jpg"
+                        },
+                        "name": "Gavroche",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "#1#",
+                            "OCEAN_POWER": "1",
+                            "FOREST_POWER": "0",
+                            "MOUNTAIN_POWER": "1",
+                            "MAIN_EFFECT": "{R} #Vous pouvez sacrifier un Permanent pour# créer un jeton [Aérolithe] dans vos Repères."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_66",
+                        "familyReference": "AX_66_R1"
+                    },
+                    "id": "01K8RBG87W1ZY3SRE1XC6RYVV8"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/9b80812822c9cb54701e",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_BISE_B_AX_53_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/69b180f9a6762630049f",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/JPG/fr_FR/192c111c17e91ae41fa1c539d26d9230.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/WEB_5750210c05bc04405da4b70b06dd07f5",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/WEB_2a635f390d729555a6e2a5955044acd8",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/WEB_80c1a2b7b194a8bb616f3b9223b978d4"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_BISE_B_AX_53_C",
+                        "id": "01JB1YGPB3HW2076HJWYCET35G",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/JPG/es_ES/e9b7da9e3bea2d59a1940e881f4f61d3.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/JPG/it_IT/5f97b3be74c8785cfca9bcd1f6af7afe.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/JPG/de_DE/1d529e88a4dd42821ff0dec973b31813.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/JPG/en_US/fd63aa9121f924efb0334432d43f38af.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/JPG/fr_FR/192c111c17e91ae41fa1c539d26d9230.jpg"
+                        },
+                        "name": "Les Grems",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "1",
+                            "MOUNTAIN_POWER": "2",
+                            "MAIN_EFFECT": "{R} Choisissez jusqu’à l'un :  • Défaussez un Permanent ciblé de Coût de Main {3} ou moins.  • Sacrifiez un Permanent. Si vous le faites, créez un jeton Robot [2/2/2 Scarabot] dans une Expédition ciblée."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_53",
+                        "familyReference": "AX_53_C"
+                    },
+                    "id": "01K8REAFB891P84BX2QH1DA4V2"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/77ee4562e3701ed83a0d",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_BISE_B_AX_53_R1",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e19fab37c8ba7ee59a30",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/JPG/fr_FR/19705500c38ba40f888d7b34bee9b12b.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/WEB_5750210c05bc04405da4b70b06dd07f5",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/WEB_2a635f390d729555a6e2a5955044acd8",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/WEB_80c1a2b7b194a8bb616f3b9223b978d4"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_BISE_B_AX_53_R1",
+                        "id": "01JB1YGPB3HW2076HJWYCET35K",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/JPG/es_ES/1f284a4812ba2c256784355daeb2931b.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/JPG/it_IT/3dfe9137f26add90fa93807bd2089d10.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/JPG/de_DE/e9540a903547d9f3ccef9b55ec336faf.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/JPG/en_US/3dba2e9b74a9eb59bce722e946777398.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_53/JPG/fr_FR/19705500c38ba40f888d7b34bee9b12b.jpg"
+                        },
+                        "name": "Les Grems",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "#2#",
+                            "MOUNTAIN_POWER": "2",
+                            "MAIN_EFFECT": "{R} Choisissez jusqu’à l'un :  • Défaussez un Permanent ciblé de Coût de Main #{5} ou moins.#  • Sacrifiez un Permanent. Si vous le faites, créez un jeton Robot [2/2/2 Scarabot] dans une Expédition ciblée."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_53",
+                        "familyReference": "AX_53_R1"
+                    },
+                    "id": "01K8RE9GNRY9X9R954KSVG0SDQ"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/b0e15e2214634647e7a8",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_AX_04_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/69b180f9a6762630049f",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_04/JPG/fr_FR/d1ab7926496554e968bf3609d0a2cdb9.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_04/ALT_CORE_B_AX_04_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_04/ALT_CORE_B_AX_04_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_04/ALT_CORE_B_AX_04_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_AX_04_C",
+                        "id": "01HKAFJNHECG82PAA2SXSTBKQ1",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_04/JPG/en_US/fca50447c3db9ed73203afbacdd8cabf.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_04/JPG/it_IT/3ddeaf3cda4a0a71bf7cf35c8278d527.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_04/JPG/es_ES/47602c1297e32f69b516f587b30d3cbc.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_04/JPG/de_DE/461577b87e84b8e3db04af4caa3d9290.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_04/JPG/fr_FR/d1ab7926496554e968bf3609d0a2cdb9.jpg"
+                        },
+                        "name": "Élémentaire de Kélon",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "3",
+                            "MOUNTAIN_POWER": "3",
+                            "FOREST_POWER": "1",
+                            "MAIN_EFFECT": "{H} Mettez une carte de votre main en Réserve."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_04",
+                        "familyReference": "AX_04_C"
+                    },
+                    "id": "01K8RBZ1W1ASD68DWG598Q19Q0"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/0be32030fba52b08c1ee",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_AX_13_R1",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e19fab37c8ba7ee59a30",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/JPG/fr_FR/1833f9ed61a92589be7b7d4266e52ef5.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/ALT_CORE_B_AX_13_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/ALT_CORE_B_AX_13_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/ALT_CORE_B_AX_13_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_AX_13_R1",
+                        "id": "01HKAFJNJJSEKYBZ5X1Y2H0PCJ",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/JPG/de_DE/88ce91b87881e4283fe9faea83016f9d.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/JPG/en_US/019182f51d9bacc7cab4355f30889d32.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/JPG/fr_FR/1833f9ed61a92589be7b7d4266e52ef5.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/JPG/it_IT/1528cf2bf33318c1bb96febf647ab323.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_13/JPG/es_ES/68b34846f14ec16693336f7d338dbbd7.jpg"
+                        },
+                        "name": "Ada Lovelace",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "1",
+                            "MOUNTAIN_POWER": "#2#",
+                            "FOREST_POWER": "1",
+                            "MAIN_EFFECT": "{R} Vous pouvez mettre une carte de votre main en Réserve #pour piocher une carte#."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_13",
+                        "familyReference": "AX_13_R1"
+                    },
+                    "id": "01K8RBWW607PMXZ9SMGAJBNBHA"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/ad84c35eb9db1f8a4217",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_AX_70_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/69b180f9a6762630049f",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_70/JPG/fr_FR/7ca596d037609ce7b6ec30147e35a4af.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_70/WEB_33921d7bd3fe418c71615ddf4fd13612",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_70/WEB_41bcef245095afe9f0ce226397934db4",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_70/WEB_62b2855a1d4e9241aca4a318582b59f7"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_AX_70_C",
+                        "id": "01JN9HNDX39AQEENAX51DT22HF",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_70/JPG/es_ES/5c7bf79c5001e508fb9bc925a15cd2cc.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_70/JPG/de_DE/3b1b928adfe3d4c6346ccef2c1593cc6.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_70/JPG/it_IT/c2effface1e97646e0275c522003f2fe.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_70/JPG/en_US/66a71f214971d4dc5a973aceac0c5bc5.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_70/JPG/fr_FR/7ca596d037609ce7b6ec30147e35a4af.jpg"
+                        },
+                        "name": "Paju, Pilote Axiom",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "2",
+                            "MOUNTAIN_POWER": "2",
+                            "ECHO_EFFECT": "{D} : Créez un jeton [Aérolithe] dans les Repères d'un joueur ciblé. (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_70",
+                        "familyReference": "AX_70_C"
+                    },
+                    "id": "01K8RBVR95J4V6WC6ZDVKTRYH8"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/a68fe6cd98e4564461c9",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_AX_34_U_2526",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/0da0f64dc42f2fe3b7f1",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_34/UNIQUE/JPG/fr_FR/ee22159cca5f41cdcbdded366f884531.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_34/WEB_0048c37061f37d8a77598fd84f62a929",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_34/WEB_a2dca4b7b0743e4fd6d10207bd7110cc",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_34/WEB_a25f3a9fc1e5f0e6517e2b8718f336af"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_AX_34_U_2526",
+                        "id": "427F2QE1Y194MAWY9ETS98KYP8",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_34/UNIQUE/JPG/fr_FR/ee22159cca5f41cdcbdded366f884531.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_34/UNIQUE/JPG/de_DE/916665174ce8cb3dbfc9f11ff915f658.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_34/UNIQUE/JPG/it_IT/7824f887b31a8ade3709fca18e287c43.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_34/UNIQUE/JPG/es_ES/7cf850d4fb9688a137ac723d33a51872.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_34/UNIQUE/JPG/en_US/c3ce8482ecfe974375ce8fb024a15339.jpg"
+                        },
+                        "name": "La Petite Fille aux Allumettes",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "2",
+                            "MOUNTAIN_POWER": "1",
+                            "OCEAN_POWER": "0",
+                            "FOREST_POWER": "3",
+                            "MAIN_EFFECT": "{J} Vous pouvez payer {1}. Si vous le faites : Je gagne 2 boosts.  {H} Si votre Réserve est vide : Je gagne 1 boost par cartes dans vos Repères.",
+                            "ECHO_EFFECT": "{D} : []Vous pouvez mettre une carte de votre main en Réserve."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_34",
+                        "familyReference": "AX_34_U_2526"
+                    },
+                    "id": "01K8RG8CZCK8F1BNJ79A4FAWSN"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/2ce78ca6601391e651db",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_AX_11_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/69b180f9a6762630049f",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_11/JPG/fr_FR/219fe4f6843b28d466120e8d4f564e5f.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_11/ALT_CORE_B_AX_11_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_11/ALT_CORE_B_AX_11_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_11/ALT_CORE_B_AX_11_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_AX_11_C",
+                        "id": "01HKAFJNJAK8M6VPA6ZGFRME93",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_11/JPG/it_IT/d6df816dc2bbbd95b504aa636a63cabb.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_11/JPG/en_US/57757c194241d10245fe2877fd386070.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_11/JPG/fr_FR/219fe4f6843b28d466120e8d4f564e5f.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_11/JPG/de_DE/20744927c4324918db7aa01a8570323f.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_11/JPG/es_ES/460111054f975c0e5aa0241fac6fc3fc.jpg"
+                        },
+                        "name": "Amelia Earhart",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "2",
+                            "MOUNTAIN_POWER": "2",
+                            "FOREST_POWER": "2"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_11",
+                        "familyReference": "AX_11_C"
+                    },
+                    "id": "01K8RBYPPJWYWZYVXYH86ZEVJ2"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/137def10902e6aa1071f",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_AX_71_U_649",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/0da0f64dc42f2fe3b7f1",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_71/UNIQUE/JPG/fr_FR/faa585732f5b0b9c71bf8b139d51593b.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_71/WEB_f2269a2919f7eddc5213bba846fdec9d",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_71/WEB_6b27e17225eec2cc3ac0476d30670392",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_71/WEB_c2ee5ac90f103282d831868bb3d6aa51"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_AX_71_U_649",
+                        "id": "1V2S40F10R9WD8PZ5SCE17HZE2",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "de-de": "",
+                            "es-es": "",
+                            "it-it": "",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_71/UNIQUE/JPG/fr_FR/faa585732f5b0b9c71bf8b139d51593b.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_71/UNIQUE/JPG/en_US/86fd4f671aa95e1a58bdd089ae72bce8.jpg"
+                        },
+                        "name": "Méduse",
+                        "elements": {
+                            "MAIN_COST": "4",
+                            "RECALL_COST": "4",
+                            "MOUNTAIN_POWER": "3",
+                            "OCEAN_POWER": "2",
+                            "FOREST_POWER": "2",
+                            "MAIN_EFFECT": "{J} []Créez un jeton Robot [2/2/2 Scarabot] dans une Expédition ciblée.  {R} []Vous pouvez envoyer un Personnage ciblé en Réserve. Si vous le faites, créez un jeton [Aérolithe] dans les Repères de son contrôleur.",
+                            "ECHO_EFFECT": "{D} : []Un Permanent ciblé que vous contrôlez active ses capacités {j}."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_71",
+                        "familyReference": "AX_71_U_649"
+                    },
+                    "id": "01K8RB8JQ077QD1QC5XYM0P34W"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/2acd2b56cf58e92c3955",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_BISE_B_LY_56_U_7714",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/0da0f64dc42f2fe3b7f1",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_56/UNIQUE/JPG/fr_FR/ec235c89bde38dbbb389463357c7d53e.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_56/WEB_2f3ac3708301e585ce49e2878dc246c4",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_56/WEB_8cfdddb4efb79bffd853a1faad2f0d9e",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_56/WEB_e40ebd4886f5a4afc6ecbd62b7d148e8"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_BISE_B_LY_56_U_7714",
+                        "id": "4TQTSPVQMD99NB3Y95AY7NBERS",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_56/UNIQUE/JPG/fr_FR/ec235c89bde38dbbb389463357c7d53e.jpg",
+                            "it-it": "",
+                            "es-es": "",
+                            "de-de": "",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_56/UNIQUE/JPG/en_US/14f821ed74906d40beb7eb74cda2e4ef.jpg"
+                        },
+                        "name": "Efrén, Marionnettiste",
+                        "elements": {
+                            "MAIN_COST": "5",
+                            "RECALL_COST": "4",
+                            "MOUNTAIN_POWER": "5",
+                            "OCEAN_POWER": "5",
+                            "FOREST_POWER": "3",
+                            "MAIN_EFFECT": "{H} []Je gagne 1 boost par cartes dans vos Repères.  {R} Lancez un dé. Sur 4+ : Créez deux jetons Robot [2/2/2 Scarabot] dans une Expédition ciblée. Sinon, créez-en un seul."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_56",
+                        "familyReference": "LY_56_U_7714"
+                    },
+                    "id": "01K8RB9H3KA9V73KH43YDE8DH8"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/39543c995c27ce6f48b2",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_BISE_B_YZ_54_R2",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e19fab37c8ba7ee59a30",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_54/JPG/fr_FR/a5dbdbd16488b66284d4136f1ab97a8a.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_54/WEB_0d2bb8a16eb5b20dbb038be45c9837a1",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_54/WEB_b7649b85f1089a4b54bce6aa7d279526",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_54/WEB_0005e0aedbfe05a69d2b3d11f818034f"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_BISE_B_YZ_54_R2",
+                        "id": "01JB1YGPC2Q3NTVGMMSJ2VZ6ZJ",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_54/JPG/it_IT/7715e1d572ae2e181838c29a12e4e264.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_54/JPG/de_DE/e32863f6a3eb50c4539e0e35d6056f1e.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_54/JPG/fr_FR/a5dbdbd16488b66284d4136f1ab97a8a.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_54/JPG/en_US/f7f6b53da79ab561fd9d56df6d202326.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_YZ_54/JPG/es_ES/d3d1d9c078fdc134079957a0279686ae.jpg"
+                        },
+                        "name": "Merlin",
+                        "elements": {
+                            "MAIN_COST": "6",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "3",
+                            "FOREST_POWER": "3",
+                            "MOUNTAIN_POWER": "3",
+                            "MAIN_EFFECT": "[Repérage] {4}. (Vous pouvez me jouer de votre main pour {4} avec «{h} Envoyez-moi en Réserve ».)  {H} Vous pouvez #défausser# un Personnage #ou Permanent# ciblé."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_54",
+                        "familyReference": "YZ_54_R2"
+                    },
+                    "id": "01K8RB4R3ANX4PEN8ZMF44251R"
+                }
+            ],
+            "number": 22
+        },
+        "spell": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/426523732e39391c74b2",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/935b480687fc3208b204",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_AX_41_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/69b180f9a6762630049f",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_41/JPG/fr_FR/7e136e33a794ac86d76627161b872607.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_41/WEB_b353c597cf25047dd12b196d0782e210",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_41/WEB_7e4e517d8267eb2f3d32859c36a7bafa"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_AX_41_C",
+                        "id": "01J1Q4P4RV2A0EQ68788JASAZ2",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_41/JPG/it_IT/d2551abe0580cf4ba0e1e55505475114.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_41/JPG/de_DE/b37273407a8d753dd8880842e6ec56da.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_41/JPG/fr_FR/7e136e33a794ac86d76627161b872607.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_41/JPG/es_ES/75da5836a34c5cd75cd3a12207e83408.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_41/JPG/en_US/900f5bc52de7bb3dd6ab18369e6a6126.jpg"
+                        },
+                        "name": "Livraison Gelée",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "MAIN_EFFECT": "[Rafraîchissement]. (Si je vais en Réserve après la résolution de mon effet, épuisez-moi {T}. Une carte épuisée ne peut pas être jouée et n'a pas de capacité de Soutien.)  [Ravitaillez]. (Mettez la première carte de votre deck en Réserve.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_41",
+                        "familyReference": "AX_41_C"
+                    },
+                    "id": "01K8RBC0GZKSJ32ZKRNFTDEEK8"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/ad8ae79c4bd8cb416404",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_AX_21_R1",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e19fab37c8ba7ee59a30",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_21/JPG/fr_FR/3b414d0427373859da2d7db4f495f638.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_21/ALT_CORE_B_AX_21_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_21/ALT_CORE_B_AX_21_R_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_AX_21_R1",
+                        "id": "01HKAFJNKG8K7YAC3PCHHM3FCR",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_21/JPG/it_IT/196f8b250110f1eb5a14073a0e8f7b79.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_21/JPG/es_ES/ba5701f3c1c2865bcb99eabb566b264e.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_21/JPG/en_US/c19d4714e9a4537a8ebe40510cae32ca.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_21/JPG/fr_FR/3b414d0427373859da2d7db4f495f638.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_21/JPG/de_DE/535db3c926be2e959edffbb2b3e342d6.jpg"
+                        },
+                        "name": "Boum !",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Sacrifiez un Personnage #ou un Permanent#. Si vous le faites, défaussez un Personnage ou Permanent ciblé."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_21",
+                        "familyReference": "AX_21_R1"
+                    },
+                    "id": "01K8RE6SNSR7R2GW102CPVR8YC"
+                }
+            ],
+            "number": 6
+        },
+        "permanent": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/6a227d3783db9779a1f3",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/a769c6d23acd4de3bf48",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_AX_80_R1",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e19fab37c8ba7ee59a30",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_80/JPG/fr_FR/94d12335e4b91567b02bc9d5692e9cfe.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_80/WEB_09b82745530b753a0e395b9a494aba40",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_80/WEB_6bfe82d9be8edc2383af4f1110330b0e"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_AX_80_R1",
+                        "id": "01JN9HNDX945HK1T715YNER4C4",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_80/JPG/es_ES/e237e314a16038f3a201d497c403524d.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_80/JPG/en_US/55f29bd30f7ed6d7d4cfe7367bced964.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_80/JPG/de_DE/7daf635afece9f3c299cb54d13ef1024.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_80/JPG/it_IT/ce9856fcddf2c985aa01e52c51490e9c.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_80/JPG/fr_FR/94d12335e4b91567b02bc9d5692e9cfe.jpg"
+                        },
+                        "name": "Navette des Scarabots",
+                        "elements": {
+                            "MAIN_COST": "#2#",
+                            "RECALL_COST": "#2#",
+                            "MAIN_EFFECT": "Lorsque je suis sacrifié — Créez un jeton Robot [2/2/2 Scarabot] dans chacune de vos Expéditions. (Les Repères excédentaires sont sacrifiés à la fin du Jour.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_80",
+                        "familyReference": "AX_80_R1"
+                    },
+                    "id": "01K8RB5SZ0VC49Y74D54NHTVMJ"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/6c9297c6ab4da9d83075",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_AX_81_C",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/69b180f9a6762630049f",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_81/JPG/fr_FR/16f35045c8c43d2c3c8c14e58a5c0663.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_81/WEB_d175d6173c40448b8f6984a09b94fdac",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_81/WEB_18e4fd76219e57cbc9f1a8ae058648ef"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_AX_81_C",
+                        "id": "01JN9HNDX945HK1T715YNER4CA",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_81/JPG/fr_FR/16f35045c8c43d2c3c8c14e58a5c0663.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_81/JPG/en_US/b63db05b4c12b9ddf64107f6c4fee727.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_81/JPG/de_DE/97dd8ae703327d1ba343aaa687c54489.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_81/JPG/es_ES/5264fcf2f6a0facef8b814eb763c8c33.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_81/JPG/it_IT/0614bf3bce55d1cc343799906311ebaf.jpg"
+                        },
+                        "name": "Station de Réapprovisionnement",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "MAIN_EFFECT": "{J} Je gagne 2 compteurs Kélon.  {T}, Dépensez 1 de mes compteurs Kélon : un Personnage ciblé perd [[Fugace]]."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_81",
+                        "familyReference": "AX_81_C"
+                    },
+                    "id": "01K8QWZFSVMC6PDVP39N0XBA4V"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/3601c359b1e0495307fa",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_BISE_B_AX_63_C",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/69b180f9a6762630049f",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/JPG/fr_FR/d2cb593d35bb425c7bcf9293cf44431f.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/WEB_a624c77d71597e3b4f75387d82ab2fd0",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/WEB_86673627b1cca3df653102bc093b5e25"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_BISE_B_AX_63_C",
+                        "id": "01JB1YGPB7A0J24VFD24R13HK6",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/JPG/de_DE/be5517560614296ab2726bc68549288d.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/JPG/en_US/30efc94ef7c1e34b9a4472a661a47f92.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/JPG/fr_FR/d2cb593d35bb425c7bcf9293cf44431f.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/JPG/es_ES/5323793270922e311bc130a546f0ced0.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/JPG/it_IT/8a8e2aae3b3745f7aac2af915557a985.jpg"
+                        },
+                        "name": "La Raffinerie",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MAIN_EFFECT": "Lorsqu'une carte quitte votre Réserve pendant l'Après-midi — Je gagne 1 compteur Sève.  {T}, Dépensez 3 de mes compteurs Sève : les Personnages dans votre Réserve gagnent 1 boost."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_63",
+                        "familyReference": "AX_63_C"
+                    },
+                    "id": "01K8RE40VGSM6R2PRT04JV916A"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/bfd3520dade77fb84c9b",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_BISE_B_AX_63_R1",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e19fab37c8ba7ee59a30",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/JPG/fr_FR/cb123a9eade4c0ff26ff93d2275658d7.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/WEB_a624c77d71597e3b4f75387d82ab2fd0",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/WEB_86673627b1cca3df653102bc093b5e25"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_BISE_B_AX_63_R1",
+                        "id": "01JB1YGPB7A0J24VFD24R13HK9",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/JPG/fr_FR/cb123a9eade4c0ff26ff93d2275658d7.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/JPG/de_DE/9c717de7cda6e7de389c61f3ede29ed6.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/JPG/it_IT/bbebc0a6aa2bcae5d06661853781c95e.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/JPG/en_US/bb2d19f65be13d91b91486921ffacca7.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_AX_63/JPG/es_ES/38769009c18b1a12bb9affd1f494a1cc.jpg"
+                        },
+                        "name": "La Raffinerie",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MAIN_EFFECT": "Lorsqu'une carte quitte votre Réserve pendant l'Après-midi — Je gagne 1 compteur Sève.  {T}, Dépensez 3 de mes compteurs Sève : #distribuez 3 boosts parmi les Personnages en Réserve.#"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_63",
+                        "familyReference": "AX_63_R1"
+                    },
+                    "id": "01K8RE3XMTP2TRZXX50EGT6QR2"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/0d927f5b2e4bd50ad56a",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_AX_28_R1",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e19fab37c8ba7ee59a30",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_28/JPG/fr_FR/9455e9e9a7c5bdc9262f7111a6f41e99.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_28/ALT_CORE_B_AX_28_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_28/ALT_CORE_B_AX_28_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_28/ALT_CORE_B_AX_28_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_AX_28_R1",
+                        "id": "01HKAFJNMBE1M97BEGPGTYKQZT",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_28/JPG/it_IT/e7d7e6881c52dd266d168f9de8d7e9a1.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_28/JPG/de_DE/87bddd34c6a773f7f25506ad8170a0e0.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_28/JPG/fr_FR/9455e9e9a7c5bdc9262f7111a6f41e99.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_28/JPG/en_US/0042dcfca90cdf00a8e30ceba989a377.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_AX_28/JPG/es_ES/bc2d97b7e5b77c0923b0a5cba7c40ddd.jpg"
+                        },
+                        "name": "Brouilleur Blindé",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MAIN_EFFECT": "{J} [Sabotez]. (Défaussez jusqu'à une carte d'une Réserve.)  #Lorsque je quitte votre zone de Repères — [Sabotez].#"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_28",
+                        "familyReference": "AX_28_R1"
+                    },
+                    "id": "01K8RCER1D82PE7ESKC705DCDJ"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/800b1e8edfcac13009d5",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_AX_77_C",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/69b180f9a6762630049f",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_77/JPG/fr_FR/95106d1f3787e3e18c93097e4b63c37f.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_77/WEB_dccc5a8f107e14d946c52d7fb695b475",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_77/WEB_9010cb9fb93b62d44058317a8cfce595"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_AX_77_C",
+                        "id": "01JN9HNDX8JW7NSN2VJQRBK9DC",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_77/JPG/es_ES/71870fdde956855aaf9266a6d8cf1728.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_77/JPG/fr_FR/95106d1f3787e3e18c93097e4b63c37f.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_77/JPG/en_US/cce32eb6990d6b6d5f99e9cef40b0cfe.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_77/JPG/it_IT/0f5916f6ee41a04605b91afd6b4f4fa3.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_77/JPG/de_DE/8ebbf405f89ed31a6ad7a05fb9ebdc7d.jpg"
+                        },
+                        "name": "Récif d'Aérolithe",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MAIN_EFFECT": "{J} Vous pouvez envoyer en Réserve un Personnage ciblé de Coût de Main {2} ou moins."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_77",
+                        "familyReference": "AX_77_C"
+                    },
+                    "id": "01K88BMX2658PK3PAT5J09J169"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/41b90b6e05a22e4b140b",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_AX_82_C",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/69b180f9a6762630049f",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_82/JPG/fr_FR/af291dab3c2e813f0d0042b4f422654b.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_82/WEB_2b0195b48f1e3a8014b546f9839f8ab7",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_82/WEB_18f8f9f5dc4e6b421c583ba5834a674a"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_AX_82_C",
+                        "id": "01JN9HNDX945HK1T715YNER4CK",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_82/JPG/de_DE/f9caa7223b525d2c3272176edf1ad6bd.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_82/JPG/es_ES/84c4dcc1628bfe10c040cc526a5d3ab3.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_82/JPG/it_IT/d769bb0487c3c58efa5d1e0743d9297d.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_82/JPG/fr_FR/af291dab3c2e813f0d0042b4f422654b.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_AX_82/JPG/en_US/569e29a9c1bd4a05108cd27b67786512.jpg"
+                        },
+                        "name": "Carrière d'Aérolithe",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MAIN_EFFECT": "À Midi — Si votre adversaire est le premier joueur, créez un jeton [Aérolithe] dans vos Repères. (C'est un Permanent avec « Quand je suis sacrifié — Ravitaillez. {T}, {1} : Sacrifiez-moi. »)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_82",
+                        "familyReference": "AX_82_C"
+                    },
+                    "id": "01K8RFEJ926DB8DTNQS9DCHPS6"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/6585593d6b1997408f53",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_AX_46_R1",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e19fab37c8ba7ee59a30",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_46/JPG/fr_FR/f2bb3f255a5ff5d97276f9d9d1895374.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_46/WEB_6d76ca6e557e4d824b84e7fe14d42385",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_46/WEB_2bd8a292af18d582eb246bc805b1c798"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_AX_46_R1",
+                        "id": "01J1Q4P4RXESM7EW214EN53FJ7",
+                        "mainFaction": {
+                            "@id": "/factions/AX",
+                            "@type": "Faction",
+                            "reference": "AX",
+                            "color": "#8c432a",
+                            "id": "01GE7AC9XBG707G19F03A95TH1",
+                            "name": "Axiom"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_46/JPG/es_ES/07810c6119acd5ef4b8bbab3d2b3052a.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_46/JPG/en_US/33ac94cd7452b665579493fae23bcc9d.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_46/JPG/fr_FR/f2bb3f255a5ff5d97276f9d9d1895374.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_46/JPG/de_DE/29858246ba4b03f9e6922ffd28087ee9.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_AX_46/JPG/it_IT/6f1c9194c8cc8d649e15023df2548bba.jpg"
+                        },
+                        "name": "Galeries Saisies par les Glaces",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "#2#",
+                            "MAIN_EFFECT": "Lorsqu'une carte va en Réserve depuis votre deck ou votre main — Je gagne 1 compteur Épreuve.  Lorsque je gagne mon troisième compteur Épreuve — Sacrifiez-moi. Si vous le faites, créez un jeton Illusion [5/5/5 Reflet Draconique] dans une Expédition ciblée, puis redressez toutes les cartes dans votre Réserve."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "AX_46",
+                        "familyReference": "AX_46_R1"
+                    },
+                    "id": "01K8RBE9XEMGD74V5TD8MQTRKV"
+                }
+            ],
+            "number": 11
+        }
+    },
+    "cardsByRarityData": [
+        [
+            "Commun",
+            21
+        ],
+        [
+            "Rare",
+            15
+        ],
+        [
+            "Unique",
+            3
+        ]
+    ],
+    "updatedAt": "2025-11-03T14:09:26+00:00",
+    "id": "01K74MA1VXVEWFVWYSNSWNTSA2",
+    "description": "",
+    "legal": true,
+    "cardIndexes": {
+        "/cards/ALT_CYCLONE_B_AX_77_C": 2,
+        "/cards/ALT_BISE_B_YZ_54_R2": 2,
+        "/cards/ALT_CYCLONE_B_AX_80_R1": 1,
+        "/cards/ALT_CYCLONE_B_AX_71_U_649": 1,
+        "/cards/ALT_BISE_B_LY_56_U_7714": 1,
+        "/cards/ALT_ALIZE_B_AX_41_C": 3,
+        "/cards/ALT_ALIZE_B_AX_46_R1": 2,
+        "/cards/ALT_CYCLONE_B_AX_66_R1": 2,
+        "/cards/ALT_CYCLONE_B_AX_70_C": 3,
+        "/cards/ALT_CORE_B_AX_13_R1": 2,
+        "/cards/ALT_CORE_B_AX_11_C": 3,
+        "/cards/ALT_CORE_B_AX_04_C": 2,
+        "/cards/ALT_CORE_B_AX_28_R1": 1,
+        "/cards/ALT_BISE_B_AX_63_R1": 1,
+        "/cards/ALT_BISE_B_AX_63_C": 1,
+        "/cards/ALT_CORE_B_AX_21_R1": 3,
+        "/cards/ALT_BISE_B_AX_53_R1": 1,
+        "/cards/ALT_BISE_B_AX_53_C": 1,
+        "/cards/ALT_CYCLONE_B_AX_82_C": 1,
+        "/cards/ALT_ALIZE_B_AX_34_U_2526": 1,
+        "/cards/ALT_CYCLONE_B_AX_81_C": 2,
+        "/cards/ALT_CORE_B_AX_08_C": 3
+    }
+}

@@ -1,0 +1,1401 @@
+{
+    "@context": "/contexts/DeckUserList",
+    "@id": "/deck_user_lists/01K67KD3WYVXX25SCHP5N6ADTA",
+    "@type": "DeckUserList",
+    "name": "fofo",
+    "user": {
+        "@id": "/users/01J3N161YGX63C3XYPMVJY9990",
+        "@type": "User",
+        "id": "01J3N161YGX63C3XYPMVJY9990"
+    },
+    "faction": {
+        "@id": "/factions/LY",
+        "@type": "Faction",
+        "reference": "LY",
+        "color": "#cf4171",
+        "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+        "name": "Lyra"
+    },
+    "alterator": {
+        "@id": "/cards/ALT_CYCLONE_B_LY_65_C",
+        "@type": "Card",
+        "cardType": {
+            "@id": "/card_types/01GE7AC9WGQTNRP28T63FH8TZD",
+            "@type": "CardType",
+            "reference": "HERO",
+            "id": "01GE7AC9WGQTNRP28T63FH8TZD",
+            "name": "Héros"
+        },
+        "rarity": {
+            "@type": "Rarity",
+            "@id": "/.well-known/genid/e8af3eaf70122f1588be",
+            "reference": "COMMON",
+            "name": "Commun"
+        },
+        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_65/JPG/fr_FR/ab9ad26ac4ed6f0f0b4a03e7be87316e.jpg",
+        "inMyCollection": 0,
+        "assets": {
+            "WEB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_65/WEB_5f6b560d2dfed64acffea67682a8070b"
+            ],
+            "HERO_WIDE": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_65/HERO_WIDE_42ded0e34c09158f41c2a97e4beb3f73"
+            ],
+            "HERO_THUMB": [
+                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_65/HERO_THUMB_e9323511ad4a9089ec82a0da00cb5858"
+            ]
+        },
+        "numberCopyAvailable": 0,
+        "isExclusive": false,
+        "isOwnerless": false,
+        "reference": "ALT_CYCLONE_B_LY_65_C",
+        "id": "01JN9HNDXQW0Q82581J22J85ER",
+        "mainFaction": {
+            "@id": "/factions/LY",
+            "@type": "Faction",
+            "reference": "LY",
+            "color": "#cf4171",
+            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+            "name": "Lyra"
+        },
+        "allImagePath": [],
+        "name": "Nadir & Bubbles",
+        "elements": {
+            "MAIN_COST": "0",
+            "RECALL_COST": "0",
+            "PERMANENT": "2",
+            "RESERVE": "2",
+            "MAIN_EFFECT": "Je commence la partie avec un marqueur Terrain {V}, un {M} et un {O}.  À Midi — Vous pouvez placer l'un de mes marqueurs sur une région visible ciblée. (Elle gagne le terrain du marqueur et perd ses autres terrains jusqu'à ce que ce marqueur soit retiré.)"
+        },
+        "isSuspended": false,
+        "isErrated": false,
+        "isBanned": false,
+        "siblingReference": "LY_65",
+        "familyReference": "LY_65_C"
+    },
+    "eventFormat": "STANDARD",
+    "public": false,
+    "cardQuantity": 39,
+    "deckLegality": {
+        "@type": "DeckLegality",
+        "@id": "/.well-known/genid/b5912f57ab4113b95c99",
+        "resume": {
+            "nbRare": true,
+            "isOwned": true,
+            "nbUnique": true,
+            "isSameFaction": true,
+            "nbFamily": true,
+            "nbHero": true,
+            "nbCards": true,
+            "isSuspended": true,
+            "isBanned": true,
+            "cardSetValidity": true,
+            "globalValidity": true,
+            "errorFamily": []
+        }
+    },
+    "deckCardsByType": {
+        "@type": "DeckCard",
+        "@id": "/.well-known/genid/bf63b8ae60b304a60956",
+        "character": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/16201c3c988524004567",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/26d038571b9edc0e7c5e",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_LY_10_R1",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/4e2ecd4fa8d62ee4e827",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_10/JPG/fr_FR/ba01821697d165f6eb7e57225f03d29f.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_10/ALT_CORE_B_LY_10_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_10/ALT_CORE_B_LY_10_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_10/ALT_CORE_B_LY_10_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_LY_10_R1",
+                        "id": "01HKAFJNS3HEXD782DX4CMTBSJ",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_10/JPG/en_US/95a269c64e88a1f6fad109ad7a441861.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_10/JPG/fr_FR/ba01821697d165f6eb7e57225f03d29f.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_10/JPG/de_DE/bb2653102a3040d114a7a3ed3a8d5c21.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_10/JPG/it_IT/b5b58030089f5c4238db805a74b099b1.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_10/JPG/es_ES/c33b7aefc47f335f2b4926d0ea210c9c.jpg"
+                        },
+                        "name": "Encrière de l'Ouroboros",
+                        "elements": {
+                            "MAIN_COST": "#2#",
+                            "RECALL_COST": "#2#",
+                            "OCEAN_POWER": "2",
+                            "MOUNTAIN_POWER": "#2#",
+                            "FOREST_POWER": "#2#",
+                            "MAIN_EFFECT": "Lorsque je vais en Réserve depuis la zone d'Expédition — Vous pouvez renvoyer une autre carte de votre Réserve dans votre main.",
+                            "ECHO_EFFECT": "#{D} : La prochaine carte que vous jouez ce tour coûte {1} de moins.# (Défaussez-moi de la Réserve pour ça.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_10",
+                        "familyReference": "LY_10_R1"
+                    },
+                    "id": "01K90ST6YHS7081XGZXWC42Y0B"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/96df0ea1a306a9c7c579",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_MU_33_R2",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/4e2ecd4fa8d62ee4e827",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/JPG/fr_FR/50c4b803c212ab58df8ab1b13d635fa3.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/WEB_dd3ca128cd9a8859c87e916005fd5466",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/WEB_a29913a460868f171aa09a5bd3ef6a5c",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/WEB_b2f8829799c6ae3c7310533d78346b6e"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_MU_33_R2",
+                        "id": "01J1Q4P4SDA8SPK4V8SP1KVFBM",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/JPG/de_DE/6829f5c99781ff8c1e0cfd3686a9c1f2.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/JPG/it_IT/20b4f949d5ba59949ad7c462abbf12af.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/JPG/es_ES/3d1974cfef8f6bd55b42d804a540c058.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/JPG/fr_FR/50c4b803c212ab58df8ab1b13d635fa3.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_MU_33/JPG/en_US/0f8ab38309eb1b0041865d4e473fc65d.jpg"
+                        },
+                        "name": "Perséphone",
+                        "elements": {
+                            "MAIN_COST": "#3#",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "0",
+                            "FOREST_POWER": "3",
+                            "MOUNTAIN_POWER": "0",
+                            "MAIN_EFFECT": "Ma région #et la région de l'Expédition qui me fait face# sont {V} #et perdent leurs autres terrains.#"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "MU_33",
+                        "familyReference": "MU_33_R2"
+                    },
+                    "id": "01K67KGD010V23PNYA518H391E"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/92d73bcf36d2ccf4d478",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_LY_04_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e8af3eaf70122f1588be",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_04/JPG/fr_FR/740c5e11b52a55b1067c043a2ec02643.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_04/ALT_CORE_B_LY_04_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_04/ALT_CORE_B_LY_04_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_04/ALT_CORE_B_LY_04_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_LY_04_C",
+                        "id": "01HKAFJNRB9YWXJQ7RRB8C1TJN",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_04/JPG/fr_FR/740c5e11b52a55b1067c043a2ec02643.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_04/JPG/en_US/422b72ca5067a45c4f88a92c6da3fc13.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_04/JPG/de_DE/ed00583e7619a2e2a2d2f84ba6a97b64.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_04/JPG/it_IT/17d49d52618a3902eed5f01680992331.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_04/JPG/es_ES/ee5272d31ea7cc98f0ba238632720488.jpg"
+                        },
+                        "name": "Martengale",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "1",
+                            "FOREST_POWER": "1",
+                            "ECHO_EFFECT": "{D} : La prochaine carte que vous jouez ce tour coûte {1} de moins."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_04",
+                        "familyReference": "LY_04_C"
+                    },
+                    "id": "01K67M2P63J10ZJJCXW2ZFG143"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/a2902cd0eb39850f349a",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_BR_34_R2",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/4e2ecd4fa8d62ee4e827",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/JPG/fr_FR/1e71a99eabf6aeef4d98363044ae8e54.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/WEB_d865360de938c343bfd21be56818dca5",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/WEB_4101215de65acd5aecd43196530dc333",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/WEB_d6bc73bb04247722faba819da0ae4fe6"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_BR_34_R2",
+                        "id": "01J1Q4P4S1E6BR3CRG4TVW2HEK",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/JPG/de_DE/d6cbcb34ceadef6751f73541f34ce712.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/JPG/es_ES/93c881a58b2932f6bfa98321dec2be24.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/JPG/fr_FR/1e71a99eabf6aeef4d98363044ae8e54.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/JPG/it_IT/bc908bb13a51a1aee8fe40b41aa53142.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_BR_34/JPG/en_US/b3ca994c9a5f25caee2c09efbca0d92a.jpg"
+                        },
+                        "name": "Seiringar de Havre",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "#0#",
+                            "FOREST_POWER": "3",
+                            "MOUNTAIN_POWER": "#0#",
+                            "MAIN_EFFECT": "Lorsque je quitte la zone d'Expédition, si j'étais [[Fugace]] — Piochez une carte.  #{R} Je gagne 1 boost.#"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "BR_34",
+                        "familyReference": "BR_34_R2"
+                    },
+                    "id": "01K67KF2J8S2X1NJF4QE50SG7E"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/4b76237149ac00c13ee3",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_LY_32_U_17225",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/724e697137b59ebfc69c",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_32/UNIQUE/JPG/fr_FR/a701aebd0cdf8f85e34813f41fd3ed4f.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_32/WEB_f87c38d0ad01b3e276dfae3242f5aa76",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_32/WEB_af998bad6365de95d04ba05335179a40",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_32/WEB_621452a22fa86fc7d5eba6974aaadb40"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_LY_32_U_17225",
+                        "id": "72054FP80M9D9V0VYZSEN3H7KF",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_32/UNIQUE/JPG/it_IT/98c8b23de19ff16cfea61473ee7efb51.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_32/UNIQUE/JPG/de_DE/f4c801232cecfa0bb7ae9ec57241ae8d.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_32/UNIQUE/JPG/es_ES/87e2521cf32a74d44690936bcfdbf323.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_32/UNIQUE/JPG/en_US/d1d700b6c0af02ea07bf737ffb6e72cc.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_32/UNIQUE/JPG/fr_FR/a701aebd0cdf8f85e34813f41fd3ed4f.jpg"
+                        },
+                        "name": "Commando Boule-de-Neige",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "3",
+                            "MOUNTAIN_POWER": "1",
+                            "OCEAN_POWER": "0",
+                            "FOREST_POWER": "4",
+                            "MAIN_EFFECT": "{H} Vous pouvez mettre une carte de votre main en Réserve. Si vous le faites : Vous pouvez épuiser une carte ciblée en Réserve.  {R} []Vous pouvez cibler un Personnage de Coût de Main {3} ou moins autre que moi. Il gagne [[Ancré]]."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_32",
+                        "familyReference": "LY_32_U_17225"
+                    },
+                    "id": "01K67KDG0N49RPTFRC2DXF665K"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/4c90b998dd53bf7cbcca",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_BISE_B_LY_51_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e8af3eaf70122f1588be",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_51/JPG/fr_FR/7c247d07835c4c470694160604b1c16e.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_51/WEB_085d33f39f534bc55b5f4594875aaf86",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_51/WEB_30a2df5f59895985891775f3563b4370",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_51/WEB_32fbd29413f0a8362819f7b39d909f5a"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_BISE_B_LY_51_C",
+                        "id": "01JB1YGPBFNZN87D698ZMZT2V4",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_51/JPG/es_ES/6581897d86757fd8cf4b46a58f99e6d7.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_51/JPG/de_DE/2d38f713a773edb88b967aae33a34c07.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_51/JPG/it_IT/c8b6d1cbc1515b627c94ee176c4de41e.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_51/JPG/en_US/f1b176bfebb745fabd8ed2af782dcb35.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_LY_51/JPG/fr_FR/7c247d07835c4c470694160604b1c16e.jpg"
+                        },
+                        "name": "Contorsionniste Lyra",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "0",
+                            "FOREST_POWER": "2",
+                            "MOUNTAIN_POWER": "3",
+                            "ECHO_EFFECT": "{I} Je ne compte pas dans la limite de votre Réserve."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_51",
+                        "familyReference": "LY_51_C"
+                    },
+                    "id": "01K938NQ5WFBZ49BPHZ37MJNK8"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/9f887dae023ec4c0eea2",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_LY_16_U_4280",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/724e697137b59ebfc69c",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_16/UNIQUE/JPG/fr_FR/5b8e94c62ceb67755b923e7ad1ea4c50.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_16/ALT_CORE_B_LY_16_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_16/ALT_CORE_B_LY_16_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_16/ALT_CORE_B_LY_16_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_LY_16_U_4280",
+                        "id": "3DC7ZVF04V87FTEYH8DKQ1W936",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_16/UNIQUE/JPG/fr_FR/5b8e94c62ceb67755b923e7ad1ea4c50.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_16/UNIQUE/JPG/es_ES/82700a89f7dc96406d11500091b03454.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_16/UNIQUE/JPG/it_IT/61aab8b6f72bf84791a9c9de1977af60.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_16/UNIQUE/JPG/de_DE/44a1247a903d8d48ba329897e6f35520.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_16/UNIQUE/JPG/en_US/2472d2519cd4ddbfd3284cd5d732cdbd.jpg"
+                        },
+                        "name": "Chroniqueuse Lyra",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "3",
+                            "MOUNTAIN_POWER": "4",
+                            "OCEAN_POWER": "0",
+                            "FOREST_POWER": "3",
+                            "MAIN_EFFECT": "{R} []Un Personnage ciblé change d'Expédition.",
+                            "ECHO_EFFECT": "{D} : [][Ravitaillez]."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_16",
+                        "familyReference": "LY_16_U_4280"
+                    },
+                    "id": "01K67KE7935MXE9XQ955K4Y1RW"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/2a174728bf80cb55e42d",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_LY_07_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e8af3eaf70122f1588be",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_07/JPG/fr_FR/43da21cbd51fadb94b0197ec3d2db00b.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_07/ALT_CORE_B_LY_07_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_07/ALT_CORE_B_LY_07_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_07/ALT_CORE_B_LY_07_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_LY_07_C",
+                        "id": "01HKAFJNRPK5QXPGYFP1QA531T",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_07/JPG/de_DE/c9469eaff512ccdc3ae312798758ae93.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_07/JPG/en_US/96b0b190cf2c2ab3d8d4e26951ff9b93.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_07/JPG/fr_FR/43da21cbd51fadb94b0197ec3d2db00b.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_07/JPG/it_IT/88f8de12d980b3429b28afc812d3b279.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_07/JPG/es_ES/792167a84a75cfcc842743eecd15d268.jpg"
+                        },
+                        "name": "Hathor",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "3",
+                            "FOREST_POWER": "3",
+                            "ECHO_EFFECT": "{D} : Renvoyez une autre carte de votre Réserve dans votre main."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_07",
+                        "familyReference": "LY_07_C"
+                    },
+                    "id": "01K67KFSZSB5W2D71BMRWS21AG"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/827821cd2fb6a665db95",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_LY_08_U_6330",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/724e697137b59ebfc69c",
+                            "reference": "UNIQUE",
+                            "name": "Unique"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_08/UNIQUE/JPG/fr_FR/320303c7761cf30b51bec6b10e8d3fb3.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_08/ALT_CORE_B_LY_08_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_08/ALT_CORE_B_LY_08_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_08/ALT_CORE_B_LY_08_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_LY_08_U_6330",
+                        "id": "0QT80YAFVF801VWR6YAG2KW9DF",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_08/UNIQUE/JPG/it_IT/3903e2b8af58d5cd3ccb2a16ccf5402d.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_08/UNIQUE/JPG/en_US/f1c22ad5055c4cd2b8629f1760dfdce5.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_08/UNIQUE/JPG/es_ES/bc4ba4834bc5cac27262b42079ac3375.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_08/UNIQUE/JPG/fr_FR/320303c7761cf30b51bec6b10e8d3fb3.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_08/UNIQUE/JPG/de_DE/ba01cb8f9daaee467175a273690ddf31.jpg"
+                        },
+                        "name": "Skald Lyra",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "3",
+                            "MOUNTAIN_POWER": "0",
+                            "OCEAN_POWER": "1",
+                            "FOREST_POWER": "4",
+                            "MAIN_EFFECT": "{H} Vous pouvez défausser une carte de votre Réserve. Si vous le faites : Un Personnage ciblé gagne 1 boost.",
+                            "ECHO_EFFECT": "{D} : []Payez {1} de moins pour la prochaine carte que vous jouez cet Après-midi."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_08",
+                        "familyReference": "LY_08_U_6330"
+                    },
+                    "id": "01K67KDH4ZE69CVRJGW2H93S4Y"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/7b4752fd401fcb8e7acc",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_LY_71_R1",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/4e2ecd4fa8d62ee4e827",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_71/JPG/fr_FR/c5d664092cee9768f3b58be715d321ba.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_71/WEB_efd11788065e2beb5699398e7857924f",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_71/WEB_ae278649ab2a058fcee8ea24c8dcfab6",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_71/WEB_84ff8d93cfb26d30d01efef8382ec7db"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_LY_71_R1",
+                        "id": "01JN9HNDXSXZD5H3XDS9ASMDTW",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_71/JPG/it_IT/74ae51ac17060b5fc4ea91f4319018ae.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_71/JPG/de_DE/be3774b059b6abd05eda2469c52c5f50.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_71/JPG/en_US/163a1dd216c9879bc06c222961f48209.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_71/JPG/es_ES/66ebca70a8fff4f41cbfc03b8c342715.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_71/JPG/fr_FR/c5d664092cee9768f3b58be715d321ba.jpg"
+                        },
+                        "name": "Nymphe des Forêts",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "OCEAN_POWER": "0",
+                            "FOREST_POWER": "3",
+                            "MOUNTAIN_POWER": "0",
+                            "MAIN_EFFECT": "{H} Si je suis face à une Expédition en {V}, vous pouvez faire gagner [[Fugace]] à un Personnage ciblé.  #{R} Vous pouvez déplacer un marqueur Terrain {V} de n'importe quelle région vers ma région.#"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_71",
+                        "familyReference": "LY_71_R1"
+                    },
+                    "id": "01K67M7YHW0E3KTSKNG6Q51EYS"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/2ac8f225f7a4e810bb3c",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_LY_10_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e8af3eaf70122f1588be",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_10/JPG/fr_FR/2abc2c899d2fb62f1485544e26220dad.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_10/ALT_CORE_B_LY_10_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_10/ALT_CORE_B_LY_10_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_10/ALT_CORE_B_LY_10_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_LY_10_C",
+                        "id": "01HN5TXRAWX201G7TZS53R00Z7",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_10/JPG/it_IT/bb564efcde27617e8a05d244d0f98cec.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_10/JPG/es_ES/d446e2b683ce9e2bb27c0896948baa83.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_10/JPG/en_US/46d57d5d2a921bc84574bca0a2eccf29.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_10/JPG/de_DE/fd795e11f35a24e60918399cb3efb948.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_10/JPG/fr_FR/2abc2c899d2fb62f1485544e26220dad.jpg"
+                        },
+                        "name": "Encrière de l'Ouroboros",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "2",
+                            "MOUNTAIN_POWER": "3",
+                            "FOREST_POWER": "3",
+                            "MAIN_EFFECT": "Lorsque je vais en Réserve depuis la zone d'Expédition — Vous pouvez renvoyer une autre carte de votre Réserve dans votre main."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_10",
+                        "familyReference": "LY_10_C"
+                    },
+                    "id": "01K90ST0TE9QHRXT5006XGV2T5"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/e22c22a795a6614d4931",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_LY_09_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e8af3eaf70122f1588be",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_09/JPG/fr_FR/f78d266c54172696a8adc2cad42d3ed9.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_09/ALT_CORE_B_LY_09_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_09/ALT_CORE_B_LY_09_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_09/ALT_CORE_B_LY_09_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_LY_09_C",
+                        "id": "01HKAFJNRYNF0NFR07RBAK583R",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_09/JPG/it_IT/70ae0f8db0a72195416b6414dc0bfba5.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_09/JPG/es_ES/a560f6e3527b6351fd8120bdcace47a0.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_09/JPG/en_US/d58471ce0ab23976756aea72db557c3a.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_09/JPG/de_DE/56ff2ec2ce52aa42bc782ccf09c37cc4.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_09/JPG/fr_FR/f78d266c54172696a8adc2cad42d3ed9.jpg"
+                        },
+                        "name": "Tanuki",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "0",
+                            "MOUNTAIN_POWER": "3",
+                            "FOREST_POWER": "3",
+                            "MAIN_EFFECT": "{H} [Sabotez]. (Défaussez jusqu'à une carte d'une Réserve.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_09",
+                        "familyReference": "LY_09_C"
+                    },
+                    "id": "01K67M7EAEJ8B2P3RQSPJDXGP1"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/2cf14633fa0c132f70ed",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_LY_15_C",
+                        "cardType": {
+                            "@id": "/card_types/01H19NWA92A4ERAC4ATMSZNASS",
+                            "@type": "CardType",
+                            "reference": "CHARACTER",
+                            "id": "01H19NWA92A4ERAC4ATMSZNASS",
+                            "name": "Personnage"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e8af3eaf70122f1588be",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_15/JPG/fr_FR/463f0e2e5ced2eec5c8a3c422765d61b.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_15/ALT_CORE_B_LY_15_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_15/ALT_CORE_B_LY_15_R_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_15/ALT_CORE_B_LY_15_U_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_LY_15_C",
+                        "id": "01HKAFJNSNREEK787NF3WM4P2G",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_15/JPG/de_DE/e10ef823916adda9ccc149378abd9475.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_15/JPG/es_ES/4515e5040a7322fe9937d0a2e91f75c6.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_15/JPG/en_US/4db1f528835953a7d379f66a6a445619.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_15/JPG/fr_FR/463f0e2e5ced2eec5c8a3c422765d61b.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_15/JPG/it_IT/1b210d4bf9d209077863b0059001f07c.jpg"
+                        },
+                        "name": "Le Marchand de Sable",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "3",
+                            "MOUNTAIN_POWER": "3",
+                            "FOREST_POWER": "0",
+                            "MAIN_EFFECT": "{H} Jusqu'à un Personnage ciblé gagne [[Endormi]]. (Au Crépuscule, ignorez ses statistiques. Au Repos, il ne va pas en Réserve et il perd Endormi.)"
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_15",
+                        "familyReference": "LY_15_C"
+                    },
+                    "id": "01K8KZB4MWF9MS062DTXFNFNQX"
+                }
+            ],
+            "number": 28
+        },
+        "spell": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/0e9a6ce9bd25666df755",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/c75ef35a953be620c41f",
+                    "quantity": 3,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_YZ_19_R2",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/4e2ecd4fa8d62ee4e827",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_19/JPG/fr_FR/1cacb3c8759eb3e7702ab31138a385fe.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_19/WEB_17c22a407f782954aa960759102a191b",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_YZ_19/WEB_e15ca09454686f1cf676008de3db08a5"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_YZ_19_R2",
+                        "id": "01HN5TXRM69K9Q4327SXHN9X1M",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_19/JPG/it_IT/3048b0a277e9db1696f1fd2273560b7d.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_19/JPG/de_DE/7353d1d24e8f5910e3560ed7af16cf2f.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_19/JPG/es_ES/1c078b4c54631e8bf73c15e1c52702b4.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_19/JPG/en_US/f44540693e55741a74a5e99404928712.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_YZ_19/JPG/fr_FR/1cacb3c8759eb3e7702ab31138a385fe.jpg"
+                        },
+                        "name": "Entraînement Magique",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "Piochez une carte."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "YZ_19",
+                        "familyReference": "YZ_19_R2"
+                    },
+                    "id": "01K67KNP6AY5GDYCQTM8K5765X"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/21275e6bf87e6ba32abb",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CORE_B_LY_23_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e8af3eaf70122f1588be",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_23/JPG/fr_FR/7c88ed9ab9a73b9f561945473e68e755.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_23/ALT_CORE_B_LY_23_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_23/ALT_CORE_B_LY_23_R_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CORE_B_LY_23_C",
+                        "id": "01HKAFJNTK53K6C3SEXETMRAVK",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_23/JPG/es_ES/71e292b162b05d379cdedd84b6d8205b.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_23/JPG/it_IT/c1944cea9833c6c6d6173efda03d00b6.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_23/JPG/de_DE/2fd1e04032e570b4b9211d64ca1fc4b1.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_23/JPG/en_US/9e4235c129c1a08c4566e2dff92bbee5.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_23/JPG/fr_FR/7c88ed9ab9a73b9f561945473e68e755.jpg"
+                        },
+                        "name": "Meunier, Tu Dors",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MAIN_EFFECT": "Un Personnage ciblé gagne [[Endormi]]. (Au Crépuscule, ignorez ses statistiques. Au Repos, il ne va pas en Réserve et il perd Endormi.)",
+                            "ECHO_EFFECT": "{D} : La prochaine carte que vous jouez ce tour coûte {1} de moins."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_23",
+                        "familyReference": "LY_23_C"
+                    },
+                    "id": "01K8KZ9E09QHMY5TJWTYBJ8D6T"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/43d3aa66f45ed2f50f42",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_CYCLONE_B_LY_78_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e8af3eaf70122f1588be",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_78/JPG/fr_FR/4a2c38dce63d3e716ed02a1cf1f97f65.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_78/WEB_02c97e6243cf3d2b57fc1a76980b1b3d",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_78/WEB_5fc48e2d4c26ee295c9b366a37bd1e78"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_CYCLONE_B_LY_78_C",
+                        "id": "01JN9HNDXWHWK6CXPRKQ7N2PZA",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_78/JPG/es_ES/2ded923e01a1ae82141fa152e3bf78fc.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_78/JPG/de_DE/eda245475545d34178dbb0e5513a0727.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_78/JPG/en_US/428b43e9e861fd8e72b90f31a04718f9.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_78/JPG/it_IT/16ddbc2c901e8c8f77be7d8005212e1a.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/CYCLONE/CARDS/ALT_CYCLONE_B_LY_78/JPG/fr_FR/4a2c38dce63d3e716ed02a1cf1f97f65.jpg"
+                        },
+                        "name": "Sceau Lyra",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "4",
+                            "MAIN_EFFECT": "Choisissez l'un :  • Jusqu'à deux Personnages ciblés gagnent [[Fugace]].  • Piochez une carte, puis lancez un dé. Sur 4+, [Ravitaillez].  • Un Personnage ciblé gagne 1 boost par carte dans votre Réserve."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_78",
+                        "familyReference": "LY_78_C"
+                    },
+                    "id": "01K67KM4Z8ZYCP7X7YDJ8EA7SP"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/b9cc86c2be4e7bc56a20",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_COREKS_B_LY_24_C",
+                        "cardType": {
+                            "@id": "/card_types/01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "@type": "CardType",
+                            "reference": "SPELL",
+                            "id": "01GE7AC9X35JXEQZJBBD6E4BKX",
+                            "name": "Sort"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e8af3eaf70122f1588be",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_24/JPG/fr_FR/f06452bd5a16b8210d3be28fa92ab9c5.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_24/ALT_CORE_B_LY_24_C_WEB.jpg",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/CORE/CARDS/ALT_CORE_B_LY_24/ALT_CORE_B_LY_24_R_WEB.jpg"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_COREKS_B_LY_24_C",
+                        "id": "01HN5TXRDAZS49XY6FM34RTSQ6",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_24/JPG/it_IT/aba013efa95b0375a16beb21616c0d56.jpg",
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_24/JPG/de_DE/ef67467e6b8e7dcf363f75d4d34091e7.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_24/JPG/es_ES/e1d48fad9f8bc94797b1b63a4626002a.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_24/JPG/fr_FR/f06452bd5a16b8210d3be28fa92ab9c5.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/COREKS/CARDS/ALT_CORE_B_LY_24/JPG/en_US/ac57e7264680d4ed557c7159958ec5e2.jpg"
+                        },
+                        "name": "Cocon d'Étoffe",
+                        "elements": {
+                            "MAIN_COST": "3",
+                            "RECALL_COST": "3",
+                            "OCEAN_POWER": "",
+                            "MOUNTAIN_POWER": "",
+                            "FOREST_POWER": "",
+                            "MAIN_EFFECT": "[[Fugace]]. (Envoyez-moi à la Défausse plutôt qu'en Réserve après résolution de mon effet.)  Choisissez l'un :  • Défaussez un Personnage [[Fugace]], [[Ancré]] ou [[Endormi]] ciblé.  • Défaussez un Permanent ciblé."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_24",
+                        "familyReference": "LY_24_C"
+                    },
+                    "id": "01K938RTQ17CZ244QMC32KZK1V"
+                }
+            ],
+            "number": 8
+        },
+        "permanent": {
+            "@type": "DeckCards",
+            "@id": "/.well-known/genid/dd4c0738e805f9f61d7a",
+            "deckUserListCard": [
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/cbb22e79e95e56dee52c",
+                    "quantity": 1,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_ALIZE_B_LY_43_C",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q7ASAYXTSM3DH772C70PV5",
+                            "@type": "CardType",
+                            "reference": "EXPEDITION_PERMANENT",
+                            "id": "01J1Q7ASAYXTSM3DH772C70PV5",
+                            "name": "Permanent d’Expédition"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/e8af3eaf70122f1588be",
+                            "reference": "COMMON",
+                            "name": "Commun"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_43/JPG/fr_FR/c65bb1b6a90557f7325b22619839c282.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_43/WEB_7770bce90f20095343d5a5cc7056564a",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_43/WEB_ded96dd95ea45267682cb63009777587"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_ALIZE_B_LY_43_C",
+                        "id": "01J1Q4P4SA983VFNNBWVRZT9T8",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_43/JPG/de_DE/d5e6dfef08d77346ee1e326ed99658c4.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_43/JPG/it_IT/8e20533c903989b8b6e45c209005be95.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_43/JPG/fr_FR/c65bb1b6a90557f7325b22619839c282.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_43/JPG/es_ES/c792361458edf9730f91ac1cfab545b4.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/ALIZE/CARDS/ALT_ALIZE_B_LY_43/JPG/en_US/0f9e009492c479b8a5eec8ca3fb2252d.jpg"
+                        },
+                        "name": "Tenue Hivernale",
+                        "elements": {
+                            "MAIN_COST": "1",
+                            "RECALL_COST": "1",
+                            "MAIN_EFFECT": "Les {V}, {M} et {O} des Personnages dans mon Expédition sont égales à leur statistique la plus élevée."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "LY_43",
+                        "familyReference": "LY_43_C"
+                    },
+                    "id": "01K8KWYGMENWH563R67ZFPJWSN"
+                },
+                {
+                    "@type": "DeckUserListCard",
+                    "@id": "/.well-known/genid/b7dbe63ebe0c6b237ec9",
+                    "quantity": 2,
+                    "card": {
+                        "@type": "Card",
+                        "@id": "/cards/ALT_BISE_B_MU_63_R2",
+                        "cardType": {
+                            "@id": "/card_types/01J1Q78N4S1E64PN4T7GB4T59F",
+                            "@type": "CardType",
+                            "reference": "LANDMARK_PERMANENT",
+                            "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+                            "name": "Repère Permanent"
+                        },
+                        "rarity": {
+                            "@type": "Rarity",
+                            "@id": "/.well-known/genid/4e2ecd4fa8d62ee4e827",
+                            "reference": "RARE",
+                            "name": "Rare"
+                        },
+                        "imagePath": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_MU_63/JPG/fr_FR/a5ee5da7728429b13cb2068a0343ad9d.jpg",
+                        "inMyCollection": 0,
+                        "assets": {
+                            "WEB": [
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_MU_63/WEB_034a9ae15c116800f0f4bb0645375a48",
+                                "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_MU_63/WEB_6228e26bfecac34d5e7f8dffd55b7a57"
+                            ]
+                        },
+                        "numberCopyAvailable": 0,
+                        "isExclusive": false,
+                        "isOwnerless": false,
+                        "reference": "ALT_BISE_B_MU_63_R2",
+                        "id": "01JB1YGPBSVNFH1P9D1KPG382E",
+                        "mainFaction": {
+                            "@id": "/factions/LY",
+                            "@type": "Faction",
+                            "reference": "LY",
+                            "color": "#cf4171",
+                            "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+                            "name": "Lyra"
+                        },
+                        "allImagePath": {
+                            "de-de": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_MU_63/JPG/de_DE/b861c863deb0cf921c5e22b44b021dce.jpg",
+                            "es-es": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_MU_63/JPG/es_ES/bdc99dc2891fa4dbf38776133731447f.jpg",
+                            "it-it": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_MU_63/JPG/it_IT/74f794c532e5b43f6ee646ab54bad6a8.jpg",
+                            "fr-fr": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_MU_63/JPG/fr_FR/a5ee5da7728429b13cb2068a0343ad9d.jpg",
+                            "en-us": "https://altered-prod-eu.s3.amazonaws.com/Art/BISE/CARDS/ALT_BISE_B_MU_63/JPG/en_US/48d0de816a1ba9c6663101eadd704e01.jpg"
+                        },
+                        "name": "Le Sous-Bois",
+                        "elements": {
+                            "MAIN_COST": "2",
+                            "RECALL_COST": "2",
+                            "MAIN_EFFECT": "{T} : Le prochain Personnage que vous jouez en {V} ce tour gagne 1 boost."
+                        },
+                        "isSuspended": false,
+                        "isErrated": false,
+                        "isBanned": false,
+                        "siblingReference": "MU_63",
+                        "familyReference": "MU_63_R2"
+                    },
+                    "id": "01K67KM0MK592SV43QX7XW1HYK"
+                }
+            ],
+            "number": 3
+        }
+    },
+    "cardsByRarityData": [
+        [
+            "Commun",
+            21
+        ],
+        [
+            "Rare",
+            15
+        ],
+        [
+            "Unique",
+            3
+        ]
+    ],
+    "updatedAt": "2025-11-02T21:49:59+00:00",
+    "id": "01K67KD3WYVXX25SCHP5N6ADTA",
+    "description": "",
+    "legal": true,
+    "cardIndexes": {
+        "/cards/ALT_ALIZE_B_LY_32_U_17225": 1,
+        "/cards/ALT_CORE_B_LY_08_U_6330": 1,
+        "/cards/ALT_COREKS_B_LY_16_U_4280": 1,
+        "/cards/ALT_ALIZE_B_BR_34_R2": 3,
+        "/cards/ALT_CORE_B_LY_07_C": 3,
+        "/cards/ALT_ALIZE_B_MU_33_R2": 3,
+        "/cards/ALT_COREKS_B_YZ_19_R2": 3,
+        "/cards/ALT_BISE_B_MU_63_R2": 2,
+        "/cards/ALT_CYCLONE_B_LY_78_C": 2,
+        "/cards/ALT_CORE_B_LY_04_C": 3,
+        "/cards/ALT_CORE_B_LY_09_C": 3,
+        "/cards/ALT_CYCLONE_B_LY_71_R1": 3,
+        "/cards/ALT_COREKS_B_LY_10_C": 2,
+        "/cards/ALT_CORE_B_LY_10_R1": 1,
+        "/cards/ALT_ALIZE_B_LY_43_C": 1,
+        "/cards/ALT_BISE_B_LY_51_C": 2,
+        "/cards/ALT_COREKS_B_LY_24_C": 1,
+        "/cards/ALT_CORE_B_LY_23_C": 2,
+        "/cards/ALT_CORE_B_LY_15_C": 2
+    }
+}

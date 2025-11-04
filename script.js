@@ -1,7 +1,7 @@
 let chart,
   data,
   options,
-  activeSeason = 5;
+  activeSeason = 6;
 
 google.charts.load("current", { packages: ["corechart"] });
 
@@ -26,21 +26,27 @@ async function initChart(rawData) {
       "#b1491e",
       "#973a18",
       "#7d2b12",
+      "#631f0a",
       "#cd002c",
       "#bc0023",
       "#ab001a",
+      "#880d20",
       "#e9337e",
       "#e12965",
       "#d91f4c",
+      "#bd1841",
       "#268746",
       "#1e6c38",
       "#16512a",
+      "#104520",
       "#0181b1",
       "#016797",
       "#014d7d",
+      "#05436a",
       "#9a55b0",
       "#7b4495",
       "#5c337a",
+      "#4e276a",
     ],
     legend: {
       position: "right",
@@ -1292,8 +1298,8 @@ const fetchData = async () => {
         logoFaction.src = `assets/icon-factions/icon-faction-${[i + 1]}.png`;
         logoFaction.classList.add("cartesJouees__bloc__details__logoFaction");
         cartesJoueesBlocDetails.appendChild(logoFaction);
-        for (let j = 0; j < 3; j++) {
-          let hero = orderedHeroes[i * 3 + j];
+        for (let j = 0; j < 4; j++) {
+          let hero = orderedHeroes[i * 4 + j];
           // <div> cartesJouees nb héros
           const cartesJoueesBlocDetailsNbHeros = document.createElement("div");
           cartesJoueesBlocDetailsNbHeros.classList.add(
